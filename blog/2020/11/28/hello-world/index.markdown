@@ -1,5 +1,8 @@
 ---
 title: First Post
+tags:
+    - post
+    - first
 ---
 
 # Welcome To Your Blog
