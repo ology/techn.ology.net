@@ -1,5 +1,5 @@
 ---
-title: Generating Musical Phrases - Round II
+title: Generating Musical Phrases
 tags:
     - music
     - software
@@ -17,13 +17,9 @@ The program in question is [quasi-random-durations](https://github.com/ology/Mus
 The code libraries that I love to use so much are:
 
 - [Data::Dumper::Compact](https://metacpan.org/release/Data-Dumper-Compact) - For concisely displaying the data structures that embody programmed musical things.
-
 - [MIDI::Drummer::Tiny](https://metacpan.org/release/MIDI-Drummer-Tiny) - For adding beats to my projects.
-
 - [Music::Duration::Partition](https://metacpan.org/release/Music-Duration-Partition) - For generating quasi-random rhythmic phrases in a given duration.
-
 - [Music::Scales](https://metacpan.org/release/Music-Scales) - For providing the scale notes that are the atoms of music.
-
 - [Music::VoiceGen](https://metacpan.org/release/Music-VoiceGen) - For generating a smooth series of pitches.
 
 (A couple are written by me, because they didn't exist yet!)
