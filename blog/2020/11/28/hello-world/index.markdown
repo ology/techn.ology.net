@@ -11,7 +11,4 @@ To edit this post, open up <%= $app->url( $self->path ) %> in your text editor.
 
 [techn.ology.net](https://techn.ology.net/)
 
-%= highlight Perl => begin
-my $answer = 42;
-print "Answer: $answer\n";
-% end
+%= highlight Perl => include 'test.pl'
