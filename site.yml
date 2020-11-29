@@ -36,7 +36,7 @@ site:
                     style: default
 
     # title: This is the title of the site, shown in the <title> tag
-    title: 'Gene Boggs'
+    title: 'techn.ology.net'
 
     # base_url: This is the base URL the site will be deployed to. It
     # should be a full URL, and may contain a path, like:
