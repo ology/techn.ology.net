@@ -82,4 +82,12 @@ This resting is crucial.  Each drummer enters after 16 bars of the previous dru
 
 Each run of this is different.  Sometimes you get a "pleasant musical evolution", but sometimes you get all toms, or just a weird clash of rhythms.  Here is one with 8 voices that is ok:
 
+[drum-circle-8v.mp3](drum-circle-8v.mp3)
 
+And how about another?
+
+[drum-circle-8v-II.mp3](drum-circle-8v-II.mp3)
+
+Ok, one more!
+
+[drum-circle-8v-III.mp3](drum-circle-8v-III.mp3)
