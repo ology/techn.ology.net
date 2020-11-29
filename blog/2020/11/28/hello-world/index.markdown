@@ -13,5 +13,6 @@ To edit this post, open up <%= $app->url( $self->path ) %> in your text editor.
 
 ```
 my $answer = 42;
+
 print "Answer: $answer\n";
 ```
