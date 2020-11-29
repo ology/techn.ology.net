@@ -26,20 +26,20 @@ Please see the source code if you are interested in the workings.  But here are
 
 In the first, the top part is made with combinations of half, quarter and eighth notes.  The second adds triplet eighth notes to the mix.  I call this "solo mode."  Haha.
 
-[polygenic-10-Solo-mode.mp3](https://www.ology.net/tech/wp-content/uploads/polygenic-10-Solo-mode.mp3)
+[polygenic-10-Solo-mode.mp3](polygenic-10-Solo-mode.mp3)
 
-[polygenic-10-Solo-mode-1.mp3](https://www.ology.net/tech/wp-content/uploads/polygenic-10-Solo-mode-1.mp3)
+[polygenic-10-Solo-mode-1.mp3](polygenic-10-Solo-mode-1.mp3)
 
 Ok. One more.  This has phrases with "charming grace-notes", because the phrase generator produced one without proper triplets:
 
-[polygenic-9-Charming-grace-notes.mp3](https://www.ology.net/tech/wp-content/uploads/polygenic-9-Charming-grace-notes.mp3)
+[polygenic-9-Charming-grace-notes.mp3](polygenic-9-Charming-grace-notes.mp3)
 
 **UPDATE:**
 
 The [descendant program](https://github.com/ology/Music/blob/master/chordal) that adds, what sound like chords:
 
-[chordal-03.mp3](https://www.ology.net/tech/wp-content/uploads/chordal-03.mp3)
+[chordal-03.mp3](chordal-03.mp3)
 
 Here is the same descendant program, but playing every other bar a whole note on top instead of the solo notes:
 
-[chordal-04.mp3](https://www.ology.net/tech/wp-content/uploads/chordal-04.mp3)
+[chordal-04.mp3](chordal-04.mp3)
