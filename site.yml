@@ -28,6 +28,12 @@
 # Statocles::Site for a full list of attributes and what they do.
 site:
     $class: 'Statocles::Site'
+    args:
+        plugins:
+            highlight:
+                $class: Statocles::Plugin::Highlight
+                $args:
+                    style: default
 
     # title: This is the title of the site, shown in the <title> tag
     title: 'Gene Boggs'
@@ -85,14 +91,6 @@ site:
     # deploy: This is the deploy object, used to deploy this site.
     deploy:
         $ref: 'deploy'
-
-    args:
-        plugins:
-            highlight:
-                $class: Statocles::Plugin::Highlight
-                $args:
-                    style: default
-
 
 # theme: These are the settings for the theme.  See Statocles::Help::Theme for
 # more information, and Statocles::Theme for a full list of attributes and what
