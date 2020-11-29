@@ -5,8 +5,13 @@ tags:
     - first
 ---
 
-# Welcome To Your Blog
+# Welcome to my journal!
 
 To edit this post, open up <%= $app->url( $self->path ) %> in your text editor.
 
-[Check the documentation for how to write Statocles content](http://preaction.me/statocles/pod/Statocles/Help/Content)
+[techn.ology.net](https://techn.ology.net/)
+
+```
+my $answer = 42;
+print "Answer: $answer\n";
+```
