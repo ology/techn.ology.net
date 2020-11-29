@@ -86,6 +86,14 @@ site:
     deploy:
         $ref: 'deploy'
 
+    args:
+        plugins:
+            highlight:
+                $class: Statocles::Plugin::Highlight
+                $args:
+                    style: default
+
+
 # theme: These are the settings for the theme.  See Statocles::Help::Theme for
 # more information, and Statocles::Theme for a full list of attributes and what
 # they do
