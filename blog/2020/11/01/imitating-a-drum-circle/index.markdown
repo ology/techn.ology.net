@@ -10,7 +10,7 @@ tags:
     - drums
 ---
 
-![](drum-circle.jpg)
+<img align="left" src="drum-circle.jpg">
 Ever been to the park and heard a tribe drumming in the distance?  This is a [drum circle](https://en.wikipedia.org/wiki/Drum_circle).
 Upon closer inspection, each drummer has a single instrument (or maybe a set of bongos).
 Each drummer keeps a steady beat in common and in syncopation with his or her fellow drummers.
