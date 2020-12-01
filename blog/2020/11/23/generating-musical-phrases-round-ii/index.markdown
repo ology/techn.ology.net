@@ -1,4 +1,5 @@
 ---
+status: published
 title: Generating Musical Phrases - Round II
 tags:
     - music

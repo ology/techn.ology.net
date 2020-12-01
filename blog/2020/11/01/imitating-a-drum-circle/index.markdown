@@ -1,4 +1,5 @@
 ---
+status: published
 title: Imitating a Drum Circle
 tags:
     - music
