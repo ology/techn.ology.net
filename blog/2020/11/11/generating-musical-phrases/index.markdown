@@ -11,7 +11,7 @@ tags:
 
 After years of fiddling with algorithmic composition, I have come to reach for certain tools to craft melodies, bass-lines, solos, etc.  My latest generative composition program and output will illustrate...
 
-~
+---
 
 The program in question is [quasi-random-durations](https://github.com/ology/Music/blob/master/quasi-random-durations)
 

@@ -14,7 +14,7 @@ Recently I was enjoying Steve Reich's ["Octet" (Eight Lines)](https://www.youtub
 
 tl;dr: [reichify](https://github.com/ology/Music/blob/master/reichify)
 
-~
+---
 
 Fortunately I have been immersed in algorithmic composition of late and had a fair idea what tools I would need.  Number one is [Perl](https://www.perl.org/) and its vast ecosystem of modules - music ones in particular.  Let's go through the code!
 

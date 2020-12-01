@@ -13,7 +13,7 @@ tags:
 ![](twinkle_ngram-play-durations.png)
 What are "ngrams"?  And how do they relate to music?  Well [ngrams](https://en.wikipedia.org/wiki/N-gram) are basically groups of tokens.  These groups are of a certain given size - say phrases of three words.  If we consider notes as tokens we get musical ngrams!  We can count the number of occurrences of each ngram phrase, and thus know how many times a given phrase is repeated.  How often does Bach repeat himself, for instance?
 
-~
+---
 
 This is a short story about refactoring and new results.
 

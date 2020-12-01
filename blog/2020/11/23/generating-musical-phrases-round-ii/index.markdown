@@ -11,7 +11,7 @@ tags:
 
 It seems I am always fiddling with algorithmic musical composition.  Most recently it is with the program, polygenic, which is a descendant of the program in the previous post on this subject.
 
-~
+---
 
 For this program, first up is to declare our standard Perl preamble.  Then version 5.20 is required (in order to allow ["post-deref" syntax](https://perldoc.perl.org/perlref#Postfix-Dereference-Syntax)), and some of my favorite music modules - well many!
 
