@@ -104,7 +104,7 @@ theme:
 deploy:
     $class: 'Statocles::Deploy::File'
     $class: 'Statocles::Deploy::File'
-    path: '/Users/gene/sandbox/ology.github.io'
+    path: '../ology.github.io'
 
 #----------------------------------------------------------------------------
 # Applications
