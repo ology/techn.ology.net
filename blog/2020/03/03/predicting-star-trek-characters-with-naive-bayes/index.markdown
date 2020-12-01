@@ -9,7 +9,9 @@ tags:
 ---
 
 ![](kirk-and-spock.jpg)
-I have been reading ["Data Science from Scratch"](https://www.oreilly.com/library/view/data-science-from/9781492041122/) and porting the python code to perl.  In this episode, we use [Naive Bayes](https://en.wikipedia.org/wiki/Naive_Bayes_classifier) to predict whether the speaker of a line is either Kirk, Spock or McCoy, with my new, work-in-progress [data science library](https://github.com/ology/Data-Science-FromScratch).  tl;dr: [is-character.pl](https://github.com/ology/Data-Science-FromScratch/blob/master/eg/is-character.pl)
+I have been reading ["Data Science from Scratch"](https://www.oreilly.com/library/view/data-science-from/9781492041122/) and porting the python code to perl.  In this episode, we use [Naive Bayes](https://en.wikipedia.org/wiki/Naive_Bayes_classifier) to predict whether the speaker of a line is either Kirk, Spock or McCoy, with my new, work-in-progress [data science library](https://github.com/ology/Data-Science-FromScratch).
+
+tl;dr: [is-character.pl](https://github.com/ology/Data-Science-FromScratch/blob/master/eg/is-character.pl)
 
 ---
 
