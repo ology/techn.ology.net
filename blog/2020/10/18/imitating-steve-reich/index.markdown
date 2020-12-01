@@ -9,6 +9,7 @@ tags:
     - generative
 ---
 
+![](Steve-Reich.jpg)
 Recently I was enjoying Steve Reich's ["Octet" (Eight Lines)](https://www.youtube.com/watch?v=WgzQcDrX86M) and became curious if I could mimic the simple, staccato phrases with which he starts off his piece.
 
 tl;dr: [reichify](https://github.com/ology/Music/blob/master/reichify)
