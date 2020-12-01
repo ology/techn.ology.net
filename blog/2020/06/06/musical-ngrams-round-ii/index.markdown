@@ -160,5 +160,5 @@ Here is the bass clef:
 
 ![](Twinkle-1_ngram-analyze-durations.png)
 ![](Twinkle-1_ngram-analyze-notes.png)
-![](Twinkle-1_ngram-analyze-duration_notes.png =260x)
+![](Twinkle-1_ngram-analyze-duration_notes.png)
 
