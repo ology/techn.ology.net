@@ -7,8 +7,8 @@ use YAML::XS qw(LoadFile);
 
 my $conf = LoadFile('site.yml');
 
-my $source = $conf->{deploy}{path} . "/index.html";
-my $dest = $conf->{deploy}{path} . "/pruned.html";
+my $source = "$conf->{deploy}{path}/index.html";
+my $dest = "$conf->{deploy}{path}/pruned.html";
 
 open(my $in, '<', $source)
     or die "Can't read $source: $!";
