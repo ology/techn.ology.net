@@ -31,9 +31,9 @@ You can sort-of see a resemblance, but the above images are *not the same* image
 
 Onward! First up is the standard Perl preamble and the modules that I will be using - [Imager](https://metacpan.org/pod/Imager) and [MIDI::Util](https://metacpan.org/pod/MIDI::Util):
 
-#!/usr/bin/env perl
-use strict;
-use warnings;
+    #!/usr/bin/env perl
+    use strict;
+    use warnings;
 
     # This requires https://metacpan.org/pod/Math::Fractal::Noisemaker
 
