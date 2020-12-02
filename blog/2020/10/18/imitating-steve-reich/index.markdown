@@ -2,10 +2,10 @@
 status: published
 title: Imitating Steve Reich
 tags:
-    - music
-    - software
     - perl
+    - software
     - MIDI
+    - music
     - generative
 ---
 
