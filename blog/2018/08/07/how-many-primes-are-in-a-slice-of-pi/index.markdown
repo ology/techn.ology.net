@@ -10,9 +10,9 @@ tags:
 
 **Questions:**
 
-    - What is the number of primes per n-slice of the decimal part of pi?
-    - What does the graph look like?
-    - Are there many overlapping primes (i.e. start at the same position in the slice)?
+* What is the number of primes per n-slice of the decimal part of pi?
+* What does the graph look like?
+* Are there many overlapping primes (i.e. start at the same position in the slice)?
 
 ---
 
