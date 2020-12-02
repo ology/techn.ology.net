@@ -7,7 +7,6 @@ tags:
     - software
     - mathematics
     - prime numbers
-    - scatter plot
 ---
 
 What does the graph look like when you convert each prime to binary and plot the ones versus the zeros?
