@@ -30,7 +30,7 @@ site:
     $class: 'Statocles::Site'
 
     # title: This is the title of the site, shown in the <title> tag
-    title: 'Gene Boggs'
+    title: 'techn.ology.net'
 
     # base_url: This is the base URL the site will be deployed to. It
     # should be a full URL, and may contain a path, like:
@@ -63,6 +63,10 @@ site:
     # change how your site looks.
     theme:
         $ref: 'theme'
+
+    links:
+        stylesheet:
+            - href: /theme/css/ology.css
 
     images:
         icon: /theme/site/favicon.png
