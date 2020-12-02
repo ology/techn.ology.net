@@ -29,6 +29,9 @@
 site:
     $class: 'Statocles::Site'
 
+    images:
+        icon: /theme/site/favicon.png
+
     # title: This is the title of the site, shown in the <title> tag
     title: 'techn.ology.net'
 
