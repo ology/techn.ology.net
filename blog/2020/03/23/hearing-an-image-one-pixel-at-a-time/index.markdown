@@ -29,7 +29,7 @@ Playing each of 256 squared (=65,536) notes would take a very long time (~11 hou
 
 You can sort-of see a resemblance, but the above images are *not the same* image that has been scaled.  That is, each run of the program generates a fresh fractal image.
 
-Onward! First up is the standard Perl preamble and the modules that I will be using - [Imager](https://metacpan.org/pod/Imager) and [MIDI::Util](https://metacpan.org/pod/MIDI::Util):
+Onward! First up is the standard Perl preamble and the modules that I will be using - [Imager](https://metacpan.org/pod/Imager), [Math::Utils](https://metacpan.org/pod/Math::Utils) and [MIDI::Util](https://metacpan.org/pod/MIDI::Util):
 
     #!/usr/bin/env perl
     use strict;
