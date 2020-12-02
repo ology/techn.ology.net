@@ -5,9 +5,7 @@ tags:
     - software
     - perl
     - data
-    - print
-    - ink
-    - frequency
+    - analysis
 ---
 
 Today I became curious about how much ink is needed to print each of the 26 letters of the English alphabet.  Naturally I wrote [a program](https://github.com/ology/Graphics/blob/master/detect-black.pl) to tell me...
