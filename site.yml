@@ -84,6 +84,8 @@ site:
         main:
             - text: 'On Github'
               href: 'https://github.com/ology'
+            - text: 'On CPAN'
+              href: 'https://metacpan.org/author/GENE'
 
     # deploy: This is the deploy object, used to deploy this site.
     deploy:
