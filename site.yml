@@ -29,9 +29,6 @@
 site:
     $class: 'Statocles::Site'
 
-    images:
-        icon: /theme/site/favicon.png
-
     # title: This is the title of the site, shown in the <title> tag
     title: 'techn.ology.net'
 
@@ -66,6 +63,9 @@ site:
     # change how your site looks.
     theme:
         $ref: 'theme'
+
+    images:
+        icon: /theme/site/favicon.png
 
     # index: The path to the page that should be used for the site index.
     index: '/blog'
