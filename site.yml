@@ -30,7 +30,7 @@ site:
     $class: 'Statocles::Site'
 
     # title: This is the title of the site, shown in the <title> tag
-    title: 'techn.ology.net'
+    title: 'Gene Boggs'
 
     # base_url: This is the base URL the site will be deployed to. It
     # should be a full URL, and may contain a path, like:
