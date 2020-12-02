@@ -15,7 +15,7 @@ Today being a Saturday, I decided to noodle around with the [GD::Simple](https:/
 
 ![](chernoff-face.gif)
 
-The results are satisfying, but [the code](https://github.com/ology/Graphics/blob/master/chernoff-face) needs some work to make it more generic... Click the image to see it animated.
+The results are satisfying, but [the code](https://github.com/ology/Graphics/blob/master/chernoff-face) needs some work to make it more generic...
 
 The program reads-in a text file of 5-dimensional comma separated values and builds a cartoon face having dimensions for head width, mouth width, eye spacing, eye size (diameter) and nose width, for each data row.
 
