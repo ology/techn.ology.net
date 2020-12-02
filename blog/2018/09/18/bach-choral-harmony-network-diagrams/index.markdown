@@ -14,11 +14,11 @@ In order to do this I wrote a small program that tallies the movement from one c
 
 ---
 
-The [code for this](https://github.com/ology/Music/blob/master/bach-choral-network) is on github.  It accepts an identifier for a song (as given by the UCI dataset) to diagram.  The association between UCI ids and Bach BWV numbers can be looked-up in this file: [titles.txt]().
+The [code for this](https://github.com/ology/Music/blob/master/bach-choral-network) is on github.  It accepts an identifier for a song (as given by the UCI dataset) to diagram.  The association between UCI ids and Bach BWV numbers can be looked-up in this file: [titles.txt](titles.txt).
 
 ![](bach-choral-network.png)
 
-The shown song diagram is for BWV 17.7 "Nun lob, mein Seel, den Herren."  For reference, here is the MIDI file: [BWV-17.7.mid](BWV-17.7.mid) and here is the transcription: [BWV-17.7.pdf](BWV-17.7.pdf)  Also, I have rendered the transitions of this piece, as a meditation, to audio [on youtube](https://www.youtube.com/watch?v=01fAE1GqW1Q).
+The shown song diagram is for BWV 17.7 "Nun lob, mein Seel, den Herren."  For reference, here is the MIDI file: [BWV-17.7.mid](BWV-17.7_001707b_.mid) and here is the transcription: [BWV-17.7.pdf](BWV-17.7_001707.pdf)  Also, I have rendered the transitions of this piece, as a meditation, to audio [on youtube](https://www.youtube.com/watch?v=01fAE1GqW1Q).
 
 **UPDATE:** I have made a web GUI for displaying these diagrams for the chorales at UCI - [https://github.com/ology/Bach-Chorales](https://github.com/ology/Bach-Chorales) - Woo!
 
