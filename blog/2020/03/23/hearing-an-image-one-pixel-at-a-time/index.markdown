@@ -11,6 +11,7 @@ tags:
     - image
 ---
 
+![](simplex-100x100-1.png)
 Tonight I became curious as to what an image would sound like when "played" one pixel at a time.
 
 tl;dr: The [play-pixels](https://github.com/ology/Music/blob/master/play-pixels) program.
