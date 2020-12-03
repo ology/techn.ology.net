@@ -9,7 +9,7 @@ tags:
     - music
 ---
 
-It seems I am always fiddling with algorithmic musical composition.  Most recently it is with the program, polygenic, which is a descendant of the program in the previous post on this subject.
+It seems I am always fiddling with algorithmic musical composition.  Most recently it is with the program, [polygenic](https://github.com/ology/Music/blob/master/polygenic), which is a descendant of the program in the previous post on this subject.
 
 ---
 
