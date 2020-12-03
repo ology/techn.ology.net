@@ -81,7 +81,7 @@ Surprise:
 
 Trust:
 
-[![](Revelation.png)](Revelation.png)
+[![](trust-Revelation-sm.png)](trust-Revelation.png)
 
 And as with the above “opinion” code, but using “[https://github.com/ology/Lingua-EN-Opinion/blob/master/eg/nrc-opinion nrc-opinion],” you can see what the most emotional sentence is, for each of these emotions. The most emotional sentences are these:
 
