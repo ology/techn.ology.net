@@ -19,7 +19,7 @@ First up is the colored bar chart. It is made with [this code](https://github.co
 
 If the total positive and negative range of the full book is graphed (with [this code](https://github.com/ology/Lingua-EN-Opinion/blob/master/eg/plot this code)), where each sentence is a data point, the fluctuating line looks like this:
 
-[![](Revelation-1-bins-sm.png)](Revelation-1-bins.png)
+[![](Revelation-1-bins.png)](Revelation-1-bins.png)
 
 The higher the line, the more positive the statement and vice-versa.
 
@@ -37,17 +37,17 @@ A curious thing – both sentences in the very same verse!
 
 This graph can be viewed with less "noise" by binning the sentences into chunks and averaging the emotional content for each bin. This shows the average contour of the chart. Here is the same graph but in chunks of 10 sentences:
 
-[![](Revelation-10-bins-sm.png)](Revelation-10-bins.png)
+[![](Revelation-10-bins.png)](Revelation-10-bins.png)
 
 There are 459 sentences in the Book of Revelation, so this divides the book into 459/10 ~ 46 discrete bins.
 
 How about showing the occurrence of a term, like "love" in the text? That is done with [https://github.com/ology/Lingua-EN-Opinion/blob/master/eg/lines-term this code] and looks like:
 
-[![](Revelation-love-sm.png)](Revelation-love.png)
+[![](Revelation-love.png)](Revelation-love.png)
 
 And here is the graph showing the term "beast":
 
-[![](Revelation-beast-sm.png)](Revelation-beast.png)
+[![](Revelation-beast.png)](Revelation-beast.png)
 
 Okay. What about the amount of each of the 8 NRC emotions (anger, anticipation, disgust, fear, joy, sadness, surprise, and trust)? Let’s plot them (with [https://github.com/ology/Lingua-EN-Opinion/blob/master/eg/nrc-plot this code])!
 
@@ -81,7 +81,7 @@ Surprise:
 
 Trust:
 
-[![](trust-Revelation-sm.png)](trust-Revelation.png)
+[![](trust-Revelation.png)](trust-Revelation.png)
 
 And as with the above “opinion” code, but using “[https://github.com/ology/Lingua-EN-Opinion/blob/master/eg/nrc-opinion nrc-opinion],” you can see what the most emotional sentence is, for each of these emotions. The most emotional sentences are these:
 
@@ -151,5 +151,5 @@ Sentence with the most trust:
 
 **UPDATE**: Here is the [Web GUI](https://github.com/ology/Bible-Sentiment)! Screenshot:
 
-[![](Web-GUI-Revelation-love-sm.png)](Web-GUI-Revelation-love.png)
+[![](Web-GUI-Revelation-love.png)](Web-GUI-Revelation-love.png)
 
