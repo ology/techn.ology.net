@@ -8,7 +8,6 @@ tags:
     - analysis
 ---
 
-![](barplot-Revelation-emotions-sm.png)
 I decided to write my own sentiment analysis library called [Lingua::EN::Opinion](https://metacpan.org/release/Lingua-EN-Opinion) and use it to investigate the KJV Bible Book of Revelation.
 
 ---
