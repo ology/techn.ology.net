@@ -1,10 +1,9 @@
 #!/usr/bin/env perl
 
-use Mojolicious::Lite;
-use HTML::WikiConverter;
-use Text::Unidecode qw(unidecode);
+use utf8;
 
-my $wc = HTML::WikiConverter->new(dialect => 'MediaWiki');
+use Mojolicious::Lite;
+use Mojo::DOM;
 
 plugin wordpress => { base_url => 'http://techn.ology.net/wp-json' };
  
@@ -12,20 +11,25 @@ get '/post/:slug' => sub {
   my $c = shift->render_later;
   $c->wp->get_post_p($c->stash('slug'))->then(sub {
     my $post = shift;
-
 #    $c->render(json => $post);
 
-#    my $content = $post->{content}{rendered};
-#    $c->render(text => $content);
+    my $dom = Mojo::DOM->new($post->{content}{rendered});
+    my $text = $dom->all_text;
 
-    my $content = $wc->html2wiki(html => unidecode($post->{content}{rendered}));
+    $text =~ s/\r\n/\n/g;
+    $text =~ s/\n\n\n/\n\n/g;
+    $text =~ s/  / /g;
+    $text =~ s/[“”]/"/g;
+    $text =~ s/[‘’]/'/g;
+    $text =~ s/[–—]/-/g;
+    $text =~ s/…/.../g;
 
-    my $file = '/Users/gene/tmp/wpfetch.markdown';
+    my $file = '/Users/gene/tmp/wpfetch.txt';
     open(my $fh, '>', $file)
         or die "Can't write $file: $!";
-    print $fh $content;
+    print $fh $text;
 
-    $c->render(text => '<pre>'.$content.'</pre>');
+    $c->render(text => $dom);
   });
 };
 
