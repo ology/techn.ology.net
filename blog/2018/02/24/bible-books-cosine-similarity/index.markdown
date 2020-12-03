@@ -218,10 +218,10 @@ Knowing that Moses wrote the first 5 books tells me that other clusters of linke
 
 Here is the arc diagram illustrating the paired relationships:
  
-![[](Bible-Arc-diagram.png)](Bible-Arc-diagram.png)
+[![](Bible-Arc-diagram.png)](Bible-Arc-diagram.png)
 
 Here is the arc diagram of the Greek New Testament by individual chapter:
  
-![[](Greek-New-Testament-Arc-diagram.png)](Greek-New-Testament-Arc-diagram.png)
+[![](Greek-New-Testament-Arc-diagram.png)](Greek-New-Testament-Arc-diagram.png)
 
 The colored dots mark the beginning of each book.
