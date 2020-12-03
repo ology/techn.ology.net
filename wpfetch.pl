@@ -6,6 +6,8 @@ use Mojolicious::Lite;
 use Mojo::DOM;
 
 plugin wordpress => { base_url => 'http://techn.ology.net/wp-json' };
+
+get '/' => sub { shift->redirect_to('/post/bible-books-cosine-similarity') };
  
 get '/post/:slug' => sub {
   my $c = shift->render_later;
