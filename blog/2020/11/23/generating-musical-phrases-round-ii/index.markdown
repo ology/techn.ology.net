@@ -2,11 +2,11 @@
 status: published
 title: Generating Musical Phrases - Round II
 tags:
-    - music
-    - software
     - perl
-    - MIDI
+    - software
     - generative
+    - MIDI
+    - music
 ---
 
 It seems I am always fiddling with algorithmic musical composition.  Most recently it is with the program, polygenic, which is a descendant of the program in the previous post on this subject.

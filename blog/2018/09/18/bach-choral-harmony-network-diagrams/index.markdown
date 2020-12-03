@@ -2,9 +2,9 @@
 status: published
 title: Bach Choral Harmony Network Diagrams
 tags:
-    - music
-    - software
     - perl
+    - software
+    - music
     - data
     - analysis
 ---

@@ -2,11 +2,11 @@
 status: published
 title: Generating Musical Phrases
 tags:
-    - music
-    - software
     - perl
-    - MIDI
+    - software
     - generative
+    - MIDI
+    - music
 ---
 
 After years of fiddling with algorithmic composition, I have come to reach for certain tools to craft melodies, bass-lines, solos, etc.  My latest generative composition program and output will illustrate...

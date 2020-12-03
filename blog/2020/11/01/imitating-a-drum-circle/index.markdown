@@ -2,12 +2,11 @@
 status: published
 title: Imitating a Drum Circle
 tags:
-    - music
-    - software
     - perl
-    - MIDI
+    - software
     - generative
-    - drums
+    - MIDI
+    - music
 ---
 
 ![](drum-circle.jpg)

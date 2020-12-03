@@ -2,10 +2,10 @@
 status: published
 title: Predicting Star Trek Characters with Naive Bayes
 tags:
+    - perl
+    - software
     - machine learning
     - Star Trek
-    - software
-    - perl
 ---
 
 ![](kirk-and-spock.jpg)

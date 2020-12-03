@@ -5,10 +5,10 @@ tags:
     - perl
     - software
     - mathematics
-    - MIDI
-    - audio
     - fractal
     - image
+    - MIDI
+    - audio
 ---
 
 ![](simplex-100x100-1.png)

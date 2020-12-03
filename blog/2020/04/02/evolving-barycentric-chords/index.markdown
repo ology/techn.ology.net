@@ -5,9 +5,9 @@ tags:
     - perl
     - software
     - mathematics
-    - music
-    - MIDI
     - evolutionary
+    - MIDI
+    - music
 ---
 
 What do the fittest barycentric chords of an evolutionary generic algorithm sound like?  Bary- what?  Genetic what?

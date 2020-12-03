@@ -3,6 +3,7 @@ status: published
 title: How Many Primes Are In A Slice Of Pi?
 tags:
     - python
+    - software
     - mathematics
     - prime numbers
     - pi

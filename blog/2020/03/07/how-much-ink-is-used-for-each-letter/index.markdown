@@ -2,8 +2,8 @@
 status: published
 title: How Much Ink Is Used For Each Letter?
 tags:
-    - software
     - perl
+    - software
     - data
     - analysis
 ---

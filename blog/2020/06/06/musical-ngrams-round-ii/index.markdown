@@ -2,12 +2,11 @@
 status: published
 title: Musical Ngrams Round II
 tags:
-    - music
-    - software
     - perl
+    - software
     - MIDI
+    - music
     - analysis
-    - ngrams
 ---
 
 ![](twinkle_ngram-play-durations.png)

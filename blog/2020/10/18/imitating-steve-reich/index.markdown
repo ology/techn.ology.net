@@ -4,9 +4,9 @@ title: Imitating Steve Reich
 tags:
     - perl
     - software
+    - generative
     - MIDI
     - music
-    - generative
 ---
 
 ![](Steve-Reich.jpg)
