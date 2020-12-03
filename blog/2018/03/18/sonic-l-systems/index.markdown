@@ -11,6 +11,8 @@ tags:
 ![](Serpinski_Lsystem.png)
 In 1968, [Aristid Lindenmayer](https://en.wikipedia.org/wiki/Aristid_Lindenmayer) introduced "[L-systems](https://en.wikipedia.org/wiki/L-system)" to the world. Basically, this is an iterative rewriting system of rules that operates on a string beginning with an "axiom" or initial string.
 
+---
+
 Using [turtle graphics](https://en.wikipedia.org/wiki/Turtle_graphics) it is possible to draw all manner of fractal "pathological curves" with this technique.
 
 Being a music nerd, I thought, "Why not make this play notes instead of draw lines?" And so the program [https://github.com/ology/Music/blob/master/lindenmayer-midi lindenmayer-midi] was born.
