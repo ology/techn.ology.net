@@ -18,7 +18,6 @@ get '/post/:slug' => sub {
 
     $text =~ s/\r\n/\n/g;
     $text =~ s/\n\n\n/\n\n/g;
-    $text =~ s/  / /g;
     $text =~ s/[“”]/"/g;
     $text =~ s/[‘’]/'/g;
     $text =~ s/[–—]/-/g;
