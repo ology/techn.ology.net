@@ -70,6 +70,7 @@ site:
 
     images:
         icon: /theme/site/favicon.png
+        banner: /theme/site/banner.jpg
 
     # index: The path to the page that should be used for the site index.
     index: '/blog'
