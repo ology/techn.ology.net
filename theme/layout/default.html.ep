@@ -46,6 +46,7 @@
         <header>
             <nav class="navbar">
                 <div class="container">
+                    <img src="/theme/site/banner.jpg"><br>
                     <a class="brand" href="/"><%= $site->title %></a>
                     % if ( my @nav_links = $site->nav( 'main' ) ) {
                     <ul>
