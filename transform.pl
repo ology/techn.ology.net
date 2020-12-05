@@ -23,7 +23,7 @@ for my $source (@files) {
         or die "Can't write $dest: $!";
 
     while (my $line = readline($in)) {
-        if ($line =~ qr|<p><a href="(.*?\.mp3)">.*?\.mp3</a></p>|) {
+        if ($line =~ m|<p><a href="(.*?\.mp3)">.*?\.mp3</a></p>|) {
             $line = qq|<p><audio controls="controls"><source type="audio/mp3" src="$1"></source></p>\n|;
         }
         print $out $line;
