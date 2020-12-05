@@ -35,5 +35,5 @@ for my $source (@files) {
         or die "Can't close $dest: $!";
 
     move($dest, $source)
-        or die "Move of $dest to $source failed: $!";
+        or die "Can't move $dest to $source: $!";
 }
