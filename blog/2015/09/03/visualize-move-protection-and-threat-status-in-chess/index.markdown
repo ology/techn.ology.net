@@ -19,7 +19,7 @@ Cut to the present and check out my Dancer web-app written in Perl, at the above
 
 Each move may be shown, forward or reverse, with handy "tape recorder" buttons.
 
-[![](https://raw.githubusercontent.com/ology/Chess-Inspector/master/public/images/Chess-Inspector.png)](https://raw.githubusercontent.com/ology/Chess-Inspector/master/public/images/Chess-Inspector.png)
+![](https://raw.githubusercontent.com/ology/Chess-Inspector/master/public/images/Chess-Inspector.png)
 
 Here are the working parts:
 
