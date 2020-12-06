@@ -6,7 +6,6 @@ tags:
     - software
     - mathematics
     - game theory
-    - strategy
 ---
 
 ![](game-theory.png)
