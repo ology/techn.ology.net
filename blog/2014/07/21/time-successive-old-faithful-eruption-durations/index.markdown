@@ -25,7 +25,7 @@ A line graph shows the state transitions.  Notice that there are no bottom-left
 
 ![](successive-faithful-eruptions-transitions.png)
 
-**[UPDATE]** We can sample a subset of the Old Faithful eruption data and add arrows from previous to next observation.  Here is the R code:
+We can sample a subset of the Old Faithful eruption data and add arrows from previous to next observation.  Here is the R code:
 
     z <- sample( faithful$eruptions, 50 )
     x <- z[ 1 : length(z) - 1 ]
