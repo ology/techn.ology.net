@@ -71,6 +71,8 @@ In this case, the caller is the `register` method that is the essential method o
         });
     }
 
+(So I *actually* had the meat of the code *in* the `register` method.  But I discovered that this did not let me test that the thing was working!  So I broke-out the `audio_tag` method and added it to the [test](https://metacpan.org/source/GENE/Statocles-Plugin-AudioTag-0.0200/t%2F01-methods.t). Yay!)
+
 And that's it!  Now instead of an ugly `<a href="...">...</a>` link to an audio clip, now I have this:
 
 [chordal-04.mp3](/2020/11/23/generating-musical-phrases-round-ii/chordal-04.mp3)
