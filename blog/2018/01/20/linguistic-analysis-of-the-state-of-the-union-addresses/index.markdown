@@ -45,7 +45,7 @@ Here are the unigram [TF-IDF](https://en.wikipedia.org/wiki/Tf%E2%80%93idf) val
       9. denisha = 0.0026136513
       10. shaw = 0.0017424342
 
-And here are the bigrams (full output - sotu-2-gram):
+And here the bigrams (full output - [sotu-2-gram](sotu-2-gram.txt)):
 
     1. 17900108-Washington.txt
       1. work allowed = 0.0161891231
