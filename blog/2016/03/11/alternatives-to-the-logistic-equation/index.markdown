@@ -5,6 +5,7 @@ tags:
     - R
     - software
     - mathematics
+    - image
 ---
 
 [![](bifurcation-01-sm.png)](bifurcation-01.png)
