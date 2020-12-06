@@ -65,15 +65,15 @@ OK.  Now that we have our traditional logistic equation bifurcation diagram, wh
 
 The equation, `x <- r * x ** (1 - x)` generates this plot:
 
-[![](bifurcation-02.png)](bifurcation-02.png)
+![](bifurcation-02.png)
 
 The equation, `x <- r * cos(x) - sin(x)` generates this plot:
 
-[![](bifurcation-04.png)](bifurcation-04.png)
+![](bifurcation-04.png)
 
 The equation, `x <- r * exp(x) * (1 - exp(x))` generates this plot:
 
-[![](bifurcation-05.png)](bifurcation-05.png)
+![](bifurcation-05.png)
 
 More alternative equations: `r - x ** 2`  or  `r ** cos(1 - x)`  or  `r * cos(x) * (1 - sin(x))` ...
 
