@@ -7,6 +7,7 @@ tags:
     - software
     - data
     - image
+    - web
 ---
 
 [![](successive-faithful-eruptions-sm.png)](successive-faithful-eruptions.png)
