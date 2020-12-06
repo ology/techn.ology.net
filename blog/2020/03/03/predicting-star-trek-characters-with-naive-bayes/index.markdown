@@ -6,6 +6,7 @@ tags:
     - software
     - machine learning
     - NLP
+    - analysis
 ---
 
 ![](kirk-and-spock.jpg)

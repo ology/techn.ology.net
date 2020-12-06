@@ -6,6 +6,7 @@ tags:
     - software
     - mathematics
     - NLP
+    - analysis
 ---
 
 This weekend I harvested 231 State of the Union addresses up to 2017 and put them through NLP processing.
