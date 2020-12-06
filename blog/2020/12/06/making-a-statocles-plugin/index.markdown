@@ -13,7 +13,7 @@ I build this online journal with the excellent perl module, [Statocles](https://
 
 ---
 
-To see this in action, check out any post on this site tagged with "music."
+To see this in action, check out any post on this site tagged with ["music."](/tag/music/)
 
 But at first, I **did** write a little script that inspected every `*.html` file on my site.  This translated any anchor (`a`) link with an audio file `href`, like an MP3 or OGG, to an `audio` element with the audio file as the `src`.  But like I say, I wanted something that was *part of* Statocles to do this for me instead of a separate program.
 
