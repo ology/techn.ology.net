@@ -56,6 +56,8 @@ site:
     # plugins: These are plugins that can add features and alter the
     # content of the site.
     plugins:
+#        lint:
+#            $class: 'Statocles::Plugin::HTMLLint'
         link_check:
             $class: 'Statocles::Plugin::LinkCheck'
         audio_tag:
