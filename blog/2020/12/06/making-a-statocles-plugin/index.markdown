@@ -15,7 +15,7 @@ I build my online journal with the excellent perl module, [Statocles](https://me
 
 To see this in action, check out any post on this site tagged with "music."
 
-But aat first, I **did** write a little script that inspected every `*.html` file on my site.  This translated any anchor (`a`) link with an audio file `href`, like an MP3 or OGG, to an `audio` element with the audio file as the `src`.  But like I say, I wanted something that was *part of* Statocles to do this for me instead of a separate program.
+But at first, I **did** write a little script that inspected every `*.html` file on my site.  This translated any anchor (`a`) link with an audio file `href`, like an MP3 or OGG, to an `audio` element with the audio file as the `src`.  But like I say, I wanted something that was *part of* Statocles to do this for me instead of a separate program.
 
 So I read a bit and asked on the [#statocles IRC channel](#irc://irc.perl.org/#statocles) and came up with a rudimentary solution, based on a code snip from [preaction](https://metacpan.org/author/PREACTION).
 
