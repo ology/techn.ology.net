@@ -5,7 +5,7 @@ tags:
     - perl
     - software
     - machine learning
-    - Star Trek
+    - NLP
 ---
 
 ![](kirk-and-spock.jpg)
