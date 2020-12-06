@@ -75,5 +75,7 @@ The equation, `x <- r * exp(x) * (1 - exp(x))` generates this plot:
 
 ![](bifurcation-05.png)
 
-More alternative equations: `r - x ** 2`  or  `r ** cos(1 - x)`  or  `r * cos(x) * (1 - sin(x))` ...
+More alternative equations:
+
+`r - x ** 2`  or  `r ** cos(1 - x)`  or  `r * cos(x) * (1 - sin(x))` ...
 
