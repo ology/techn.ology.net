@@ -34,11 +34,9 @@ The "flowing triangles" pattern should continue.  But it appears, at the far r
 
 I realize that I am illustrating an artifact, not some sort of revolution in number theory. I am just a curious cat.  Maybe I'll submit it to the Prime Curios site.  But maybe it's another one of those "obvious to everyone but me" things. ;-)
 
-**Update:** My friend Luc saw my curious chart and rendered the graph that I had only imagined.  His visualization shows white for zero and "more black" as the gap value increases (in the image at left), a colored version, of mostly greens, in "bands" or rows of gaps greater than two.
+**Update:** My friend Luc saw my curious chart and rendered the graph that I had only imagined.  His visualization is superior!
 
 ![](lucs-gaps.png)
-
-Colored rows of Prime gaps-of-gaps [4.3MB PDF]
 
 So this answers my main questions, "Does the zero triangle pattern persist?" and "Does the chart become "taken over with the growing complexity?"
 
