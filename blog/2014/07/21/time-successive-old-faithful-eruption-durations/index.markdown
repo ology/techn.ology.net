@@ -1,6 +1,12 @@
 ---
 status: published
 title: Time-Successive Old Faithful Eruption Durations
+tags:
+    - perl
+    - R
+    - software
+    - data
+    - image
 ---
 
 [![](successive-faithful-eruptions-sm.png)](successive-faithful-eruptions.png)
