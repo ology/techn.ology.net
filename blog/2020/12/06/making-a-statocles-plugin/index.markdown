@@ -40,7 +40,7 @@ Now import the Statocles functionality:
     use Statocles::Base 'Class';
     with 'Statocles::Plugin';
 
-Give the program plenty of documentation.  Code without any docs is basically impossible to know how to use without diving into the source, itself.
+Give your plugin plenty of documentation.  Code without any docs is basically impossible to know how to use without diving into the source, itself.
 
 The module has a single attribute, the `file_type` which tells the module what kind of links to look for and replace.
 
@@ -77,4 +77,5 @@ And that's it!  Now instead of an ugly `<a href="...">...</a>` link to an audio 
 
 [chordal-04.mp3](/2020/11/23/generating-musical-phrases-round-ii/chordal-04.mp3)
 
-Excellent!
+[Statocles::Plugin::AudioTag](https://metacpan.org/pod/Statocles::Plugin::AudioTag) - Excellent!
+
