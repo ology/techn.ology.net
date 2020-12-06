@@ -7,7 +7,7 @@ tags:
 ---
 
 ![](statocles.png)
-The other day I decided that I didn't like the "bare links" to my audio clips.  The HTML5 `audio` element is far superior!
+The other day I decided that I didn't like the ugly `a href` links to my audio clips.  The HTML5 `audio` element is far superior!
 
 I build this online journal with the excellent perl module, [Statocles](https://metacpan.org/pod/Statocles), so I wanted something built-in to do the job.
 
