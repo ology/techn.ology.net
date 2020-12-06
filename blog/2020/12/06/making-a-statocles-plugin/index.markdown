@@ -73,6 +73,6 @@ In this case, the caller is the `register` method that is the essential method o
 
 And that's it!  Now instead of an ugly `<a href="...">...</a>` link to an audio clip, now I have this:
 
-![](/2020/11/23/generating-musical-phrases-round-ii/chordal-04.mp3)
+[chordal-04.mp3](/2020/11/23/generating-musical-phrases-round-ii/chordal-04.mp3)
 
 Excellent!
