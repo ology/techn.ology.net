@@ -8,7 +8,7 @@ tags:
     - prime numbers
 ---
 
-The prime number sequence fascinates me.  I am not sure why but exposing properties in it is exciting.  Even if they are mundane and "obvious to everyone else", the fact that I can answer questions visually, sometimes thrills me.
+The [prime number sequence](http://en.wikipedia.org/wiki/Prime_numbers) fascinates me.  I am not sure why but exposing properties in it is exciting.  Even if they are mundane and "obvious to everyone else", the fact that I can answer questions visually, sometimes thrills me.
 
 tl;dr: [gaps-of-gaps](https://github.com/ology/Math/blob/master/primes/gaps-of-gaps)
  
