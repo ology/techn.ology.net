@@ -46,4 +46,5 @@ So this answers my main questions, "Does the zero triangle pattern persist?" and
 
 2. No the complex patterns to do not "take over" and break up the chart into increasingly less patterned fragments.  In fact, the "complex patterns" are obviously restricted to the top few bands of gaps.  This makes sense because the gaps grow smaller, the farther down the graph you go, until it's just 2s and 0s.
 
-(This cascade of triangles is similar to this cellular automata. Or the right-hand-side of Rule 30. Why?)
+(This cascade of triangles is similar to [this cellular automata](http://joelgustafson.com/things/automata/?193). Or the right-hand-side of [Wolfram Rule 30](https://mathworld.wolfram.com/Rule30.html). Why?)
+
