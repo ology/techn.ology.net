@@ -42,7 +42,7 @@ Check out the 7 net diagrams of my "4 notes defining 4 chords" tetrahedra. (The 
 ![](6-4.png)
 ![](7-5.png)
 
-The faces are chords, within the key of C major tonality. The "outside" note ("a" in the first diagram) is connected to the inner triangle, which is I or "C major", and makes vi or "A minor", in the first diagram. The chords come from the program, "inversion" above.
+The faces are chords, within the key of C major tonality. The "outside" note ("a" in the first diagram) is connected to the inner triangle, which is I or "C major", and makes vi or "A minor", in the first diagram. The chords come from the perl module [Music::Chord::Namer](https://metacpan.org/pod/Music::Chord::Namer).
 
 So ok, seven notes is not great for making chords. You have to start inverting when you get to the middle of the scale. Having more notes in your bag is musically better. This means that we need a lot more "real estate" on our deltahedra - more triangles.
 
