@@ -66,7 +66,7 @@ This program is very simple.  Each note gets a quarter note value and there are
 
     > timidity stat-walk.mid
 
-But I took the liberty of enhancing it a bit with my DAW and came up with this:
+But I took the liberty of enhancing it a bit with my [DAW](https://www.apple.com/logic-pro/) and came up with this:
 
 [note-transition-stat-walk.mp3](note-transition-stat-walk.mp3)
 
