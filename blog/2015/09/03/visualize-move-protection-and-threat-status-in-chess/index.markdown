@@ -1,6 +1,10 @@
 ---
 status: published
 title: 'Visualize Move, Protection and Threat Status in Chess'
+tags:
+    - perl
+    - software
+    - web
 ---
 
 When I was a kid, my younger brother became a chess master and would regularly thrash me in the game.  Invariably this seemed to be because I would do something dumb like leaving my queen threatened and unattended.
