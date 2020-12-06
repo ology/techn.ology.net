@@ -12,9 +12,11 @@ One day I became curious about musical triads (three note chords) as geometric t
 
 When I returned from the imaginary physics world to the idealized, Euclidean world, I began to wonder about the musical possibilities of triangle-faced polyhedra (deltahedra). Could chords of three notes fit together nicely, around a (triangle-faced) Platonic solid? How many chords? In what orders? Did Pythagoras ask himself these questions? How about the volume of solids defined by Pythagorean tuning vs equal temperament? And how many notes before chord inversion? 7? 8? 12? What about using the entire scale versus just the notes of the key? How many possible deltahedra are there anyway? Etc until my head exploded.
 
-Then, after picking up the pieces, and in order to get a grip on the issues, I researched interval ratios and scale temperament and wrote the programs, "intervals" and "inversion" at http://github.com/ology/Music.
+Then, after picking up the pieces, and in order to get a grip on the issues, I researched interval ratios and scale temperament and wrote the perl module [Music::Intervals](https://metacpan.org/pod/Music::Intervals).
 
 I knew that diatonic chords marched up and down the staff sharing two notes with two other chords: I-vi, ii-vii, iii-I, IV-ii, V-iii, vi-IV, vii-V. In the key of C, I is C major, ii is D minor, iii is E minor, etc. So, I-vi would be the root and its relative minor, sharing the 1st and 3rd notes of the scale.
+
+![](chord-strip.jpg)
 
 As you can see from this ribbon of triangles representing the seven diatonic chords, linked by two notes left and right, odd cycles make Möbius strips. This was not part of my investigation - just cool in itself.
 
