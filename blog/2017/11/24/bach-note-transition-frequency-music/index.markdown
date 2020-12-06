@@ -69,13 +69,12 @@ This program is very simple.  Each note gets a quarter note value and there are
 But I took the liberty of enhancing it a bit with my DAW and came up with this:
 
 [note-transition-stat-walk.mp3](note-transition-stat-walk.mp3)
- 
 
 **Update:** I made copies of the programs that honor multiple tracks.  The output is spartan - a simultaneous quarter note for each track of notes. YMMV: [note-transition-sync](https://github.com/ology/Music/blob/master/note-transition-sync) and [stat-walk-sync](https://github.com/ology/Music/blob/master/stat-walk-sync).  Here is our Bach:
 
 [stat-walk-sync-jesu.mp3](stat-walk-sync-jesu.mp3)
- 
+
 And here is a very different Beethoven Moonlight Sonata:
 
 [stat-walk-sync-moonlight.mp3](stat-walk-sync-moonlight.mp3)
- 
+
