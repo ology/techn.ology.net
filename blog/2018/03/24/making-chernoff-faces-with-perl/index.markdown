@@ -5,7 +5,6 @@ tags:
     - perl
     - software
     - mathematics
-    - Chernoff
     - data
 ---
 
