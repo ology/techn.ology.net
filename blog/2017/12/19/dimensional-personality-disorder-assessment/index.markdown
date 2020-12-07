@@ -6,7 +6,7 @@ tags:
     - psychology
 ---
 
-![]()
+![](tim.jpg)
 [Timothy W. Butcher](http://obits.oregonlive.com/obituaries/oregon/obituary.aspx?pid=160646732) and I collaborated on a number of diverse projects.  One was a personality disorder quiz that he devised while taking an abnormal psychology university course.
 
 ---
