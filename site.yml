@@ -39,7 +39,7 @@ site:
     #
     # If the base_url contains a path, all internal links will be
     # rewritten appropriately.
-    base_url: 'https://techn.ology.net'
+    base_url: 'https://ology.github.io'
 
     # apps: These are the applications in this site. The name of the app,
     # "blog", "page", or "static", is used to refer to it in commands.
@@ -70,7 +70,9 @@ site:
 
     links:
         stylesheet:
-            - href: /theme/css/ology.css
+            - href: /theme/site/ology.css
+        script:
+            - href: /theme/site/ology.js
 
     images:
         icon: /theme/site/favicon.png
