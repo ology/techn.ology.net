@@ -109,7 +109,7 @@ Ok great.  So what kind of things does this produce?  Here is the basic output w
 
 [moduation.mp3](moduation.mp3)
 
-And here is one with a chord progression, bass and a single note top line (made by the program [progressive](https://github.com/ology/Music/blob/master/progressive):
+And here is one with a chord progression, bass and a single note top line (made by the program [progressive](https://github.com/ology/Music/blob/master/progressive)):
 
 [progressive-01](progressive-01.mp3)
 
