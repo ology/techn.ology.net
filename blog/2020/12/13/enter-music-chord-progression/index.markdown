@@ -99,7 +99,7 @@ We may have requested that the sharp notes be made flat.  In that case we perfor
         }
     }
 
-This uses a reqular expression substitution to change sharped noted to the flat equivalents.
+This uses a reqular expression substitution to change sharped notes to their flat equivalents.
 
 Lastly, we return the transformed notes:
 
