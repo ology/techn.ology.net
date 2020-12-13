@@ -8,14 +8,12 @@ tags:
     - music
 ---
 
-![](state-machine-sm.png)
+![](state-machine.png)
 This weekend I saw this diagram and thought, "I can do that!"
 
 tl;dr: [Music::Chord::Progression](https://metacpan.org/release/Music-Chord-Progression)
 
 ---
-
-![](state-machine.png)
 
 For me, programming is an iterative process.  First I get a glimmer of an idea.  Then I work out both in my head and in perl a ["Minimal working example"](https://en.wikipedia.org/wiki/Minimal_working_example).  This usually reveals the rudimentary data stuctures and algorithms necessary, and allows whatever it is that I am curious about to be seen in action.
 
