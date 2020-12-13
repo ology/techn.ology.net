@@ -105,11 +105,11 @@ Lastly, we return the transformed notes:
 
     return \@notes;
 
-Ok great.  So what kind of things does this produce?  Here is the basic output when modulated over `E D A D` in major:
+Ok great.  So what kind of things does this produce?  Here is the basic output when modulated over `E D A D` in major (made by the program [moduation](https://github.com/ology/Music-Chord-Progression/blob/main/eg/moduation)):
 
 [moduation.mp3](moduation.mp3)
 
-And here is one with a chord progression, bass and a single note top line:
+And here is one with a chord progression, bass and a single note top line (made by the program [progressive](https://github.com/ology/Music/blob/master/progressive):
 
 [progressive-01](progressive-01.mp3)
 
