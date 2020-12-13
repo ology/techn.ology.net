@@ -31,10 +31,10 @@ The first thing is to assign our object variable:
 
     my ($self) = @_;
 
-We bail out if the chord transition network (`net`) doesn't match-up with the chord list attribute that we have defined (`chords`):
+We bail out if the chord transition network (`net`) doesn't match-up with the `chord_map` attribute that we have defined:
 
-    croak 'chords length must equal number of net keys'
-        unless @{ $self->chords } == keys %{ $self->net };
+    croak 'chord_map length must equal number of net keys'
+        unless @{ $self->chord_map } == keys %{ $self->net };
 
 The first part of the algorithm is to create a random progression:
 
@@ -49,11 +49,11 @@ This uses the `graph` attribute object (as well as the `tonic` and `resolve` att
 
 Next, it is time to perform jazz chord substitution (if requested in the constructor):
 
-    my @chords = @{ $self->chords };
+    my @chord_map = @{ $self->chord_map };
 
     if ($self->substitute) {
         my $i = 0;
-        for my $chord (@chords) {
+        for my $chord (@chord_map) {
             my $substitute = $self->sub_cond->() ? $self->substitution($chord) : $chord;
             if ($substitute eq $chord && $i < @progression && $self->sub_cond->()) {
                 $progression[$i] .= 't'; # Indicate that we should tritone substitute
@@ -63,9 +63,9 @@ Next, it is time to perform jazz chord substitution (if requested in the constru
         }
     }
 
-    my @phrase = map { $self->_tt_sub(\@chords, $_) } @progression;
+    my @phrase = map { $self->_tt_sub(\@chord_map, $_) } @progression;
 
-This bit is a bit complicated.  Basically it transforms the object `chords` into dominants or extended chords.  Also it determines if a scale note in the progression should be substituted with its tritone.
+This bit is a bit complicated.  Basically it transforms the object `chord_map` into dominants or extended chords.  Also it determines if a scale note in the progression should be substituted with its tritone.
 
 We're almost done, but we need to attach octaves to actual notes in order to render them to audio:
 
@@ -90,7 +90,7 @@ We may have requested that the sharp notes be made flat.  In that case we perfor
             'A#' => 'Bb',
             'B#' => 'C',
         );
-        for my $chord (@notes) {
+        for my $chord (@chords) {
             for my $note (@$chord) {
                 $note =~ s/^([A-G]#)(\d+)$/$equiv{$1}$2/ if $note =~ /#/;
             }
@@ -99,9 +99,9 @@ We may have requested that the sharp notes be made flat.  In that case we perfor
 
 This uses a reqular expression substitution to change sharped notes to their flat equivalents.
 
-Lastly, we return the transformed notes:
+Lastly, we return the transformed chords:
 
-    return \@notes;
+    return \@chords;
 
 Ok great.  So what kind of things does this produce?  Here is the basic output when modulated over `E D A D` in major (made by the program [moduation](https://github.com/ology/Music-Chord-Progression/blob/main/eg/moduation)):
 
