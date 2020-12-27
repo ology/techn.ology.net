@@ -139,7 +139,7 @@ And what does this look like?
 
 ![](mojo-harvest-billboard.png)
 
-It appears that there is no trend at all.  Interesting.
+It appears that there is no trend at all.  Interesting.  It might be more interesting to compare the time spent at the number one position...
 
 By the way, here is an example of a record that is processed into the chart:
 
