@@ -156,7 +156,7 @@ I added logic to the code to count the number of weeks a song is at number one.
 
 ![](chart-x-no1-weeks.png)
 
-This shows that ... there is no trend either.  Ok.
+This shows that ... there is really no trend either.  But maybe you could say that the longer a hit song is number one, the longer it stays in the charts.  This is not earth shattering news, by any means.
 
 For what it's worth, here is a 3D plot (made with [R](https://www.r-project.org/)):
 
