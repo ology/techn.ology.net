@@ -98,6 +98,7 @@ The next code strips off the lines that do not have song data (those with a numb
         for my $line (@lines) {
             next unless $line->[0] =~ /^\d+$/;
             push @records, $line;
+            last;
         }
 
 And here is the final purpose of this loop - to save the first record (member 0) by name, entry position and number of weeks spent on the chart.
@@ -137,12 +138,22 @@ Finally the chart is printed to a graphics file:
 
 And what does this look like?
 
-![](mojo-harvest-billboard.png)
+![](position-x-chart-weeks.png)
 
-It appears that there is no trend at all.  Interesting.  It might be more interesting to compare the time spent at the number one position...
+It appears that there is no trend at all.  Okay.  It might be more interesting to compare the time spent at the number one position... (See the update below.)
 
 By the way, here is an example of a record that is processed into the chart:
 
     'Bridge Over Troubled Water SIMON AND GARFUNKEL' => [49, 14]
 
 That says, "Bridge Over Troubled Water" entered the chart at position 49 and stayed in the charts for 14 weeks.
+
+---
+
+**Update:**
+
+I added logic to the code to count the number of weeks a song is at number one.
+
+![](chart-x-no1-weeks.png)
+
+This shows that 
