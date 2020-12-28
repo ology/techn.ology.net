@@ -69,7 +69,7 @@ Now upon inspection of this data, we find that there are literal "\n", "\r", and
         my $r = quotemeta('\\r');
         my $t = quotemeta('\\t');
 
-Here is the part of the loop that sanitizes the data by row, so that we cave clean data with which to work:
+Here is the part of the loop that sanitizes the data by row, so that we have clean data with which to work:
 
         my @lines;
         for my $d (@data) {
