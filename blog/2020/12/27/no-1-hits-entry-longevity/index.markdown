@@ -157,3 +157,7 @@ I added logic to the code to count the number of weeks a song is at number one.
 ![](chart-x-no1-weeks.png)
 
 This shows that ... there is no trend either.  Ok.
+
+For what it's worth, here is a 3D plot (made with [R](https://www.r-project.org/)):
+
+![](Top-Tunes.png)
