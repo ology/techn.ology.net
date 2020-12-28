@@ -152,11 +152,15 @@ That says, "Bridge Over Troubled Water" entered the chart at position 49 and sta
 
 **Update:**
 
-I added logic to the code to count the number of weeks a song is at number one.
+I added logic to the code to also count the number of weeks a song is at number one.
+
+So this means having a third member:
+
+    'Bridge Over Troubled Water SIMON AND GARFUNKEL' => [49, 14, 6]
 
 ![](chart-x-no1-weeks.png)
 
-This shows that ... there is really no trend either.  But maybe you could say that the longer a hit song is number one, the longer it stays in the charts.  This is not earth shattering news, by any means.
+Anyway, this shows that ... there is really no trend either.  But maybe you could say that the longer a hit song is number one, the longer it stays in the charts.  This is not earth shattering news, by any means.
 
 For what it's worth, here is a 3D plot (made with [R](https://www.r-project.org/)):
 
