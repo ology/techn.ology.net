@@ -156,4 +156,4 @@ I added logic to the code to count the number of weeks a song is at number one.
 
 ![](chart-x-no1-weeks.png)
 
-This shows that 
+This shows that ... there is no trend either.  Ok.
