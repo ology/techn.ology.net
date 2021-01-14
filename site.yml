@@ -62,6 +62,8 @@ site:
             $class: 'Statocles::Plugin::LinkCheck'
         audio_tag:
             $class: 'Statocles::Plugin::AudioTag'
+        video_tag:
+            $class: 'Statocles::Plugin::VideoTag'
 
     # theme: The theme builds and manages the templates. Use themes to
     # change how your site looks.
