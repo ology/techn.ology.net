@@ -64,6 +64,8 @@ site:
             $class: 'Statocles::Plugin::AudioTag'
         video_tag:
             $class: 'Statocles::Plugin::VideoTag'
+            $args:
+                file_type: 'youtu'
 
     # theme: The theme builds and manages the templates. Use themes to
     # change how your site looks.
