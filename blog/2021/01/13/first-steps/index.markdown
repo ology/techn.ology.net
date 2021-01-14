@@ -11,4 +11,4 @@ At first I thought it was a Texas Instruments [programmable calculator](https://
 
 Here is a video tear-down of the thing:
 
-[Tandy PC-6 full video](https://youtu.be/604JEbKgGLs?t=64)
+[Tandy PC-6 full video](https://www.youtube.com/watch?v=604JEbKgGLs)
