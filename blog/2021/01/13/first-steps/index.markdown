@@ -12,3 +12,5 @@ At first I thought it was a Texas Instruments [programmable calculator](https://
 Here is a video tear-down of the thing:
 
 [Tandy PC-6 full video](https://www.youtube.com/watch?v=604JEbKgGLs)
+
+Next year I bought the venerable [HP28 programmable calculator](https://en.wikipedia.org/wiki/HP-28_series).  Then an [HP48G](https://en.wikipedia.org/wiki/HP_48_series).  Those were the good ol' days...
