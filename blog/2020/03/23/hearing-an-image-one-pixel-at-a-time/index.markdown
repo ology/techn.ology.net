@@ -110,7 +110,9 @@ I uploaded the 33.3 minute audio of a 100x100 simplex fractal at 300 BPM to YouT
 
 [33.3 minute audio](https://www.youtube.com/watch?v=gPleJe-SoQk)
 
-Use a program like [Timidity++](http://timidity.sourceforge.net/) or [VLC](https://www.videolan.org/vlc/index.html) to hear it.  And here is an example of a 100x100 simplex fractal:
+Use a program like [Timidity++](http://timidity.sourceforge.net/) or [VLC](https://www.videolan.org/vlc/index.html) to hear the generated MIDI.
+
+Here is an example of a 100x100 simplex fractal:
 
 ![](simplex-100x100-1.png)
 
