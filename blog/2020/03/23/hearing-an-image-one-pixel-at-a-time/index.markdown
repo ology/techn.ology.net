@@ -106,7 +106,11 @@ So what does an example of one of these 8x8 fractals sound like?  I imported th
 
 Extreme tedium!  *Not* a dance hit!  At a higher BPM this might sound like a zany roller-coaster ride...  And yes indeed it does.
 
-I uploaded the [33.3 minute audio](https://youtu.be/gPleJe-SoQk) of a 100x100 simplex fractal at 300 BPM to YouTube.  (It uses a "reversed electric piano" patch, which gives it that spacey background delay.)  Use a program like [Timidity++](http://timidity.sourceforge.net/) or [VLC](https://www.videolan.org/vlc/index.html) to hear it.  And here is an example of a 100x100 simplex fractal:
+I uploaded the 33.3 minute audio of a 100x100 simplex fractal at 300 BPM to YouTube.  (It uses a "reversed electric piano" patch, which gives it that spacey background delay.)
+
+[33.3 minute audio](https://www.youtube.com/watch?v=gPleJe-SoQk)
+
+Use a program like [Timidity++](http://timidity.sourceforge.net/) or [VLC](https://www.videolan.org/vlc/index.html) to hear it.  And here is an example of a 100x100 simplex fractal:
 
 ![](simplex-100x100-1.png)
 
