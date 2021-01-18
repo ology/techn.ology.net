@@ -10,11 +10,13 @@ tags:
 ---
 
 ![](Steve-Reich.jpg)
-Recently I was enjoying Steve Reich's ["Octet" (Eight Lines)](https://www.youtube.com/watch?v=WgzQcDrX86M) and became curious if I could mimic the simple, staccato phrases with which he starts off his piece.
+Recently I was enjoying Steve Reich's "Octet" (Eight Lines) and became curious if I could mimic the simple, staccato phrases with which he starts off his piece.
 
 tl;dr: [reichify](https://github.com/ology/Music/blob/master/reichify)
 
 ---
+
+["Octet" (Eight Lines)](https://www.youtube.com/watch?v=WgzQcDrX86M)
 
 Fortunately I have been immersed in algorithmic composition of late and had a fair idea what tools I would need.  Number one is [Perl](https://www.perl.org/) and its vast ecosystem of modules - music ones in particular.  Let's go through the code!
 
