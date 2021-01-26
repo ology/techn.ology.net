@@ -1,2 +1,2 @@
-# techn.ology.net
+# https://ology.github.io/
 Personal Blog
