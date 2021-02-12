@@ -20,16 +20,14 @@ With that in mind, I wanted my machine to startup in a usable state - with apps 
     sleep 5s
 
     wmctrl -s 0
-    gnome-terminal
-    #x-terminal-emulator -e ssh-add ~/.ssh/id_rsa-github
+    gnome-terminal --maximize --tab-with-profile=Default --tab-with-profile=Default
     sleep 5s
 
     gpaste-client ui
     sleep 5s
 
     wmctrl -s 1
-    # https://www.cyberciti.biz/faq/howto-run-firefox-from-the-command-line/
-    firefox --search "gene.boggs@gmail.com" &
+    firefox &
     sleep 5s
 
     wmctrl -s 2
