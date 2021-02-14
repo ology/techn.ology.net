@@ -18,6 +18,7 @@ get '/post/:slug' => sub {
     my $dom = Mojo::DOM->new($post->{content}{rendered});
     my $text = $dom->all_text;
 
+    # Sanitize text
     $text =~ s/\r\n/\n/g;
     $text =~ s/\n\n\n/\n\n/g;
     $text =~ s/[“”]/"/g;
