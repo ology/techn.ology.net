@@ -10,9 +10,10 @@ get '/' => sub ($c) {
   my %posts;
   for my $file (@files) {
     if ($file =~ m|^blog/([\d/]+)/([\w-]+)/index.markdown$|) {
+      my $date = $1;
       my $slug = $2;
-      $posts{$1} = {
-        slug => $slug,
+      $posts{$slug} = {
+        date => $date,
         title => titleize($slug),
       };
     }
@@ -60,8 +61,8 @@ __DATA__
 % layout 'default';
 % title 'Statocles UI Posts';
 <h2>Posts</h1>
-% for my $date (reverse sort keys %$posts) {
-<p><%= $date %>: <a href="<%= url_for('view')->query(date => $date, slug => $posts->{$date}{slug}) %>"><%= $posts->{$date}{title} %></a></p>
+% for my $slug (sort { $posts->{$b}{date} cmp $posts->{$a}{date} } keys %$posts) {
+<p><%= $posts->{$slug}{date} %>: <a href="<%= url_for('view')->query(date => $posts->{$slug}{date}, slug => $slug) %>"><%= $posts->{$slug}{title} %></a></p>
 % }
 
 @@ edit.html.ep
