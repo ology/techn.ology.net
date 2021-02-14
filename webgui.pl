@@ -1,7 +1,6 @@
 #!/usr/bin/env perl
 
 use Mojolicious::Lite -signatures;
-
 use File::Find::Rule;
 use Mojo::File;
 
