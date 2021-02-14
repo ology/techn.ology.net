@@ -60,7 +60,7 @@ __DATA__
 % layout 'default';
 % title 'Statocles UI Posts';
 <h2>Posts</h1>
-% for my $slug (sort { $posts->{$b}{date} cmp $posts->{$a}{date} || $posts->{$b}{title} cmp $posts->{$a}{title} } keys %$posts) {
+% for my $slug (sort { $posts->{$b}{date} cmp $posts->{$a}{date} || $posts->{$a}{title} cmp $posts->{$b}{title} } keys %$posts) {
 <p><%= $posts->{$slug}{date} %>: <a href="<%= url_for('view')->query(date => $posts->{$slug}{date}, slug => $slug) %>"><%= $posts->{$slug}{title} %></a></p>
 % }
 
