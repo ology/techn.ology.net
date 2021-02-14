@@ -77,6 +77,7 @@ __DATA__
 <p></p>
 <input type="submit" value="Submit"/>
 </form>
+<p><a href="/">Back to Posts</a></p>
 
 @@ layouts/default.html.ep
 <!DOCTYPE html>
