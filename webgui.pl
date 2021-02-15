@@ -82,7 +82,7 @@ sub titleize {
 sub slugize {
   my ($title) = @_;
   (my $slug = $title) =~ s/\s+/-/g;
-  $slug =~  s/(?!-)[[:punct:]]//g; # Remove all punctuation besides the hyphen
+  $slug =~ s/(?!-)[[:punct:]]//g; # Remove all punctuation except the hyphen
   $slug = lc $slug;
   return $slug;
 }
