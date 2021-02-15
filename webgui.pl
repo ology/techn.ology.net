@@ -72,6 +72,12 @@ CONTENT
   $c->redirect_to($c->url_for('edit')->query(date => $date, slug => $slug));
 } => 'new';
 
+get '/deploy' => sub ($c) {
+  system('statocles', 'deploy') == 0
+    or die "Can't deploy";
+  $c->redirect_to($c->url_for('index'));
+} => 'deploy';
+
 sub titleize {
   my ($slug) = @_;
   (my $title = $slug) =~ s/-/ /g;
@@ -93,7 +99,10 @@ __DATA__
 @@ index.html.ep
 % layout 'default';
 % title 'Statocles UI Posts';
-<p><b><a href="<%= $site %>">Site</a></b></p>
+<p>
+<b><a href="<%= $site %>">Visit Site</a></b>
+| <b><a href="<%= url_for('deploy') %>">Deploy</a></b>
+</p>
 <form action="<%= url_for('new') %>" method="post">
 <label for="title">New post:</label>
 <input type="text" name="title" id="title" placeholder="Blog Post Title"/>
