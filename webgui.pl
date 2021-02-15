@@ -2,7 +2,9 @@
 
 use Mojolicious::Lite -signatures;
 use File::Find::Rule;
+use File::Path qw(make_path);
 use Mojo::File;
+use Time::Piece;
 use YAML::XS qw(LoadFile);
 
 use constant FORMAT => 'blog/%s/%s/index.markdown';
@@ -51,11 +53,38 @@ post '/edit' => sub ($c) {
   $c->redirect_to($c->url_for('view')->query(date => $date, slug => $slug));
 } => 'edit';
 
+post '/new' => sub ($c) {
+  my $title = $c->param('title');
+  my $slug = slugize($title);
+  my $t = localtime;
+  my $date = $t->ymd('/');
+  my $content = <<"CONTENT";
+---                                                                                                                                                                          
+status: published
+title: $title
+---
+Markdown content goes here.
+CONTENT
+  my $path = "blog/$date/$slug";
+  make_path($path) unless -d $path;
+  my $file = Mojo::File->new(sprintf FORMAT, $date, $slug);
+  $file->spurt($content);
+  $c->redirect_to($c->url_for('edit')->query(date => $date, slug => $slug));
+} => 'new';
+
 sub titleize {
   my ($slug) = @_;
   (my $title = $slug) =~ s/[_-]/ /g;
   $title =~ s/([\w']+)/\u\L$1/g; # Capitalize every word
   return $title;
+}
+
+sub slugize {
+  my ($title) = @_;
+  (my $slug = $title) =~ s/\s+/-/g;
+  $slug =~ s/\W+//g;
+  $slug = lc $slug;
+  return $slug;
 }
 
 app->start;
@@ -64,7 +93,12 @@ __DATA__
 @@ index.html.ep
 % layout 'default';
 % title 'Statocles UI Posts';
-<b><a href="<%= $site %>">Site</a></b>
+<p><b><a href="<%= $site %>">Site</a></b></p>
+<form action="<%= url_for('new') %>" method="post">
+<label for="title">New post:</label>
+<input type="text" name="title" id="title" placeholder="Blog Post Title"/>
+<input type="submit" value="Submit"/>
+</form>
 <h2>Posts</h1>
 % for my $slug (sort { $posts->{$b}{date} cmp $posts->{$a}{date} || $posts->{$a}{title} cmp $posts->{$b}{title} } keys %$posts) {
 <p><%= $posts->{$slug}{date} %>: <a href="<%= url_for('view')->query(date => $posts->{$slug}{date}, slug => $slug) %>"><%= $posts->{$slug}{title} %></a></p>
