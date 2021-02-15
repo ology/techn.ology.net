@@ -3,6 +3,7 @@
 use Mojolicious::Lite -signatures;
 use File::Find::Rule;
 use Mojo::File;
+use YAML::XS qw(LoadFile);
 
 use constant FORMAT => 'blog/%s/%s/index.markdown';
 
@@ -19,9 +20,11 @@ get '/' => sub ($c) {
       };
     }
   }
+  my $conf = LoadFile('site.yml');
   $c->render(
     template => 'index',
     posts => \%posts,
+    site => $conf->{site}{base_url},
   );
 } => 'index';
 
@@ -61,6 +64,7 @@ __DATA__
 @@ index.html.ep
 % layout 'default';
 % title 'Statocles UI Posts';
+<b><a href="<%= $site %>">Site</a></b>
 <h2>Posts</h1>
 % for my $slug (sort { $posts->{$b}{date} cmp $posts->{$a}{date} || $posts->{$a}{title} cmp $posts->{$b}{title} } keys %$posts) {
 <p><%= $posts->{$slug}{date} %>: <a href="<%= url_for('view')->query(date => $posts->{$slug}{date}, slug => $slug) %>"><%= $posts->{$slug}{title} %></a></p>
