@@ -75,6 +75,7 @@ CONTENT
 get '/deploy' => sub ($c) {
   system('statocles', 'deploy') == 0
     or die "Can't deploy: $!";
+  $c->flash(message => 'Deployed site!');
   $c->redirect_to($c->url_for('index'));
 } => 'deploy';
 
@@ -99,6 +100,9 @@ __DATA__
 @@ index.html.ep
 % layout 'default';
 % title 'Statocles UI Posts';
+% if (flash('message')) {
+%= tag h4 => (style => 'color:green') => flash('message')
+% }
 <p>
 <b><a href="<%= $site %>">Visit Site</a></b>
 | <b><a href="<%= url_for('deploy') %>">Deploy</a></b>
