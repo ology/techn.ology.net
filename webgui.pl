@@ -74,7 +74,7 @@ CONTENT
 
 get '/deploy' => sub ($c) {
   system('statocles', 'deploy') == 0
-    or die "Can't deploy";
+    or die "Can't deploy: $!";
   $c->redirect_to($c->url_for('index'));
 } => 'deploy';
 
