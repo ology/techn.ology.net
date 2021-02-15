@@ -4,6 +4,8 @@ use Mojolicious::Lite -signatures;
 use File::Find::Rule;
 use Mojo::File;
 
+use constant FORMAT => 'blog/%s/%s/index.markdown';
+
 get '/' => sub ($c) {
   my @files = File::Find::Rule->file()->name('*.markdown')->in('blog');
   my %posts;
@@ -26,7 +28,7 @@ get '/' => sub ($c) {
 get '/edit' => sub ($c) {
   my $date = $c->param('date');
   my $slug = $c->param('slug');
-  my $file = Mojo::File->new('blog/' . $date . '/' . $slug . '/index.markdown');
+  my $file = Mojo::File->new(sprintf FORMAT, $date, $slug);
   $c->render(
     template => 'edit',
     date => $date,
@@ -41,7 +43,7 @@ post '/edit' => sub ($c) {
   my $slug = $c->param('slug');
   my $content = $c->param('content');
   $content =~ s/\r\n/\n/g;
-  my $file = Mojo::File->new('blog/' . $date . '/' . $slug . '/index.markdown');
+  my $file = Mojo::File->new(sprintf FORMAT, $date, $slug);
   $file->spurt($content);
   $c->redirect_to($c->url_for('view')->query(date => $date, slug => $slug));
 } => 'edit';
