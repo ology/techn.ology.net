@@ -26,7 +26,7 @@ get '/post/:slug' => sub {
     $text =~ s/[–—]/-/g;
     $text =~ s/…/.../g;
 
-    my $file = '/Users/gene/tmp/wpfetch.txt';
+    my $file = "$ENV{HOME}/tmp/wpfetch.txt";
     open(my $fh, '>', $file)
         or die "Can't write $file: $!";
     print $fh $text;
