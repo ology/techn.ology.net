@@ -74,7 +74,7 @@ CONTENT
 
 sub titleize {
   my ($slug) = @_;
-  (my $title = $slug) =~ s/[_-]/ /g;
+  (my $title = $slug) =~ s/-/ /g;
   $title =~ s/([\w']+)/\u\L$1/g; # Capitalize every word
   return $title;
 }
