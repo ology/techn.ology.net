@@ -82,7 +82,7 @@ sub titleize {
 sub slugize {
   my ($title) = @_;
   (my $slug = $title) =~ s/\s+/-/g;
-  $slug =~ s/\W+//g;
+  $slug =~ s/[~!@#$%^&*()+`="'<>?,.\/\\{}\[\]|]+//g;
   $slug = lc $slug;
   return $slug;
 }
