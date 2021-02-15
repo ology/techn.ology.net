@@ -23,7 +23,7 @@ get '/' => sub ($c) {
     template => 'index',
     posts => \%posts,
   );
-};
+} => 'index';
 
 get '/edit' => sub ($c) {
   my $date = $c->param('date');
@@ -79,7 +79,7 @@ __DATA__
 <p></p>
 <input type="submit" value="Submit"/>
 </form>
-<p><a href="/">Back to Posts</a></p>
+<p><a href="<%= url_for('index') %>">Back to Posts</a></p>
 
 @@ layouts/default.html.ep
 <!DOCTYPE html>
