@@ -1,0 +1,430 @@
+---                                                                                                                                                                          
+status: published
+title: Books of the Bible TF-IDF
+tags:
+  - software
+  - perl
+  - bible
+  - NLP
+  - data
+  - analysis
+---
+
+What are the "most unique phrases" in the Bible?  Let's find out!
+
+---
+
+Using the [per](https://www.perl.org/) module [Text::TFIDF::Ngram](https://metacpan.org/release/Text-TFIDF-Ngram) and the books of the KJV Bible as individual text files, we get this for three-word phrases:
+
+    1. Sacred-Texts/Bible-Books/01-Genesis.txt
+      1. 0.0032820906 = every living creature
+      2. 0.0029014899 = every creeping thing
+
+    2. Sacred-Texts/Bible-Books/02-Exodus.txt
+      1. 0.0143045907 = fine twined linen
+      2. 0.0042913772 = thou shalt overlay
+
+    3. Sacred-Texts/Bible-Books/03-Leviticus.txt
+      1. 0.0195649886 = priest shall look
+      2. 0.0195649886 = priest shall pronounce
+
+    4. Sacred-Texts/Bible-Books/04-Numbers.txt
+      1. 0.0112491124 = one silver charger
+
+    5. Sacred-Texts/Bible-Books/05-Deuteronomy.txt
+      1. 0.0048595221 = whither ye go
+
+    6. Sacred-Texts/Bible-Books/06-Joshua.txt
+      1. 0.0073765295 = left none remaining
+
+    7. Sacred-Texts/Bible-Books/07-Judges.txt
+      1. 0.0053726691 = great strength lieth
+      2. 0.0053726691 = wherewith thou mightest
+
+    8. Sacred-Texts/Bible-Books/08-Ruth.txt
+      1. 0.0204443139 = unto thy mother
+
+    9. Sacred-Texts/Bible-Books/09-1 Samuel.txt
+      1. 0.0029895247 = people said unto
+
+    10. Sacred-Texts/Bible-Books/10-2 Samuel.txt
+      1. 0.0052061343 = three mighty men
+      2. 0.0052061343 = thy master's son
+
+    11. Sacred-Texts/Bible-Books/11-1 Kings.txt
+
+    12. Sacred-Texts/Bible-Books/12-2 Kings.txt
+      1. 0.0045149077 = reigned sixteen years
+
+    13. Sacred-Texts/Bible-Books/13-1 Chronicles.txt
+      1. 0.0060659678 = lot came forth
+
+    14. Sacred-Texts/Bible-Books/14-2 Chronicles.txt
+      1. 0.0056502844 = three looking toward
+
+    15. Sacred-Texts/Bible-Books/15-Ezra.txt
+      1. 0.0419894754 = taken strange wives
+      2. 0.0209947377 = two hundred twenty
+
+    16. Sacred-Texts/Bible-Books/16-Nehemiah.txt
+
+    17. Sacred-Texts/Bible-Books/17-Esther.txt
+      1. 0.0234276043 = every province according
+
+    18. Sacred-Texts/Bible-Books/18-Job.txt
+      1. 0.0042512709 = came also another
+
+    19. Sacred-Texts/Bible-Books/19-Psalms.txt
+      1. 0.0038020321 = thy tender mercies
+
+    20. Sacred-Texts/Bible-Books/20-Proverbs.txt
+      1. 0.0072564065 = unto thy soul
+
+    21. Sacred-Texts/Bible-Books/21-Ecclesiastes.txt
+
+    22. Sacred-Texts/Bible-Books/22-Song of Solomon.txt
+      1. 0.0532030391 = thou art fair
+
+    23. Sacred-Texts/Bible-Books/23-Isaiah.txt
+      1. 0.0029670509 = line upon line
+
+    24. Sacred-Texts/Bible-Books/24-Jeremiah.txt
+      1. 0.0054620456 = drink offerings unto
+      2. 0.0027310228 = seek thy life
+
+    25. Sacred-Texts/Bible-Books/25-Lamentations.txt
+      1. 0.0173544450 = thou hast slain
+
+    26. Sacred-Texts/Bible-Books/26-Ezekiel.txt
+      1. 0.0074738549 = east side unto
+      2. 0.0074738549 = set thy face
+
+    27. Sacred-Texts/Bible-Books/27-Daniel.txt
+      1. 0.0244234085 = burning fiery furnace
+
+    28. Sacred-Texts/Bible-Books/28-Hosea.txt
+      1. 0.0161497982 = betroth thee unto
+
+    29. Sacred-Texts/Bible-Books/29-Joel.txt
+      1. 0.0413532713 = hath left hath
+
+    30. Sacred-Texts/Bible-Books/30-Amos.txt
+      1. 0.0135786861 = shall surely go
+
+    31. Sacred-Texts/Bible-Books/31-Obadiah.txt
+      1. 0.0880424485 = neither shouldest thou
+
+    32. Sacred-Texts/Bible-Books/32-Jonah.txt
+
+    33. Sacred-Texts/Bible-Books/33-Micah.txt
+
+    34. Sacred-Texts/Bible-Books/34-Nahum.txt
+
+    35. Sacred-Texts/Bible-Books/35-Habakkuk.txt
+
+    36. Sacred-Texts/Bible-Books/36-Zephaniah.txt
+
+    37. Sacred-Texts/Bible-Books/37-Haggai.txt
+
+    38. Sacred-Texts/Bible-Books/38-Zechariah.txt
+      1. 0.0224635054 = hosts hath sent
+      2. 0.0134781032 = shall consume away
+
+    39. Sacred-Texts/Bible-Books/39-Malachi.txt
+
+    40. Sacred-Texts/Bible-Books/40-Matthew.txt
+      1. 0.0041263966 = forth good fruit
+      2. 0.0041263966 = thy whole body
+
+    41. Sacred-Texts/Bible-Books/41-Mark.txt
+
+    42. Sacred-Texts/Bible-Books/42-Luke.txt
+      1. 0.0041637161 = certain rich man
+
+    43. Sacred-Texts/Bible-Books/43-John.txt
+      1. 0.0092755001 = therefore said unto
+      2. 0.0061836667 = woman saith unto
+
+    44. Sacred-Texts/Bible-Books/44-Acts.txt
+      1. 0.0048521172 = certain man named
+      2. 0.0048521172 = voice saying unto
+
+    45. Sacred-Texts/Bible-Books/45-Romans.txt
+      1. 0.0087359394 = one toward another
+
+    46. Sacred-Texts/Bible-Books/46-1 Corinthians.txt
+      1. 0.0213561495 = ye come together
+
+    47. Sacred-Texts/Bible-Books/47-2 Corinthians.txt
+      1. 0.0146737414 = shall reap also
+
+    48. Sacred-Texts/Bible-Books/48-Galatians.txt
+      1. 0.0261804883 = neither circumcision availeth
+
+    49. Sacred-Texts/Bible-Books/49-Ephesians.txt
+      1. 0.0223155549 = made known unto
+
+    50. Sacred-Texts/Bible-Books/50-Philippians.txt
+      1. 0.0356773321 = nigh unto death
+
+    51. Sacred-Texts/Bible-Books/51-Colossians.txt
+
+    52. Sacred-Texts/Bible-Books/52-1 Thessalonians.txt
+
+    53. Sacred-Texts/Bible-Books/53-2 Thessalonians.txt
+
+    54. Sacred-Texts/Bible-Books/54-1 Timothy.txt
+
+    55. Sacred-Texts/Bible-Books/55-2 Timothy.txt
+      1. 0.0298285891 = thou hast learned
+      2. 0.0150238352 = thou hast heard
+
+    56. Sacred-Texts/Bible-Books/56-Titus.txt
+      1. 0.0727817574 = maintain good works
+      2. 0.0416557074 = every good work
+
+    57. Sacred-Texts/Bible-Books/57-Philemon.txt
+
+    58. Sacred-Texts/Bible-Books/58-Hebrews.txt
+      1. 0.0144620375 = ye will hear
+
+    59. Sacred-Texts/Bible-Books/59-James.txt
+      1. 0.0395553029 = faith without works
+
+    60. Sacred-Texts/Bible-Books/60-1 Peter.txt
+
+    61. Sacred-Texts/Bible-Books/61-2 Peter.txt
+      1. 0.0423149752 = elements shall melt
+
+    62. Sacred-Texts/Bible-Books/62-1 John.txt
+      1. 0.0399899766 = heart condemn us
+
+    63. Sacred-Texts/Bible-Books/63-2 John.txt
+
+    64. Sacred-Texts/Bible-Books/64-3 John.txt
+
+    65. Sacred-Texts/Bible-Books/65-Jude.txt
+
+    66. Sacred-Texts/Bible-Books/66-Revelation.txt
+      1. 0.0349912295 = sealed twelve thousand
+      2. 0.0204115506 = know thy works
+
+Some books have one or two "most unique phrases."  But some have none at all.
+
+For two-word phrases, we get:
+
+    1. Sacred-Texts/Bible-Books/01-Genesis.txt
+      1. 0.0016804692 = creepeth upon
+
+    2. Sacred-Texts/Bible-Books/02-Exodus.txt
+      1. 0.0059517792 = twined linen
+      2. 0.0056683612 = fine twined
+
+    3. Sacred-Texts/Bible-Books/03-Leviticus.txt
+      1. 0.0085807307 = thy estimation
+      2. 0.0077226576 = shall pronounce
+
+    4. Sacred-Texts/Bible-Books/04-Numbers.txt
+      1. 0.0075924366 = one silver
+
+    5. Sacred-Texts/Bible-Books/05-Deuteronomy.txt
+      1. 0.0066053273 = giveth thee
+      2. 0.0053299400 = thy gates
+
+    6. Sacred-Texts/Bible-Books/06-Joshua.txt
+      1. 0.0101772334 = border went
+
+    7. Sacred-Texts/Bible-Books/07-Judges.txt
+      1. 0.0020773105 = drew sword
+
+    8. Sacred-Texts/Bible-Books/08-Ruth.txt
+
+    9. Sacred-Texts/Bible-Books/09-1 Samuel.txt
+      1. 0.0013735992 = say thus
+
+    10. Sacred-Texts/Bible-Books/10-2 Samuel.txt
+      1. 0.0021507439 = thy master's
+
+    11. Sacred-Texts/Bible-Books/11-1 Kings.txt
+      1. 0.0020908704 = hear thou
+      2. 0.0019244400 = ten cubits
+
+    12. Sacred-Texts/Bible-Books/12-2 Kings.txt
+      1. 0.0050939416 = son reigned
+      2. 0.0046541963 = said unto
+
+    13. Sacred-Texts/Bible-Books/13-1 Chronicles.txt
+      1. 0.0029986452 = chief fathers
+      2. 0.0023989162 = lot came
+
+    14. Sacred-Texts/Bible-Books/14-2 Chronicles.txt
+      1. 0.0020296084 = hundred oxen
+      2. 0.0016938248 = much spoil
+
+    15. Sacred-Texts/Bible-Books/15-Ezra.txt
+      1. 0.0115161009 = taken strange
+
+    16. Sacred-Texts/Bible-Books/16-Nehemiah.txt
+
+    17. Sacred-Texts/Bible-Books/17-Esther.txt
+      1. 0.0188955355 = king's gate
+      2. 0.0185247686 = every province
+
+    18. Sacred-Texts/Bible-Books/18-Job.txt
+      1. 0.0021662110 = without knowledge
+      2. 0.0020765123 = escaped alone
+
+    19. Sacred-Texts/Bible-Books/19-Psalms.txt
+      1. 0.0035197343 = thy statutes
+      2. 0.0033521279 = will praise
+
+    20. Sacred-Texts/Bible-Books/20-Proverbs.txt
+      1. 0.0031545491 = slothful man
+
+    21. Sacred-Texts/Bible-Books/21-Ecclesiastes.txt
+      1. 0.0144572163 = also vanity
+      2. 0.0082612664 = wise man's
+
+    22. Sacred-Texts/Bible-Books/22-Song of Solomon.txt
+      1. 0.0176654751 = art fair
+      2. 0.0176654751 = soul loveth
+
+    23. Sacred-Texts/Bible-Books/23-Isaiah.txt
+
+    24. Sacred-Texts/Bible-Books/24-Jeremiah.txt
+      1. 0.0012399406 = north country
+
+    25. Sacred-Texts/Bible-Books/25-Lamentations.txt
+      1. 0.0071787309 = hath swallowed
+
+    26. Sacred-Texts/Bible-Books/26-Ezekiel.txt
+      1. 0.0030667796 = rebellious house
+
+    27. Sacred-Texts/Bible-Books/27-Daniel.txt
+      1. 0.0075538928 = burning fiery
+      2. 0.0075538928 = fiery furnace
+
+    28. Sacred-Texts/Bible-Books/28-Hosea.txt
+      1. 0.0056274555 = betroth thee
+
+    29. Sacred-Texts/Bible-Books/29-Joel.txt
+      1. 0.0142523024 = left hath
+
+    30. Sacred-Texts/Bible-Books/30-Amos.txt
+      1. 0.0182639291 = punishment thereof
+      2. 0.0182639291 = three transgressions
+
+    31. Sacred-Texts/Bible-Books/31-Obadiah.txt
+      1. 0.0398440278 = neither shouldest
+      2. 0.0221680867 = deceived thee
+
+    32. Sacred-Texts/Bible-Books/32-Jonah.txt
+      1. 0.0167249840 = great city
+
+    33. Sacred-Texts/Bible-Books/33-Micah.txt
+      1. 0.0057308470 = lion among
+      2. 0.0047827211 = thou inhabitant
+
+    34. Sacred-Texts/Bible-Books/34-Nahum.txt
+
+    35. Sacred-Texts/Bible-Books/35-Habakkuk.txt
+      1. 0.0120899929 = men's blood
+      2. 0.0120899929 = thine horses
+
+    36. Sacred-Texts/Bible-Books/36-Zephaniah.txt
+      1. 0.0106189786 = coast shall
+
+    37. Sacred-Texts/Bible-Books/37-Haggai.txt
+      1. 0.0242606509 = will shake
+      2. 0.0234382907 = twentieth day
+
+    38. Sacred-Texts/Bible-Books/38-Zechariah.txt
+      1. 0.0078226308 = wives apart
+
+    39. Sacred-Texts/Bible-Books/39-Malachi.txt
+      1. 0.0088608758 = deal treacherously
+
+    40. Sacred-Texts/Bible-Books/40-Matthew.txt
+      1. 0.0067891214 = saith unto
+      2. 0.0044367026 = chief priests
+
+    41. Sacred-Texts/Bible-Books/41-Mark.txt
+      1. 0.0046915615 = looked round
+      2. 0.0023457808 = worm dieth
+
+    42. Sacred-Texts/Bible-Books/42-Luke.txt
+      1. 0.0025970187 = parable unto
+      2. 0.0017782008 = ten pounds
+
+    43. Sacred-Texts/Bible-Books/43-John.txt
+      1. 0.0061731771 = ye believe
+      2. 0.0046298828 = therefore said
+
+    44. Sacred-Texts/Bible-Books/44-Acts.txt
+
+    45. Sacred-Texts/Bible-Books/45-Romans.txt
+      1. 0.0051110785 = maketh intercession
+
+    46. Sacred-Texts/Bible-Books/46-1 Corinthians.txt
+      1. 0.0077869213 = unknown tongue
+      2. 0.0064891011 = might gain
+
+    47. Sacred-Texts/Bible-Books/47-2 Corinthians.txt
+      1. 0.0064522835 = made sorry
+
+    48. Sacred-Texts/Bible-Books/48-Galatians.txt
+      1. 0.0085424598 = circumcision availeth
+      2. 0.0085424598 = neither circumcision
+
+    49. Sacred-Texts/Bible-Books/49-Ephesians.txt
+      1. 0.0170050835 = heavenly places
+
+    50. Sacred-Texts/Bible-Books/50-Philippians.txt
+      1. 0.0261062568 = whatsoever things
+      2. 0.0104271859 = already attained
+
+    51. Sacred-Texts/Bible-Books/51-Colossians.txt
+
+    52. Sacred-Texts/Bible-Books/52-1 Thessalonians.txt
+      1. 0.0145563515 = became followers
+      2. 0.0145563515 = longer forbear
+
+    53. Sacred-Texts/Bible-Books/53-2 Thessalonians.txt
+      1. 0.0286542352 = follow us
+
+    54. Sacred-Texts/Bible-Books/54-1 Timothy.txt
+
+    55. Sacred-Texts/Bible-Books/55-2 Timothy.txt
+
+    56. Sacred-Texts/Bible-Books/56-Titus.txt
+      1. 0.0216612373 = maintain good
+
+    57. Sacred-Texts/Bible-Books/57-Philemon.txt
+
+    58. Sacred-Texts/Bible-Books/58-Hebrews.txt
+      1. 0.0043719211 = new covenant
+
+    59. Sacred-Texts/Bible-Books/59-James.txt
+      1. 0.0126192294 = beloved brethren
+      2. 0.0111558672 = faith without
+
+    60. Sacred-Texts/Bible-Books/60-1 Peter.txt
+      1. 0.0100527289 = conscience toward
+      2. 0.0100527289 = though now
+
+    61. Sacred-Texts/Bible-Books/61-2 Peter.txt
+
+    62. Sacred-Texts/Bible-Books/62-1 John.txt
+      1. 0.0182953487 = wicked one
+      2. 0.0168761134 = written unto
+
+    63. Sacred-Texts/Bible-Books/63-2 John.txt
+
+    64. Sacred-Texts/Bible-Books/64-3 John.txt
+
+    65. Sacred-Texts/Bible-Books/65-Jude.txt
+
+    66. Sacred-Texts/Bible-Books/66-Revelation.txt
+      1. 0.0112317527 = sealed twelve
+      2. 0.0102957733 = four beasts
+
