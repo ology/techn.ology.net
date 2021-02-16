@@ -14,7 +14,7 @@ What are the "most unique phrases" in the Bible?  Let's find out!
 
 ---
 
-Using the [per](https://www.perl.org/) module [Text::TFIDF::Ngram](https://metacpan.org/release/Text-TFIDF-Ngram) and the books of the KJV Bible as individual text files, we get this for three-word phrases:
+Using the [perl](https://www.perl.org/) module [Text::TFIDF::Ngram](https://metacpan.org/release/Text-TFIDF-Ngram) and the books of the KJV Bible as individual text files, we get this for three-word phrases:
 
     1. Sacred-Texts/Bible-Books/01-Genesis.txt
       1. 0.0032820906 = every living creature
