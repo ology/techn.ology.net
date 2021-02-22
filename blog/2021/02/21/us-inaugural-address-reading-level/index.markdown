@@ -16,9 +16,11 @@ Like this!
 
 ![USIA-Kincaid.png](USIA-Kincaid.png)
 
-As we can see, the reading level has decreased steadily.  And to some, this may seem like a sign of declining intelligence of our presidents.  But to me, the general population does not read at the 30th grade level!  Biden comes in at 6.02, with a level of comprehension for the common person.
+As we can see, the reading level has decreased steadily.  And to some, this may seem like a sign of declining intelligence of our presidents.  But realistically, the general population does not read at the 30th grade level!  Biden comes in at 6.02, with a level of comprehension for the common person.
 
-    # Chars Words Complex Sentences SylW   WpS   FOG Flesch Kincaid            Name
+Here are the numbers:
+
+    #  Chars Words Complex Sentences SylW   WpS   FOG Flesch Kincaid            Name
     1   8606  1429   20.15        24 1.68 59.54 31.88   4.37   27.44 1789-Washington
     2    785   135   21.48         4 1.65 33.75 22.09  32.83   17.06 1793-Washington
     3  13850  2318   19.33        37 1.67 62.65 32.79   1.75   28.58      1797-Adams
@@ -78,4 +80,17 @@ As we can see, the reading level has decreased steadily.  And to some, this may 
     57 12306  2115   12.06       111 1.50 19.05 12.44  60.46    9.56      2013-Obama
     58  8287  1436   14.07        89 1.52 16.13 12.08  61.50    8.69      2017-Trump
     59 13883  2513   10.74       205 1.43 12.26  9.20  73.74    6.02      2021-Biden
+
+And here is the super-simple [R](https://www.r-project.org/) code that creates the graph above:
+
+    abplot <- function (data, title) {
+        years <- seq(1789, 2021, by = 4)
+        plot(data, type='l', main = title, xaxt = 'n')
+        axis(1, 1 : length(years), years)
+        abline(lsfit(1 : length(data), data))
+    }
+
+    data <- read.csv('~/tmp/USIA-fathom-stats.txt', header=T, sep="\t")
+
+    abplot(data$Kincaid, 'Kincaid')
 
