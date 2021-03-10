@@ -46,7 +46,7 @@ For the "top" part (in `C major`) the first 10 look like:
 
 Where `P` is the prime number, `Mod` is the prime mapped to the number of scale notes, and `Note` is the MIDI pitch number.
 
-The "top" part plays two octaves (14 notes).  Consequently prime number 17 modulo maps to the number three, as above.
+The "top" part plays two octaves (14 notes).  Consequently prime number 17 modulo maps to the number three, as above.  The "bottom" part only uses a single octave for its notes.
 
 The "top" and "bottom" parts do exactly the same thing - loop over the primes, but at different speeds and in different octaves.  The "top" plays eighth notes in the 4th and 5th octaves.  The "bottom" part plays the primes as whole notes in the 3rd octave.  So there are eight notes per bottom note.
 
