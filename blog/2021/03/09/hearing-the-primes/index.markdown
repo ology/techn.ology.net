@@ -12,9 +12,7 @@ There are many interpretations of what the prime numbers "sound like."  Mine pla
 
 ---
 
-Also the program, called [primes-layered](https://github.com/ology/Music/blob/master/primes-layered), allows you to specify a few parameters to achieve a couple different effects.
-
-Basically the program does this:
+The program, called [primes-layered](https://github.com/ology/Music/blob/master/primes-layered), allows you to specify a few parameters to achieve a couple different effects.  And basically the program does this:
 
   - The prime numbers up to a given `limit` are gathered in an array.
 
