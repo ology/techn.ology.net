@@ -26,7 +26,7 @@ The program, called [primes-layered](https://github.com/ology/Music/blob/master/
 
 Well, first an appropriate patch is assigned.  The defaults are a synth for the bottom and an electric piano up top.
 
-Then a scale in `C` is created according to the top **octave** (and one above it), and the name of the **scale**.  By default the octave is `4` and the scale is `major`.
+Then two scales in `C` are created according to the top and bottom octaves, and the name of the scale.  By default the scale is `major`, the top octaves are `4` and `5` and the bottom is `3`.
 
 The next thing to do is loop over the primes starting with 2, 3, 5, 7, 11, ...  And for each prime we modulo with the number of notes in the scale, and then get that note!
 
