@@ -26,7 +26,7 @@ Make a local directory for your module.  From your `~` home directory do this:
 
 Install the necessary Perl modules to build a distribution:
 
-    cpanm Dist::Zilla Dist::Zilla::MintingProfile::Starter::Git Dist::Zilla::App::Command::installdeps
+    cpanm Dist::Zilla Dist::Zilla::MintingProfile::Starter::Git Dist::Zilla::App::Command::installdeps Dist::Zilla::Plugin::NextRelease
 
 Make a new Dist::Zilla distribution:
 
