@@ -22,7 +22,7 @@ Make a local directory for your module.  From your `~` home directory do this:
 
     mkdir repos;
     cd repos;
-    git clone git@github.com:BD3i/Your-Module-Name.git
+    git clone git@github.com:you/Your-Module-Name.git
 
 Install the necessary Perl modules to build a distribution:
 
