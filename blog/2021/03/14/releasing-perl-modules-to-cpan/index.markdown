@@ -97,7 +97,7 @@ If everything is ok, and if you have recieved confirmation of your PAUSE account
     dzil release
     dzil clean
 
-You will soon get a couple email messages saying that (hopefully) your distribution has been accepted.
+You will soon get a couple email messages (hopefully) saying that your distribution has been accepted.
 
 Check [MetaCPAN](https://metacpan.org/recent) for your new release.
 
