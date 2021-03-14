@@ -6,7 +6,7 @@ tags:
   - software
 ---
 
-These steps assume that your module and tests are located in `~/sandbox/Your-Module-Name`.
+These steps assume that your module and tests are located in `~/sandbox/Your-Module-Name` and that you are friends with the command line.
 
 ---
 
@@ -101,4 +101,6 @@ If everything is ok, and if you have recieved confirmation of your PAUSE account
 You will soon get a couple email messages (hopefully) saying that your distribution has been accepted.
 
 Check [MetaCPAN](https://metacpan.org/recent) for your new release.
+
+And to know all about it, check out [Dist::Zilla::Starter](https://metacpan.org/pod/Dist::Zilla::Starter) - Thanks [Grinnz](https://metacpan.org/author/DBOOK) :-)
 
