@@ -76,7 +76,7 @@ But if you have none, start with this as `t/01-functions.t` (or `01-methods.t` i
 
     use Test::More;
 
-    use_ok 'Foo::Bar';
+    use_ok 'Your::Module::Name';
 
     done_testing();
 
