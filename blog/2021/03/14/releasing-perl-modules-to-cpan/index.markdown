@@ -87,19 +87,17 @@ Merge your module code with the generated module:
 Add your files to the `git` repository:
 
     git add *
-    git commit -a -m 'Initial commit'
-    git push
 
 Install the dependencies for your module:
 
     dzil installdeps
 
-Generate a license file and commit it to github:
+Generate a license file and commit everything to github:
 
     dzil regenerate
 
     git add LICENSE
-    git commit -m 'Initial commit' LICENSE
+    git commit -a -m 'Initial commit'
     git push
 
 Test your distribution:
