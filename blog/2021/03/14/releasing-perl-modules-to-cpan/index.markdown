@@ -37,7 +37,7 @@ Make a new Dist::Zilla distribution:
 Move your new distribution to the git directory for `Your-Module-Name`:
 
     mv Your-Module-Name/* repos/Your-Module-Name/
-    mv Your-Module-Name/.* repos/Your-Module-Name/
+    mv Your-Module-Name/.* repos/Your-Module-Name/ # "No" to all questions
     rm -rf Your-Module-Name
     cd repos/Your-Module-Name
 
@@ -68,14 +68,6 @@ Fix-up your `dist.ini` file to look like this:
 
     [AutoPrereqs]
 
-Install the dependencies for your module:
-
-    dzil installdeps
-
-Generate a license file:
-
-    dzil regenerate
-
 Add your tests:
 
     cp ~/sandbox/Your-Module-Name/t .
@@ -96,6 +88,18 @@ Add your files to the `git` repository:
 
     git add *
     git commit -a -m 'Initial commit'
+    git push
+
+Install the dependencies for your module:
+
+    dzil installdeps
+
+Generate a license file and commit it to github:
+
+    dzil regenerate
+
+    git add LICENSE
+    git commit -m 'Initial commit' LICENSE
     git push
 
 Test your distribution:
