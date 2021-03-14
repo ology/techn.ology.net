@@ -18,36 +18,31 @@ Make a [github account](https://github.com/join?ref_cta=Sign+up&ref_loc=header+l
 
 Make a [github repository](https://github.com/new) for `Your-Module-Name` without readme, .gitignore or license files.
 
-Change to your module directory:
+Install the necessary Perl modules to build a distribution:
 
-    cd ~/sandbox/Your-Module-Name
+    cpanm Dist::Zilla Dist::Zilla::MintingProfile::Starter::Git Dist::Zilla::App::Command::installdeps
 
-Add this single line file as `README.md`:
+Make a repository directory for your distribution:
 
-    # Your-Module-Name
+    mkdir ~/repos
+    cd ~/repos
 
-Setup your module for use with `git` (if not already a repository):
+Make a new distribution:
 
-    git init -b main
-    git add .
-    git commit -a -m 'Initial commit'
+    dzil setup
+    dzil new -P Starter::Git Your::Module::Name
+    cd Your-Module-Name
 
 Setup your repository with github:
 
     git remote add origin git@github.com:your_github_id/Your-Module-Name.git
     git push origin main
 
-Install the necessary Perl modules to build a distribution:
+Add this as a `README.md` file:
 
-    cpanm Dist::Zilla Dist::Zilla::MintingProfile::Starter::Git Dist::Zilla::App::Command::installdeps
-
-Make new distribution configuration files:
-
-    dzil setup
-    dzil new -P Starter::Git Your::Module::Name
-    cp Your-Module-Name/dist.ini .
-    cp Your-Module-Name/.gitignore .
-    rm -rf Your-Module-Name
+    # Your-Module-Name
+    ---
+    The description of your module...
 
 Add this as a new `Changes` file:
 
