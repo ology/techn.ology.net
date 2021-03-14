@@ -68,6 +68,14 @@ Open the `dist.ini` file and make it look like this:
 
     [AutoPrereqs]
 
+Add your module tests:
+
+    cp -R ~/sandbox/Your-Module-Name/t .
+
+Merge your module with the generated one:
+
+    vimdiff ~/sandbox/Your-Module-Name/lib/Your/Module/Name.pm lib/Your/Module/Name.pm
+
 Install the dependencies for your module:
 
     dzil installdeps
