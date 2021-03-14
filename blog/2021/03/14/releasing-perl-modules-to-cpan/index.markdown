@@ -26,7 +26,7 @@ Make a local directory for your module.  From your `~` home directory do this:
 
 Install the necessary Perl modules to build a distribution:
 
-    cpanm Dist::Zilla Dist::Zilla::MintingProfile::Starter Dist::Zilla::Plugin::GithubMeta Dist::Zilla::Plugin::NextRelease Dist::Zilla::Plugin::VersionFromMainModule
+    cpanm Dist::Zilla Dist::Zilla::MintingProfile::Starter::Git Dist::Zilla::App::Command::installdeps
 
 Make a new Dist::Zilla distribution:
 
@@ -37,6 +37,7 @@ Make a new Dist::Zilla distribution:
 Move your new distribution to the git directory for `Your-Module-Name`:
 
     mv Your-Module-Name/* repos/Your-Module-Name/
+    mv Your-Module-Name/.* repos/Your-Module-Name/
     rm -rf Your-Module-Name
     cd repos/Your-Module-Name
 
@@ -55,21 +56,25 @@ Fix-up your `dist.ini` file to look like this:
     copyright_holder = Your Name
     copyright_year   = 2021
 
-    [VersionFromMainModule]
-
-    [@Starter]
+    [@Starter::Git]
     revision = 5
+    managed_versions = 1
+    regenerate = LICENSE
 
     [NextRelease]
     format = %v %{yyyy-MM-dd HH:mm:ss}d
 
     [GithubMeta]
 
+    [AutoPrereqs]
+
+Install the dependencies for your module:
+
+    dzil installdeps
+
 Generate a license file:
 
-    dzil build
-    cp Your-Module-Name/LICENSE .
-    dzil clean
+    dzil regenerate
 
 Add your tests:
 
