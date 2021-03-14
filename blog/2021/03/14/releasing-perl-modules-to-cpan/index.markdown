@@ -41,7 +41,7 @@ Install the necessary Perl modules to build a distribution:
 
     cpanm Dist::Zilla Dist::Zilla::MintingProfile::Starter::Git Dist::Zilla::App::Command::installdeps
 
-Make a new distribution:
+Make new distribution configuration files:
 
     dzil setup
     dzil new -P Starter::Git Your::Module::Name
