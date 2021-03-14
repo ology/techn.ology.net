@@ -16,30 +16,35 @@ Make a [PAUSE account](https://pause.perl.org/pause/query?ACTION=request_id) for
 
 Make a [github account](https://github.com/join?ref_cta=Sign+up&ref_loc=header+logged+out&ref_page=%2F&source=header-home) to house your module(s).
 
-Make a [github repository](https://github.com/new) for `Your-Module-Name` with a readme file, but without .gitignore or license files.
+Make a [github repository](https://github.com/new) for `Your-Module-Name` without readme, .gitignore or license files.
 
-Make a local directory for your module.  From your `~` home directory do this:
+Setup your module for use with `git`:
 
-    mkdir repos;
-    cd repos;
-    git clone git@github.com:you/Your-Module-Name.git
+    cd ~/sandbox/Your-Module-Name
+    git init -b main
+    git add .
+    git commit -a -m 'Initial commit'
+
+Add this single line as a new `README.md` file:
+
+    # Your-Module-Name
+
+Setup your repository with github:
+
+    git remote add origin git@github.com:your_github_id/Your-Module-Name.git
+    git push origin main
 
 Install the necessary Perl modules to build a distribution:
 
     cpanm Dist::Zilla Dist::Zilla::MintingProfile::Starter::Git Dist::Zilla::App::Command::installdeps
 
-Make a new Dist::Zilla distribution:
+Make a new distribution:
 
-    cd # Go back to ~
     dzil setup
     dzil new -P Starter::Git Your::Module::Name
-
-Move your new distribution to the git directory for `Your-Module-Name`:
-
-    mv Your-Module-Name/* repos/Your-Module-Name/
-    mv Your-Module-Name/.* repos/Your-Module-Name/ # "No" to all questions
+    cp Your-Module-Name/dist.ini .
+    cp Your-Module-Name/.gitignore .
     rm -rf Your-Module-Name
-    cd repos/Your-Module-Name
 
 Add this as a new `Changes` file:
 
@@ -48,10 +53,10 @@ Add this as a new `Changes` file:
     {{$NEXT}}
         - Minted by Dist::Zilla.
 
-Fix-up your `dist.ini` file to look like this:
+Add this as a new `dist.ini` file:
 
     name    = Your-Module-Name
-    author  = Your Name <you@cpan.org>
+    author  = Your Name <your_pause_id@cpan.org>
     license = Artistic_2_0
     copyright_holder = Your Name
     copyright_year   = 2021
@@ -68,26 +73,6 @@ Fix-up your `dist.ini` file to look like this:
 
     [AutoPrereqs]
 
-Add your tests:
-
-    cp ~/sandbox/Your-Module-Name/t .
-
-But if you have none, start with this as `t/01-functions.t` (or `01-methods.t` if OO):
-
-    use Test::More;
-
-    use_ok 'Your::Module::Name';
-
-    done_testing();
-
-Merge your module code with the generated module:
-
-    vimdiff ~/sandbox/Your-Module-Name/lib/Your/Module/Name.pm lib/Your/Module/Name.pm
-
-Add your files to the `git` repository:
-
-    git add *
-
 Install the dependencies for your module:
 
     dzil installdeps
@@ -96,7 +81,7 @@ Generate a license file and commit everything to github:
 
     dzil regenerate
 
-    git add LICENSE
+    git add .
     git commit -a -m 'Initial commit'
     git push
 
