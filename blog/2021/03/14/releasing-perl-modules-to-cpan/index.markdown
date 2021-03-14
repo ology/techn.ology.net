@@ -72,7 +72,7 @@ Add your module tests:
 
 Merge your module with the generated one (with an editor like [vim](https://www.vim.org/)):
 
-    vimdiff ~/sandbox/Your-Module-Name/lib/Your/Module/Name.pm lib/Your/Module/Name.pm
+    vim -o ~/sandbox/Your-Module-Name/lib/Your/Module/Name.pm lib/Your/Module/Name.pm
 
 Install the dependencies for your module:
 
