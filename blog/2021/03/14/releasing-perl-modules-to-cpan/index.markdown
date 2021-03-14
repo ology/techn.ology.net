@@ -32,7 +32,7 @@ Make a new Dist::Zilla distribution:
 
     cd # Go back to ~
     dzil setup
-    dzil new -P Starter Your::Module::Name
+    dzil new -P Starter::Git Your::Module::Name
 
 Move your new distribution to the git directory for `Your-Module-Name`:
 
