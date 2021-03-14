@@ -86,7 +86,7 @@ Generate a license file and commit everything to github:
 
     git add .
     git commit -a -m 'Initial commit'
-    git push
+    git push origin main
 
 Test your distribution:
 
