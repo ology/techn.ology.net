@@ -49,7 +49,7 @@ Add this as a new `Changes` file:
     {{$NEXT}}
         - Minted by Dist::Zilla.
 
-Open the `dist.ini` file and make it look like this:
+Open the `dist.ini` file in your favorite editor, and make it look like this:
 
     name    = Your-Module-Name
     author  = Your Name <your_pause_id@cpan.org>
@@ -70,7 +70,7 @@ Add your module tests:
 
     cp -R ~/sandbox/Your-Module-Name/t .
 
-Merge your module with the generated one:
+Merge your module with the generated one (again with an editor like `vim`):
 
     vimdiff ~/sandbox/Your-Module-Name/lib/Your/Module/Name.pm lib/Your/Module/Name.pm
 
