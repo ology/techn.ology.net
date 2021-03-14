@@ -68,9 +68,7 @@ Open the `dist.ini` file and make it look like this:
     revision = 5
     managed_versions = 1
     regenerate = LICENSE
-
-    [NextRelease]
-    format = %v %{yyyy-MM-dd HH:mm:ss}d
+    NextRelease.format = %v %{yyyy-MM-dd HH:mm:ss}d
 
     [GithubMeta]
 
