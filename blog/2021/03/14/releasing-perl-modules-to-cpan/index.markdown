@@ -33,11 +33,6 @@ Make a new distribution:
     dzil new -P Starter::Git Your::Module::Name
     cd Your-Module-Name
 
-Setup your repository with github:
-
-    git remote add origin git@github.com:your_github_id/Your-Module-Name.git
-    git push origin main
-
 Add this as a `README.md` file:
 
     # Your-Module-Name
@@ -80,12 +75,15 @@ Install the dependencies for your module:
 
     dzil installdeps
 
-Generate a license file and commit everything to github:
+Generate a license file:
 
     dzil regenerate
 
+Commit everything to github:
+
     git add .
     git commit -a -m 'Initial commit'
+    git remote add origin git@github.com:your_github_id/Your-Module-Name.git
     git push origin main
 
 Test your distribution:
