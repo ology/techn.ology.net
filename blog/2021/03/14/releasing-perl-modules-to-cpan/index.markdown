@@ -27,11 +27,11 @@ Make a repository directory for your distribution:
     mkdir ~/repos
     cd ~/repos
 
-Setup Dist::Zilla (optionally with your PAUSE id and password):
+Setup [Dist::Zilla](https://metacpan.org/pod/Dist::Zilla) (optionally with your PAUSE id and password):
 
     dzil setup
 
-Make a new distribution:
+Make a new distribution for your module:
 
     dzil new -P Starter::Git Your::Module::Name
     cd Your-Module-Name
@@ -70,7 +70,7 @@ Add your module tests:
 
     cp -R ~/sandbox/Your-Module-Name/t .
 
-Merge your module with the generated one (again with an editor like `vim`):
+Merge your module with the generated one (with an editor like [vim](https://www.vim.org/)):
 
     vimdiff ~/sandbox/Your-Module-Name/lib/Your/Module/Name.pm lib/Your/Module/Name.pm
 
