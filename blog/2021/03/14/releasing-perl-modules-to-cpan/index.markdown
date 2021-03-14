@@ -18,16 +18,19 @@ Make a [github account](https://github.com/join?ref_cta=Sign+up&ref_loc=header+l
 
 Make a [github repository](https://github.com/new) for `Your-Module-Name` without readme, .gitignore or license files.
 
-Setup your module for use with `git`:
+Change to your module directory:
 
     cd ~/sandbox/Your-Module-Name
+
+Add this single line file as `README.md`:
+
+    # Your-Module-Name
+
+Setup your module for use with `git`:
+
     git init -b main
     git add .
     git commit -a -m 'Initial commit'
-
-Add this single line as a new `README.md` file:
-
-    # Your-Module-Name
 
 Setup your repository with github:
 
