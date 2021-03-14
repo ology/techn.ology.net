@@ -87,7 +87,7 @@ Commit everything to github:
     git add .
     git commit -a -m 'Initial commit'
     git remote add origin git@github.com:your_github_id/Your-Module-Name.git
-    git push origin main
+    git push -u origin main
 
 Test your distribution:
 
