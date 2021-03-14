@@ -6,7 +6,7 @@ tags:
   - software
 ---
 
-These steps assume that you do *not* have a local `git` repository for your module yet, *but* that your module and tests are located in `~/sandbox/Your-Module-Name`.
+These steps assume that your module and tests are located in `~/sandbox/Your-Module-Name`.
 
 ---
 
@@ -26,7 +26,7 @@ Add this single line file as `README.md`:
 
     # Your-Module-Name
 
-Setup your module for use with `git`:
+Setup your module for use with `git` (if not already a repository):
 
     git init -b main
     git add .
