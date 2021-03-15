@@ -50,7 +50,7 @@ Add this as a new `Changes` file:
     {{$NEXT}}
         - Minted by Dist::Zilla.
 
-Open the `dist.ini` file in your favorite editor, and make it look like this:
+Open the `dist.ini` file in your favorite editor, and make it look something like this:
 
     name    = Your-Module-Name
     author  = Your Name <your_pause_id@cpan.org>
