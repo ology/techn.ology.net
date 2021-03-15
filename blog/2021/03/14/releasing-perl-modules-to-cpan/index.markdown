@@ -67,6 +67,8 @@ Open the `dist.ini` file in your favorite editor, and make it look something lik
 
     [AutoPrereqs]
 
+You can choose to use a different license, of course. Check out [Software::License](https://metacpan.org/pod/Software::License#SEE-ALSO) for the others.
+
 Add your module tests:
 
     cp -R ~/sandbox/Your-Module-Name/t .
