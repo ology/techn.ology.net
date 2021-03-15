@@ -11,7 +11,7 @@ These steps assume that your module and tests are located in `~/sandbox/Your-Mod
 
 ---
 
-Have the programs `git`, and of course `perl` and friends, installed on your machine.
+Have the programs `git`, and of course `perl`, installed on your machine.
 
 Make a [PAUSE account](https://pause.perl.org/pause/query?ACTION=request_id) for uploading to [CPAN](https://www.cpan.org/).  This is not instant and may take a few days.
 
