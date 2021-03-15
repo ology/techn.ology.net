@@ -6,6 +6,7 @@ tags:
   - software
 ---
 
+![perl-to-cpan](perl-to-cpan.png)
 These steps assume that your module and tests are located in `~/sandbox/Your-Module-Name` and that you are friends with the command line.
 
 ---
