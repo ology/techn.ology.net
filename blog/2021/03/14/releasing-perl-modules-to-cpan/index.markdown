@@ -70,7 +70,7 @@ Add your module tests:
 
     cp -R ~/sandbox/Your-Module-Name/t .
 
-Merge your module with the generated one (with an editor like [vim](https://www.vim.org/)):
+Merge your module with the generated one (with an editor like [vim](https://www.vim.org/) or [vscode](https://code.visualstudio.com/)):
 
     vim -O ~/sandbox/Your-Module-Name/lib/Your/Module/Name.pm lib/Your/Module/Name.pm
 
