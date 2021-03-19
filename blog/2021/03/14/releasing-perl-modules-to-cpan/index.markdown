@@ -23,7 +23,7 @@ Install the necessary Perl modules to build a distribution:
 
     cpanm Dist::Zilla Dist::Zilla::MintingProfile::Starter::Git Dist::Zilla::App::Command::installdeps
 
-Make a repository directory for your distribution:
+Optionally, make a repository directory for your distribution:
 
     mkdir ~/repos
     cd ~/repos
