@@ -7,7 +7,7 @@ tags:
   - software
 ---
 
-Recently I was inspired by the Brian Eno section of [this generative music presentation](https://teropa.info/loop/#/airports) (right arrow or space-bar moves ahead in the presentation), which describes Eno's tape-loop setup.
+Recently I was inspired by the Brian Eno section of [this generative music presentation](https://teropa.info/loop/#/airports) (right arrow or space-bar moves forward), which describes Eno's tape-loop setup.
 
 ---
 
