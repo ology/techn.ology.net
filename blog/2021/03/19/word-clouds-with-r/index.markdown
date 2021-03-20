@@ -1,10 +1,10 @@
 ---
 status: published
-title: Word Clouds with R
+title: Word-clouds with R
 tags:
-  - software
   - R
   - NLP
+  - software
 ---
 
 What are the most used words in Sherlock Holmes?  Let's make word-clouds and find out!
