@@ -35,7 +35,6 @@ Sanitize the text:
     docs <- tm_map(docs, removePunctuation)
     docs <- tm_map(docs, content_transformer(tolower))
     docs <- tm_map(docs, removeWords, stopwords('english'))
-    docs <- tm_map(docs, stripWhitespace) 
 
 Set the color palette to use:
 
