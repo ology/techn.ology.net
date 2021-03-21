@@ -162,6 +162,6 @@ So this means having a third member:
 
 Anyway, this shows that ... there is really no trend either.  But maybe you could say that the longer a hit song is number one, the longer it stays in the charts.  This is not earth shattering news, by any means.
 
-For what it's worth, here is a 3D plot (made with [R](https://www.r-project.org/)):
+For what it's worth, here is a 3D plot (made with [R](https://www.r-project.org/)), where the axes are as above x=entered, y=charted, z=stayed at #1:
 
 ![](Top-Tunes.png)
