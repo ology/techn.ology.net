@@ -38,7 +38,7 @@ Here are the first number pattern pictures, for modulo 2 through 10, with prime
 [![](plot-100-09-sm.png)](plot-100-09.png)
 [![](plot-100-10-sm.png)](plot-100-10.png)
 
-Here are a few pattern pictures where the module is *only* the prime number 31.  Each chart shows the "primes below" an increasingly higher number.  The first shows primes below 10, then 20, 30, 40, 50, 1000 and the last chart shows primes below 10,000.
+Here are a few pattern pictures where the modulo is *only* the prime number 31.  Each chart shows the "primes below" an increasingly higher number.  The first shows primes below 10, then 20, 30, 40, 50, 1000 and the last chart shows primes below 10,000.
 
 [![](plot-010-31-sm.png)](plot-010-31.png)
 [![](plot-020-31-sm.png)](plot-020-31.png)
