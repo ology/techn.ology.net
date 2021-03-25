@@ -50,3 +50,8 @@ Here are a few pattern pictures where the modulo is *only* the prime number 31. 
 
 These might make a cool "flip-book" PNG animation for math geeks.  Maybe I'll do that...
 
+**UPDATE**
+
+Here is an animated gif of the above:
+
+![animated-fib-primes.gif](animated-fib-primes.gif)
