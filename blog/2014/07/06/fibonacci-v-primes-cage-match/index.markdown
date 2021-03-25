@@ -55,3 +55,8 @@ These might make a cool "flip-book" PNG animation for math geeks.  Maybe I'll 
 Here is an animated gif of the above:
 
 ![animated-fib-primes.gif](animated-fib-primes.gif)
+
+And [here is a table of images](http://www.ology.net/dev/slice-seq/) showing the x-axis: prime limit up to 100, by 10's, and the y-axis: modulo 2 to 31.
+
+Fascinating.
+
