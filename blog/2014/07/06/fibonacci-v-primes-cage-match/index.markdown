@@ -12,7 +12,7 @@ tags:
 [![](plot-200-31-sm.png)](plot-200-31.png)
 Today I decided to more deeply investigate this curious math thing I discovered (for myself) - Plotting the Fibonacci numbers by Prime numbers each by a given modulo.  "Fibo-what? Mod-what? So what!", you say. *:p*
 
-tldr code: [slice-seq](https://github.com/ology/Math/blob/master/slice-seq) and [slice-seq.R](https://github.com/ology/Math/blob/master/slice-seq.R)
+tl;dr code: [slice-seq](https://github.com/ology/Math/blob/master/slice-seq) and [slice-seq.R](https://github.com/ology/Math/blob/master/slice-seq.R)
 
 ---
 
