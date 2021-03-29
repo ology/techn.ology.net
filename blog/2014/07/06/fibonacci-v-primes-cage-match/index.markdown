@@ -58,5 +58,7 @@ Here is an animated gif of the above:
 
 And [here is a table of images](http://www.ology.net/dev/slice-seq/) showing the x-axis: prime limit up to 100, by 10's, and the y-axis: modulo 2 to 31.
 
+And [here is the companion table of images](http://www.ology.net/dev/slice-seq-to-1000/) showing the x-axis: prime limit up to 1000, by 100's, and the same y-axis: modulo 2 to 31.
+
 Fascinating.
 
