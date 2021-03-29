@@ -60,5 +60,7 @@ And [here is a table of images](http://www.ology.net/dev/slice-seq/) showing the
 
 And [here is the companion table of images](http://www.ology.net/dev/slice-seq-to-1000/) showing the x-axis: prime limit up to 1000, by 100's, and the same y-axis: modulo 2 to 31.
 
+And [here are the plots](http://www.ology.net/dev/slice-seq-at-10000/) for primes under 10,000, where modulo is again 2 to 31.
+
 Fascinating.
 
