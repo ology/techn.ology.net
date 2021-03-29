@@ -16,9 +16,9 @@ tl;dr code: [slice-seq](https://github.com/ology/Math/blob/master/slice-seq) and
 
 ---
 
-For the mechanics, I use Perl to produce the data and R to visualize it.
+For the mechanics, I use [Perl](https://www.perl.org/) to produce the data and [R](https://www.r-project.org/) to visualize it.
 
-The first is the Fibonacci sequence: 0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89, 144, ...  The primes are of course: 2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, ...  If you plot them on a graph, each sky-rockets because they are both sequences of bigger and bigger numbers.
+The first is the [Fibonacci sequence](https://oeis.org/A000045): 0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89, 144, ...  The [primes](https://oeis.org/A000040) are of course: 2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, ...  If you plot them on a graph, each sky-rockets because they are both sequences of bigger and bigger numbers.
 
 What I have been interested in is "boxing in" an infinitely long sequence.
 
