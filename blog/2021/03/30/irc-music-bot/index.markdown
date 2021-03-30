@@ -39,7 +39,9 @@ Print out a note list given a chord name for the *chord* command
 
 Print out a chord name of the given notes for the *notes* command
 
-* [Music::Duration::Partition](https://metacpan.org/pod/Music::Duration::Partition)
+* [Music::Duration::Partition](https://metacpan.org/pod/Music::Duration::Partition) and
+
+* [Data::Dumper::Compact](https://metacpan.org/pod/Data::Dumper::Compact)
 
 Generate a randomized phrase of `pitch.duration` elements for the number of given quarter-notes
 
