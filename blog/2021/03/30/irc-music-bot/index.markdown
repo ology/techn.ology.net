@@ -63,7 +63,7 @@ Prints a brief command string with examples
 
 Prints the github URL of the code for this bot
 
-* *motif* number
+* *motif* number [duration pool]
 
 Prints a randomized phrase with notes in the key of `C` with durations
 
