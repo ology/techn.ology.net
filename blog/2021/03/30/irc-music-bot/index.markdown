@@ -45,6 +45,10 @@ Print out a chord name of the given notes for the *notes* command
 
 Generate a randomized phrase of `pitch.duration` elements for the number of given quarter-notes
 
+* [Music::Intervals](https://metacpan.org/pod/Music::Intervals)
+
+For computing the intervals between pitches
+
 ### Commands:
 
 * *leave*
@@ -74,4 +78,8 @@ Prints a chord name given the notes
 * *chord* C [C7|CM7|...]
 
 Prints the notes of a given named chord
+
+* *interval* C C# D D# ... B
+
+Prints the ratio and named intervals between the given pitches
 
