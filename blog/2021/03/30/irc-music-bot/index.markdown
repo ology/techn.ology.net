@@ -29,6 +29,8 @@ For the `vov` program
 
 * [Music::Scales](https://metacpan.org/pod/Music::Scales)
 
+Used to display scale notes and
+
 Used to select random scale notes for the *motif* command
 
 * [Music::Chord::Note](https://metacpan.org/pod/Music::Chord::Note)
@@ -82,4 +84,16 @@ Prints the notes of a given named chord
 * *interval* C C# D D# ... B
 
 Prints the ratio and named intervals between the given pitches
+
+* *key* 1b [1#|2b|2#|...]
+
+Prints the named key given the number of accidentals
+
+* *key* F [A|Gb|D#|...]
+
+Prints the number of accidentals given a named key
+
+* *scale* D minor
+
+Prints the notes of the given scale
 
