@@ -51,6 +51,12 @@ Generate a randomized phrase of `pitch.duration` elements for the number of give
 
 For computing the intervals between pitches
 
+* [Mojo::UserAgent](https://metacpan.org/pod/Mojo::UserAgent) and
+
+* [Mojo::DOM](https://metacpan.org/pod/Mojo::DOM)
+
+For finding out Billboard #1 hit songs
+
 ### Commands:
 
 * *leave*
@@ -96,4 +102,8 @@ Prints the number of accidentals given a named key
 * *scale* D minor
 
 Prints the notes of the given scale
+
+* *hit* 19700101
+
+Finds the Billboard #1 hit song for that date
 
