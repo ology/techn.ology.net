@@ -113,7 +113,7 @@ Prints the notes of the given scale
 
 Finds the Billboard #1 hit song for that date
 
-* *play* 70 4 C4.en C4.en G4.en G4.en A4.en A4.en G4.qn
+* *play* 70 4 2 C4.en C4.en G4.en G4.en A4.en A4.en G4.qn
 
-Creates an MP3 file given the BPM, MIDI patch and note phrase, repeated 4 times
+Creates an MP3 file given the BPM, MIDI patch, repeats, and note phrase
 
