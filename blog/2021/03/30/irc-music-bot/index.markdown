@@ -31,15 +31,15 @@ For the `vov` program
 
 Used to display scale notes and
 
-Used to select random scale notes for the *motif* command
+Used to select random scale notes
 
 * [Music::Chord::Note](https://metacpan.org/pod/Music::Chord::Note)
 
-Print out a note list given a chord name for the *chord* command
+Print out a note list given a chord name
 
 * [Music::Chord::Namer](https://metacpan.org/pod/Music::Chord::Namer)
 
-Print out a chord name of the given notes for the *notes* command
+Print out a chord name of the given notes
 
 * [Music::Duration::Partition](https://metacpan.org/pod/Music::Duration::Partition) and
 
@@ -85,11 +85,11 @@ Prints a randomized phrase with notes in the key of `C` with durations
 
 Prints chords in the key of `C`, representing the given Roman numeral phrase
 
-* *notes* C C# D D# ... B
+* *chord* C C# D D# ... B
 
 Prints a chord name given the notes
 
-* *chord* C [C7|CM7|...]
+* *notes* C [C7|CM7|...]
 
 Prints the notes of a given named chord
 
