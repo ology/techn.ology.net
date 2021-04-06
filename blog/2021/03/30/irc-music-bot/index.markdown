@@ -57,6 +57,12 @@ For computing the intervals between pitches
 
 For finding out Billboard #1 hit songs
 
+* [Syntax::Keyword::Try](https://metacpan.org/pod/Syntax::Keyword::Try) and
+
+* [MIDI::Util](https://metacpan.org/pod/MIDI::Util)
+
+Generate an MP3 file based on a given phrase
+
 ### Commands:
 
 * *leave*
@@ -106,4 +112,8 @@ Prints the notes of the given scale
 * *hit* 19700101
 
 Finds the Billboard #1 hit song for that date
+
+* *play* 70 4 C4.en C4.en G4.en G4.en A4.en A4.en G4.qn
+
+Creates an MP3 file given the BPM, MIDI patch and note phrase, repeated 4 times
 
