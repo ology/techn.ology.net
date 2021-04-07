@@ -117,3 +117,9 @@ Finds the Billboard #1 hit song for that date
 
 Creates an MP3 file given the BPM, MIDI patch, repeats, and note phrase
 
+* *range* instrument_name
+
+Prints the note-octave range for the given instrument
+
+Instruments: violin, viola, cello, bass, trumpet, trombone, french_horn, tuba, piccolo, flute, oboe, clarinet, alto_sax, tenor_sax, baritone_sax, bassoon, harp, harpsichord, piano, xylophone, glockenspiel, vibraphone, timpani, marimba, guitar
+
