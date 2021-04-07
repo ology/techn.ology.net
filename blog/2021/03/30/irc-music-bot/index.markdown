@@ -77,6 +77,12 @@ Prints a brief command string with examples
 
 Prints the github URL of the code for this bot
 
+* *patch* number (or partial name)
+
+Prints out the name of a MIDI musical instrument for a patch number or
+
+Prints out the MIDI instrument name and patch number for a name fragment
+
 * *motif* number [duration pool]
 
 Prints a randomized phrase with notes in the key of `C` with durations
