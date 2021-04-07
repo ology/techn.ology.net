@@ -123,5 +123,5 @@ Prints the note-octave range for the given instrument
 
 Instruments: violin, viola, cello, bass, trumpet, trombone, french_horn, tuba, piccolo, flute, oboe, clarinet, alto_sax, tenor_sax, baritone_sax, bassoon, harp, harpsichord, piano, xylophone, glockenspiel, vibraphone, timpani, marimba, guitar
 
-![instrument-ranges.jpg](instrument-ranges.jpg)
+[![instrument-ranges](instrument-ranges.jpg)](instrument-ranges.jpg)
 
