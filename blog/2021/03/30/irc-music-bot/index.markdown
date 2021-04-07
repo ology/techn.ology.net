@@ -55,7 +55,7 @@ For computing the intervals between pitches
 
 * [Mojo::DOM](https://metacpan.org/pod/Mojo::DOM)
 
-For finding out Billboard #1 hit songs
+For fetching web data
 
 * [Syntax::Keyword::Try](https://metacpan.org/pod/Syntax::Keyword::Try) and
 
@@ -118,6 +118,10 @@ Prints the notes of the given scale
 * *hit* 19700101
 
 Finds the Billboard #1 hit song for that date
+
+* *bwv* number (or a name like "Anh.208")
+
+Finds the Bach composition
 
 * *play* 70 4 2 C4.en C4.en G4.en G4.en A4.en A4.en G4.qn
 
