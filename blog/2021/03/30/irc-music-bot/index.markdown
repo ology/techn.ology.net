@@ -121,7 +121,11 @@ Finds the Billboard #1 hit song for that date
 
 * *bwv* number (or a name like "Anh.208")
 
-Finds the Bach composition
+Prints the information on the Bach composition
+
+* *bwv-url* number (or a name like "Anh.208")
+
+Prints the URL for the Bach composition
 
 * *play* 70 4 2 C4.en C4.en G4.en G4.en A4.en A4.en G4.qn
 
