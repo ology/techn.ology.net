@@ -123,6 +123,8 @@ Finds the Billboard #1 hit song for that date
 
 Prints the information on the Bach composition
 
+Please see the [list of Bach works](https://imslp.org/wiki/List_of_works_by_Johann_Sebastian_Bach) for more information.
+
 * *bwv url* number (or an appendix like "Anh_208")
 
 Prints the URL for the Bach composition
