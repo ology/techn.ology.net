@@ -123,7 +123,7 @@ Finds the Billboard #1 hit song for that date
 
 Prints the information on the Bach composition
 
-* *bwv-url* number (or a name like "Anh.208")
+* *bwv url* number (or an appendix like "Anh_208")
 
 Prints the URL for the Bach composition
 
