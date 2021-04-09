@@ -133,9 +133,11 @@ Prints the URL for the Bach composition
 
 Note that The "em dash" must be used if needing a hyphen in the argument e.g. Anh.133–150.
 
-#### *play* 70 4 2 C4.en C4.en G4.en G4.en A4.en A4.en G4.qn
+#### *play* number number number phrase
 
-Creates an MP3 file given the BPM, MIDI patch, repeats, and note phrase
+Creates an MP3 file given the arguments: BPM, MIDI patch, repeats, and note phrase
+
+For example: `play 70 4 2 C4.en C4.en G4.en G4.en A4.en A4.en G4.qn`
 
 #### *range* instrument_name
 
