@@ -131,7 +131,7 @@ Prints the number of accidentals given a named key
 
 Prints the notes of the given scale
 
-#### *hit* YYYYMMDD
+#### *hit* yyyymmdd
 
 Finds the Billboard #1 hit song for that date
 
