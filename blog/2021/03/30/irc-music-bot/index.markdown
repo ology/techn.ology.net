@@ -75,6 +75,10 @@ Prints a brief command string with examples
 
 Prints the github URL of the code for this bot
 
+#### *convert* name or number
+
+Converts between **midinum** and **ISO** note formats
+
 #### *patch* number (or partial name)
 
 Prints out the name of a MIDI musical instrument for a patch number or
