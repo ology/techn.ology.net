@@ -97,6 +97,8 @@ Prints a randomized phrase with notes in the key of `C` with durations
 
 Prints chords in the key of `C`, representing the given Roman numeral phrase
 
+For example: `vov I ii V/V`
+
 #### *chord* C C# D D# ... B
 
 Prints a chord name given the notes
@@ -117,7 +119,7 @@ Prints the named key given the number of accidentals
 
 Prints the number of accidentals given a named key
 
-#### *scale* D minor
+#### *scale* note scale
 
 Prints the notes of the given scale
 
@@ -125,7 +127,7 @@ Prints the notes of the given scale
 
 Finds the Billboard #1 hit song for that date
 
-#### *bwv* number (or a name like "Anh.208")
+#### *bwv* number (or an appendix name like "Anh.208")
 
 Prints the information on the Bach composition
 
@@ -143,7 +145,7 @@ Creates an MP3 file given the arguments: BPM, MIDI patch, repeats, and note phra
 
 For example: `play 70 4 2 C4.en C4.en G4.en G4.en A4.en A4.en G4.qn`
 
-#### *range* instrument_name
+#### *range* instrument
 
 Prints the note-octave range for the given instrument
 
