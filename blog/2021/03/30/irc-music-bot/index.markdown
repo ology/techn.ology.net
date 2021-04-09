@@ -81,6 +81,10 @@ Prints out the name of a MIDI musical instrument for a patch number or
 
 Prints out the MIDI instrument name and patch number for a name fragment
 
+* *freq* note number
+
+Prints out the number of overtone frequencies above the given note
+
 * *motif* number [duration pool]
 
 Prints a randomized phrase with notes in the key of `C` with durations
