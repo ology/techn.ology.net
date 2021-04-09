@@ -27,11 +27,9 @@ To import the configuration variables
 
 For the `vov` program
 
-* [Music::Scales](https://metacpan.org/pod/Music::Scales)
+* [Music::Scales](https://metacpan.org/pod/Music::Scales#SCALES)
 
-Used to display scale notes and
-
-Used to select random scale notes
+Used to display and select scale notes
 
 * [Music::Chord::Note](https://metacpan.org/pod/Music::Chord::Note)
 
