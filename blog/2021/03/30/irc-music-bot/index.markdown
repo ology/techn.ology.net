@@ -161,11 +161,11 @@ The BPM and repeats arguments are optional.  If left off they will default to 10
 
 If there are no patch changes, a piano will be used.
 
-Also, named chords are supported, and are indicated with a `=` symbol.
+Also, named chords are supported, and are indicated with a `=` symbol.  Octaves are given by a period followed by the number of the octave. The duration is further specified with another period followed by a duration (e.g. wn, hn, dqn, ten, etc.).  If not given, they default to octave `4` and duration `wn`.
 
-For example: `play 100 2 ^24 =C.4 =F.4 =G.3 =G.3 =F.4 =C.4`
+For example: `play 100 2 ^24 =C =F =G =G =F =C`
 
-Another example: `play =C7.4 =Dm7.4 =G.3 =G7.3 =F7.4 =C.4``
+Another example: `play =C7.5.qn =Dm7.5.qn =G.5.qn =G7.5.qn =F7.5.qn =C.5.qn``
 
 #### *range* instrument
 
