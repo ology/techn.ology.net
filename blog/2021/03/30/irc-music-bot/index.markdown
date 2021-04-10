@@ -63,6 +63,10 @@ For fetching web data
 
 Generate an MP3 file based on a given phrase
 
+* [MIDI::Drummer::Tiny](https://metacpan.org/pod/MIDI::Drummer::Tiny)
+
+Generate percussion
+
 ### Commands:
 
 #### *leave*
@@ -170,6 +174,20 @@ For example: `play 100 2 ^24 =C =F =G =G =F =C`
 Another example: `play =C7.5.qn =Dm7.5.qn =G.5.qn =G7.5.qn =F7.5.qn =C.5.qn`
 
 Please see the list of chord names [here](https://metacpan.org/release/Music-Chord-Note/source/lib/Music/Chord/Note.pm#L12)
+
+#### *perc* [number [number]] phrase
+
+Creates an MP3 file given the arguments: BPM, repeats, and percussion phrase
+
+Volume changes are indicated with a `~` symbol.
+
+For example: `perc 120 4 kick.qn snare.qn kick.en kick.en snare.qn`
+
+Two simultaneous strikes can be achieved in a `()` group:
+
+`perc (kick closed_hh).qn (snare closed_hh).qn (kick closed_hh).en kick.en (snare closed_hh).qn`
+
+Please see the percussion instrument names [here](https://metacpan.org/pod/MIDI::Drummer::Tiny#KIT) (and ignore the rest of that document)
 
 #### *range* instrument
 
