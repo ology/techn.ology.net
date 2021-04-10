@@ -149,7 +149,7 @@ Prints the URL for the Bach composition
 
 Note that The "em dash" must be used if needing a hyphen in the argument e.g. Anh.133–150.
 
-#### *play* number number phrase
+#### *play* [number [number]] phrase
 
 Creates an MP3 file given the arguments: BPM, repeats, and a note phrase with embedded patch changes
 
