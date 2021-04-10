@@ -165,7 +165,7 @@ Also, named chords are supported, and are indicated with a `=` symbol.  Octaves 
 
 For example: `play 100 2 ^24 =C =F =G =G =F =C`
 
-Another example: `play =C7.5.qn =Dm7.5.qn =G.5.qn =G7.5.qn =F7.5.qn =C.5.qn``
+Another example: `play =C7.5.qn =Dm7.5.qn =G.5.qn =G7.5.qn =F7.5.qn =C.5.qn`
 
 #### *range* instrument
 
