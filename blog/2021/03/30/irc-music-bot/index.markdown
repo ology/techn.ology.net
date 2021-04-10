@@ -115,11 +115,13 @@ Prints a chord name given the notes
 
 Prints the notes of a given named chord
 
-#### *interval* C C# D D# ... B
+#### *interval* C C# D [D# ... B] **or** a/b c/d e/f, where a to f are integers
 
-Prints the ratio and named intervals between the given pitches
+Prints the ratio and named intervals between the given pitches (or ratios) of a 3 note triad
 
 Please see the long list of named intervals [here](https://metacpan.org/source/GENE/Music-Intervals-0.0602/lib%2FMusic%2FIntervals%2FRatios.pm#L11)
+
+For example: `interval 1/1 5/4 3/2`
 
 #### *key* 1b [1#|2b|2#|...]
 
