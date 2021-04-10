@@ -109,7 +109,7 @@ Prints a chord name given the notes
 
 Prints the notes of a given named chord
 
-#### *interval* C C# D [D# ... B] **or** a/b c/d e/f, where a to f are integers
+#### *interval* C C# D [D# ... B] **or** a/b c/d e/f, where a-f are integers
 
 Prints the ratio and named intervals between the given pitches (or ratios) of a 3 note triad
 
