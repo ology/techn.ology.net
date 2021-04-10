@@ -153,6 +153,8 @@ Note that The "em dash" must be used if needing a hyphen in the argument e.g. An
 
 Creates an MP3 file given the arguments: BPM, repeats, and a note phrase with embedded patch changes
 
+A note is represented by a letter and optional accidental (`#` or `b`), the octave number, and then a period followed by a duration (e.g. wn, hn, dqn, ten, d96, etc.).
+
 Volume changes are indicated with a `~` symbol.  Patch changes are indicated with `^`.  Panning is `!`.  Each can be from `0` to `127`.
 
 For example: `play 70 2 ^0 ~100 C4.en C4.en G4.en G4.en ^70 ~127 A4.en A4.en G4.qn`
@@ -161,7 +163,7 @@ The BPM and repeats arguments are optional.  If left off they will default to 10
 
 If there are no patch changes, a piano will be used.
 
-Also, named chords are supported, and are indicated with a `=` symbol.  Octaves are given by a period followed by the number of the octave. The duration is further specified with another period followed by a duration (e.g. wn, hn, dqn, ten, etc.).  If not given, they default to octave `4` and duration `wn`.
+Also, named chords are supported, and are indicated with a `=` symbol.  Octaves are given by a period followed by the number of the octave. The duration is further specified with another period followed by a duration.  If not given, they default to octave `4` and duration `wn`.
 
 For example: `play 100 2 ^24 =C =F =G =G =F =C`
 
