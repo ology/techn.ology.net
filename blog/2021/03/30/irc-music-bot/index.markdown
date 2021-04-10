@@ -47,9 +47,7 @@ Print out a note list given a chord name
 
 Print out a chord name of the given notes
 
-* [Music::Duration::Partition](https://metacpan.org/pod/Music::Duration::Partition) and
-
-* [Data::Dumper::Compact](https://metacpan.org/pod/Data::Dumper::Compact)
+* [Music::Duration::Partition](https://metacpan.org/pod/Music::Duration::Partition) and [Data::Dumper::Compact](https://metacpan.org/pod/Data::Dumper::Compact)
 
 Generate a randomized phrase of `pitch.duration` elements for the number of given quarter-notes
 
@@ -57,15 +55,11 @@ Generate a randomized phrase of `pitch.duration` elements for the number of give
 
 For computing the intervals between pitches
 
-* [Mojo::UserAgent](https://metacpan.org/pod/Mojo::UserAgent) and
-
-* [Mojo::DOM](https://metacpan.org/pod/Mojo::DOM)
+* [Mojo::UserAgent](https://metacpan.org/pod/Mojo::UserAgent) and [Mojo::DOM](https://metacpan.org/pod/Mojo::DOM)
 
 For fetching web data
 
-* [Syntax::Keyword::Try](https://metacpan.org/pod/Syntax::Keyword::Try) and
-
-* [MIDI::Util](https://metacpan.org/pod/MIDI::Util)
+* [Syntax::Keyword::Try](https://metacpan.org/pod/Syntax::Keyword::Try) and [MIDI::Util](https://metacpan.org/pod/MIDI::Util)
 
 Generate an MP3 file based on a given phrase
 
