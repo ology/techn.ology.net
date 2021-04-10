@@ -21,7 +21,7 @@ To drive the whole thing!
 
 * [YAML::XS](https://metacpan.org/pod/distribution/YAML-LibYAML/lib/YAML/XS.pod)
 
-To import the configuration variables
+To import the configuration
 
 * [Music::Note](https://metacpan.org/pod/Music::Note)
 
