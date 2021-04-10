@@ -167,6 +167,8 @@ For example: `play 100 2 ^24 =C =F =G =G =F =C`
 
 Another example: `play =C7.5.qn =Dm7.5.qn =G.5.qn =G7.5.qn =F7.5.qn =C.5.qn`
 
+Please see the list of chord names [here](https://metacpan.org/release/Music-Chord-Note/source/lib/Music/Chord/Note.pm#L12)
+
 #### *range* instrument
 
 Prints the note-octave range for the given instrument
