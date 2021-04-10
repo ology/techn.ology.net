@@ -119,6 +119,8 @@ Prints the notes of a given named chord
 
 Prints the ratio and named intervals between the given pitches
 
+Please see the long list of named intervals [here](https://metacpan.org/source/GENE/Music-Intervals-0.0601/lib%2FMusic%2FIntervals%2FRatios.pm#L15)
+
 #### *key* 1b [1#|2b|2#|...]
 
 Prints the named key given the number of accidentals
