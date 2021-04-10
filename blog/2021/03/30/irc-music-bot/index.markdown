@@ -77,7 +77,7 @@ Causes the bot to /quit the network entirely
 
 #### *help*
 
-Prints a brief command string with examples
+Prints out the URL to this page!
 
 #### *source*
 
