@@ -49,7 +49,7 @@ Print out a chord name of the given notes
 
 * [Music::Duration::Partition](https://metacpan.org/pod/Music::Duration::Partition) and [Data::Dumper::Compact](https://metacpan.org/pod/Data::Dumper::Compact)
 
-Generate a randomized phrase of `pitch.duration` elements for the number of given quarter-notes
+Generate a randomized phrase of `pitch.duration` elements
 
 * [Music::Intervals](https://metacpan.org/pod/Music::Intervals)
 
