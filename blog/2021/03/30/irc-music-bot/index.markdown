@@ -29,7 +29,7 @@ To convert between note formats
 
 * [Music::Note::Frequency](https://metacpan.org/pod/Music::Note::Frequency)
 
-The get note frequencies
+To get note frequencies
 
 * [App::MusicTools](https://metacpan.org/pod/App::MusicTools)
 
