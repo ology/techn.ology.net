@@ -153,13 +153,19 @@ Note that The "em dash" must be used if needing a hyphen in the argument e.g. An
 
 Creates an MP3 file given the arguments: BPM, repeats, and a note phrase with embedded patch changes
 
-Patch changes are indicated with a `^`.
+Patch changes are indicated with a `^` symbol.
 
 For example: `play 70 2 ^0 C4.en C4.en G4.en G4.en ^70 A4.en A4.en G4.qn`
 
 The BPM and repeats arguments are optional.  If left off they will default to 100 and 2, respectively.
 
 If there are no patch changes, a piano will be used.
+
+Also, named chords are supported, and are indicated with a `=` symbol.
+
+For example: `play 100 2 ^24 =C.4 =F.4 =G.3 =G.3 =F.4 =C.4`
+
+Another example: `play =C7.4 =Dm7.4 =G.3 =G7.3 =F7.4 =C.4``
 
 #### *range* instrument
 
