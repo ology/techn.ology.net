@@ -35,7 +35,7 @@ To get note frequencies
 
 For the `vov` program
 
-* [Music::Scales](https://metacpan.org/pod/Music::Scales#SCALES)
+* [Music::Scales](https://metacpan.org/pod/Music::Scales)
 
 Used to display and select scale notes
 
@@ -130,6 +130,8 @@ Prints the number of accidentals given a named key
 #### *scale* note scale
 
 Prints the notes of the given scale
+
+Please see the list of scales [here](https://metacpan.org/pod/Music::Scales#SCALES)
 
 #### *hit* yyyymmdd
 
