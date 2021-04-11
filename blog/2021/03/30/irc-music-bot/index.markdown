@@ -189,6 +189,24 @@ Two simultaneous strikes can be achieved in a `()` group:
 
 Please see the percussion instrument names [here](https://metacpan.org/pod/MIDI::Drummer::Tiny#KIT) (and ignore the rest of that document)
 
+Conveniently, these abbreviations may be used when making a phrase:
+
+  oh => open_hh
+  ch => closed_hh
+  ph => pedal_hh
+  c1 => crash1
+  c2 => crash2
+  r1 => ride1
+  r2 => ride2
+  rb => ride_bell
+  sn => snare
+  es => electric_snare
+  ht => hi_tom
+  mt => hi_mid_tom
+  ft => hi_floor_tom
+  bd => kick
+  eb => electric_bass
+
 #### *range* instrument
 
 Prints the note-octave range for the given instrument
