@@ -65,6 +65,8 @@ Generate an MP3 file based on a given phrase
 
 * [MIDI::Drummer::Tiny](https://metacpan.org/pod/MIDI::Drummer::Tiny)
 
+* A server to host MP3 files and run the fretboard diagram app
+
 Generate percussion
 
 ### Commands:
@@ -146,6 +148,10 @@ Please see the list of scales [here](https://metacpan.org/pod/Music::Scales#SCAL
 #### *hit* yyyymmdd
 
 Finds the Billboard #1 hit song for that date
+
+#### *fret* x02220 1
+
+Prints the URL to a guitar fretboard diagram given the fingering and neck position arguments
 
 #### *bwv* number (or an appendix name like "Anh.208")
 
