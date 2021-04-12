@@ -161,9 +161,11 @@ Note that The "em dash" must be used if needing a hyphen in the argument e.g. An
 
 #### *play* [number [number]] phrase
 
-Creates an MP3 file given the arguments: BPM, repeats, and a note phrase with embedded patch changes
+Creates an MP3 file given the arguments: BPM, repeats, and a note phrase with embedded patch, volume and panning changes
 
 A note is represented by a letter and optional accidental (`#` or `b`), the octave number, and then a period followed by a duration (e.g. wn, hn, dqn, ten, d96, etc.).
+
+The `d96` duration is the "raw tick" value of the handy abbreviations.  These may be used for tied notes.  96 ticks are equal to one quarter note.  `d336` would be a tie of 3.5 notes.
 
 Volume changes are indicated with a `~` symbol.  Patch changes are indicated with `^`.  Panning is `!`.  Each can be from `0` to `127`.
 
