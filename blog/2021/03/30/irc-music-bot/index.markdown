@@ -123,6 +123,12 @@ Please see the long list of named intervals [here](https://metacpan.org/source/G
 
 For example: `interval 1/1 5/4 3/2`
 
+#### *ratio* C [G, F, pm3, pM3 ...]
+
+#### *ratio* 1/1 [3/2, 4/3, 32/27, 81/64 ...]
+
+Prints the description and numeric ratio for the given named pitch **or** the pitch name for a given numeric ratio
+
 #### *key* 1b [1#|2b|2#|...]
 
 Prints the named key given the number of accidentals
