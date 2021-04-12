@@ -119,8 +119,6 @@ Prints the notes of a given named chord
 
 Prints the intervals between the given two or three named pitches or ratios
 
-Please see the long list of named intervals [here](https://metacpan.org/source/GENE/Music-Intervals-0.0602/lib%2FMusic%2FIntervals%2FRatios.pm#L11)
-
 For example: `interval 1/1 5/4 3/2`
 
 #### *ratio* C [G, F, pm3, pM3 ...]
@@ -128,6 +126,8 @@ For example: `interval 1/1 5/4 3/2`
 #### *ratio* 1/1 [3/2, 4/3, 32/27, 81/64 ...]
 
 Prints the description and numeric ratio for the given named pitch **or** the pitch name for a given numeric ratio
+
+Please see the long list of named intervals and ratios [here](https://metacpan.org/release/Music-Intervals/source/lib/Music/Intervals/Ratios.pm#L11)
 
 #### *key* 1b [1#|2b|2#|...]
 
