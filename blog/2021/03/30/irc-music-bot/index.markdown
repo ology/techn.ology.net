@@ -117,7 +117,7 @@ Prints the notes of a given named chord
 
 #### *interval* a/b c/d e/f, where a-f are integers
 
-Prints the intervals between the given three named pitches or ratios
+Prints the intervals between the given two or three named pitches or ratios
 
 Please see the long list of named intervals [here](https://metacpan.org/source/GENE/Music-Intervals-0.0602/lib%2FMusic%2FIntervals%2FRatios.pm#L11)
 
