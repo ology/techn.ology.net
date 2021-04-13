@@ -59,7 +59,7 @@ For computing the intervals between pitches
 
 For fetching web data
 
-* [Syntax::Keyword::Try](https://metacpan.org/pod/Syntax::Keyword::Try) and [MIDI::Util](https://metacpan.org/pod/MIDI::Util)
+* [Syntax::Keyword::Try](https://metacpan.org/pod/Syntax::Keyword::Try) and [MIDI::Util](https://metacpan.org/pod/MIDI::Util) and [MP3::Tag](https://metacpan.org/pod/MP3::Tag)
 
 Generate an MP3 file based on a given phrase
 
