@@ -71,6 +71,10 @@ Optional
 
 Produce a drum track
 
+* [MIDI::Chord::Guitar](https://metacpan.org/pod/MIDI::Chord::Guitar)
+
+Prints out guitar chord neck position fingerings
+
 Generate percussion
 
 ### Commands:
@@ -152,6 +156,12 @@ Please see the list of scales [here](https://metacpan.org/pod/Music::Scales#SCAL
 #### *hit* yyyymmdd
 
 Finds the Billboard #1 hit song for that date
+
+#### *fingering* D3 m
+
+Show the fingerings for the note and chord
+
+Please see the known chords [here](https://metacpan.org/source/GENE/MIDI-Chord-Guitar-0.0603/share%2Fmidi-guitar-chord-voicings.csv)
 
 #### *fret* x02220 1
 
