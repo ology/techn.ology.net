@@ -63,9 +63,13 @@ For fetching web data
 
 Generate an MP3 file based on a given phrase
 
+* A server to host MP3 files and run the fretboard diagram app
+
+Optional
+
 * [MIDI::Drummer::Tiny](https://metacpan.org/pod/MIDI::Drummer::Tiny)
 
-* A server to host MP3 files and run the fretboard diagram app
+Produce a drum track
 
 Generate percussion
 
