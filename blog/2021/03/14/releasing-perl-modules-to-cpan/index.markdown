@@ -82,6 +82,7 @@ Commit everything to github:
     git add .
     git commit -a -m 'Initial commit'
     git remote add origin git@github.com:your_github_id/Your-Module-Name.git
+    git branch -M main
     git push -u origin main
 
 Install the dependencies for your module:
