@@ -58,7 +58,7 @@ Finally, write the score to a MIDI file, named after the program:
 
     $score->write_score("$0.mid");
 
-And what does this sound like?  Well here are the first 64 prime numbers ([OEIS A000040](https://oeis.org/A000040)):
+And what does this sound like?  Well here are the 58 prime numbers in the sequence [OEIS A000040](https://oeis.org/A000040):
 
 [oeis-40.mp3](oeis-40.mp3)
 
