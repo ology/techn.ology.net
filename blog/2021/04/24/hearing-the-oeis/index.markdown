@@ -61,7 +61,7 @@ And what does this sound like?  Well here are the first 64 prime numbers ([OEIS 
 
 [oeis-40.mp3](oeis-40.mp3)
 
-And here are the Fibonacci numbers ([OEIS A000045](https://oeis.org/A000045)):
+And here are the first 64 Fibonacci numbers ([OEIS A000045](https://oeis.org/A000045)):
 
 [oeis-45.mp3](oeis-45.mp3)
 
