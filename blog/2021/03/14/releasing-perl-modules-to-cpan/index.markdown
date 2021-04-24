@@ -77,20 +77,23 @@ Merge your module with the generated one (with an editor like [vim](https://www.
 
     vim -O ~/sandbox/Your-Module-Name/lib/Your/Module/Name.pm lib/Your/Module/Name.pm
 
-Install the dependencies for your module:
-
-    dzil installdeps
-
-Generate a license file:
-
-    dzil regenerate
-
 Commit everything to github:
 
     git add .
     git commit -a -m 'Initial commit'
     git remote add origin git@github.com:your_github_id/Your-Module-Name.git
     git push -u origin main
+
+Install the dependencies for your module:
+
+    dzil installdeps
+
+Generate a license file and add it to git:
+
+    dzil regenerate
+    git add LICENSE
+    git commit -m 'Initial commit' LICENSE
+    git push
 
 Test your distribution:
 
