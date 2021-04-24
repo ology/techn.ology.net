@@ -8,6 +8,7 @@ tags:
   - audio
 ---
 
+![oeis-logo.jpg](oeis-logo.jpg)
 What does a number sequence "sound like"?
 
 ---
