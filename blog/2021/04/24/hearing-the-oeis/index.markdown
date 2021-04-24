@@ -47,10 +47,10 @@ Inspect each term of the OEIS sequence.  Find the modulo between this term and t
 
     my $i = 0;
     for my $n (oeis($oeis, $limit)) {
-        $i++;
         my $mod = $n % @scale;
         my $note = $scale[$mod];
-        print "$i. n: $n, mod ", scalar(@scale), ": $mod, note: $note\n";
+        printf "%d. n: %d, mod %d: %d, note: %d\n",                                                                                                                              
+            ++$i, $n, scalar(@scale), $mod, $note;
         $score->n('qn', $note);
     }
 
