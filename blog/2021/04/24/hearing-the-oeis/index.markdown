@@ -29,7 +29,7 @@ Declare the modules and functions to use:
     use Music::Scales qw(get_scale_MIDI);
     use OEIS qw(oeis);
 
-Declare and assign the program parameters as command-line arguments:
+Declare and assign the program parameters (which can be given as command-line arguments):
 
     my $oeis   = shift || die "Usage: perl $0 oeis-number [how-many scale bpm patch octave]\n";
     my $limit  = shift || 64;
