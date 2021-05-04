@@ -161,7 +161,7 @@ Finds the Billboard #1 hit song for that date
 
 Show the fingerings for the note and chord
 
-Please see the known chords [here](https://metacpan.org/source/GENE/MIDI-Chord-Guitar-0.0603/share%2Fmidi-guitar-chord-voicings.csv)
+Please see the known chords [here](https://metacpan.org/source/GENE/MIDI-Chord-Guitar-0.0604/share%2Fmidi-guitar-chord-voicings.csv)
 
 #### *fret* x02220 1
 
