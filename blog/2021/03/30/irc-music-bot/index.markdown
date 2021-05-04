@@ -215,7 +215,7 @@ Two simultaneous strikes can be achieved in a `()` group:
 
 `perc (kick closed_hh).qn (snare closed_hh).qn (kick closed_hh).en kick.en (snare closed_hh).qn`
 
-Please see the percussion instrument names [here](https://metacpan.org/pod/MIDI::Drummer::Tiny#KIT) (and ignore the rest of that document)
+Please see the percussion instrument names [here](https://metacpan.org/pod/MIDI::Drummer::Tiny#kit) (and ignore the rest of that document)
 
 Conveniently, these abbreviations may be used when making a phrase:
 
