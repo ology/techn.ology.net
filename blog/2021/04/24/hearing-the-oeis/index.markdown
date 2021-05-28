@@ -19,15 +19,19 @@ Let's join [MIDI-Perl](https://metacpan.org/release/MIDI-Perl) with the [OEIS mo
 
 Let's get to it.  The code is super simple:
 
+<%= highlight perl => begin %>
     #!/usr/bin/env perl
     use strict;
     use warnings;
+<% end %>
 
 Declare the modules and functions to use:
 
+<%= highlight perl => begin %>
     use MIDI::Util qw(setup_score);
     use Music::Scales qw(get_scale_MIDI);
     use OEIS qw(oeis);
+<% end %>
 
 Declare and assign the program parameters (which can be given as command-line arguments):
 
