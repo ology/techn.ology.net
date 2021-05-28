@@ -220,8 +220,8 @@ Conveniently, these abbreviations may be used when making a phrase:
     ph => pedal_hh
     c1 => crash1
     c2 => crash2
-    cn => 'china',
-    sp => 'splash',
+    cn => china
+    sp => splash
     r1 => ride1
     r2 => ride2
     rb => ride_bell
