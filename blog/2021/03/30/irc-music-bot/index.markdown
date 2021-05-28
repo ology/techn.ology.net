@@ -13,8 +13,7 @@ tl;dr: [irc-bot](https://github.com/ology/Miscellaneous/blob/master/irc-bot)
 
 ---
 
-Ingredients:
-============
+### Ingredients:
 
 * [Mojo::IRC](https://metacpan.org/pod/Mojo::IRC)
 
@@ -74,8 +73,7 @@ Produce a drum track
 
 Prints out guitar chord neck position fingerings
 
-Commands:
-=========
+### Commands:
 
 #### *leave*
 
