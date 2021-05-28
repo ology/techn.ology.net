@@ -13,9 +13,8 @@ tl;dr: [irc-bot](https://github.com/ology/Miscellaneous/blob/master/irc-bot)
 
 ---
 
-### Ingredients:
-
----
+Ingredients:
+============
 
 * [Mojo::IRC](https://metacpan.org/pod/Mojo::IRC)
 
@@ -67,8 +66,6 @@ Generate an MP3 file based on a given phrase
 
 * A server to host MP3 files and run the fretboard diagram app
 
-Optional
-
 * [MIDI::Drummer::Tiny](https://metacpan.org/pod/MIDI::Drummer::Tiny)
 
 Produce a drum track
@@ -77,11 +74,8 @@ Produce a drum track
 
 Prints out guitar chord neck position fingerings
 
-Generate percussion
-
-### Commands:
-
----
+Commands:
+=========
 
 #### *leave*
 
