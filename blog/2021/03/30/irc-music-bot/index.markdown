@@ -9,7 +9,7 @@ tags:
 
 Sometimes I hang out in an IRC channel with fellow musicians.  So I wrote a handy bot that does a couple musical things...
 
-tl;dr: [irc-bot](https://github.com/ology/Miscellaneous/blob/master/irc-bot)
+tl;dr: [irc-bot](https://github.com/ology/Music/blob/master/irc-bot)
 
 ---
 
