@@ -15,6 +15,8 @@ tl;dr: [irc-bot](https://github.com/ology/Miscellaneous/blob/master/irc-bot)
 
 ### Ingredients:
 
+---
+
 * [Mojo::IRC](https://metacpan.org/pod/Mojo::IRC)
 
 To drive the whole thing!
@@ -78,6 +80,8 @@ Prints out guitar chord neck position fingerings
 Generate percussion
 
 ### Commands:
+
+---
 
 #### *leave*
 
