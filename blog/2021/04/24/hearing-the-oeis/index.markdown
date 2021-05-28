@@ -1,4 +1,4 @@
----                                                                                                                                                                          
+---
 status: published
 title: Hearing the OEIS
 tags:
@@ -58,7 +58,7 @@ my $i = 0;
 for my $n (oeis($oeis, $limit)) {
     my $mod = $n % @scale;
     my $note = $scale[$mod];
-    printf "%d. n: %d, mod %d: %d, note: %d\n",                                                                                                                              
+    printf "%d. n: %d, mod %d: %d, note: %d\n",
         ++$i, $n, scalar(@scale), $mod, $note;
     $score->n('qn', $note);
 }
