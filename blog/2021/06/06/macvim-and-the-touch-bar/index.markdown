@@ -10,7 +10,7 @@ You can add custom buttons to the [Apple Touch Bar](https://support.apple.com/gu
 
 ---
 
-From [this gist](https://gist.github.com/0x4a616e/31f58e02ffd5d49bb0865c3dce0b5a08), I learned about how to customize the touch bar in vim.  This is something that I have desired for, forever - i.e. having my own, personal vim buttons.  You can do this with gamer keypads, even foot pedals, etc.
+From [this gist](https://gist.github.com/0x4a616e/31f58e02ffd5d49bb0865c3dce0b5a08), I learned about how to customize the touch bar in vim.  This is something that I have desired forever.  That is, having my own, personal vim buttons.  You can do this with gamer keypads, even foot pedals, etc.  But the touch bar! Shiny!
 
 Anyway, just add a line like this to your .vimrc file:
 
