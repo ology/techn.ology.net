@@ -5,6 +5,7 @@ tags:
   - software
 ---
 
+[touchbar-buttons](touchbar-buttons-01-sm.jpg)
 You can add custom buttons to the [Apple Touch Bar](https://support.apple.com/guide/mac-help/touch-bar-mchlbfd5b039/mac) when using [MacVim](https://github.com/macvim-dev/macvim#readme).
 
 ---
@@ -18,5 +19,7 @@ Anyway, just add a line like this to your .vimrc file:
 This adds a touchbar button that opens the "vim buffer explorer."
 
 Save and reopen MacVim. Voila!
+
+[touchbar-buttons](touchbar-buttons-01.jpg)
 
 (By the way, I don't think you can remove the MacVim "Fullscreen" button.)
