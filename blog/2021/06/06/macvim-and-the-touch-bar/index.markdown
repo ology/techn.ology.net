@@ -22,4 +22,6 @@ Save and reopen MacVim. Voila!
 
 ![touchbar-buttons](touchbar-buttons-01.jpg)
 
-(By the way, I don't think you can remove the MacVim "Fullscreen" button.)
+This shows (on my 2017 model Touch Bar) the following "virtual" buttons: Escape, Full-screen, Previous tab, Open new tab, Next tab, Open the vim explorer, Previous git hunk, Toggle the fabulous [gitgutter plugin]() on or off, Next git hunk.  These are actions that I need to do periodically in vim.
+
+(By the way, I don't think you can remove the MacVim "Full-screen" button.)
