@@ -56,6 +56,10 @@ site:
     # plugins: These are plugins that can add features and alter the
     # content of the site.
     plugins:
+        highlight:
+            $class: 'Statocles::Plugin::Highlight'
+            $args:
+                style: 'default'
 #        lint:
 #            $class: 'Statocles::Plugin::HTMLLint'
         link_check:
