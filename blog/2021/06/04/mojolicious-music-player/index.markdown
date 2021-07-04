@@ -15,7 +15,9 @@ tl;dr: [audio-stream](https://github.com/ology/Miscellaneous/blob/master/audio-s
 
 I have an external drive with 30+ straight days of music, and have two desires: 1) To be able to play through this library in "shuffle" mode, returning a random tune each time.  And 2) to be able to search for arbitrary keywords.
 
-So, yes, there are plenty of full-featured audio players out there.  [VLC](https://www.videolan.org/) for instance.  But none written by me. Haha.  Also, it has the advantages of being super lightweight and playable from any machine on the nextwork too.
+So, yes, there are plenty of full-featured audio players out there.  [VLC](https://www.videolan.org/) for instance.  But none written by me. Haha.  Also, it has the advantages of being super lightweight and playable from any machine on the network too.
+
+![audio-player](audio-player.png)
 
 Let's get to it.  There are two parts: The code and the audio library itself.  The audio library goes under a subdirectory named "public".  In my case, my audio files are on an external drive.  So do these steps:
 
@@ -142,5 +144,9 @@ Pretty simple so far!
 
 Next up is the single, but complex template full of Mojolicious and JavaScript things.  Unfortunately my Mojolicious based blog engine, [Statocles](https://metacpan.org/pod/Statocles) tries to interpolate any template examples I show here!  So I will leave understanding that part up to the reader!
 
-![audio-player](audio-player.png)
+Anyway, to start this program, just run the Mojolicious included development server, "morbo":
+
+    audio-stream $ morbo audio-stream
+
+And browse to http://127.0.0.1:3000/ - Voila!
 
