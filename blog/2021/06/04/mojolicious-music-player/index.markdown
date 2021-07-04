@@ -150,3 +150,9 @@ Anyway, to start this program, just run the Mojolicious included development ser
 
 And browse to http://127.0.0.1:3000/ - Voila!
 
+~
+
+*UPDATE* - Now with [Bootstrap](https://getbootstrap.com/):
+
+![audio-player-phone](audio-player-phone.png)
+
