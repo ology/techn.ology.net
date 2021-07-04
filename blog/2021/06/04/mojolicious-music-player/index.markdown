@@ -1,0 +1,145 @@
+---
+status: published
+title: Mojolicious Music Player
+tags:
+    - audio
+    - perl
+    - software
+---
+
+Can you build an audio player from perl (https://mojolicious.org/)[Mojolicious]?  Yes!
+
+tl;dr: (https://github.com/ology/Miscellaneous/blob/master/audio-stream)[audio-stream]
+
+---
+
+I have an external drive with 30+ straight days of music, and have two desires: 1) To be able to play through this library in "shuffle" mode, returning a random tune each time.  And 2) to be able to search for arbitrary keywords.
+
+So, yes, there are plenty of full-featured audio players out there.  (https://www.videolan.org/)[VLC] for instance.  But none written by me. Haha.
+
+Let's get to it.  There are two parts: The code and the audio library itself.  The audio library goes under a subdirectory named "public".  In my case, my audio files are on an external drive.  So do these steps:
+
+    mkdir audio-stream
+    # Then copy the program here.
+    mkdir public
+    cd public
+    ln -s /media/gene/New Volume/Audio/  # But with your folder
+    cd ..
+
+Now for the code.  First up, declare the libraries of functionality to use:
+
+    use File::Find::Rule;
+    use Mojolicious::Lite -signatures;
+    use Number::Format;
+    use Storable qw(retrieve store);
+
+(https://metacpan.org/pod/File::Find::Rule)[File::Find::Rule] recursively gathers all interesting files.  (https://metacpan.org/pod/Mojolicious::Lite)[Mojolicious::Lite] is the web framework upon which this program is based.  (https://metacpan.org/pod/Number::Format)[Number::Format] just puts a comma in the total number of tracks that is displayed.  (https://metacpan.org/pod/Storable)[Storable] saves and retrieves the file of tracks that is used to actually locate the audio.
+
+Next, the physical locations of the audio are defined:
+
+    use constant PATH => 'public/Audio/'; # Where the audio files live
+    use constant DAT  => "$0.dat";        # The tracks file
+
+Now for the first Mojolicious::Lite endpoint:
+
+    get '/' => sub ($c) {
+      my $autoadvance = $c->param('autoadvance') || 0;
+      my $autoplay    = $c->param('autoplay') || 0;
+      my $current     = $c->param('current') || 0;
+      my $shuffle     = $c->param('shuffle') || 0;
+      my $query       = $c->param('query') || '';
+      my $submit      = $c->param('submit') || '';
+
+This says, "When '/' is visited, capture a half-dozen parameters."  These parameters determine the behavior of the program.
+
+      my $audio = []; # Bucket for all tracks
+      my $match = []; # Bucket for all matches if given a query
+
+A couple buckets are declared to hold the audio that is found.  And the first is set to the tracks file, declared above:
+
+      $audio = retrieve(DAT) if -e DAT;
+
+As promised, we re-format the total number of tracks to have a thousands separator comma:
+
+      my $nf = Number::Format->new;
+      my $total = $nf->format_number(scalar @$audio);
+
+Now if there is a query parameter provided to the endpoint, brute force through every track, looking for matches between the track name and the query:
+
+      if ($query) {
+        for my $n (0 .. $#$audio) {
+          push @$match, $n if lc($audio->[$n]) =~ /$query/i;
+        }
+
+Then if shuffling, get a random member of the matches. Otherwise increment the track:
+
+        $current = $shuffle ? $match->[int rand @$match] : $current + 1;
+      }
+      else {
+
+If there is no query and shuffling is called for, get a random audio track index from the complete library of audio. Otherwise increment:
+
+        $current = $shuffle ? int(rand @$audio) : $current + 1;
+      }
+
+Normally a track is selected next.  But when a search query has been freshly submitted, do not select a track to display.
+
+      my $track = $submit ? '' : $audio->[$current];
+
+For this main endpoint, pass the interesting variables to the template (named "index") for rendering on the web:
+
+      $c->render(
+        template    => 'index',
+        total       => $total,
+        audio       => $audio,
+        track       => $track,
+        autoplay    => $autoplay,
+        autoadvance => $autoadvance,
+        current     => $current,
+        shuffle     => $shuffle,
+        query       => $query,
+        match       => $match,
+      );
+
+Give the endpoint a name, so that it can be referred to in the code and template:
+
+    } => 'index';
+
+Now for the second Mojolicious::Lite endpoint, whose intention is to recreate the track list:
+
+    get '/refresh' => sub ($c) {
+
+First, gather all the interesting files for the track list:
+
+      my @files = File::Find::Rule->file()
+                                  ->name('*.mp3', '*.m4a')
+                                  ->in(PATH);
+
+And remove "public" from the filename, since that is part of the underlying framework itself:
+
+      for my $file (@files) {
+        $file =~ s/^public//;
+      }
+
+Next, save the files to disk:
+
+      store \@files, DAT;
+
+Lastly, redirect back to the main page:
+
+      $c->redirect_to($c->url_for('index'));
+
+But name the endpoint for good measure:
+
+    } => 'refresh';
+
+Finally, start the application:
+
+    app->start;
+
+Pretty simple so far!
+
+Next up is the single, but complex template full of Mojolicious and JavaScript things.  Unfortunately my Mojolicious based blog engine, (https://metacpan.org/pod/Statocles)[Statocles] tries to interpolate any template examples I show here!  So I will leave understanding that part up to the reader!
+
+[audio-player](audio-player.png)
+
