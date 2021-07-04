@@ -20,7 +20,8 @@ So, yes, there are plenty of full-featured audio players out there.  [VLC](https
 Let's get to it.  There are two parts: The code and the audio library itself.  The audio library goes under a subdirectory named "public".  In my case, my audio files are on an external drive.  So do these steps:
 
     mkdir audio-stream
-    # Then copy the program here.
+    cd audio-stream
+    # Copy the program here.
     mkdir public
     cd public
     ln -s /media/gene/New Volume/Audio/  # But with your folder
