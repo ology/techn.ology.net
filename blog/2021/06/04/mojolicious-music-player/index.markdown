@@ -142,5 +142,5 @@ Pretty simple so far!
 
 Next up is the single, but complex template full of Mojolicious and JavaScript things.  Unfortunately my Mojolicious based blog engine, [Statocles](https://metacpan.org/pod/Statocles) tries to interpolate any template examples I show here!  So I will leave understanding that part up to the reader!
 
-[audio-player](audio-player.png)
+![audio-player](audio-player.png)
 
