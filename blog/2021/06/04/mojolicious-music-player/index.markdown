@@ -15,7 +15,7 @@ tl;dr: (https://github.com/ology/Miscellaneous/blob/master/audio-stream)[audio-s
 
 I have an external drive with 30+ straight days of music, and have two desires: 1) To be able to play through this library in "shuffle" mode, returning a random tune each time.  And 2) to be able to search for arbitrary keywords.
 
-So, yes, there are plenty of full-featured audio players out there.  (https://www.videolan.org/)[VLC] for instance.  But none written by me. Haha.
+So, yes, there are plenty of full-featured audio players out there.  (https://www.videolan.org/)[VLC] for instance.  But none written by me. Haha.  Also, it has the advantages of being super lightweight and playable from any machine on the nextwork too.
 
 Let's get to it.  There are two parts: The code and the audio library itself.  The audio library goes under a subdirectory named "public".  In my case, my audio files are on an external drive.  So do these steps:
 
