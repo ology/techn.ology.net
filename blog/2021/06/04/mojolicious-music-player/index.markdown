@@ -7,7 +7,7 @@ tags:
     - software
 ---
 
-Can you build an audio player from perl [Mojolicious](https://mojolicious.org/])?  Yes!
+Can you build an audio player from perl [Mojolicious](https://mojolicious.org/)?  Yes!
 
 tl;dr: [audio-stream](https://github.com/ology/Miscellaneous/blob/master/audio-stream)
 
