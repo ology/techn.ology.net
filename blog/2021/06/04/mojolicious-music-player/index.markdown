@@ -7,15 +7,15 @@ tags:
     - software
 ---
 
-Can you build an audio player from perl [https://mojolicious.org/](Mojolicious)?  Yes!
+Can you build an audio player from perl [Mojolicious](https://mojolicious.org/])?  Yes!
 
-tl;dr: [https://github.com/ology/Miscellaneous/blob/master/audio-stream](audio-stream)
+tl;dr: [audio-stream](https://github.com/ology/Miscellaneous/blob/master/audio-stream)
 
 ---
 
 I have an external drive with 30+ straight days of music, and have two desires: 1) To be able to play through this library in "shuffle" mode, returning a random tune each time.  And 2) to be able to search for arbitrary keywords.
 
-So, yes, there are plenty of full-featured audio players out there.  [https://www.videolan.org/](VLC) for instance.  But none written by me. Haha.  Also, it has the advantages of being super lightweight and playable from any machine on the nextwork too.
+So, yes, there are plenty of full-featured audio players out there.  [VLC](https://www.videolan.org/) for instance.  But none written by me. Haha.  Also, it has the advantages of being super lightweight and playable from any machine on the nextwork too.
 
 Let's get to it.  There are two parts: The code and the audio library itself.  The audio library goes under a subdirectory named "public".  In my case, my audio files are on an external drive.  So do these steps:
 
@@ -33,7 +33,7 @@ Now for the code.  First up, declare the libraries of functionality to use:
     use Number::Format;
     use Storable qw(retrieve store);
 
-[https://metacpan.org/pod/File::Find::Rule](File::Find::Rule) recursively gathers all interesting files.  [https://metacpan.org/pod/Mojolicious::Lite](Mojolicious::Lite) is the web framework upon which this program is based.  [https://metacpan.org/pod/Number::Format](Number::Format) just puts a comma in the total number of tracks that is displayed.  [https://metacpan.org/pod/Storable](Storable) saves and retrieves the file of tracks that is used to actually locate the audio.
+[File::Find::Rule](https://metacpan.org/pod/File::Find::Rule) recursively gathers all interesting files.  [Mojolicious::Lite](https://metacpan.org/pod/Mojolicious::Lite) is the web framework upon which this program is based.  [Number::Format](https://metacpan.org/pod/Number::Format) just puts a comma in the total number of tracks that is displayed.  [Storable](https://metacpan.org/pod/Storable) saves and retrieves the file of tracks that is used to actually locate the audio.
 
 Next, the physical locations of the audio are defined:
 
@@ -139,7 +139,7 @@ Finally, start the application:
 
 Pretty simple so far!
 
-Next up is the single, but complex template full of Mojolicious and JavaScript things.  Unfortunately my Mojolicious based blog engine, [https://metacpan.org/pod/Statocles](Statocles) tries to interpolate any template examples I show here!  So I will leave understanding that part up to the reader!
+Next up is the single, but complex template full of Mojolicious and JavaScript things.  Unfortunately my Mojolicious based blog engine, [Statocles](https://metacpan.org/pod/Statocles) tries to interpolate any template examples I show here!  So I will leave understanding that part up to the reader!
 
 [audio-player](audio-player.png)
 
