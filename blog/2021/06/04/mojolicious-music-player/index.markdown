@@ -147,7 +147,7 @@ Next up is the single, but complex template full of Mojolicious and JavaScript t
 
 Anyway, to start this program, just run the Mojolicious included development server, "morbo":
 
-    audio-stream $ morbo audio-stream
+    audio-player $ morbo audio-player
 
 And browse to [http://127.0.0.1:3000/refresh](http://127.0.0.1:3000/refresh) - Voila!
 
