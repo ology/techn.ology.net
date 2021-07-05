@@ -149,5 +149,5 @@ Anyway, to start this program, just run the Mojolicious included development ser
 
     audio-stream $ morbo audio-stream
 
-And browse to http://127.0.0.1:3000/ - Voila!
+And browse to [http://127.0.0.1:3000/refresh](http://127.0.0.1:3000/refresh) - Voila!
 
