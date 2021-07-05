@@ -9,7 +9,7 @@ tags:
 
 Can you build an audio player from perl [Mojolicious](https://mojolicious.org/)?  Yes!
 
-tl;dr: [audio-stream](https://github.com/ology/Miscellaneous/blob/master/audio-stream)
+tl;dr: [audio-player](https://github.com/ology/audio-player)
 
 ---
 
@@ -21,12 +21,10 @@ So, yes, there are plenty of full-featured audio players out there.  [VLC](https
 
 Let's get to it.  There are two parts: The code and the audio library itself.  The audio library goes under a subdirectory named "public".  In my case, my audio files are on an external drive.  So do these steps:
 
-    mkdir audio-stream
-    cd audio-stream
-    # Copy the program here.
-    mkdir public
+    git clone https://github.com/ology/audio-player
+    cd audio-player
     cd public
-    ln -s /media/gene/New Volume/Audio/  # But with your folder
+    ln -s /media/gene/External/Music/ Audio/  # But with your folder
     cd ..
 
 Now for the code.  First up, declare the libraries of functionality to use:
