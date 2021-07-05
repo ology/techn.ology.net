@@ -26,6 +26,9 @@ Let's get to it.  There are two parts: The code and the audio library itself.  T
     cd public
     ln -s /media/gene/External/Music/ Audio/  # But with your folder
     cd ..
+    morbo audio-player
+    # Now visit the app refresh endpoint with any browser
+    curl http://127.0.0.1:3000/refresh
 
 Now for the code.  First up, declare the libraries of functionality to use:
 
