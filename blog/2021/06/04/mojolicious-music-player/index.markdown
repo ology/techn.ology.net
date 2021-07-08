@@ -70,11 +70,6 @@ A couple buckets are declared to hold the audio that is found.  And the first is
         $c->flash(error => "Can't read track list file");
       }
 
-As promised, we re-format the total number of tracks to have a thousands separator comma:
-
-      my $nf = Number::Format->new;
-      my $total = $nf->format_number(scalar @$audio);
-
 Now if there is a query parameter provided to the endpoint, brute force through every track, looking for matches between the track name and the query:
 
       if ($query) {
@@ -92,6 +87,12 @@ If there is no query and shuffling is called for, get a random audio track index
 
         $current = $shuffle ? int(rand @$audio) : $current + 1;
       }
+
+As promised, we re-format the total number, and query matched tracks to have a thousands separator comma:
+
+      my $nf = Number::Format->new;
+      my $total = $nf->format_number(scalar @$audio);
+      my $matches = $nf->format_number(scalar @$match);
 
 Normally a track is selected next.  But when a search query has been freshly submitted, do not select a track to display.
 
