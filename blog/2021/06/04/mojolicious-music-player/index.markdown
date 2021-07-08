@@ -115,6 +115,8 @@ For this main endpoint, pass the interesting variables to the template (named "i
         shuffle     => $shuffle,
         query       => $query,
         match       => $match,
+        matches     => $matches,
+        submit      => $submit ? 1 : 0,
       );
 
 Give the endpoint a name, so that it can be referred to in the code and template:
