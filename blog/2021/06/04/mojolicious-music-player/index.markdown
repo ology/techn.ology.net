@@ -77,15 +77,19 @@ Now if there is a query parameter provided to the endpoint, brute force through 
           push @$match, $n if lc($audio->[$n]) =~ /$query/i;
         }
 
-Then if shuffling, get a random member of the matches. Otherwise increment the track:
+Then if shuffling, get a random member of the matches. Otherwise increment the track - unless we are told not to with the *noinc* flag:
 
-        $current = $shuffle ? $match->[int rand @$match] : $current + 1;
+        $current = $shuffle
+          ? $match->[int rand @$match]
+          : $noinc
+            ? $current
+            : $current + 1;
       }
+
+If there is no query and shuffling is called for, get a random audio track index from the complete library of audio. Otherwise increment, unless we are told not to:
+
       else {
-
-If there is no query and shuffling is called for, get a random audio track index from the complete library of audio. Otherwise increment:
-
-        $current = $shuffle ? int(rand @$audio) : $current + 1;
+        $current = $shuffle ? int(rand @$audio) : $noinc ? $current : $current + 1;
       }
 
 As promised, we re-format the total number, and query matched tracks to have a thousands separator comma:
