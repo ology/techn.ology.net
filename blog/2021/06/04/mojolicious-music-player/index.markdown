@@ -51,6 +51,7 @@ Now for the first Mojolicious::Lite endpoint:
       my $autoadvance = $c->param('autoadvance') || 0;
       my $autoplay    = $c->param('autoplay') || 0;
       my $current     = $c->param('current') || 0;
+      my $noinc       = $c->param('noinc') || 0;
       my $shuffle     = $c->param('shuffle') || 0;
       my $query       = $c->param('query') || '';
       my $submit      = $c->param('submit') || '';
@@ -60,9 +61,14 @@ This says, "When '/' is visited, capture a half-dozen parameters."  These parame
       my $audio = []; # Bucket for all tracks
       my $match = []; # Bucket for all matches if given a query
 
-A couple buckets are declared to hold the audio that is found.  And the first is set to the tracks file, declared above:
+A couple buckets are declared to hold the audio that is found.  And the first is set to the tracks file, declared above.  (And if a tracks file can't be found, a warning message is flashed to the user.)
 
-      $audio = retrieve(DAT) if -e DAT;
+      if (-e DAT) {
+        $audio = retrieve(DAT) if -e DAT;
+      }
+      else {
+        $c->flash(error => "Can't read track list file");
+      }
 
 As promised, we re-format the total number of tracks to have a thousands separator comma:
 
