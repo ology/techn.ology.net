@@ -64,7 +64,7 @@ This says, "When '/' is visited, capture a half-dozen parameters."  These parame
 A couple buckets are declared to hold the audio that is found.  And the first is set to the tracks file, declared above.  (And if a tracks file can't be found, a warning message is flashed to the user.)
 
       if (-e DAT) {
-        $audio = retrieve(DAT) if -e DAT;
+        $audio = retrieve(DAT);
       }
       else {
         $c->flash(error => "Can't read track list file");
