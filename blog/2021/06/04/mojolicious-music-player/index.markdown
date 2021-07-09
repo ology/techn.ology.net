@@ -34,11 +34,13 @@ Now for the code.  First up, declare the libraries of functionality to use:
 
     use Encoding::FixLatin qw(fix_latin);
     use File::Find::Rule ();
+    use List::SomeUtils qw(first_index);
     use Mojolicious::Lite -signatures;
+    use Mojo::Util qw(url_escape url_unescape);
     use Number::Format ();
     use Storable qw(retrieve store);
 
-[Encoding::FixLatin](https://metacpan.org/pod/Encoding::FixLatin) "makes a best effort to convert [funky encodings] to UTF-8."  [File::Find::Rule](https://metacpan.org/pod/File::Find::Rule) recursively gathers all interesting files.  [Mojolicious::Lite](https://metacpan.org/pod/Mojolicious::Lite) is the web framework upon which this program is based.  [Number::Format](https://metacpan.org/pod/Number::Format) just puts a comma in the total number of tracks that is displayed.  [Storable](https://metacpan.org/pod/Storable) saves and retrieves the file of tracks that is used to actually locate the audio.
+[Encoding::FixLatin](https://metacpan.org/pod/Encoding::FixLatin) "makes a best effort to convert [funky encodings] to UTF-8."  [File::Find::Rule](https://metacpan.org/pod/File::Find::Rule) recursively gathers all interesting files.  The [List::SomeUtils](https://metacpan.org/pod/List::SomeUtils) `first_index` function locates a track in the search matches.  [Mojolicious::Lite](https://metacpan.org/pod/Mojolicious::Lite) is the web framework upon which this program is based.  [Number::Format](https://metacpan.org/pod/Number::Format) just puts a comma in the total number of tracks that is displayed.  [Storable](https://metacpan.org/pod/Storable) saves and retrieves the file of tracks that is used to actually locate the audio.
 
 Next, the physical locations of the audio are defined:
 
@@ -73,9 +75,17 @@ A couple buckets are declared to hold the audio that is found.  And the first is
 Now if there is a query parameter provided to the endpoint, brute force through every track, looking for matches between the track name and the query:
 
       if ($query) {
+        # Convert encoded things like &amp; back into &
+        $query = url_unescape($query);
+
         for my $n (0 .. $#$audio) {
           push @$match, $n if lc($audio->[$n]) =~ /$query/i;
         }
+
+The index of the current item of the search results is needed in order to properly increment.  Also, if the current item cannot be found, the first match is used.
+
+    my $idx = first_index { $_ == $current } @$match;
+    $idx = $match->[0] if $idx == -1;
 
 Then if shuffling, get a random member of the matches. Otherwise increment the track - unless we are told not to with the *noinc* flag:
 
@@ -83,7 +93,7 @@ Then if shuffling, get a random member of the matches. Otherwise increment the t
           ? $match->[int rand @$match]
           : $noinc
             ? $current
-            : $current + 1;
+            : $match->[$idx + 1];
       }
 
 If there is no query and shuffling is called for, get a random audio track index from the complete library of audio. Otherwise increment, unless we are told not to:
