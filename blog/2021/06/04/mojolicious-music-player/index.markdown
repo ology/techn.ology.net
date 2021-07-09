@@ -84,15 +84,15 @@ Now if there is a query parameter provided to the endpoint, brute force through 
 
 The index of the current item of the search results is needed in order to properly increment.  Also, if the current item cannot be found, the first match is used.
 
-    my $idx = first_index { $_ == $current } @$match;
-    $idx = $match->[0] if $idx == -1;
+        my $idx = first_index { $_ == $current } @$match;
+        $idx = 0 if $idx == -1;
 
 Then if shuffling, get a random member of the matches. Otherwise increment the track - unless we are told not to with the *noinc* flag:
 
         $current = $shuffle
           ? $match->[int rand @$match]
           : $noinc
-            ? $current
+            ? $match->[$idx]
             : $match->[$idx + 1];
       }
 
