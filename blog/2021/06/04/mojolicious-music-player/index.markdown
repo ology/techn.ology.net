@@ -108,9 +108,10 @@ As promised, we re-format the total number, and query matched tracks to have a t
       my $total = $nf->format_number(scalar @$audio);
       my $matches = $nf->format_number(scalar @$match);
 
-Normally a track is selected next.  But when a search query has been freshly submitted, do not select a track to display.
+Normally a track is selected next.  But when a search query has been freshly submitted, do not select a track to display.  Also, handle the case where there is no current track to display:
 
-      my $track = $submit ? '' : $audio->[$current];
+        my $track = $submit || !$current ? '' : $audio->[$current];
+        $track ||= '';
 
 For this main endpoint, pass the interesting variables to the template (named "index") for rendering on the web:
 
