@@ -24,6 +24,6 @@ What does this mean?  Being a Zen anecdote, does "meaning" even apply?  Literal 
 
 First, what is the motivation of the thief?  I think that he or she is "just a thief", i.e. a trope playing the part of a one dimensional character.
 
-Who is Ryoken?  [Well...](https://en.wikipedia.org/wiki/Ry%C5%8Dkan)  Why he unperturbed by encountering a thief in his home?  Well, he is a Zen master, after all.  But why does he give away his clothes?  And why does he wish he could give away the Moon, too?
+Who is Ryoken?  [Well...](https://en.wikipedia.org/wiki/Ry%C5%8Dkan)  Also, why was he unperturbed by encountering a thief in his home?  Well, he is a Zen master, after all.  But why does he give away his clothes?  And why does he wish he could give away the Moon, too?
 
 Hmmmmm...
