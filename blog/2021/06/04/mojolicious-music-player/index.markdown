@@ -176,3 +176,11 @@ Anyway, to start this program, just run the Mojolicious included development ser
 
 And browse to [http://127.0.0.1:3000/refresh](http://127.0.0.1:3000/refresh) - Voila!
 
+~
+
+**UPDATE:**
+
+The program `audio-player2`, in the same repository directory, is the evolution of the above implementation, with track ratings and smoother interface/behavior.
+
+![audio-player2](audio-player2.png)
+
