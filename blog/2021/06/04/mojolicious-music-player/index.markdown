@@ -184,3 +184,5 @@ The program `audio-player2`, in the same repository directory, is the evolution 
 
 ![audio-player2](audio-player2.png)
 
+(And the astute observer will notice the low rating for this classic Kraftwerk song.  But that is the rating for zero = no rating.  Meaning that I just hadn't given it a top rating yet. But that is now fixed. :))
+
