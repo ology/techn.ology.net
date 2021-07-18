@@ -24,6 +24,6 @@ What does this mean?  Being a Zen anecdote, does "meaning" even apply?  Literal 
 
 First, what is the motivation of the thief?  I think that he or she is "just a thief", i.e. a trope playing the part of a one dimensional character.
 
-Who is Ryōkan?  [Well...](https://en.wikipedia.org/wiki/Ry%C5%8Dkan)  Also, why was he unperturbed by encountering a thief in his home?  Well, he is a Zen master, after all, and "turns the table" on the thief.  But why does he give away his clothes?  What is his motivation?  And why does he wish he could give away the Moon, too?
+Who is Ryōkan?  [Well...](https://en.wikipedia.org/wiki/Ry%C5%8Dkan)  Also, why was he unperturbed by encountering a thief in his home?  Well, he is a Zen master after all, and "turns the table" on the thief, greeting an honored guest.  But why does he give away his clothes?  What is his motivation?  Giving gifts to and getting them from house-guests is a tradition in many cultures.  But why does he wish he could give away the Moon, too?  Is this the part where meaning does not apply, maybe?
 
 Hmmmmm...
