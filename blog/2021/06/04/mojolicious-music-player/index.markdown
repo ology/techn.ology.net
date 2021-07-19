@@ -9,7 +9,7 @@ tags:
 
 Can you build an audio player from perl [Mojolicious](https://mojolicious.org/)?  Yes!
 
-tl;dr: [audio-player](https://github.com/ology/audio-player) & [audio-player2](https://github.com/ology/audio-player/blob/main/audio-player2)
+tl;dr: [audio-player](https://github.com/ology/audio-player)
 
 ---
 
