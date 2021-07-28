@@ -27,3 +27,8 @@ First, what is the motivation of the thief?  I think that he or she is "just a t
 Who is Ryōkan?  [Well...](https://en.wikipedia.org/wiki/Ry%C5%8Dkan)  Also, why was he unperturbed by encountering a thief in his home?  Well, he is a Zen master after all, and "turns the table" on the thief, greeting an honored guest.  But why does he give away his clothes?  What is his motivation?  Giving gifts to and getting them from house-guests is a tradition in many cultures.  But why does he wish he could give away the Moon, too?  Is this the part where meaning does not apply, maybe?
 
 Hmmmmm...
+
+~
+
+Aha.  The Zen master doesn't need any of what we would call "possessions" - He "has" the Moon after all.  And his possessions - all of Nature - cannot be given away in the traditional sense.  One has to be enlightened to gain them, instead of a common thief.
+
