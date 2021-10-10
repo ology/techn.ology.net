@@ -5,6 +5,7 @@ tags:
   - software
 ---
 
+![Touch Bar](touchbar-sm.jpg)
 This post is about using the [Apple Touch Bar](https://support.apple.com/guide/mac-help/touch-bar-mchlbfd5b039/mac) Bar with [iTerm2](https://iterm2.com/), when in [vim](https://www.vim.org/).
 
 ---
