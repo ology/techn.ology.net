@@ -28,7 +28,7 @@ By the way, any vim key-combos (like "gT" to switch tabs) or even custom .vimrc 
 
 After you have these in place, you add them by opening the View menu item called "Customize Touch Bar..."
 
-This is what mine look like:
+This is what mine looks like:
 
 ![Touch Bar](touchbar.jpg)
 
