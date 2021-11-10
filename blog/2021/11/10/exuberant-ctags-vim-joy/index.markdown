@@ -7,7 +7,7 @@ tags:
 There are a couple thousand posts on how cool [Exuberant Ctags](http://ctags.sourceforge.net/) is... This is another!
 
 ---
-I am a programmer and use ctags for a couple things:
+I am a programmer and use ctags for a couple perl things:
 
 * To index every perl package - core and from CPAN.
 
@@ -51,7 +51,7 @@ I use a custom `~/.ctags` file with directives that tells ctags to parse perl pa
 
 I stitched this together from a couple places.  One being [kberov/ctags](https://github.com/kberov/ctags) on github.
 
-Next for me is to make a shell alias for making the `tags` files that I re-create constantly for my programming projects.  That's:
+Next for me is to make a (bash, in my case) shell alias for making the `tags` files that are re-created constantly (when there are new bits pulled from the git origin).  Anyway, that's:
 
     alias retag='cd lib; ctags -R; cd -; cd t; ctags -R; cd -'
 
