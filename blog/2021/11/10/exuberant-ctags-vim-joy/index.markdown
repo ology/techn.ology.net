@@ -51,9 +51,13 @@ I use a custom `~/.ctags` file with directives that tells ctags to parse perl pa
 
 I stitched this together from a couple places.  One being [kberov/ctags](https://github.com/kberov/ctags) on github.
 
-Next for me is to make a shell alias for making the `tags` files that I re-create constantly for my programming projects.  That's `alias retag='cd lib; ctags -R; cd -; cd t; ctags -R; cd -'`.
+Next for me is to make a shell alias for making the `tags` files that I re-create constantly for my programming projects.  That's:
 
-Lastly, a ctags directive is needed in the `~/.vimrc` file.  This needs to point to a few places: 1. the core and cpan perl (an absolute directory that is not covered here) and 2. the relative directories to lib and t.  And what is that directive?  `set tags=lib/tags,t/tags` - That's it!
+    alias retag='cd lib; ctags -R; cd -; cd t; ctags -R; cd -'
+
+Lastly, a ctags directive is needed in the `~/.vimrc` file.  This needs to point to a few places: 1. the core and cpan perl (an absolute directory that is not covered here) and 2. the relative directories to lib and t.  And what is that directive?
+
+    set tags=lib/tags,t/tags
 
 Now when you are in a script.pl perl file, you position the cursor over a subroutine or module name and key CTRL+].  This jumps you to the subroutine definition or top of the module, respectively.
 
