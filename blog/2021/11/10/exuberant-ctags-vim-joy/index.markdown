@@ -59,8 +59,8 @@ Lastly, a ctags directive is needed in the `~/.vimrc` file.  This needs to point
 
     set tags=lib/tags,t/tags
 
-Now when you are in a script.pl perl file, you position the cursor over a subroutine or module name and key CTRL+].  This jumps you to the subroutine definition or top of the module, respectively.
+Now when you are in a script.pl perl file, you position the cursor over a subroutine or module name and key `CTRL-]`.  This jumps you to the subroutine definition or top of the module, respectively.
 
-To return to the previous position, key CTRL+o.
+To return to the previous position, key `CTRL-o`.
 
 Voila!
