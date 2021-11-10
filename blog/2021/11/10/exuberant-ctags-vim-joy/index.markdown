@@ -51,7 +51,7 @@ I use a custom `~/.ctags` file with directives that tells ctags to parse perl pa
 
 I stitched this together from a couple places.  One being [kberov/ctags](https://github.com/kberov/ctags) on github.
 
-Next for me is to make a (bash, in my case) shell alias for making the `tags` files that are re-created constantly (when there are new bits pulled from the git origin).  Anyway, that's:
+Next for me is to add a bash alias for making the `tags` files that are constantly re-created (when there are new bits pulled from git origin).  Anyway, that's:
 
     alias retag='cd lib; ctags -R; cd -; cd t; ctags -R; cd -'
 
