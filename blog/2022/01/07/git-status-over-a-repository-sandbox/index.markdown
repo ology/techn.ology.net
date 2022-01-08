@@ -113,6 +113,14 @@ The final condition is just to skip to the next repo with:
         next REPO;
       }
 
-The point is that you can execute any git shell commands with the perl "qx" operator and a bit of tweezing!
+I execute this in the shell by putting this in my ~/bin directory, making it executable, then saying:
+
+    $ gitstat 1
+
+And look for DIRTY repos.  Or interactively, for instance:
+
+    $ gitstat 0 ~/repos
+
+Anyway, the point is that you can execute any git shell commands with the perl "qx" operator and a bit of tweezing!
 
 -Peace-
