@@ -12,7 +12,7 @@ tl;dr: [gitstat](https://github.com/ology/Miscellaneous/blob/master/gitstat)
 
 ---
 
-I made an app that does that!  And here it is...
+I have a sandbox with over a hundred repositories.  This is probably small compared to many uber-geeks.  But anyway, I made an app that does that!  And here it is...
 
 The standard perl preamble:
 
