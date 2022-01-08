@@ -114,7 +114,7 @@ The final condition is just to skip to the next repo with:
         next REPO;
       }
 
-I execute this in the shell by putting this in my ~/bin directory, making it executable, then saying:
+I run this in the shell by putting this in my ~/bin directory, making it executable, then saying:
 
     $ gitstat 1
 
