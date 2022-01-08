@@ -29,7 +29,7 @@ Imports that the program depends upon:
     use DateTime::Format::DateParse ();
     use Time::Ago ();
 
-Accept program arguments for quick summary or interactive views, and the location of the repositories:
+Accept program arguments for either quick summary or interactive view, and the location of the repositories:
 
     my $summary = shift // 0;
     my $path = shift || $ENV{HOME} . '/sandbox';
