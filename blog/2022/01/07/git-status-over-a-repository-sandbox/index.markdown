@@ -47,7 +47,7 @@ Next is the loop over these in ASCII-betical order, skipping any without a ".git
     REPO: for my $repo (sort @repos) {
         ...
 
-If we choose to show a summary (with a "1" as the sole program argument), a "DIRTY" flag is printed with the time since the last commit.  Here is the code for that:
+If we choose to show a summary (with a "1" as the first program argument), a "DIRTY" flag is printed with the time since the last commit.  Here is the code for that:
 
     my $git = qx{ git diff --stat };
     print ' - DIRTY' if $git;
