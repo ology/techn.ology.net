@@ -91,14 +91,14 @@ Ok. We prompt the user for their choice. If this is "q", we bail-out of the prog
         print "\nLast commit on $git";
       }
 
-This performs a git status of the repository and prints out how long it was since the last commit.
+This performs a git status, prints out the branches of the repository, and then prints out how long it was since the last commit.
 
       elsif ($response eq 'p') {
         my $git = qx{ git pull };
         print "\n$git";
       }
 
-Sometimes I want to pull.  Some people abhor pulling... Fortunately, this program is open source. YMMV.
+Sometimes I want to pull.  Some people abhor pulling... Fortunately, this program is open source!
 
       elsif ($response eq 'f') {
         my $git = qx{ git fetch --prune };
