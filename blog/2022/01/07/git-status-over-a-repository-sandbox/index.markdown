@@ -55,6 +55,7 @@ If we choose to show a summary (with a "1" as the first program argument), an op
 
     $git = qx{ git log -1 --format=%cd };
     chomp $git;
+
     my $last = DateTime::Format::DateParse->parse_datetime($git, 'local');
     my $duration = $now->subtract_datetime_absolute($last);
     $git = Time::Ago->in_words($duration->seconds);
