@@ -20,7 +20,7 @@ The standard perl preamble:
     use strict;
     use warnings;
 
-Program imports that the program depends upon:
+Imports that the program depends upon:
 
     use File::Find::Rule ();
     use IO::Prompt qw(prompt);
