@@ -66,7 +66,8 @@ Interactively:
       printf "\n%0*d. %s (%s)", $width, $i, $repo, $branch;
 
       my $git = qx{ git diff --stat };
-      print $git ? " - DIRTY\n" : "\n";
+      print ' - DIRTY' if $git;
+      print "\n";
 
       my $response = prompt 'Enter=next q=quit s=status p=pull f=prune: ';
 
