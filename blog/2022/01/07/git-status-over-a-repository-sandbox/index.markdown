@@ -92,7 +92,7 @@ Ok. We prompt the user for their choice. If this is "q", we bail-out of the prog
         print "\nLast commit on $git";
       }
 
-This performs a git status, prints out the branches of the repository, and then prints out how long it was since the last commit.
+This performs a git status, prints out the branches of the repository, and then prints out the time of the last commit.
 
       elsif ($response eq 'p') {
         my $git = qx{ git pull };
