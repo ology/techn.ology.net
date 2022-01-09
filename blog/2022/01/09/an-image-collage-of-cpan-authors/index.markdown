@@ -68,7 +68,6 @@ Next, if not asking for a random selection, and if the "start" argument has been
         $start = first_index { CORE::fc($_) eq CORE::fc($start) } sort keys %authors;
         die "Author '$author' not found\n"
             if $start < 0;
-        $start++;
     }
 
 Next, if not asking for a random selection, the head of the sorted author list is truncated to the starting author id.  If there are no resulting authors in the list, bail out of the program:
@@ -76,13 +75,13 @@ Next, if not asking for a random selection, the head of the sorted author list i
     if ($start > -1) {
         my $i = 0;
         for my $author (sort keys %authors) {
-            $i++;
             if ($i < $start) {
                 delete $authors{$author};
             }
             else {
                 last;
             }
+            $i++;
         }
     }
 
