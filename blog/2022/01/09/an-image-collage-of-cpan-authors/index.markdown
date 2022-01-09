@@ -6,6 +6,7 @@ tags:
   - software
 ---
 
+![Collage](collage-2x2.jpg)
 It's a lazy Sunday, so I thought I'd resurrect a clunky program I wrote a while back, and fix it up...
 
 tl;dr: [cpan-avatars](https://github.com/ology/Modules/blob/master/cpan-avatars)
@@ -158,6 +159,11 @@ Finally, the collage image and HTML files are saved:
     write_text($file, $html);
     print "Saved $file\n";
 
-~
+So, running this command:
 
-Sunday! :D
+    $ perl cpan-avatars 6 gene
+
+Creates this [web page/image map](collage.html).
+
+Voila!
+:D
