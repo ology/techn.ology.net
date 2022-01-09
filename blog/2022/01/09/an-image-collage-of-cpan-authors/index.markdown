@@ -48,14 +48,13 @@ The program parameters, i.e. variables that define the bounds and behavior:
 
 Now we get to the actual functionality of the program:
 
-    die "Path '$path' does not exist"                                                                                                                                            
+    die "Path '$path' does not exist" 
         unless -d $path;
 
     get_file($cpan . $file, $file, "Saved $file");
 
     my $pca = Parse::CPAN::Authors->new($file);
 
-    # Get each author metacpan url
     for my $author ($pca->authors) {
         $authors{ $author->pauseid } = $base . $author->pauseid;
     }
