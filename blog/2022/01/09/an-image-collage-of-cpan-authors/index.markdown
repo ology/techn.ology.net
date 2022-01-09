@@ -109,6 +109,9 @@ Now that the author list is known, the actual avatar image files are downloaded 
 
 Next up is to build an HTML image map.  I'll leave-out the HTML markup, but the logic is thus:
 
+    my $html =<<'HTML';
+    ...
+
     my $collage = Imager->new(xsize => $size, ysize => $size)
         or die "Can't create image: ", Imager->errstr;
 
