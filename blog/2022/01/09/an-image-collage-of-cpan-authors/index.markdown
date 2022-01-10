@@ -92,6 +92,8 @@ Now that the author list is known, the actual avatar image files are downloaded 
 
     my $i = 0;
 
+    my @displayed; # Bucket for the displayed authors
+
     for my $author ($start == -1 ? shuffle keys %authors : sort keys %authors) { 
         $i++;
         sleep 4 unless $i == 1; # play nice
@@ -101,6 +103,8 @@ Now that the author list is known, the actual avatar image files are downloaded 
         my $img = $dom->find('img[alt="Author image"]')->[0]->attr('src');
         my $img_file = $path->child($author);
         get_file($img, $img_file, "$i. Saved $img_file");
+
+        push @displayed, $author;
 
         last if $i >= $max;
     }
@@ -117,7 +121,7 @@ Next up is to build an HTML image map.  I'll leave-out the HTML markup, but the 
     my $x = 0;
     my $y = 0;
 
-    for my $author (sort keys %authors) {
+    for my $author (sort @displayed) {
         my $img_file = $path->child($author);
         next unless -e $img_file;
 
