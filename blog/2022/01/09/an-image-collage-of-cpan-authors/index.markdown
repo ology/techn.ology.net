@@ -85,8 +85,7 @@ Next, if not asking for a random selection, the head of the sorted author list i
         }
     }
 
-    die "No authors\n"
-        if keys(%authors) < 1;
+    die "No authors\n" unless keys %authors;
 
 Now that the author list is known, the actual avatar image files are downloaded until the maximum is reached:
 
