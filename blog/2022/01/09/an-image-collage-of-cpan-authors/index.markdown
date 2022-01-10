@@ -131,8 +131,6 @@ Next up is to build an HTML image map.  I'll leave-out the HTML markup, but the 
 
         $i++;
         $x++;
-
-        last if $i >= $max;
     }
 
 Finally, the collage image and HTML files are saved:
