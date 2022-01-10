@@ -38,7 +38,7 @@ The program parameters, i.e. variables that define the bounds and behavior:
 
     my $width = 130;            # Fixed avatar side pixel size
     my $size  = $width * $side; # The width of the collage
-    my $max   = $side ** 2;     # Number of avatars to fetch
+    my $max   = $side * $side;  # Number of avatars to fetch
 
     my $base = 'https://metacpan.org/author/';
     my $cpan = 'http://www.cpan.org/authors/';
