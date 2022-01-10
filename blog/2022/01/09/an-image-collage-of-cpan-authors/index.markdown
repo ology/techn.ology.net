@@ -43,7 +43,7 @@ The program parameters, i.e. variables that define the bounds and behavior:
     my $cpan = 'http://www.cpan.org/authors/';
     my $file = '01mailrc.txt.gz';
 
-    my %authors;
+    my @authors;
 
 Now we get to the actual functionality of the program:
 
@@ -57,7 +57,7 @@ Now we get to the actual functionality of the program:
     my $pca = Parse::CPAN::Authors->new($file);
 
     for my $author ($pca->authors) {
-        $authors{ $author->pauseid } = $base . $author->pauseid;
+        push @authors, $author->pauseid;
     }
 
 This makes sure there is a place on the file system for the avatars and collage files, then fetches *all* the [CPAN](https://metacpan.org/) authors (with a subroutine, not shown here). Finally, the code populates the list of authors with their CPAN author url.
@@ -66,7 +66,7 @@ Next, if not asking for a random selection, and if the "start" argument has been
 
     if ($start ne '-1' && $start =~ /[A-Za-z]/) {
         my $author = $start;
-        $start = first_index { CORE::fc($_) eq CORE::fc($author) } sort keys %authors;
+        $start = first_index { CORE::fc($_) eq CORE::fc($author) } sort @authors;
         die "Author '$author' not found\n"
             if $start < 0;
     }
@@ -77,14 +77,14 @@ Now the actual avatar image files are downloaded until the maximum is reached:
 
     my @displayed; # Bucket for the displayed authors
 
-    for my $author ($start == -1 ? shuffle keys %authors : sort keys %authors) { 
+    for my $author ($start == -1 ? shuffle @authors : sort @authors) { 
         $i++;
 
         next if $start > -1 && ($i - 1) < $start;
 
         sleep 4 if @displayed; # play nice
 
-        my $content = get($authors{$author});
+        my $content = get($base . $author);
         my $dom = Mojo::DOM->new($content);
         my $img = $dom->find('img[alt="Author image"]')->[0]->attr('src');
         my $img_file = $path->child($author);
