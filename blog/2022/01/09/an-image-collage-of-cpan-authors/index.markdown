@@ -71,24 +71,7 @@ Next, if not asking for a random selection, and if the "start" argument has been
             if $start < 0;
     }
 
-Next, if not asking for a random selection, the head of the sorted author list is truncated to the starting author id.  If there are no resulting authors in the list, bail out of the program:
-
-    if ($start > -1) {
-        my $i = 0;
-        for my $author (sort keys %authors) {
-            if ($i < $start) {
-                delete $authors{$author};
-            }
-            else {
-                last;
-            }
-            $i++;
-        }
-    }
-
-    die "No authors\n" unless keys %authors;
-
-Now that the author list is known, the actual avatar image files are downloaded until the maximum is reached:
+Now the actual avatar image files are downloaded until the maximum is reached:
 
     my $i = 0;
 
@@ -96,6 +79,9 @@ Now that the author list is known, the actual avatar image files are downloaded 
 
     for my $author ($start == -1 ? shuffle keys %authors : sort keys %authors) { 
         $i++;
+
+        next if $start > -1 && ($i - 1) < $start;
+
         sleep 4 unless $i == 1; # play nice
 
         my $content = get($authors{$author});
@@ -106,7 +92,7 @@ Now that the author list is known, the actual avatar image files are downloaded 
 
         push @displayed, $author;
 
-        last if $i >= $max;
+        last if @displayed >= $max;
     }
 
 Next up is to build an HTML image map.  I'll leave-out the HTML markup, but the logic is thus:
