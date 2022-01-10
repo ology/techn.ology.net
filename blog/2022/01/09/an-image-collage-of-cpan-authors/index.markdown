@@ -21,12 +21,12 @@ The standard perl preamble:
 
 The imports that the program depends upon:
 
-    use File::Slurper 'write_text';
     use HTTP::Simple;
     use Imager;
     use List::SomeUtils 'first_index';
     use List::Util 'shuffle';
     use Mojo::DOM;
+    use Mojo::File;
     use Mojo::UserAgent;
     use Parse::CPAN::Authors;
 
@@ -48,8 +48,10 @@ The program parameters, i.e. variables that define the bounds and behavior:
 
 Now we get to the actual functionality of the program:
 
-    die "Path '$path' does not exist" 
-        unless -d $path;
+    $path = Mojo::File->new($path);
+    unless (-d $path) { 
+        $path->make_path;                                                                                                                                                        
+    }
 
     get_file($cpan . $file, $file, "Saved $file");
 
@@ -99,7 +101,7 @@ Now that the author list is known, the actual avatar image files are downloaded 
         my $tx = $ua->get($authors{$author});
         my $dom = Mojo::DOM->new($tx->res->body);
         my $img = $dom->find('img[alt="Author image"]')->[0]->attr('src');
-        my $img_file = $path . $author;
+        my $img_file = $path->child($author);
         get_file($img, $img_file, "$i. Saved $img_file");
 
         last if $i >= $max;
@@ -118,7 +120,7 @@ Next up is to build an HTML image map.  I'll leave-out the HTML markup, but the 
     my $y = 0;
 
     for my $author ($start == -1 ? keys %authors : sort keys %authors) {
-        my $img_file = $path . $author;
+        my $img_file = $path->child($author);
         next unless -e $img_file;
 
         my $img = Imager->new;
@@ -148,14 +150,14 @@ Next up is to build an HTML image map.  I'll leave-out the HTML markup, but the 
 
 Finally, the collage image and HTML files are saved:
 
-    $file = $path . 'collage.jpg';
+    $file = $path->child('collage.jpg');
     $collage->write(file => $file) or
         die "Can't write to $file: ", $collage->errstr;
     print "Saved $file\n";
 
     ... # HTML markup
 
-    $file = $path . 'collage.html';
+    $file = $path->child('collage.html');
     write_text($file, $html);
     print "Saved $file\n";
 
