@@ -157,3 +157,7 @@ Creates this [web page/image map](collage.html).
 
 Voila!
 :D
+
+~
+
+To do: Filter things with [MetaCPAN::Client::Author](https://metacpan.org/pod/MetaCPAN::Client::Author)
