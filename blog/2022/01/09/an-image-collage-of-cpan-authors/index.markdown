@@ -136,7 +136,7 @@ Next up is to build an HTML image map.  I'll leave-out the HTML markup, but the 
         my $y0 = $y * $width;
         my $y1 = $y0 + $width;
 
-        $html .= qq|<area shape="rect" coords="$x0,$y0,$x1,$y1" alt="$author" href="https://metacpan.org/author/$author" title="$author">\n|;
+        $html .= qq|<area shape="rect" coords="$x0,$y0,$x1,$y1" alt="$author" href="$base$author" title="$author">\n|;
 
         $collage->paste(left => $x0, top => $y0, img => $img);
 
