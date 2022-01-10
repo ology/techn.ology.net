@@ -66,7 +66,7 @@ Next, if not asking for a random selection, and if the "start" argument has been
 
     if ($start ne '-1' && $start =~ /[A-Za-z]/) {
         my $author = $start;
-        $start = first_index { CORE::fc($_) eq CORE::fc($start) } sort keys %authors;
+        $start = first_index { CORE::fc($_) eq CORE::fc($author) } sort keys %authors;
         die "Author '$author' not found\n"
             if $start < 0;
     }
