@@ -44,7 +44,7 @@ The program parameters, i.e. variables that define the bounds and behavior:
     my $file = '01mailrc.txt.gz';
 
     my @authors;   # Bucket for all authors
-    my @displayed; # Bucket for the displayed authors
+    my @displayed; # Bucket for displayed authors
 
 Now we get to the actual functionality of the program:
 
