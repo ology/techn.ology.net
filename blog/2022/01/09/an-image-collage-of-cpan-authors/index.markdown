@@ -119,7 +119,7 @@ Next up is to build an HTML image map.  I'll leave-out the HTML markup, but the 
     my $x = 0;
     my $y = 0;
 
-    for my $author ($start == -1 ? keys %authors : sort keys %authors) {
+    for my $author (sort keys %authors) {
         my $img_file = $path->child($author);
         next unless -e $img_file;
 
