@@ -82,7 +82,7 @@ Now the actual avatar image files are downloaded until the maximum is reached:
 
         next if $start > -1 && ($i - 1) < $start;
 
-        sleep 4 @displayed; # play nice
+        sleep 4 if @displayed; # play nice
 
         my $content = get($authors{$author});
         my $dom = Mojo::DOM->new($content);
