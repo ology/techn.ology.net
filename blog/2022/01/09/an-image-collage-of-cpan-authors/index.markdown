@@ -21,13 +21,12 @@ The standard perl preamble:
 
 The imports that the program depends upon:
 
-    use HTTP::Simple;
+    use HTTP::Simple qw(get getstore);
     use Imager;
     use List::SomeUtils 'first_index';
     use List::Util 'shuffle';
     use Mojo::DOM;
     use Mojo::File;
-    use Mojo::UserAgent;
     use Parse::CPAN::Authors;
 
 The program parameters, i.e. variables that define the bounds and behavior:
@@ -97,9 +96,8 @@ Now that the author list is known, the actual avatar image files are downloaded 
         $i++;
         sleep 4 unless $i == 1; # play nice
 
-        my $ua = Mojo::UserAgent->new;
-        my $tx = $ua->get($authors{$author});
-        my $dom = Mojo::DOM->new($tx->res->body);
+        my $content = get($authors{$author});
+        my $dom = Mojo::DOM->new($content);
         my $img = $dom->find('img[alt="Author image"]')->[0]->attr('src');
         my $img_file = $path->child($author);
         get_file($img, $img_file, "$i. Saved $img_file");
