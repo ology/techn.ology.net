@@ -147,7 +147,7 @@ Finally, the collage image and HTML files are saved:
     ...
 
     $file = $path->child('collage.html');
-    write_text($file, $html);
+    $file->spurt($html);
     print "Saved $file\n";
 
 So, running this command:
