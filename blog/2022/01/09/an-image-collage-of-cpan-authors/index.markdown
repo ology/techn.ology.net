@@ -33,7 +33,7 @@ The imports that the program depends upon:
 The program parameters, i.e. variables that define the bounds and behavior:
 
     my $side  = shift || 3;
-    my $start = shift || 1;
+    my $start = shift // 0;
     my $path  = shift || $ENV{HOME} . '/tmp/avatars/';
 
     my $width = 130;            # Fixed avatar side pixel size
