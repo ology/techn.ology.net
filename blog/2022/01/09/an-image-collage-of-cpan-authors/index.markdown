@@ -43,7 +43,8 @@ The program parameters, i.e. variables that define the bounds and behavior:
     my $cpan = 'http://www.cpan.org/authors/';
     my $file = '01mailrc.txt.gz';
 
-    my @authors;
+    my @authors;   # Bucket for all authors
+    my @displayed; # Bucket for the displayed authors
 
 Now we get to the actual functionality of the program:
 
@@ -74,8 +75,6 @@ Next, if not asking for a random selection, and if the "start" argument has been
 Now the actual avatar image files are downloaded until the maximum is reached:
 
     my $i = 0;
-
-    my @displayed; # Bucket for the displayed authors
 
     for my $author ($start == -1 ? shuffle @authors : sort @authors) { 
         $i++;
