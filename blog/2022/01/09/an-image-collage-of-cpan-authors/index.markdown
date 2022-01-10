@@ -153,7 +153,8 @@ Finally, the collage image and HTML files are saved:
         die "Can't write to $file: ", $collage->errstr;
     print "Saved $file\n";
 
-    ... # HTML markup
+    $html .= <<'HTML';
+    ...
 
     $file = $path->child('collage.html');
     write_text($file, $html);
