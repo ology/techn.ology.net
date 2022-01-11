@@ -105,6 +105,8 @@ site:
               href: 'https://metacpan.org/author/GENE'
             - text: 'On Github'
               href: 'https://github.com/ology'
+            - text: 'On Soundcloud'
+              href: 'https://soundcloud.com/gene-boggs-music'
             - text: 'Algorithmic Musical Composition'
               href: 'https://github.com/ology/MIDI-Perl-HOWTO/wiki'
 
