@@ -107,7 +107,7 @@ site:
               href: 'https://github.com/ology'
             - text: 'On Soundcloud'
               href: 'https://soundcloud.com/gene-boggs-music'
-            - text: 'Algorithmic Musical Composition'
+            - text: 'Algorithmic Music'
               href: 'https://github.com/ology/MIDI-Perl-HOWTO/wiki'
 
     # deploy: This is the deploy object, used to deploy this site.
