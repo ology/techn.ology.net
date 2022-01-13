@@ -46,6 +46,8 @@ The program parameters, i.e. variables that define the bounds and behavior:
     my @authors;   # Bucket for all authors
     my @displayed; # Bucket for displayed authors
 
+This defines the number of avatars per $side.  This means that number squared will be the total number of avatars displayed ($max).  The $start variable is the place to start creating the collage.  This can be either an index number (of the sorted author names), an auth name, or "-1" meaning "display a random selection."  The $path is the directory where the collage will be created.
+
 Now we get to the actual functionality of the program:
 
     $path = Mojo::File->new($path);
