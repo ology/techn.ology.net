@@ -163,16 +163,16 @@ For the curious, here is the timing of 100 random avatars on my Linux laptop:
     Saved 01mailrc.txt.gz
       1. Saved RLUCAS
       2. Saved CYATES
-      ...
+    ...
      99. Saved FLINGTOAD
     100. Saved SPUTTENE
     Saved collage.jpg
     Saved collage.html
 
-    real	8m27.941s
-    user	0m3.970s
-    sys	  0m0.319s
+    real  8m27.941s
+    user  0m3.970s
+    sys   0m0.319s
 
 ~
 
-To do: Filter things with [MetaCPAN::Client::Author](https://metacpan.org/pod/MetaCPAN::Client::Author)
+To do on another Sunday: Filter things with [MetaCPAN::Client::Author](https://metacpan.org/pod/MetaCPAN::Client::Author)
