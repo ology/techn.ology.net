@@ -63,7 +63,7 @@ Now we get to the actual functionality of the program:
         push @authors, $author->pauseid;
     }
 
-This makes sure there is a place on the file system for the avatars and collage files, then fetches *all* the [CPAN](https://metacpan.org/) authors (with a subroutine, shown in the "tl;dr" link above). Finally, the code populates the list of authors with their CPAN author url.
+This makes sure there is a place on the file system for the avatars and collage files, then fetches *all* the [CPAN](https://metacpan.org/) authors (with a subroutine, shown in the "tl;dr" link above). Finally, the list of authors is gathered.
 
 Next, if not asking for a random selection, and if the "start" argument has been given as an author name (not a numeric id), find the index of "start" in the sorted list of authors:
 
