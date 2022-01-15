@@ -88,6 +88,7 @@ Now the actual avatar image files are downloaded until the maximum is reached:
         my $content = get($base . $author);
         my $dom = Mojo::DOM->new($content);
         my $img = $dom->find('img[alt="Author image"]')->[0]->attr('src');
+
         my $img_file = $path->child($author);
         get_file($img, $img_file, "$i. Saved $img_file");
 
