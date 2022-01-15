@@ -65,9 +65,9 @@ Now we get to the actual functionality of the program:
 
 This makes sure there is a place on the file system for the avatars and collage files, then fetches *all* the [CPAN](https://metacpan.org/) authors (with a subroutine, shown in the "tl;dr" link above). Finally, the list of authors is gathered.
 
-Next, if not asking for a random selection, and if the "start" argument has been given as an author name (not a numeric id), find the index of "start" in the sorted list of authors:
+Next, if the "start" argument has been given as an author name (not numeric), find the index of "start" in the sorted list of authors:
 
-    if ($start ne '-1' && $start =~ /[A-Za-z]/) {
+    if ($start =~ /[A-Za-z]/) {
         my $author = $start;
         $start = first_index { CORE::fc($_) eq CORE::fc($author) } sort @authors;
         die "Author '$author' not found\n"
