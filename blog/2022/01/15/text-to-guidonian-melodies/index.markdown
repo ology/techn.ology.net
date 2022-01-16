@@ -80,3 +80,10 @@ So what does this sound like?
     perl guidonian -s minor -t 'Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua'
 
 [guidonian.mp3](guidonian.mp3)
+
+And here is what the lyrics of The Beatles, [Penny Lane](https://genius.com/The-beatles-penny-lane-lyrics) sounds like:
+
+    perl guidonian -f ~/Documents/lit/Beatles/Penny_Lane.txt
+
+[penny-lane-guidonian.mp3](penny-lane-guidonian.mp3)
+
