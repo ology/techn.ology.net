@@ -25,10 +25,16 @@ This program uses the venerable [Getopt::Long](https://metacpan.org/pod/Getopt::
 
 The program accepts a number of command-line arguments, all of which have a default set (except for the "--file", which is undef).
 
-One of these is the name of the scale to use.  And the next thing the program does is to compute the size of the intervals between the degrees:
+One of these is either the name of the scale to use, or a number for random intervals of half-steps.  So the next thing the program does is either compute the size of the intervals between scale degrees OR get a list of seven random integer interval numbers:
 
-    my @scale     = (get_scale_nums($opts{scale}), 12);
-    my @intervals = map { $scale[$_ + 1] - $scale[$_]} 0 .. $#scale - 1;
+    if ($opts{int} == 0) { 
+        # Get the scale intervals
+        my @scale  = (get_scale_nums($opts{scale}), 12);
+        @intervals = map { $scale[$_ + 1] - $scale[$_]} 0 .. $#scale - 1;
+    }
+    else { 
+        @intervals = map { int(rand $opts{int}) + 1 } 1 .. 7;
+    }
 
 This is then used in the next step, which is to instantiate a new Music::Guidonian object:
 
