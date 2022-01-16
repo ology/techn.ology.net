@@ -70,7 +70,6 @@ Create a MIDI score, add the notes of the phrase to it, and play each as a quart
 
 So what does this sound like?
 
-    perl guidonian -t 'Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua' -s minor
-    timidity %.mid
+    perl guidonian -s minor -t 'Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua'
 
 [guidonian.mp3](guidonian.mp3)
