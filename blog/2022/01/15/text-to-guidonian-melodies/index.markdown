@@ -27,14 +27,15 @@ The program accepts a number of command-line arguments, all of which have a defa
 
 One of these is either the name of the scale to use, or a number for random intervals of half-steps.  So the next thing the program does is either compute the size of the intervals between scale degrees OR get a list of seven random integer interval numbers:
 
-    if ($opts{int} == 0) { 
-        # Get the scale intervals
-        my @scale  = (get_scale_nums($opts{scale}), 12);
-        @intervals = map { $scale[$_ + 1] - $scale[$_]} 0 .. $#scale - 1;
-    }
-    else { 
-        @intervals = map { int(rand $opts{int}) + 1 } 1 .. 7;
-    }
+if ($opts{rand}) { 
+    # Get random intervals
+    @intervals = map { int(rand $opts{rand}) + 1 } 1 .. 7;
+}
+else { 
+    # Get the named scale intervals
+    my @scale  = (get_scale_nums($opts{scale}), 12);
+    @intervals = map { $scale[$_ + 1] - $scale[$_]} 0 .. $#scale - 1;
+}
 
 This is then used in the next step, which is to instantiate a new Music::Guidonian object:
 
