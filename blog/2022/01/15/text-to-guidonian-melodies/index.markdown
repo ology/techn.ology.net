@@ -25,7 +25,7 @@ This program uses the venerable [Getopt::Long](https://metacpan.org/pod/Getopt::
 
 The program accepts a number of command-line arguments, all of which have a default set (except for the "--file", which is undef).
 
-One of these is either the name of the scale to use, or a number for random intervals of half-steps.  So the next thing the program does is either get a list of seven random integer interval numbers OR compute the size of the intervals between scale degrees:
+This is either the name of the scale to use, or a maximum number for random intervals of half-steps.  So the next thing the program does is either get a list of seven random integer interval numbers OR compute the size of the intervals between scale degrees:
 
     if ($opts{rand}) { 
         # Get random intervals
@@ -81,7 +81,7 @@ So what does this sound like?
 
 [guidonian.mp3](guidonian.mp3)
 
-And here is what the lyrics of The Beatles, [Penny Lane](https://genius.com/The-beatles-penny-lane-lyrics) sounds like:
+And here are what the lyrics of The Beatles, [Penny Lane](https://genius.com/The-beatles-penny-lane-lyrics) sounds like:
 
     perl guidonian -f ~/Documents/lit/Beatles/Penny_Lane.txt
 
