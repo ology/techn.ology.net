@@ -23,12 +23,12 @@ This took some head scratching:  How to get lists of the subroutines that repres
 For the first, I use this excellent syntax that perl affords:
 
     my $total_bars = 32;
-    my @barst = map { my $sub = 'bart' . $_; \&$sub } 1 .. $total_bars;
-    my @barsb = map { my $sub = 'barb' . $_; \&$sub } 1 .. $total_bars;
+    my @barst = map { my $sub = 'bart' . $_; \&$sub } 1 .. $total_bars; # Treble
+    my @barsb = map { my $sub = 'barb' . $_; \&$sub } 1 .. $total_bars; # Bass
 
 This creates a name for each numbered subroutine and then returns a reference to that subroutine - one for treble and one for bass.
 
-For the second, I just get a random integer, that is the size of the treble (and bass) subroutine list, from 1 to the maximum number of bars to play:
+For the second, I just get a random integer, that is the size of the treble subroutine list, from 1 to the maximum number of bars to play:
 
     my @choices = map { int rand @barst } 1 .. $max;
 
@@ -39,10 +39,12 @@ For the third, I just loop over the choices executing each selected subroutine:
     my $tproc = sub {
         set_chan_patch($score, 0, $tpatch);
         $barst[$_]->() for @choices;
+        ...
     };
     my $bproc = sub {
         set_chan_patch($score, 1, $bpatch);
         $barsb[$_]->()for @choices;
+        ...
     };
 
 And what do these subroutines look like?
