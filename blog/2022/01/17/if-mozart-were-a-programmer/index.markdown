@@ -14,7 +14,7 @@ tl;dr: [dice-game](https://github.com/ology/Music/blob/master/dice-game)
 
 ---
 
-After searching a bit, I found the [transcription of possible phrases](https://musescore.com/user/30029219/scores/5943501) that were allegedly used by Mozart.  These are simple, single measures of treble and bass motifs in 3/8 time.  And there are about 100 of them.  So far, I only have 32 bars covered.
+After searching a bit, I found the [transcription of possible phrases](https://musescore.com/user/30029219/scores/5943501) that were allegedly used by Mozart.  These are simple, single measures of treble and bass motifs in 3/8 time.  And there are about 100 of them...
 
 So I had my work cut out for me: 1) implement the selection and playing of these motifs.  And 2) tediously turn the measures into MIDI-Perl (the ~100 bars).
 
@@ -42,6 +42,23 @@ For the third, I just loop over the choices executing each selected subroutine:
         set_chan_patch($score, 1, $bpatch);
         $barsb[$_]->()for @choices;
     };
+
+And what do these subroutines look like?
+
+    sub bart1 { 
+        print '', (caller(0))[3], "\n";
+        $score->n(qw(en F5));
+        $score->n(qw(en D5));
+        $score->n(qw(en G5));
+    }
+    sub barb1 { 
+        $score->n(qw(en F3));
+        $score->n(qw(en D3));
+        $score->n(qw(en G3));
+    }
+    ...
+
+They just add notes and rests to the score.
 
 Finally I play the two simultaneously with:
 
