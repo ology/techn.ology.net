@@ -26,6 +26,8 @@ For the first, I use this excellent syntax that perl affords:
     my @barst = map { my $sub = 'bart' . $_; \&$sub } 1 .. $total_bars;
     my @barsb = map { my $sub = 'barb' . $_; \&$sub } 1 .. $total_bars;
 
+This creates a name for each numbered subroutine and then returns a reference to that subroutine - one for treble and one for bass.
+
 For the second, I just get a random integer from 1 to the maximum number of bars to play:
 
     my @choices = map { int rand @barst } 1 .. $max;
