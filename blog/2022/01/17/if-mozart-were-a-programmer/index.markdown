@@ -67,7 +67,6 @@ They just add notes and rests to the score.
 Finally I play the two simultaneously with:
 
     $score->synch($tproc, $bproc);
-    ...
     $score->write_score("$0.mid");
 
 And what does a run of this sound like?
