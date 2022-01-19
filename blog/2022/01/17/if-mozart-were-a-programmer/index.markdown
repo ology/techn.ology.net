@@ -72,3 +72,5 @@ Finally I play the two simultaneously with:
 And what does a run of this sound like?
 
 [dice-game.mp3](dice-game.mp3)
+
+![mozart-game.jpg](mozart-game.jpg)
