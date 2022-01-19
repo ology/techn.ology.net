@@ -22,9 +22,8 @@ This took some head scratching:  How to get lists of the subroutines that repres
 
 For the first, I use this excellent syntax that perl affords:
 
-    my $total_bars = 32;
-    my @barst = map { my $sub = 'bart' . $_; \&$sub } 1 .. $total_bars; # Treble
-    my @barsb = map { my $sub = 'barb' . $_; \&$sub } 1 .. $total_bars; # Bass
+    my @barst = map { my $sub = 'bart' . $_; \&$sub } 1 .. TOTAL_BARS; # Treble
+    my @barsb = map { my $sub = 'barb' . $_; \&$sub } 1 .. TOTAL_BARS; # Bass
 
 This creates a name for each numbered subroutine and then returns a reference to that subroutine - one for treble and one for bass.
 
