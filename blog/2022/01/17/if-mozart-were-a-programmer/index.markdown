@@ -44,7 +44,7 @@ For the third, I just loop over the choices executing each selected subroutine:
     };
     my $bproc = sub {
         set_chan_patch($score, 1, $bpatch);
-        $barsb[$_]->()for @choices;
+        $barsb[$_]->() for @choices;
         ...
     };
 
