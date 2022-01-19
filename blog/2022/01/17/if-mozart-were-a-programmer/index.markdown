@@ -28,9 +28,11 @@ For the first, I use this excellent syntax that perl affords:
 
 This creates a name for each numbered subroutine and then returns a reference to that subroutine - one for treble and one for bass.
 
-For the second, I just get a random integer, that is the size of the treble subroutine list, from 1 to the maximum number of bars to play:
+For the second, I do one of two things depending on whether we are given a specific choice: Either get the user defined choices, or get a random integer, that is the size of the treble subroutine list, from 1 to the maximum number of bars to play:
 
-    my @choices = map { int rand @barst } 1 .. $max;
+    my @choices = $choice
+        ? map { $_ - 1 } split(/,/, $choice)
+        : map { int rand @barst } 1 .. $max;
 
 Technically, this should be the sum of two dice...  But that is the same thing as choosing at random.
 
