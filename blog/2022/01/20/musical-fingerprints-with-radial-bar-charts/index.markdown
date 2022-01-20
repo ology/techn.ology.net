@@ -18,7 +18,7 @@ Naturally I wondered if I could replicate this and analyze my own tunes...
 
 ![XYZ](radial/XYZ.png)
 
-Here are all 26 tunes from my last release, "X" (located on my YouTube page at https://www.youtube.com/channel/UCHTS8kJCGNo_4d5x6POCTVw ):
+Here are the rest of the tunes from my last release, "X" (located on my YouTube page at https://www.youtube.com/channel/UCHTS8kJCGNo_4d5x6POCTVw ):
 
 [Attenuation](radial/Attenuation.png),
 [Beneath](radial/Beneath.png),
