@@ -14,8 +14,8 @@ tl:dr: [analyze-low-level](https://github.com/ology/Music/blob/master/analyze-lo
 
 ---
 
-Naturally I wondered if I could replicate this, and also analyze my own tunes...
+Naturally I wondered if I could replicate this and analyze my own tunes...
 
 ![XYZ](radial/XYZ.png)
 
-Here are all 26 tunes from my last release titles, ["X"](https://www.youtube.com/watch?v=BCrFiwwMC9M&list=OLAK5uy_kR1i35AqGhfZ9fkT2d0lFCMyBOU9auMjc): [Charts](radial/)
+Here are all 26 tunes from my last release, "X" (located on my [YouTube page](https://www.youtube.com/channel/UCHTS8kJCGNo_4d5x6POCTVw)): [Charts](radial/)
