@@ -12,7 +12,7 @@ I stumbled across [this link](https://www.nytimes.com/2019/04/04/learning/whats-
 
 ---
 
-Naturally I wondered if I could replicate this and analyze my own music, as my latest release, ["X"](https://musicbrainz.org/release-group/9e074913-54f9-4c36-9e6e-5e005ed5da08) is on MusicBrainz.
+Naturally I wondered if I could replicate this and analyze my own music, as my latest release, ["X"](https://musicbrainz.org/release/4e559959-0392-4297-92e9-76a2d8f2cb2e) is on MusicBrainz.
 
 Code: [analyze-low-level](https://github.com/ology/Music/blob/master/analyze-low-level)
 
