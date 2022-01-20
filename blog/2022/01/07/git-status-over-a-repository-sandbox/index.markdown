@@ -32,7 +32,8 @@ Imports that the program depends upon:
 Accept program arguments for either quick summary or interactive view, and the location of the repositories:
 
     my $summary = shift // 0;
-    my $path = shift || $ENV{HOME} . '/sandbox';
+    my $path    = shift || $ENV{HOME} . '/sandbox';
+    my $filter  = shift // ''; # Inclusive regular expression pattern
 
 Ok. First-up, we get a list of the possible repositories:
 
@@ -117,7 +118,7 @@ The final condition is just to skip to the next repo with:
 
 I run this in the shell by putting this in my ~/bin directory, making it executable, then saying:
 
-    $ gitstat 1
+    $ gitstat 1 | grep DIRTY -A1
 
 And look for DIRTY repos.  Or interactively, for instance:
 
