@@ -18,7 +18,9 @@ Naturally I wondered if I could replicate this and analyze my own tunes...
 
 ![XYZ](radial/XYZ.png)
 
-Here are the rest of the tunes from my last release, "X", located on [my YouTube page](https://www.youtube.com/channel/UCHTS8kJCGNo_4d5x6POCTVw):
+As you can see, this is not the sexiest chart.  There are many many other libraries out there, but the one I chose was the simplest at the time.
+
+Anyway, here are the rest of the tunes from my last release, "X", located on [my YouTube page](https://www.youtube.com/channel/UCHTS8kJCGNo_4d5x6POCTVw):
 
 [Attenuation](radial/Attenuation.png),
 [Beneath](radial/Beneath.png),
