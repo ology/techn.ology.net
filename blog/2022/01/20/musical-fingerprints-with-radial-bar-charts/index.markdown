@@ -43,5 +43,5 @@ Here are all 26 tunes from my last release, "X" (located on my YouTube page at h
 [Soliton](radial/Soliton.png),
 [Sol](radial/Sol.png),
 [Urgent](radial/Urgent.png),
-[Vignette II](radial/Vignette II.png),
-[Voss Alteration](radial/Voss Alteration.png)
+[Vignette II](radial/Vignette\ II.png),
+[Voss Alteration](radial/Voss\ Alteration.png)
