@@ -20,4 +20,28 @@ Naturally I wondered if I could replicate this and analyze my own tunes...
 
 Here are all 26 tunes from my last release, "X" (located on my YouTube page at https://www.youtube.com/channel/UCHTS8kJCGNo_4d5x6POCTVw ):
 
-[Charts](radial/)
+[Attenuation](radial/Attenuation.png),
+[Beneath](radial/Beneath.png),
+[Beyond](radial/Beyond.png),
+[Clubster](radial/Clubster.png),
+[Complexity](radial/Complexity.png),
+[Composure](radial/Composure.png),
+[Dignified](radial/Dignified.png),
+[Dusk](radial/Dusk.png),
+[Echolocation](radial/Echolocation.png),
+[Emergent](radial/Emergent.png),
+[Gondwana](radial/Gondwana.png),
+[Lakeside](radial/Lakeside.png),
+[Lush](radial/Lush.png),
+[Magical](radial/Magical.png),
+[Manifest](radial/Manifest.png),
+[Ocean](radial/Ocean.png),
+[Overlap](radial/Overlap.png),
+[Puzzlement](radial/Puzzlement.png),
+[Romantics](radial/Romantics.png),
+[Serene](radial/Serene.png),
+[Soliton](radial/Soliton.png),
+[Sol](radial/Sol.png),
+[Urgent](radial/Urgent.png),
+[Vignette II]('radial/Vignette II.png'),
+[Voss Alteration]('radial/Voss Alteration.png')
