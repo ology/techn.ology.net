@@ -45,3 +45,5 @@ Here are the rest of the tunes from my last release, "X" (located on my YouTube 
 [Urgent](radial/Urgent.png),
 [Vignette II](radial/Vignette-II.png),
 [Voss Alteration](radial/Voss-Alteration.png)
+
+As expected, my ambient tunes like Lush and Sol, etc. all have smaller fingerprints, because they all change the least in every way.
