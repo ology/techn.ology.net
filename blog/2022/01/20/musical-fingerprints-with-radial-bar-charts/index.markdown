@@ -60,3 +60,5 @@ Anyway, here are the rest of the tunes from my last release, "X", located on [my
 [Voss Alteration](radial/Voss-Alteration.png)
 
 As expected, my ambient tunes like Lush and Sol, etc. all have smaller fingerprints, because they all change the least in every way.
+
+As an exercise for the reader, analyze Led Zeppelin or Frank Sinatra or whoever with this technique.  Just find their musicbrainz artist id and use that instead of mine.  Fun times!
