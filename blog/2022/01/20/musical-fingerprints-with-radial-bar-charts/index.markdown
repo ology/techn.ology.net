@@ -18,7 +18,7 @@ Code: [analyze-low-level](https://github.com/ology/Music/blob/master/analyze-low
 
 ![XYZ](radial/XYZ.png)
 
-As you can see, this is not the sexiest chart.  There are many many other libraries out there, but the one I chose was the simplest at the time.
+As you can see, this is not the sexiest chart.  There are many many other libraries out there, but the one I chose was the simplest at the time.  The red polygon represents the song in question ("XYZ" in the above case).  Grey is for the average of all 26 tunes.
 
 Anyway, here are the rest of the tunes from my last release, "X", located on [my YouTube page](https://www.youtube.com/channel/UCHTS8kJCGNo_4d5x6POCTVw):
 
