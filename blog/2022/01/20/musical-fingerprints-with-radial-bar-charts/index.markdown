@@ -31,33 +31,7 @@ It's small but handy!  Please see the code link above for the exciting details. 
 
 As you can see, this is not the sexiest chart.  There are many many other libraries out there, but the one I chose was the simplest at the time.  The red polygon represents the song in question ("XYZ" in the above case).  Grey is for the average of all 26 tunes.
 
-Anyway, [here](radial/) are the rest of the charts for the tunes from my last release, "X" (The audio is located on [my YouTube page](https://www.youtube.com/channel/UCHTS8kJCGNo_4d5x6POCTVw)).
-
-[Attenuation](radial/Attenuation.png),
-[Beneath](radial/Beneath.png),
-[Beyond](radial/Beyond.png),
-[Clubster](radial/Clubster.png),
-[Complexity](radial/Complexity.png),
-[Composure](radial/Composure.png),
-[Dignified](radial/Dignified.png),
-[Dusk](radial/Dusk.png),
-[Echolocation](radial/Echolocation.png),
-[Emergent](radial/Emergent.png),
-[Gondwana](radial/Gondwana.png),
-[Lakeside](radial/Lakeside.png),
-[Lush](radial/Lush.png),
-[Magical](radial/Magical.png),
-[Manifest](radial/Manifest.png),
-[Ocean](radial/Ocean.png),
-[Overlap](radial/Overlap.png),
-[Puzzlement](radial/Puzzlement.png),
-[Romantics](radial/Romantics.png),
-[Serene](radial/Serene.png),
-[Soliton](radial/Soliton.png),
-[Sol](radial/Sol.png),
-[Urgent](radial/Urgent.png),
-[Vignette II](radial/Vignette-II.png),
-[Voss Alteration](radial/Voss-Alteration.png)
+Anyway, here are the rest of the charts for the tunes from my last release, "X" (audio located on [my YouTube channel](https://www.youtube.com/channel/UCHTS8kJCGNo_4d5x6POCTVw)): [Tune Charts](charts.html)
 
 As expected, my ambient tunes like Lush and Sol have smaller fingerprints, because they change the least in every way.
 
