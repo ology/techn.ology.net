@@ -59,6 +59,6 @@ Anyway, here are the rest of the charts for the tunes from my last release, "X",
 [Vignette II](radial/Vignette-II.png),
 [Voss Alteration](radial/Voss-Alteration.png)
 
-As expected, my ambient tunes like Lush and Sol have smaller fingerprints, because they all change the least in every way.
+As expected, my ambient tunes like Lush and Sol have smaller fingerprints, because they change the least in every way.
 
 As an exercise for the reader, analyze [Led Zeppelin](https://musicbrainz.org/artist/678d88b2-87b0-403b-b63d-5da7465aecc3) or [Frank Sinatra](https://musicbrainz.org/artist/197450cd-0124-4164-b723-3c22dd16494d) or whoever, with this technique.  Just input their musicbrainz artist id, instead of mine.  Might take a bit of tweaking of the code to filter the recordings.  Also: Might take a while... Fun times!
