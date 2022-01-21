@@ -31,7 +31,7 @@ It's small but handy!  Please see the code link above for the exciting details. 
 
 As you can see, this is not the sexiest chart.  There are many many other libraries out there, but the one I chose was the simplest at the time.  The red polygon represents the song in question ("XYZ" in the above case).  Grey is for the average of all 26 tunes.
 
-Anyway, [here](radial/) are the rest of the charts for the tunes from my last release, "X", located on [my YouTube page](https://www.youtube.com/channel/UCHTS8kJCGNo_4d5x6POCTVw):
+Anyway, [here](radial/) are the rest of the charts for the tunes from my last release, "X" (The audio is located on [my YouTube page](https://www.youtube.com/channel/UCHTS8kJCGNo_4d5x6POCTVw)).
 
 [Attenuation](radial/Attenuation.png),
 [Beneath](radial/Beneath.png),
