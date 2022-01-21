@@ -16,6 +16,17 @@ Naturally I wondered if I could replicate this and analyze my own music, as my l
 
 Code: [analyze-low-level](https://github.com/ology/Music/blob/master/analyze-low-level)
 
+The code uses a number of libraries to get the job done:
+
+[GD::Chart::Radial](https://metacpan.org/pod/GD::Chart::Radial),
+[Math::Utils](https://metacpan.org/pod/Math::Utils),
+[Mojo::File](https://metacpan.org/pod/Mojo::File),
+[Statistics::Basic](https://metacpan.org/pod/Statistics::Basic),
+[WebService::AcousticBrainz](https://metacpan.org/pod/WebService::AcousticBrainz), and
+[WebService::MusicBrainz](https://metacpan.org/pod/WebService::MusicBrainz)
+
+It's small but handy!  Please see the code link above for the exciting details.  But these types of images are what it produces:
+
 ![XYZ](radial/XYZ.png)
 
 As you can see, this is not the sexiest chart.  There are many many other libraries out there, but the one I chose was the simplest at the time.  The red polygon represents the song in question ("XYZ" in the above case).  Grey is for the average of all 26 tunes.
