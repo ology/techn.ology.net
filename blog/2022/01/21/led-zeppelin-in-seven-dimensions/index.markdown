@@ -19,6 +19,6 @@ Example chart that this produces:
 
 ![Immigrant Song](Immigrant-Song.png)
 
-The spokes are defined by specific measurements that I chose from those available in the the [AcousticBrainz](https://acousticbrainz.org/) analysis of each tune.  These were the most "meaningful" to me, but I don't know the exact meanings!  Oof.
+The spokes are defined by specific measurements that I chose from those available in the the [AcousticBrainz](https://acousticbrainz.org/) analysis of each tune.  These were the most "meaningful" to me, but I don't know the exact meanings!  Oof.  Anyway, the red line connects measurements of the song in question (like the Immigrant Song). Gray represents the average of all songs.
 
 And here is the [zip file](Led-Zeppelin-Charts.zip) of all the charts for every Zeppelin tune.
