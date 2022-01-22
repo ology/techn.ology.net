@@ -22,3 +22,12 @@ Example chart that this produces:
 The spokes are defined by specific measurements that I chose from those available in the the [AcousticBrainz](https://acousticbrainz.org/) analysis of each tune.  These were the most "meaningful" to me, but I don't know the exact meanings!  Oof.  Anyway, the red line connects measurements of the song in question (like the Immigrant Song). Gray represents the average of all songs.  Also, the spokes are zero at the center and one at the end, with the measurements scaled to that range.
 
 And here is the [zip file](Led-Zeppelin-Charts.zip) of all the charts for every Zeppelin tune.
+
+~
+
+**UPDATE**:
+I visualized [Queen](https://musicbrainz.org/artist/0383dadf-2a4e-4d10-a46a-e9e041da8eb3) with [this list](Queen-releases-mbid.txt) of recording ids for each of their albums.  Here is one of the charts:
+
+![Another One Bites the Dust](Another-One-Bites-the-Dust.png)
+
+And [here]() is are all 146 of their charts.
