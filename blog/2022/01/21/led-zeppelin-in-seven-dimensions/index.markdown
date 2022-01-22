@@ -30,4 +30,4 @@ I visualized [Queen](https://musicbrainz.org/artist/0383dadf-2a4e-4d10-a46a-e9e0
 
 ![Another One Bites the Dust](Another-One-Bites-the-Dust.png)
 
-And [here]() is are all 146 of their charts.
+And [here](Queen-Charts.zip) is are all 146 of their charts.
