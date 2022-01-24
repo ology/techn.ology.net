@@ -1,6 +1,6 @@
 ---                                                                                                                                                                          
 status: published
-title: Musical Fingerprints with Radial Bar Charts
+title: Musical Fingerprints with Radar Charts
 tags:
   - perl
   - software
