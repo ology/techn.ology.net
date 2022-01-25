@@ -7,7 +7,7 @@ tags:
   - music
 ---
 
-[Previously](https://ology.github.io/2022/01/20/musical-fingerprints-with-radial-bar-charts/), I figured out how to "fingerprint" songs with radar charts.  But as soon as I did, I wanted to analyze the entire set of tunes by well known bands like Led Zeppelin.
+[Previously](https://ology.github.io/2022/01/20/musical-fingerprints-with-radar-charts/), I figured out how to "fingerprint" songs with radar charts.  But as soon as I did, I wanted to analyze the entire set of tunes by well known bands like Led Zeppelin.
 
 ---
 
