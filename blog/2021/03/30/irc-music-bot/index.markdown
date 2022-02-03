@@ -16,62 +16,48 @@ tl;dr: [irc-bot](https://github.com/ology/Music/blob/master/irc-bot)
 ### Ingredients:
 
 * [Mojo::IRC](https://metacpan.org/pod/Mojo::IRC)
-
-To drive the whole thing!
+- To drive the whole thing!
 
 * [YAML::XS](https://metacpan.org/pod/distribution/YAML-LibYAML/lib/YAML/XS.pod)
+- To import the configuration
 
-To import the configuration
+* [Music::Note](https://metacpan.org/pod/Music::Note) 
+- To convert between note formats
 
-* [Music::Note](https://metacpan.org/pod/Music::Note)
+* [Music::Note::Frequency](https://metacpan.org/pod/Music::Note::Frequency) 
+- To get note frequencies
 
-To convert between note formats
+* [App::MusicTools](https://metacpan.org/pod/App::MusicTools) 
+- For the `vov` program
 
-* [Music::Note::Frequency](https://metacpan.org/pod/Music::Note::Frequency)
+* [Music::Scales](https://metacpan.org/pod/Music::Scales) 
+- Used to display and select scale notes
 
-To get note frequencies
+* [Music::Chord::Note](https://metacpan.org/pod/Music::Chord::Note) 
+- Print out a note list given a chord name
 
-* [App::MusicTools](https://metacpan.org/pod/App::MusicTools)
+* [Music::Chord::Namer](https://metacpan.org/pod/Music::Chord::Namer) 
+- Print out a chord name of the given notes
 
-For the `vov` program
+* [Music::Duration::Partition](https://metacpan.org/pod/Music::Duration::Partition) and [Data::Dumper::Compact](https://metacpan.org/pod/Data::Dumper::Compact) 
+- Generate a randomized phrase of `pitch.duration` elements
 
-* [Music::Scales](https://metacpan.org/pod/Music::Scales)
+* [Music::Intervals](https://metacpan.org/pod/Music::Intervals) 
+- For computing the intervals between pitches
 
-Used to display and select scale notes
+* [Mojo::UserAgent](https://metacpan.org/pod/Mojo::UserAgent) and [Mojo::DOM](https://metacpan.org/pod/Mojo::DOM) 
+- For fetching web data
 
-* [Music::Chord::Note](https://metacpan.org/pod/Music::Chord::Note)
-
-Print out a note list given a chord name
-
-* [Music::Chord::Namer](https://metacpan.org/pod/Music::Chord::Namer)
-
-Print out a chord name of the given notes
-
-* [Music::Duration::Partition](https://metacpan.org/pod/Music::Duration::Partition) and [Data::Dumper::Compact](https://metacpan.org/pod/Data::Dumper::Compact)
-
-Generate a randomized phrase of `pitch.duration` elements
-
-* [Music::Intervals](https://metacpan.org/pod/Music::Intervals)
-
-For computing the intervals between pitches
-
-* [Mojo::UserAgent](https://metacpan.org/pod/Mojo::UserAgent) and [Mojo::DOM](https://metacpan.org/pod/Mojo::DOM)
-
-For fetching web data
-
-* [Syntax::Keyword::Try](https://metacpan.org/pod/Syntax::Keyword::Try) and [MIDI::Util](https://metacpan.org/pod/MIDI::Util) and [MP3::Tag](https://metacpan.org/pod/MP3::Tag)
-
-Generate an MP3 file based on a given phrase
+* [Syntax::Keyword::Try](https://metacpan.org/pod/Syntax::Keyword::Try) and [MIDI::Util](https://metacpan.org/pod/MIDI::Util) and [MP3::Tag](https://metacpan.org/pod/MP3::Tag) 
+- Generate an MP3 file based on a given phrase
 
 * A server to host MP3 files and run the fretboard diagram app
 
-* [MIDI::Drummer::Tiny](https://metacpan.org/pod/MIDI::Drummer::Tiny)
+* [MIDI::Drummer::Tiny](https://metacpan.org/pod/MIDI::Drummer::Tiny) 
+- Produce a drum track
 
-Produce a drum track
-
-* [MIDI::Chord::Guitar](https://metacpan.org/pod/MIDI::Chord::Guitar)
-
-Prints out guitar chord neck position fingerings
+* [MIDI::Chord::Guitar](https://metacpan.org/pod/MIDI::Chord::Guitar) 
+- Prints out guitar chord neck position fingerings
 
 ### Commands:
 
