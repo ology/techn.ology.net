@@ -23,6 +23,6 @@ So... I think that Coltrane might have used this diagram like so:
 
 1. Start anywhere on the inner or outer circle.
 2. Move right or left playing whole-tones.
-3. If you get to a section boundary, play the cluster.
+3. If you get to a section boundary, play the cluster, unless going back.
 4. If you land on a cluster, you can play those notes.
 5. GOTO 2
