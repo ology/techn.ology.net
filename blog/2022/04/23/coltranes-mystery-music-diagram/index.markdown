@@ -18,3 +18,10 @@ This fascinating, but simple diagram speaks for itself.  Theoretically, this is 
 Here is Coltrane's original drawing.  (Notice that he messed up at 9 o'clock.)
 
 ![coltrane-circle-drawing](coltrane-circle-drawing.jpg)
+
+So... I think that Coltrane might have used this diagram like so:
+
+1. Start anywhere on the inner or outer circle.
+2. Move right or left playing whole-tones.
+3. If you get to a cluster, you can play the next notes inside the "ovals."
+4. GOTO 2
