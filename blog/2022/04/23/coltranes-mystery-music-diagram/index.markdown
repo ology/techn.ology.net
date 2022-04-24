@@ -7,7 +7,7 @@ tags:
 
 ![coltrane-circle-drawing](coltrane-circle-drawing-sm.jpg)
 
-Like many music theory minded people, who also are into jazz, I have seen and wondered about John Coltrane's curious circle drawing...
+Like many music theory minded people, who also are into jazz, I have seen and wondered about [John Coltrane](https://en.wikipedia.org/wiki/John_Coltrane)'s curious circle drawing...
 
 ---
 
