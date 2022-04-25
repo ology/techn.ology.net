@@ -24,7 +24,7 @@ So... I think that Coltrane might have used this diagram like so:
 1. Start anywhere on the inner or outer circle.
 2. Move right or left playing whole-tones.
 3. If you get to a section boundary, play the cluster, unless going back.
-4. If you land on a cluster, you can play those notes.
+4. If you land on a midpoint cluster, you can play those notes.
 5. GOTO 2
 
 Naturally, being a programmer, I was compelled to attempt to automate the playing (via MIDI) of this diagram.  Check out [the code](https://github.com/ology/Music/blob/master/coltrane), if you dare.
