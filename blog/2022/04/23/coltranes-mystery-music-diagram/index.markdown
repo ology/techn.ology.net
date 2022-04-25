@@ -38,12 +38,6 @@ The results are so-so at best, so far.  Here are a couple runs:
 
 [coltrane-05](coltrane-05.mp3)
 
-So I imported a run into my [DAW](https://www.apple.com/logic-pro/) to have better drums... I added mindless keys and stunted bass - not proper jazz!  But here it is:
-
-[Colatrane-fragment](Colatrane-fragment.mp3)
-
-...If he were alive, Coltrane would not be impressed. :|
-
-Here is a better one **without** the annoying bass and keys:
+So I imported a run into my [DAW](https://www.apple.com/logic-pro/) to have better drums:
 
 [Coltrane-fragment-02](Coltrane-fragment-02.mp3)
