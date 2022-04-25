@@ -46,4 +46,4 @@ So I imported a run into my [DAW](https://www.apple.com/logic-pro/) to have bett
 
 Here is a better one **without** the annoying bass and keys:
 
-[Colatrane-fragment-02](Colatrane-fragment-02.mp3)
+[Coltrane-fragment-02](Coltrane-fragment-02.mp3)
