@@ -3,6 +3,7 @@ status: published
 title: Coltrane's Mystery Music Diagram
 tags:
   - music
+  - perl
 ---
 
 ![coltrane-circle-drawing](coltrane-circle-drawing-sm.jpg)
