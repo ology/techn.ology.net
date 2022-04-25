@@ -29,6 +29,8 @@ So... I think that Coltrane might have used this diagram like so:
 
 Naturally, being a programmer, I was compelled to attempt to automate the playing (via MIDI) of this diagram.  Check out [the code](https://github.com/ology/Music/blob/master/coltrane), if you dare.
 
-The results are so-so at best, so far.  Here is the current, best run:
+The results are so-so at best, so far.  Here are the current, best runs:
 
 [coltrane-03](coltrane-03.mp3)
+
+[coltrane-04](coltrane-04.mp3)
