@@ -40,7 +40,7 @@ The results are so-so at best, so far.  Here are the current, best runs:
 
 Occasionally, this may run off into too-high or too-low registers. If so, re-run it! ;)
 
-So I imported a run into my [DAW](https://www.apple.com/logic-pro/) and have better drums... I added mindless keys and stunted bass - not proper jazz!  But here it is:
+So I imported a run into my [DAW](https://www.apple.com/logic-pro/) to have better drums... I added mindless keys and stunted bass - not proper jazz!  But here it is:
 
 [Colatrane-fragment](Colatrane-fragment.mp3)
 
