@@ -38,4 +38,10 @@ The results are so-so at best, so far.  Here are the current, best runs:
 
 [coltrane-05](coltrane-05.mp3)
 
-Occasionally, this will run off into too-high or too-low registers. If so, re-run it! ;)
+Occasionally, this may run off into too-high or too-low registers. If so, re-run it! ;)
+
+So I imported a run into my [DAW](https://www.apple.com/logic-pro/) and have better drums... I added mindless keys and stunted bass - not proper jazz!  But here it is:
+
+[Colatrane-fragment](Colatrane-fragment.mp3)
+
+If he were alive, Coltrane would not be impressed. :\
