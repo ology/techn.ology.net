@@ -35,4 +35,6 @@ The results are so-so at best, so far.  Here are the current, best runs:
 
 [coltrane-04](coltrane-04.mp3)
 
-Occasionally, this will run off into too-high or too-low registers. Re-run it! ;)
+[coltrane-05](coltrane-05.mp3)
+
+Occasionally, this will run off into too-high or too-low registers. If so, re-run it! ;)
