@@ -43,3 +43,7 @@ So I imported a run into my [DAW](https://www.apple.com/logic-pro/) to have bett
 [Colatrane-fragment](Colatrane-fragment.mp3)
 
 ...If he were alive, Coltrane would not be impressed. :|
+
+Here is a better one **without** the annoying bass and keys:
+
+[Colatrane-fragment-02](Colatrane-fragment-02.mp3)
