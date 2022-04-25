@@ -44,4 +44,4 @@ So I imported a run into my [DAW](https://www.apple.com/logic-pro/) to have bett
 
 [Colatrane-fragment](Colatrane-fragment.mp3)
 
-If he were alive, Coltrane would not be impressed. :\
+If he were alive, Coltrane would not be impressed. :|
