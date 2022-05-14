@@ -1,6 +1,6 @@
 ---                                                                                                                                                                          
 status: published
-title: Interactive Circular Music Interval Diagram
+title: Circular Music Interval Diagram
 tags:
   - perl
   - music
