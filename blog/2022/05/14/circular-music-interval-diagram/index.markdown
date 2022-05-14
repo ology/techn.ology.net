@@ -7,7 +7,7 @@ tags:
   - data
 ---
 
-After studying John Coltrane's wholetone/chromatic [circular diagram](https://ology.github.io/2022/04/23/coltranes-mystery-music-diagram/), I was determined to make a program to show any musical intervals around a circle.  And if I could, to make a concentric "inner" ring with note offsets, like Coltrane did.  So the weekend arrived and I got busy...
+After studying John Coltrane's wholetone/chromatic [circular diagram](https://ology.github.io/2022/04/23/coltranes-mystery-music-diagram/), I was determined to make a program to show musical intervals around a circle.  And if I could, to make a concentric "inner" ring with note offsets, like Coltrane did.  So the weekend arrived and I got busy...
 
 
 ---
