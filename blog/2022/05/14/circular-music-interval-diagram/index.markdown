@@ -123,7 +123,7 @@ If we are *not* showing the inner ring, render a caption in the middle of the ci
         -cdata => $caption,
     ) if !$show_inner;
 
-Now for the loop that actually draws the interval positions on the outer ring... But first we have to set up a couple things - a counter and and array of the positions to render:
+Now for the loop that actually draws the interval positions on the outer ring... But first we have to set up a couple things - a counter and an array of the positions to render:
 
     my $i = 0; # counter
 
