@@ -12,9 +12,7 @@ After studying John Coltrane's wholetone/chromatic [circular diagram](https://ol
 
 ---
 
-tl;dr: [circle-intervals](https://github.com/ology/Music/blob/master/circle-intervals)
-
-**Images at the bottom**
+tl;dr: [circle-intervals](https://github.com/ology/Music/blob/master/circle-intervals) ~ **Images at the bottom**
 
 Let's dive in!
 
