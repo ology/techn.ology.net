@@ -129,7 +129,7 @@ Now for the loop that actually draws the interval positions on the outer ring...
 
     my @marks = map { $_ * $total_marks / $show_marks } 1 .. $show_marks;
 
-Now for the loop!  A coordinate is computed based on the current position, a small circle is drawn for each interval position, and the name of the note (or the pitch number) is added (from the @outer_labels array):
+Now for the loop!  A coordinate is computed based on the current position, a small circle is drawn for each interval position, and the name of the note (or the pitch number) is added:
 
     for my $mark (@marks) {
         $i++;
