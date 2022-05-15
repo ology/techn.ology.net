@@ -95,7 +95,7 @@ And we are going to use SVG for this task:
 
 And now for the meat of the program!
 
-There are two separate, concentric interval rings - an outer and an inner.  We render the outer ring first, but before we can, a scale of notes must be aquired.  With that in hand, we construct labels for our intervals - note names (or pitch numbers).
+There are two separate, concentric interval rings - an outer and an inner.  We render the outer ring first, but before we can, a scale of notes must be aquired.  With that in hand, we construct labels for our intervals (i.e. note names).
 
     my @outer_scale = get_scale_notes($outer_note, SCALE, undef, $flat ? 'b' : '#');
 
