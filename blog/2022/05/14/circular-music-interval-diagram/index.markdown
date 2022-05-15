@@ -302,7 +302,7 @@ So what do these diagrams look like?  Here are some examples produced with the p
 
 ![perfect 5th](circle-intervals-02.svg)
 
-    $ perl circle-intervals 4 12 1 0 1 > circle-intervals-03.svg
+    $ perl circle-intervals 4 12 0 0 1 > circle-intervals-03.svg
 
 ![numeric](circle-intervals-03.svg)
 
