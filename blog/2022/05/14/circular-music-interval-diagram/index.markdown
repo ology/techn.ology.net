@@ -128,6 +128,9 @@ Now for the loop that actually draws the interval positions on the outer ring...
     my $i = 0; # counter
 
     my @marks = map { $_ * $total_marks / $show_marks } 1 .. $show_marks;
+    my $fract = ($marks[1] - $marks[0]) / 2;
+
+The $fract variable is the difference between two marks, and is used to render the innder ring.
 
 Now for the loop!  A coordinate is computed based on the current position, a small circle is drawn for each interval position, and the name of the note (or the pitch number) is added:
 
@@ -165,35 +168,6 @@ Okay. With the outer ring drawn, we move on to the inner ring.  This is mostly i
             },
         );
 
-The big difficulty with the inner ring is that it must be rotated so that its notes are exactly between the notes of the outer ring.  This involves tediously adjusting the positions.  So that is what this ugly array is:
-
-        my @factors = (
-            0,    0,
-            1.7,  1.2,  0.9,  0.7,
-            0.65, 0.6,  0.5,  0.45,
-            0.45, 0.4,  0.35, 0.35,
-            0.35, 0.35, 0.35, 0.3,
-            0.3,  0.25, 0.25, 0.25,
-            0.25, 0.25, 0.25, 0.24,
-            0.24, 0.23, 0.22, 0.22,
-            0.22, 0.22, 0.21, 0.21,
-            0.2,  0.2,  0.2,  0.2,
-            0.2,  0.2,  0.2,  0.2,
-            0.19, 0.19, 0.19, 0.19,
-            0.19, 0.19, 0.18, 0.18,
-            0.18, 0.18, 0.18, 0.18,
-            0.18, 0.18, 0.18, 0.18,
-            0.18, 0.18, 0.17,
-        );
-        my %intervals;
-        for my $known (keys %named) {
-            for my $mark (2 .. $total_marks) {
-                $intervals{ $known . ',' . $mark } = $factors[$mark];
-            }
-        }
-
-A hash is built of all the known intervals with these adjustments as values.
-
 Next we do pretty much the same thing as with the outer ring to the inner ring: Generate arrays for note intervals, labels and positions, and then add them to the growing SVG diagram.  But first we add the inner circle and caption.
 
         my @inner_scale = get_scale_notes($inner_note, SCALE, undef, $flat ? 'b' : '#');
@@ -228,10 +202,9 @@ With the inner circle in place, we procede to add the notes to the ring:
             $i++;
 
             my $p = coordinate(
-                $mark,
+                $mark + $fract,
                 $total_marks,
                 $inner_radius,
-                $intervals{ $interval . ',' . $show_marks }
             );
 
             $inner_style->circle(
@@ -275,19 +248,10 @@ There are two subroutines that are used.  One is to gather the note labels to re
         my $analog = $p / $total * DOUBLE - HALF;
 
         # Replace the time value with the polar coordinate
-        my $coord;
-        if ($inner) {
-            $coord = [
-                $radius + $radius * cos($analog - DOUBLE / $total + $inner),
-                $radius + $radius * sin($analog - DOUBLE / $total + $inner)
-            ];
-        }
-        else {
-            $coord = [
-                $radius + $radius * cos($analog),
-                $radius + $radius * sin($analog)
-            ];
-        }
+        my $coord = [
+            $radius + $radius * cos($analog),
+            $radius + $radius * sin($analog)
+        ];
 
         return $coord;
     }
