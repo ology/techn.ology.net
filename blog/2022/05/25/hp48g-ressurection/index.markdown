@@ -46,15 +46,21 @@ First, after much scouring of the internet, I found [this post](https://retrocom
     set file type binary      ; Binary if you want to run it. ASCII for text source listings.
     SET SEND PACKET-LENGTH 64 ; CRUCIAL!
 
-To send from HP48 to PC, on PC type:
+To send from the HP48 to the PC, on the PC type:
 
     server
 
-The reverse is just:
+Choose a variable and type or press:
+
+    SEND
+
+on the calculator.
+
+To receive a file on the 48, type this (or press the button):
 
     RECV
 
-to recieve a file (from the PC) to the HP48 combined with:
+This receives a file (from the PC) on the HP48 with:
 
     send some-filename
 
