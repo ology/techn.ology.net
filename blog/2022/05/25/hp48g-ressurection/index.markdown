@@ -30,7 +30,7 @@ First I had to figure out a way to tranfer things back and forth, between the ca
 
 ![transfer-dialog](transfer-dialog.png)
 
-Fortunately I had the foresight to purchase an "HP48x to PC Interface Kit" at some point.  This is just a serial cable on one end and a proprietary HP 4-pin jack on the other.  With this in hand, I installed ["C-Kermit"](https://www.kermitproject.org/ck90.html).
+Fortunately I had the foresight to purchase an "HP48x to PC Interface Kit" at some point.  This is just a serial cable on one end and a proprietary HP 4-pin jack on the other.  I use a [nice serial to USB adapter](https://www.amazon.com/Tripp-Lite-Keyspan-High-Speed-USA-19HS/dp/B0000VYJRY/).  And with these in hand, I installed ["C-Kermit"](https://www.kermitproject.org/ck90.html) on my computer.
 
     ▸ sudo ~gene/bin/kermit 
     ...
