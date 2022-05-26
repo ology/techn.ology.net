@@ -34,7 +34,7 @@ Fortunately I had the foresight to purchase an "HP48x to PC Interface Kit" at so
     ...
     (/home/gene/sandbox/HP48/) C-Kermit>
 
-First, after much scouring of the internet, I found [this post](https://retrocomputing.stackexchange.com/questions/16165/how-to-transfer-files-between-modern-linux-host-and-hp48-handheld-calculator) and set these things (ignoring the ; comments) accrding to it:
+First, after much scouring of the internet, I found [this post](https://retrocomputing.stackexchange.com/questions/16165/how-to-transfer-files-between-modern-linux-host-and-hp48-handheld-calculator) and set these things (ignoring the ; comments) according to it:
 
     set port /dev/ttyUSB0     ; Where...
     set speed 9600            ; Serial port speed, HP48 defaults to 9600, also supports 4800 2400 1200
