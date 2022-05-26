@@ -81,7 +81,7 @@ The first lines say this (in reverse Polish notation): "Multiply the amount of g
 
 I had to go over every program and sub-program debugging step-by-step (i.e. [PRG][NXT][RUN][DBUG][SST]). Whew!  But I was able to successfully figure everything out **and** make a couple major improvements - the first upgrade in 28 years! :D
 
-Here are photos of TRIP2 in action:
+Here are photos of TRIP2 in action (with testing values):
 
 ![menu](trip2-menu.jpg)
 ![settings 1](trip2-set1.jpg)
@@ -89,3 +89,4 @@ Here are photos of TRIP2 in action:
 ![settings 3](trip2-set3.jpg)
 ![summary](trip2-summary.jpg)
 
+Currently, the ETA is correct except for the edge case shown, where the total time divided by the drive time is 0 (meaning the trip should be done at the **end** of the previous day.)
