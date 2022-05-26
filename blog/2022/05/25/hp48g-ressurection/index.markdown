@@ -26,7 +26,9 @@ This software was built with ["RPL"](https://en.wikipedia.org/wiki/RPL_(programm
 
 Recently I decided to take my HP48GX calculator out of storage and maybe sell it... Hrm. But naturally I had to test it first... Rabbit hole!  Everything worked fine with the calculator systems, but I couldn't get **my** software to run.  So I put on my debugging helmet (cape?) and got busy.
 
-First I had to figure out a way to tranfer things back and forth, between the calculator and my (Linux) computer.
+First I had to figure out a way to tranfer things back and forth, between the calculator and my (Linux) computer.  The calculator side is easy - just go to the `I/O` section:
+
+![transfer-dialog](transfer-dialog.png)
 
 Fortunately I had the foresight to purchase an "HP48x to PC Interface Kit" at some point.  This is just a serial cable on one end and a proprietary HP 4-pin jack on the other.  With this in hand, I installed ["C-Kermit"](https://www.kermitproject.org/ck90.html).
 
