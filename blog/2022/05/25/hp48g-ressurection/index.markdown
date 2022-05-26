@@ -95,6 +95,6 @@ Here are photos of TRIP2 in action (with testing values):
 ![settings 3](trip2-set3.jpg)
 ![summary](trip2-summary.jpg)
 
-Currently, the ETA is correct except for the edge case shown, where the total time divided by the drive time is an integer (a number of days), meaning the trip should be done at the **end** of the previous day.
+At the time of this writing, the ETA is correct *except* for the edge case shown, where the total time divided by the drive time is an integer (a number of days), meaning the trip should be done at the **end** of the previous day. But since has been fixed!
 
-Anyway, hurrah for updates, even if they take 28 years!
+Hurrah for updates, even if they take decades!
