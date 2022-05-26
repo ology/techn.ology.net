@@ -66,9 +66,7 @@ This receives a file (from the PC) on the HP48 with:
 
 on the PC.
 
-So I did this for my TRIP program that is [on github](https://github.com/ology/HP48) and in the cloned repository on my local machine.
-
-Ok with that on my 48, I tried running it and...Barf!  It halted on a couple undefined sub-programs.  Ugh!  Also there was **no** documentation whatsoever. Ugh again!
+So I did this for my TRIP program that is both [on github](https://github.com/ology/HP48) and in the cloned repository on my local machine.  And with it on my 48, I tried running it and...Barf!  It halted on a couple undefined sub-programs.  Ugh!  Also there was **no** documentation whatsoever. Ugh again!
 
 So I rolled up my sleeves and proceeded to attempt to understand everything that TRIP did, so that I could "fill-in the blanks" - not a small task.
 
