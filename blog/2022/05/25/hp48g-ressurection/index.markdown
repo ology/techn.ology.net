@@ -28,7 +28,7 @@ Recently I decided to take my HP48GX calculator out of storage and maybe sell it
 
 First I had to figure out a way to tranfer things back and forth, between the calculator and my (Linux) computer.
 
-Fortunately I had the foresight to purchase an "HP48x to PC Interface Kit" at some point.  This is just a serial cable on one end and a proprietary HP 4-pin jack on the other.  With this in hand, I installed ["C-Kermit"](https://www.kermitproject.org/ck90.html) and got busy!
+Fortunately I had the foresight to purchase an "HP48x to PC Interface Kit" at some point.  This is just a serial cable on one end and a proprietary HP 4-pin jack on the other.  With this in hand, I installed ["C-Kermit"](https://www.kermitproject.org/ck90.html).
 
     ▸ sudo ~gene/bin/kermit 
     ...
@@ -64,7 +64,7 @@ So I did this for my TRIP program that is [on github](https://github.com/ology/H
 
 Ok with that on my 48, I tried running it and...Barf!  It halted on a couple undefined sub-programs.  Ugh!  Also there was **no** documentation whatsoever. Ugh again!
 
-So I rolled up my sleeves and got busy understanding everything that TRIP did, so that I could "fill-in the blanks" - not a small task.
+So I rolled up my sleeves and proceeded to attempt to understand everything that TRIP did, so that I could "fill-in the blanks" - not a small task.
 
 How did I see the source code you ask?  I used kermit in ASCII mode (set on both the PC and the calculator sides), and re-uploaded to my computer.  Then I could open TRIP in a text editor.  (And I went ahead and uploaded that ASCII version to github.)
 
