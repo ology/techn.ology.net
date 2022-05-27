@@ -34,7 +34,7 @@ Fortunately I had the foresight to purchase an "HP48x to PC Interface Kit" at so
 
     ▸ sudo ~gene/bin/kermit 
     ...
-    (/home/gene/sandbox/HP48/) C-Kermit>
+    (/home/gene/sandbox/HP48/) C-Kermit>take transfer-setup.kermit
 
 So, after much scouring of the internet, I found [this post](https://retrocomputing.stackexchange.com/questions/16165/how-to-transfer-files-between-modern-linux-host-and-hp48-handheld-calculator) and set these things (ignoring the ; comments) according to it:
 
@@ -47,6 +47,8 @@ So, after much scouring of the internet, I found [this post](https://retrocomput
     set control prefix all    ; Not sure about what this means, worked after I set it.
     set file type binary      ; Binary if you want to run it. ASCII for text source listings.
     SET SEND PACKET-LENGTH 64 ; CRUCIAL!
+
+That's the `transfer-setup.kermit` file.
 
 To send from the HP48 to the PC, on the PC type:
 
