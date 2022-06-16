@@ -12,6 +12,8 @@ Long ago I wrote a really clunky analog clock app. Yesterday I finally fixed it 
 
 This post is not about some earth shattering revelation.  Rather it's about the basic math needed to render a working clock.
 
+tl;dr: [basic-clock at github](https://github.com/ology/Graphics/blob/master/basic-clock)
+
 First up is the standard preamble for perl programs:
 
     #!/usr/bin/env perl
