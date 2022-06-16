@@ -98,7 +98,7 @@ Here is where we get the current time if one is not given:
 
 We need to remember the number of minutes so we can compute the position of the hour hand:
 
-        my $min = $m; # Remember the number of minutes
+        my $min = $m;
 
 Now compute the analog time equivalents with our constants:
 
