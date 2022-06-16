@@ -128,7 +128,7 @@ And if we are plotting the hand positions, use differring lengths for each:
                    : $radius;
             }
 
-That makes the hands look a bit more realistic for actualy clocksC. "in real life."
+That makes the hands look a bit more realistic for actual clocks.
 
 Finally replace the time values with rectangular coordinates:
 
