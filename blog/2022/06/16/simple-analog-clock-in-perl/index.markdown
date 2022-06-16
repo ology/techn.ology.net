@@ -147,6 +147,6 @@ And return the new coordinates:
         return @t{qw(s m h)};
     }
 
-![clock.png](clock.png)
+![clock.svg](clock.svg)
 
 Voila!
