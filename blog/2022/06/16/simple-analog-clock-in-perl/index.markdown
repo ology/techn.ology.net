@@ -106,7 +106,7 @@ Now compute the analog time equivalents with our constants:
         $m = $m / 60 * DOUBLE - HALF;
         $h = $h / 12 * DOUBLE - HALF;
 
-Compute the position of the hour hand and add 1/2 degree for each minute, if we are plotting the hands:
+To compute the position of the hour hand, we also need to add 1/2 degree for each minute:
 
         $h += $min * FRACT if $flag;
 
