@@ -2,7 +2,8 @@
 status: published
 title: Guitar Resurrection
 tags:
-  - foo
+  - music
+  - perl
 ---
 
 [![Blue-Meanie](gold-hardware-sm.jpg)](gold-hardware.jpg) My friend Mike gave me this guitar he built (from new parts, not used scrap!).  So I decided it was time to re-learn the basics of playing the instrument...
