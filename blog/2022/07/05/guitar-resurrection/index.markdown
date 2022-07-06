@@ -23,3 +23,5 @@ And here is the animation of going up and down the fretboard that I made, after 
     $ convert -delay 70 F-mode-0*.png F-mode-06.png F-mode-05.png F-mode-04.png F-mode-03.png F-mode-02.png animated-F-modes.gif
 
 ![animated-F-modes](animated-F-modes.gif)
+
+Ok. Enough jabbering. Time to practice...
