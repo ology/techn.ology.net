@@ -18,7 +18,7 @@ Anyway back at school, I only "muscle-memorized" two modes (scale degrees of a k
 
 So I decided to use my [fretboard diagramming library](https://metacpan.org/pod/Music::FretboardDiagram) to produce each modal scale, in the key of `F`, in two octaves on the guitar.
 
-And here is the animation of going up and down the fretboard that I made, after running my [modes program](https://github.com/ology/Music-FretboardDiagram/blob/master/eg/modes), with this command:
+And here is the animation of going up and down the fretboard that I made, after running my [modes program](https://github.com/ology/Music-FretboardDiagram/blob/master/eg/modes), with this [imagemagick](https://imagemagick.org/index.php) command:
 
     $ convert -delay 70 F-mode-0*.png F-mode-06.png F-mode-05.png F-mode-04.png F-mode-03.png F-mode-02.png animated-F-modes.gif
 
