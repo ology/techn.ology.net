@@ -76,7 +76,11 @@ Sun Tzu says, "Indirect tactics, efficiently applied, are inexhaustible as Heave
 
 He goes on to say, "In battle, there are not more than two methods of attack: the direct and the indirect; yet these two in combination give rise to an endless series of maneuvers. The direct and the indirect lead on to each other in turn. It is like moving in a circle - you never come to an end.  Who can exhaust the possibilities of their combination?"  So that is, while engineering, you can apply direct or indirect methods to find a solution to a problem.  And that they in turn will yield numerous possible "maneuvers" or attempts at solution.  Possibly this is using your tools and expertise in new and different permutations?  I have to ponder this point...
 
-Sun Tzu says that "the good fighter will be terrible in his onset, and prompt in his decision." Terrible?  Maybe that means that any task or project may seem utterly confusing to the wayward engineer.
+This is a cool quote: "Energy may be likened to the bending of a crossbow; decision, to the releasing of a trigger."
+
+Sun Tzu says, "The clever combatant looks to the effect of combined energy, and does not require too much from individuals."  While he was speaking of generals and armies, we may view this in terms of our efforts.  To solve a problem, use the combined effect of your tools, not just one in isolation.
+
+**Chapter 6. Weak Points and Strong**
 
 ~
 
