@@ -78,3 +78,6 @@ He goes on to say, "In battle, there are not more than two methods of attack: th
 
 Sun Tzu says that "the good fighter will be terrible in his onset, and prompt in his decision." Terrible?  Maybe that means that any task or project may seem utterly confusing to the wayward engineer.
 
+~
+
+More to come ...
