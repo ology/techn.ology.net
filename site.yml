@@ -101,11 +101,11 @@ site:
     # "text", the text of the link, and "href", the URL to link to.
     nav:
         main:
-            - text: 'On CPAN'
-              href: 'https://metacpan.org/author/GENE'
-            - text: 'On Github'
+#            - text: 'On CPAN'
+#              href: 'https://metacpan.org/author/GENE'
+            - text: 'Github'
               href: 'https://github.com/ology'
-            - text: 'On Soundcloud'
+            - text: 'Soundcloud'
               href: 'https://soundcloud.com/gene-boggs-music'
             - text: 'Algorithmic Music'
               href: 'https://github.com/ology/MIDI-Perl-HOWTO/wiki'
