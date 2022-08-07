@@ -15,7 +15,7 @@ tl;dr: [bifurcation.R](https://github.com/ology/Math/blob/master/bifurcation.R)
 
 ---
 
-To produce the graph, we use code in the R programming language.  Following that is an exploration into using alternative equations to get different graphs.
+To produce the graphs, we use code in the R programming language.
 
 First off, we set the range and maximum iterations for the plot:
 
