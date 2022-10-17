@@ -72,7 +72,7 @@ Construct our Spotify query based on the given **track**, **album**, or **artist
     my $keys  = $key . 's';
     my @query = ($opts{$key}, $key);
 
-Assign a couple of handy variables for our Sportify search bounds:
+Assign a couple of handy variables for our Spotify search bounds:
 
     my ($limit, $max) = @opts{ qw(limit max) };
 
