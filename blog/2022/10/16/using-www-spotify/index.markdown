@@ -49,7 +49,7 @@ This program is a command-line script that takes the following arguments:
 
 But in order to do anything, we must have an **artist** name. Then the program will use either a **track** or an **album** if provided. If neither are given, the **artist** is looked up. Also an alternate configuration file, Spotify batch size (**limit**), and the Spotify **max**imum number of records to fetch, may be given.
 
-    die qq/Usage: perl $0 artist="Gene Boggs" [album="X"|track="Clubster"] [config="settings.yml"]\n/
+    die qq/Usage: perl $0 --artist="Gene Boggs" [--album="X"|--track="Clubster"] [--config="settings.yml"]\n/
         unless $opts{artist};
 
 Load up the configuration file bits:
