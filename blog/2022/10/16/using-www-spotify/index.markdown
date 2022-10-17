@@ -10,6 +10,8 @@ Last year, I wrote a [music player](https://github.com/ology/audio-player) for m
 
 ---
 
+tl;dr: [www-spotify](https://github.com/ology/Music/blob/master/www-spotify)
+
 In order to get this working, you have to have a [Spotify developer account](https://developer.spotify.com/dashboard/). Once you have this, add the bits to a `settings.yml` file, like:
 
     oauth_client_id: abcdefghijklmnopqrstuvwxyz
