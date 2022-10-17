@@ -47,7 +47,7 @@ This program is a command-line script that takes the following arguments:
         'max=i',
     );
 
-But in order to do anything, we must have an **artist** name. Then the program will use either a **track** or an **album** if provided. If neither are given, the artist is looked up. Also an alternate configureation file, Spotify batch size (**limit**), and the Spotify **max**imum number of records to fetch, may be given.
+But in order to do anything, we must have an **artist** name. Then the program will use either a **track** or an **album** if provided. If neither are given, the **artist** is looked up. Also an alternate configuration file, Spotify batch size (**limit**), and the Spotify **max**imum number of records to fetch, may be given.
 
     die qq/Usage: perl $0 artist="Gene Boggs" [album="X"|track="Clubster"] [config="settings.yml"]\n/
         unless $opts{artist};
@@ -87,7 +87,7 @@ Ok, now actually fetch the results from Spotify:
             { limit => $batch, offset => $i }
         );
 
-Then inspect each of the items returnd, if any:
+Then inspect each of the items returned, if any:
 
         for my $item ($result->{$keys}{items}->@*) {
 
