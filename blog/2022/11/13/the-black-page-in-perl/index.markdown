@@ -8,7 +8,7 @@ tags:
   - software
 ---
 
-I have a library of drummer tools, and Frank Zappa wrote [The Black Page](https://en.wikipedia.org/wiki/The_Black_Page) drum solo.  So...
+I have a library of drummer tools, and Frank Zappa wrote [The Black Page](https://en.wikipedia.org/wiki/The_Black_Page) drum solo.  So... (tl;dr: [black-page](https://github.com/ology/MIDI-Drummer-Tiny/blob/master/eg/black-page))
 
 ---
 
