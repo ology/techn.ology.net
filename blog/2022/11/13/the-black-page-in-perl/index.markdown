@@ -20,7 +20,9 @@ This piece is not easy to play. Fortunately the transcription is about perfect.
 
 For the coding, a [MIDI::Drummer::Tiny](https://metacpan.org/pod/MIDI::Drummer::Tiny) object is created with a couple handfuls of custom musical durations via [Music::Duration](https://metacpan.org/pod/Music::Duration). These are added to the [MIDI-Perl](https://metacpan.org/dist/MIDI-Perl) known lengths list, and used to add notes and rests to the score.
 
-The [black-page](https://github.com/ology/MIDI-Drummer-Tiny/blob/master/eg/black-page) program begins thusly:
+Also, I did **not** do any of the transcribed repeats.  So the whole piece is just 26 bars long.
+
+Ok!  The [black-page](https://github.com/ology/MIDI-Drummer-Tiny/blob/master/eg/black-page) program begins thusly:
 
     #!/usr/bin/env perl
     use strict;
