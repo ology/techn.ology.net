@@ -59,7 +59,7 @@ Now that we have that, we can create the custom note durations that Frank imagin
     my $ten = dura_size($d->triplet_eighth);
     Music::Duration::add_duration(Gten => $ten * 2);
 
-Next, sychronize the patterns that add notes and rests to the score, so that they are played simultaneously:
+Next, synchronize the patterns that add notes and rests to the score, so that they are played simultaneously:
 
     $d->sync(
         \&pulse,
