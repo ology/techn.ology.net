@@ -3,6 +3,7 @@ status: published
 title: The Black Page (in Perl)
 tags:
   - perl
+  - MIDI
   - music
   - software
 ---
