@@ -68,7 +68,7 @@ Next, synchronize the patterns that add notes and rests to the score, so that th
         \&beat,
     );
 
-The `pulse()` is the steady, quarter-note pedal high-hat.  The `beat()` is everything else.
+The `pulse()` is the steady, quarter-note pedal hi-hat.  The `beat()` is everything else.
 
 Finally, write the MIDI out to a file called "black-page.mid":
 
