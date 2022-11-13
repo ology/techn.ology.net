@@ -16,7 +16,7 @@ I determined that I would code [the transcription](https://polynome.net/wp-conte
 
 ![black-page-ex.png](black-page-ex.png)
 
-This piece is not easy to play. Fortunately the transcription is perfect.
+This piece is not easy to play. Fortunately the transcription is about perfect.
 
 For the coding, a [MIDI::Drummer::Tiny](https://metacpan.org/pod/MIDI::Drummer::Tiny) object is created with a couple handfuls of custom musical durations via [Music::Duration](https://metacpan.org/pod/Music::Duration). These are added to the [MIDI-Perl](https://metacpan.org/dist/MIDI-Perl) known lengths list, and used to add notes and rests to the score.
 
