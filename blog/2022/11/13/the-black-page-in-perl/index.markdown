@@ -109,4 +109,6 @@ To actually hear it, you have to use [timidity](https://timidity.sourceforge.net
 
 [black-page.mp3](black-page.mp3)
 
-The floor-tom rolls leave **much** to be desired...
+The floor-tom rolls leave **much** to be desired.  So here is the same MIDI file, but imported into [my DAW](https://www.apple.com/logic-pro/) and given a better drum kit:
+
+[The-Black-Page.mp3](The-Black-Page.mp3)
