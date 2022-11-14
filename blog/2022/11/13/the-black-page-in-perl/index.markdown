@@ -115,6 +115,6 @@ The floor-tom rolls leave **much** to be desired.  So here is the same MIDI file
 
 Nice.
 
-For your pleasure, and critical comparison, here is Terry with Dwezil and crew:
+For your pleasure, and critical comparison, here is Terry with Dweezil and crew:
 
 [ZPZ](https://www.youtube.com/watch?v=aDQE82ElyJg)
