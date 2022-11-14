@@ -114,3 +114,7 @@ The floor-tom rolls leave **much** to be desired.  So here is the same MIDI file
 [The-Black-Page.mp3](The-Black-Page.mp3)
 
 Nice.
+
+For your pleasure, and critical comparison, here is Terry with Dwezil and crew:
+
+[ZPZ](https://www.youtube.com/watch?v=aDQE82ElyJg)
