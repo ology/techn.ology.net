@@ -12,6 +12,7 @@ tags:
 I have a library of drummer tools, and Frank Zappa wrote [The Black Page](https://en.wikipedia.org/wiki/The_Black_Page) drum solo.  So... (tl;dr: [black-page](https://github.com/ology/MIDI-Drummer-Tiny/blob/master/eg/black-page) & mp3 at the bottom)
 
 ---
+ **UPDATE:** I was informed that I was not using the original sheet music by FZ.  So I am in the process of modifying the code, and will add it to this write-up when it is finished! (Thanks [Scott](https://www.reddit.com/user/geoscott/)!)
 
 I determined that I would code [the transcription](https://polynome.net/wp-content/uploads/2020/02/Zappa-The-Black-Page-Terry-Bozzio.pdf) (PDF) by Phillip Albright, as played by Terry Bozzio.  This was a week ago, but I finally finished!  Here are the first 9 bars:
 
