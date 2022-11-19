@@ -17,7 +17,7 @@ I determined that I would code [the transcription](https://polynome.net/wp-conte
 
 ![black-page-ex.png](black-page-ex.png)
 
-This piece is not easy to play. Fortunately the transcription is about perfect.
+This piece is not easy to play...
 
 For the coding, a [MIDI::Drummer::Tiny](https://metacpan.org/pod/MIDI::Drummer::Tiny) object is created with a couple handfuls of custom musical durations via [Music::Duration](https://metacpan.org/pod/Music::Duration). These are added to the [MIDI-Perl](https://metacpan.org/dist/MIDI-Perl) known lengths list, and used to add notes and rests to the score.
 
@@ -29,7 +29,7 @@ Ok the program begins thusly:
     use strict;
     use warnings;
 
-Which is the traditional Perl preamble.
+...which is the traditional Perl preamble.
 
 Next, we import the libraries and their functionality, that we will use:
 
