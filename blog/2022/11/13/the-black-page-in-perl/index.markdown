@@ -32,7 +32,7 @@ Here are first six bars of the sheet music for the "official" transcription:
 
 For the coding, a [MIDI::Drummer::Tiny](https://metacpan.org/pod/MIDI::Drummer::Tiny) object is created with a couple handfuls of custom musical durations via [Music::Duration](https://metacpan.org/pod/Music::Duration). These are added to the [MIDI-Perl](https://metacpan.org/dist/MIDI-Perl) known lengths list, and used to add notes and rests to the score.
 
-By the way, I did **not** code any of the transcribed repeats. And so the whole piece is just 26 bars long.  Also, 9 kit pieces are required: kick & snare, hi-hat & crash, hi, mid, & low toms, plus both hi and low floor toms.
+By the way, I did **not** code any of the transcribed repeats. Also, 9 kit pieces are required: kick & snare, hi-hat & crash, hi, mid, & low toms, plus both hi and low floor toms.
 
 Ok the program begins thusly:
 
@@ -145,3 +145,5 @@ For your pleasure, and critical comparison, here is Terry with Dweezil and crew:
 **UPDATE** But I have found and re-coded the "official" version.  Here is the audio after piping through my DAW:
 
 [black-page-ORIG.mp3](black-page-ORIG.mp3)
+
+Personally, I like the Terry Bozzio version.
