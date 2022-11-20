@@ -144,7 +144,7 @@ For your pleasure, and critical comparison, here is Terry with Dweezil and crew:
 
 [ZPZ](https://www.youtube.com/watch?v=aDQE82ElyJg)
 
-**UPDATE** But I have found and re-coded the "official" version.  Here is the audio after piping through my DAW:
+**UPDATE** But I have found and re-coded the "official" version.  Here is the audio as rendered by timidity:
 
 [black-page-ORIG.mp3](black-page-ORIG.mp3)
 
