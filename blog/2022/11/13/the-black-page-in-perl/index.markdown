@@ -20,7 +20,11 @@ Here is [the transcription](https://polynome.net/wp-content/uploads/2020/02/Zapp
 
 ![black-page-ex.png](black-page-ex.png)
 
-This piece is not easy to play...
+This piece is not easy to play... The audio for that first revision is below.
+
+Here is the sheet music for the "official" transcription:
+
+![black-page-8-bars.png](black-page-8-bars.png)
 
 For the coding, a [MIDI::Drummer::Tiny](https://metacpan.org/pod/MIDI::Drummer::Tiny) object is created with a couple handfuls of custom musical durations via [Music::Duration](https://metacpan.org/pod/Music::Duration). These are added to the [MIDI-Perl](https://metacpan.org/dist/MIDI-Perl) known lengths list, and used to add notes and rests to the score.
 
@@ -53,17 +57,33 @@ Alrighty then.  Time to instantiate a drummer object:
         reverb => 15,
     );
 
-Now that we have that, we can create the custom note durations that Frank imagined:
+Now that we have that, we must create the custom note durations that Frank imagined:
 
-    Music::Duration::tuplet($d->half,    'A',  5);
-    Music::Duration::tuplet($d->eighth,  'B',  5);
-    Music::Duration::tuplet($d->quarter, 'C',  7);
-    Music::Duration::tuplet($d->quarter, 'D',  5);
-    Music::Duration::tuplet($d->quarter, 'E', 11);
-    Music::Duration::tuplet($d->quarter, 'F', 12);
+    Music::Duration::tuplet($d->half,    'A', 5);  # Ahn
+    Music::Duration::tuplet($d->eighth,  'B', 5);  # Ben
+    Music::Duration::tuplet($d->quarter, 'C', 5);  # Cqn
+    Music::Duration::tuplet($d->quarter, 'D', 7);  # Dqn
+    Music::Duration::tuplet($d->quarter, 'E', 11); # Eqn
+    Music::Duration::tuplet($d->quarter, 'F', 12); # Fqn
 
     my $ten = dura_size($d->triplet_eighth);
-    Music::Duration::add_duration(Gten => $ten * 2);
+    Music::Duration::add_duration(Gten => $ten * 2); # Gten
+
+    # for bar 5
+    Music::Duration::tuplet($d->triplet_half, 'P', 5); # Pthn
+    Music::Duration::tuplet($d->triplet_half, 'Q', 6); # Qthn
+    Music::Duration::tuplet($d->triplet_half, 'R', 7); # Rthn ?
+
+    # for bar 15
+    Music::Duration::tuplet($d->triplet_whole, 'S', 7);   # Stwn
+    my $twn = dura_size($d->triplet_whole);
+    Music::Duration::add_duration(Ttwn => $twn / 2);      # Ttwn
+    Music::Duration::add_duration(Utwn => $twn / 7);      # Utwn
+    my $half_twn = dura_size('Ttwn');
+    Music::Duration::add_duration(Vtwn => $half_twn / 5); # Vtwn
+    Music::Duration::add_duration(Xtwn => $half_twn / 4); # Xtwn
+    my $half_7twn = dura_size('Utwn');
+    Music::Duration::add_duration(Wtwn => $half_7twn / 2); # Wtwn
 
 Next, synchronize the patterns that add notes and rests to the score, so that they are played simultaneously:
 
