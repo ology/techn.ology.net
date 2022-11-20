@@ -76,20 +76,18 @@ Now that we have that, we must create the custom note durations that Frank imagi
     Music::Duration::add_duration(Gten => $ten * 2); # Gten
 
     # for bar 5
-    Music::Duration::tuplet($d->triplet_half, 'P', 5); # Pthn
-    Music::Duration::tuplet($d->triplet_half, 'Q', 6); # Qthn
-    Music::Duration::tuplet($d->triplet_half, 'R', 7); # Rthn ?
+    Music::Duration::tuplet($d->triplet_quarter, 'P', 5); # Ptqn
+    Music::Duration::tuplet($d->triplet_quarter, 'Q', 6); # Qtqn
 
     # for bar 15
-    Music::Duration::tuplet($d->triplet_whole, 'S', 7);   # Stwn
-    my $twn = dura_size($d->triplet_whole);
-    Music::Duration::add_duration(Ttwn => $twn / 2);      # Ttwn
-    Music::Duration::add_duration(Utwn => $twn / 7);      # Utwn
-    my $half_twn = dura_size('Ttwn');
-    Music::Duration::add_duration(Vtwn => $half_twn / 5); # Vtwn
-    Music::Duration::add_duration(Xtwn => $half_twn / 4); # Xtwn
-    my $half_7twn = dura_size('Utwn');
-    Music::Duration::add_duration(Wtwn => $half_7twn / 2); # Wtwn
+    my $thn = dura_size($d->triplet_half);
+    Music::Duration::add_duration(Tthn => $thn / 2);      # Tthn
+    Music::Duration::add_duration(Uthn => $thn / 7);      # Uthn
+    my $half_thn = dura_size('Tthn');
+    Music::Duration::add_duration(Vthn => $half_thn / 5); # Vthn
+    Music::Duration::add_duration(Xthn => $half_thn / 4); # Xthn
+    my $half_7thn = dura_size('Uthn');
+    Music::Duration::add_duration(Wthn => $half_7thn / 2); # Wthn
 
 Next, synchronize the patterns that add notes and rests to the score, so that they are played simultaneously:
 
