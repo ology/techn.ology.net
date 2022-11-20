@@ -26,6 +26,10 @@ Here is the sheet music for the "official" transcription:
 
 ![black-page-8-bars.png](black-page-8-bars.png)
 
+...which includes this gem:
+
+![holy-crap.png](holy-crap.png)
+
 For the coding, a [MIDI::Drummer::Tiny](https://metacpan.org/pod/MIDI::Drummer::Tiny) object is created with a couple handfuls of custom musical durations via [Music::Duration](https://metacpan.org/pod/Music::Duration). These are added to the [MIDI-Perl](https://metacpan.org/dist/MIDI-Perl) known lengths list, and used to add notes and rests to the score.
 
 By the way, I did **not** code any of the transcribed repeats. And so the whole piece is just 26 bars long.  Also, 9 kit pieces are required: kick & snare, hi-hat & crash, hi, mid, & low toms, plus both hi and low floor toms.
@@ -124,7 +128,7 @@ Anyway, here is the beginning of the `beat()` subroutine:
 
 This just adds notes, clusters of notes, and rests to the score.
 
-To actually hear it, you have to use [timidity](https://timidity.sourceforge.net/) on the command-line or [VLC](https://www.videolan.org/vlc/).  Either of these programs can render to MP3 too.  Here's the timidity output with exciting General MIDI patches:
+To actually hear it, you have to use [timidity](https://timidity.sourceforge.net/) on the command-line or [VLC](https://www.videolan.org/vlc/).  Either of these programs can render to MP3 too.  Here's the timidity output of the Terry Bozzio version with exciting General MIDI patches:
 
 [black-page.mp3](black-page.mp3)
 
@@ -137,3 +141,7 @@ Nice.
 For your pleasure, and critical comparison, here is Terry with Dweezil and crew:
 
 [ZPZ](https://www.youtube.com/watch?v=aDQE82ElyJg)
+
+**UPDATE** But I have found and re-coded the "official" version.  Here is the audio after piping through my DAW:
+
+[The-Black-Page-ORIG.mp3](The-Black-Page-ORIG.mp3)
