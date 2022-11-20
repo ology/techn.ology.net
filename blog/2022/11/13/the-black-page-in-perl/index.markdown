@@ -88,7 +88,7 @@ Now that we have that, we must create the custom note durations that Frank imagi
 Next, synchronize the patterns that add notes and rests to the score, so that they are played simultaneously:
 
     $d->sync(
-        \&pulse,
+        \&pulse, # not in the original but handy for debugging
         \&beat,
     );
 
