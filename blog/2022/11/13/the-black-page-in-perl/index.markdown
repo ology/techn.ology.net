@@ -102,12 +102,7 @@ Here is the `pulse()` subroutine:
 
     sub pulse {
         for my $i (1 .. $d->beats * $d->bars) {
-            if ($i == 1) {
-                $d->flam($d->quarter, 'r', $d->pedal_hh);
-            }
-            else {
-                $d->note($d->quarter, $d->pedal_hh);
-            }
+            $d->note($d->quarter, $d->pedal_hh);
         }
     }
 
