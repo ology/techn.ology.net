@@ -24,7 +24,7 @@ Here is [the transcription](https://polynome.net/wp-content/uploads/2020/02/Zapp
 
 This piece is not easy to play... The audio for that Bozzio revision is below.
 
-But here are first six bars of the sheet music for the "official" transcription:
+But here are first six bars of the sheet music for [the "official" transcription](black-page-official-sheet-music.pdf):
 
 ![black-page-8-bars.png](black-page-8-bars.png)
 
