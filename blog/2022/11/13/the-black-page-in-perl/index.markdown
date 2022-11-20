@@ -59,7 +59,7 @@ Alrighty then.  Time to instantiate a drummer object:
     my $d = MIDI::Drummer::Tiny->new(
         file   => "$0.mid",
         bpm    => 60,
-        bars   => 26,
+        bars   => 30,
         reverb => 15,
     );
 
