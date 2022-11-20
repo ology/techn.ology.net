@@ -14,15 +14,17 @@ I have a library of drummer tools, and Frank Zappa wrote [The Black Page](https:
 ---
  **UPDATE:** I was informed that I was not using the original sheet music by FZ.  So I am in the process of modifying the code, and will add it to this write-up when it is finished! (Thanks [Scott](https://www.reddit.com/user/geoscott/)!)
 
+~
+
 I determined that I would code this up.
 
 Here is [the transcription](https://polynome.net/wp-content/uploads/2020/02/Zappa-The-Black-Page-Terry-Bozzio.pdf) (PDF) by Phillip Albright, as played by Terry Bozzio. And here are the first 9 bars:
 
 ![black-page-ex.png](black-page-ex.png)
 
-This piece is not easy to play... The audio for that first revision is below.
+This piece is not easy to play... The audio for that Bozzio revision is below.
 
-Here are first six bars of the sheet music for the "official" transcription:
+But here are first six bars of the sheet music for the "official" transcription:
 
 ![black-page-8-bars.png](black-page-8-bars.png)
 
