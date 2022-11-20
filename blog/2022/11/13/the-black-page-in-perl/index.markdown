@@ -18,7 +18,7 @@ I have a library of drummer tools, and Frank Zappa wrote [The Black Page](https:
 
 I determined that I would code this up.
 
-Here is [the transcription](https://polynome.net/wp-content/uploads/2020/02/Zappa-The-Black-Page-Terry-Bozzio.pdf) (PDF) by Phillip Albright, as played by Terry Bozzio. And here are the first 9 bars:
+Here is [the transcription](Zappa-The-Black-Page-Terry-Bozzio.pdf) (PDF) by Phillip Albright, as played by Terry Bozzio. And here are the first 9 bars:
 
 ![black-page-ex.png](black-page-ex.png)
 
