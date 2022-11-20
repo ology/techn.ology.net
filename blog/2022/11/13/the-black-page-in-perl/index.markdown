@@ -22,7 +22,7 @@ Here is [the transcription](https://polynome.net/wp-content/uploads/2020/02/Zapp
 
 This piece is not easy to play... The audio for that first revision is below.
 
-Here is the sheet music for the "official" transcription:
+Here are first six bars of the sheet music for the "official" transcription:
 
 ![black-page-8-bars.png](black-page-8-bars.png)
 
