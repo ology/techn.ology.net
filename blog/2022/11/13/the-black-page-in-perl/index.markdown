@@ -34,7 +34,7 @@ But here are first six bars of the sheet music for the "official" transcription:
 
 For the coding, a [MIDI::Drummer::Tiny](https://metacpan.org/pod/MIDI::Drummer::Tiny) object is created with a couple handfuls of custom musical durations via [Music::Duration](https://metacpan.org/pod/Music::Duration). These are added to the [MIDI-Perl](https://metacpan.org/dist/MIDI-Perl) known lengths list, and used to add notes and rests to the score.
 
-By the way, I did **not** code any of the transcribed repeats. Also, 9 kit pieces are required: kick & snare, hi-hat & crash, hi, mid, & low toms, plus both hi and low floor toms.
+By the way, I did **not** code any of the transcribed repeats. Also, these kit pieces are required: kick & snare, closed hi-hat, hi & low bongos, castanets (rendered as the closed hi-hat for my purposes), hi, mid, & low toms, plus the hi floor tom.
 
 Ok the program begins thusly:
 
