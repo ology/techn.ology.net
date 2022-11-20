@@ -112,7 +112,7 @@ Anyway, here is the beginning of the `beat()` subroutine:
 
     sub beat {
         # 1st measure:
-        $d->flam($d->quarter, $d->kick, $d->snare, ACCENT);
+        $d->note($d->quarter, $d->snare);
 
         $d->note($d->thirtysecond, $d->snare);
         $d->note($d->thirtysecond, $d->snare);
