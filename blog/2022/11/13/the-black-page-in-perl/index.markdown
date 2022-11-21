@@ -12,7 +12,7 @@ tags:
 I have a library of drummer tools, and Frank Zappa wrote [The Black Page](https://en.wikipedia.org/wiki/The_Black_Page) drum solo.  So... (tl;dr: [black-page](https://github.com/ology/MIDI-Drummer-Tiny/blob/master/eg/black-page) & mp3 at the bottom)
 
 ---
- **UPDATE:** I was informed that I was not using the original sheet music by FZ.  So I am in the process of modifying the code, and will add it to this write-up when it is finished! (Thanks [Scott](https://www.reddit.com/user/geoscott/)!)
+ **UPDATE:** I was informed that I was not using the original sheet music by FZ.  So I have modified the code, and have added it to this write-up. (Thanks [Scott](https://www.reddit.com/user/geoscott/)!)
 
 ~
 
