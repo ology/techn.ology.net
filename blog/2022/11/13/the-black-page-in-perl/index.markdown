@@ -142,8 +142,8 @@ For your pleasure, and critical comparison, here is Terry with Dweezil and crew:
 
 [ZPZ](https://www.youtube.com/watch?v=aDQE82ElyJg)
 
-**UPDATE** But I have found and re-coded the "official" version.  Here is the audio as rendered by timidity:
+But I have found and re-coded the "official" version.  Here is the audio as rendered by timidity:
 
 [black-page-ORIG.mp3](black-page-ORIG.mp3)
 
-Personally, I like the Terry Bozzio version.
+Without the steady pedal hi-hat, it's impossible to keep track of things. Personally, I like the Terry Bozzio version.
