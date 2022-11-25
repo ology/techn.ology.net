@@ -216,6 +216,8 @@ For reference, here is the overly-complicated transposition subroutine:
         return $chord;
     }
 
+And here are the actual chords for the seventh-chord, 12-bar blues:
+
     sub bars {
         no warnings qw(qw);
         return (
@@ -234,6 +236,8 @@ For reference, here is the overly-complicated transposition subroutine:
         );
     }
 
+And here is the transition network for each chord to a list of connected chords:
+
     sub net {
         no warnings qw(qw);
         return (
@@ -244,3 +248,5 @@ For reference, here is the overly-complicated transposition subroutine:
             'Gm7'    => [qw( C7 Gb7 )],
         );
     }
+
+Yes, every one is not used (yet)...
