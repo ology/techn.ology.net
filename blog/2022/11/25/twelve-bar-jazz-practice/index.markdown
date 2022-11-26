@@ -170,7 +170,9 @@ Next, we want to add either a whole or two half notes.  Whether to add a half is
 
             if (!$opts{simple} && $opts{percent} >= int(rand 100) + 1) {
 
-If we are **not** `simple` and the `percent` is right, accumulate the computed chord notes, and re-collect for the next half-note:
+The "percent" is really a "possible maximum."  The default is 25%. This means that a half-note will be chosen a **maximum** of 25% of the time. Could be less!
+
+Anyway, if we are **not** `simple` and the `percent` is right, accumulate the computed chord notes, and re-collect for the next half-note:
 
                 push @spec, [ $d->half, @notes ];
 
