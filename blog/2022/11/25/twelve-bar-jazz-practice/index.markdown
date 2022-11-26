@@ -279,7 +279,7 @@ And `--verbose` **tells** you what chords (and even notes) are generated.  So th
 
     $ perl blues-progressions --verbose --percent=0 --tonic=Bb
 
-Which looks like this for eaxample (not the same as the audio below):
+Which looks like this, for example (**not** the same as the audio below):
 
     1.    A#7: [ [ 'wn', 'A#4', 'D5', 'F5', 'G#5' ] ]
     2.    Bm7: [ [ 'wn', 'B4', 'D5', 'F#5', 'A5' ] ]
