@@ -14,15 +14,15 @@ I stumbled upon this chart of 17 blues-jazz (jazz-blues?) chord progressions. Na
 
 This is an account of the program code itself.  For an example of a couple runs, see the MP3s below.
 
-As usual, I generally do **not** use the raw midi file.  Instead, I import the file into [my DAW](https://www.apple.com/logic-pro/) and render it with superior instrumentation.
+As usual, I generally do **not** use a single, raw midi file.  Instead, after curating a few generated runs, I import the files into [my DAW](https://www.apple.com/logic-pro/) and render with superior instrumentation.
 
-The traditional Perl preamble:
+Anyway, here is the traditional Perl preamble:
 
     #!/usr/bin/env perl
     use strict;
     use warnings;
 
-The libraries and their functionality, that we will use:
+Followed by the libraries and their functionality, that we will use:
 
     use Data::Dumper::Compact qw(ddc);              # verbose output
     use Getopt::Long qw(GetOptions);                # commandline options
@@ -32,7 +32,7 @@ The libraries and their functionality, that we will use:
     use Music::Chord::Note ();                      # notes of a chord
     use Music::MelodicDevice::Transposition ();     # transpose a note
 
-First up, we define and the grab the values for the command-line given, program options:
+With those things declared, we define and the grab the values for the command-line given, program options:
 
     my %opts = (
         tonic   => 'C',     # note to transpose things to
