@@ -275,3 +275,5 @@ But anyway:
     $ perl blues-progressions --drums
 
 [blues-progressions-04.mp3](blues-progressions-04.mp3)
+
+Some [Steely Dan](https://en.wikipedia.org/wiki/Steely_Dan) changes, man...
