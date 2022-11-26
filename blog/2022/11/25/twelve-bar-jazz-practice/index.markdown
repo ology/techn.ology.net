@@ -12,7 +12,7 @@ I stumbled upon [this chart](Blues-Progressions.jpg) of 17 blues-jazz (jazz-blue
 
 ---
 
-This is an account of the program code itself.  For an example of a couple runs, see the MP3s below.
+This is an account of the program code itself.  For examples of a couple runs, see the MP3s below.
 
 Here is the traditional Perl preamble:
 
