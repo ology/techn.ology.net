@@ -202,7 +202,7 @@ Finally, the **first** chord of an imperfect cadence is added to the end:
         $d->note($d->whole, $cadence->[0]->@*);           # only use the 1st
     }
 
-For reference, here is the overly-complicated transposition subroutine:
+For reference, here is the chord transposition subroutine:
 
     sub transposition {
         my ($transpose, $chord, $md) = @_;
