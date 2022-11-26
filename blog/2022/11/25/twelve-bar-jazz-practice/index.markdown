@@ -252,7 +252,7 @@ And here is the transition network for each chord to a list of connected chords:
 
 Yes, every one is not used (yet)...
 
-So, on with the show!  Here are various timidity renderings with their command-line options.
+But, on with the show!  Here are various timidity renderings with their command-line options.
 
 Btw, in `vim` I do this type of thing:
 
