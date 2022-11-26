@@ -14,9 +14,7 @@ I stumbled upon [this chart](Blues-Progressions.jpg) of 17 blues-jazz (jazz-blue
 
 This is an account of the program code itself.  For an example of a couple runs, see the MP3s below.
 
-As usual, I generally do **not** use a single, raw midi file.  Instead, after curating a few generated runs, I import the files into [my DAW](https://www.apple.com/logic-pro/) and render with superior instrumentation.
-
-Anyway, here is the traditional Perl preamble:
+Here is the traditional Perl preamble:
 
     #!/usr/bin/env perl
     use strict;
@@ -258,9 +256,13 @@ And here is the transition network for each chord to a list of connected chords:
 
 Yes, every one is not used (yet)...
 
-But, on with the show!  Here are various timidity renderings with their command-line options.
+Ok now for the audio!
 
-Btw, in `vim` I do this type of thing:
+As usual, I generally do **not** use a single, raw midi file to practice with.  Instead, after curating a few generated runs, I import the files into [my DAW](https://www.apple.com/logic-pro/) and render with superior instrumentation.
+
+Below are various timidity renderings with their command-line options.
+
+Btw, in [vim](https://www.vim.org/) I do this type of thing:
 
     :!rm -f %.mid ; perl % --verbose ; timidity %.mid
 
