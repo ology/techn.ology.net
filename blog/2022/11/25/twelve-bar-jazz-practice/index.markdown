@@ -8,7 +8,7 @@ tags:
   - software
 ---
 
-I stumbled upon this chart of 17 blues-jazz (jazz-blues?) chord progressions. Naturally, being a programmer, I made a program with which to practice. (tl:dr: [blues-progressions](https://github.com/ology/Music/blob/master/blues-progressions) & audio below)
+I stumbled upon [this chart](Blues-Progressions.jpg) of 17 blues-jazz (jazz-blues?) chord progressions. Naturally, being a programmer, I made a program with which to practice. (tl:dr: [blues-progressions](https://github.com/ology/Music/blob/master/blues-progressions) & audio below)
 
 ---
 
@@ -124,7 +124,7 @@ Here, C is equal to zero for the `scale()` method, meaning that we do not want t
 
         my $transpose = $cn->scale($opts{tonic});
 
-Ok the bar lists and network transitions are static.  I took them from
+Ok the bar lists and network transitions are static.  I took them from:
 
 [![](Blues-Progressions.jpg)](Blues-Progressions.jpg)
 
