@@ -29,6 +29,7 @@ Followed by the libraries and their functionality, that we will use:
     use Music::Cadence ();                          # ending musical cadence
     use Music::Chord::Note ();                      # notes of a chord
     use Music::MelodicDevice::Transposition ();     # transpose a note
+    use Music::Note ();                             # enharmonic notes
 
 With those things declared, we define and the grab the values for the command-line given, program options:
 
@@ -42,7 +43,7 @@ With those things declared, we define and the grab the values for the command-li
         percent => 25,      # maximum half-note percentage
         metrono => 'pedal', # hihat: pedal, closed, open
         drums   => 0,       # to drum, or not to drum?
-        simple  => 0,       # don't randomly choose a transtion
+        simple  => 0,       # don't randomly choose a transition
         verbose => 0,
     );
     GetOptions( \%opts, 
