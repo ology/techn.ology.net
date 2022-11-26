@@ -187,7 +187,9 @@ Tell us what we've won, Bob!
             printf '%*d. %13s: %s', length($opts{bars}), $n + 1, $names, ddc(\@spec)
                 if $opts{verbose};
 
-Accumulate the note specifications:
+An example of the verbose output is shown below.
+
+Now we accumulate the note specifications (either 2 halves or 1 whole):
 
             push @specs, @spec;
         }
@@ -267,7 +269,7 @@ But anyway:
     $ perl blues-progressions --verbose --percent=20 --metrono=closed --repeat=2
     $ timidity blues-progressions.mid
 
-Which can be abbreviated to this, by the way:
+This can be abbreviated, by the way:
 
     $ perl blues-progressions --ver --per=20 --met=closed --rep=2
 
@@ -275,7 +277,24 @@ And `--verbose` **tells** you what chords (and even notes) are generated.  So th
 
 [blues-progressions-01.mp3](blues-progressions-01.mp3)
 
-    $ perl blues-progressions --percent=0 --tonic=Bb
+    $ perl blues-progressions --verbose --percent=0 --tonic=Bb
+
+Which looks like this:
+
+    1.    A#7: [ [ 'wn', 'A#4', 'D5', 'F5', 'G#5' ] ]
+    2.    Bm7: [ [ 'wn', 'B4', 'D5', 'F#5', 'A5' ] ]
+    3.    A#7: [ [ 'wn', 'A#4', 'D5', 'F5', 'G#5' ] ]
+    4.   F#M7: [ [ 'wn', 'F#4', 'A#4', 'C#5', 'F5' ] ]
+    5.   D#M7: [ [ 'wn', 'D#4', 'G4', 'A#4', 'D5' ] ]
+    6.   D#m7: [ [ 'wn', 'D#4', 'F#4', 'A#4', 'C#5' ] ]
+    7.    DM7: [ [ 'wn', 'D4', 'F#4', 'A4', 'C#5' ] ]
+    8.    Dm7: [ [ 'wn', 'D4', 'F4', 'A4', 'C5' ] ]
+    9.     C7: [ [ 'wn', 'C4', 'E4', 'G4', 'A#4' ] ]
+    10.   D#7: [ [ 'wn', 'D#4', 'G4', 'A#4', 'C#5' ] ]
+    11.   A#7: [ [ 'wn', 'A#4', 'D5', 'F5', 'G#5' ] ]
+    12.   CM7: [ [ 'wn', 'C4', 'E4', 'G4', 'B4' ] ]
+
+(Where `A#` == `Bb`, etc. Guess I need to display flats if the requested tonic is flat. Hmmmm.)
 
 [blues-progressions-02.mp3](blues-progressions-02.mp3)
 
