@@ -152,7 +152,7 @@ Keep track of the chord name(s) for verbose mode:
 
             my $names = $new_chord;
 
-This is an individual MIDI note specification, for temporary use inside the loop:
+We use an individual MIDI note specification temporarily inside the loop:
 
             my @spec;
 
