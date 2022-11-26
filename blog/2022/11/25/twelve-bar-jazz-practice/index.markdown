@@ -154,7 +154,7 @@ We use an individual MIDI note specification temporarily inside the loop:
 
             my @spec;
 
-Next, we want to add either a whole or two half notes.  Whether to add a half is determined by the percent command option:
+Next, we want to add either a whole or two half notes.  Whether to add a half is determined by the `percent` command option:
 
             if ($opts{percent} >= int(rand 100) + 1) {
 
@@ -187,7 +187,7 @@ Tell us what we've won, Bob!
 
 An example of the verbose output is shown below.
 
-Now we accumulate the note specifications (either 2 halves or 1 whole):
+Now we accumulate the note specification (either 2 halves or 1 whole):
 
             push @specs, @spec;
         }
