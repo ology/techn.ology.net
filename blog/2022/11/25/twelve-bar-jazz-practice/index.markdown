@@ -206,8 +206,8 @@ For reference, here is the overly-complicated transposition subroutine:
     sub transposition {
         my ($transpose, $chord, $md) = @_;
         if ($transpose && $chord =~ /^([A-G][#b]?)(.*)$/) {
-            my $note = $1;
-            my $flav = $2;
+            my $note = $1; # the named note itself
+            my $flav = $2; # the chord "flavor"
             my $transposed = $md->transpose($transpose, [$note]);
             (my $new_note = $transposed->[0]) =~ s/^([A-G][#b]?).*$/$1/;
             my $new_chord = $new_note . $flav;
