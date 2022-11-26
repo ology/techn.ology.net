@@ -294,18 +294,18 @@ Here is what I practice, most:
 
 Which looks like this `verbose` example (but is **not** the same as the audio):
 
-    1.    Bm7: [ [ 'wn', 'B4', 'D5', 'Gb5', 'A5' ] ]
-    2.    Am7: [ [ 'wn', 'A4', 'C5', 'E5', 'G5' ] ]
-    3.    Gm7: [ [ 'wn', 'G4', 'Bb4', 'D5', 'F5' ] ]
-    4.   GbM7: [ [ 'wn', 'Gb4', 'Bb4', 'Db5', 'F5' ] ]
-    5.   EbM7: [ [ 'wn', 'Eb4', 'G4', 'Bb4', 'D5' ] ]
-    6.  Edim7: [ [ 'wn', 'E4', 'G4', 'Bb4', 'Db5' ] ]
-    7.    Dm7: [ [ 'wn', 'D4', 'F4', 'A4', 'C5' ] ]
-    8.   Dbm7: [ [ 'wn', 'Db4', 'E4', 'Ab4', 'B4' ] ]
-    9.     F7: [ [ 'wn', 'F4', 'A4', 'C5', 'Eb5' ] ]
-    10.    B7: [ [ 'wn', 'B4', 'Eb5', 'Gb5', 'A5' ] ]
-    11.  EbM7: [ [ 'wn', 'Eb4', 'G4', 'Bb4', 'D5' ] ]
-    12.   CM7: [ [ 'wn', 'C4', 'E4', 'G4', 'B4' ] ]
+    1.  BbM7: [ [ 'wn', 'Bb4', 'D5', 'F5', 'A5' ] ]
+    2.  EbM7: [ [ 'wn', 'Eb4', 'G4', 'Bb4', 'D5' ] ]
+    3.   Dm7: [ [ 'wn', 'D4', 'F4', 'A4', 'C5' ] ]
+    4.  GbM7: [ [ 'wn', 'Gb4', 'Bb4', 'Db5', 'F5' ] ]
+    5.  EbM7: [ [ 'wn', 'Eb4', 'G4', 'Bb4', 'D5' ] ]
+    6.  Ebm7: [ [ 'wn', 'Eb4', 'Gb4', 'Bb4', 'Db5' ] ]
+    7.   Dm7: [ [ 'wn', 'D4', 'F4', 'A4', 'C5' ] ]
+    8.   Ab7: [ [ 'wn', 'Ab4', 'C5', 'Eb5', 'Gb5' ] ]
+    9.    F7: [ [ 'wn', 'F4', 'A4', 'C5', 'Eb5' ] ]
+    10.   F7: [ [ 'wn', 'F4', 'A4', 'C5', 'Eb5' ] ]
+    11.  Bb7: [ [ 'wn', 'Bb4', 'D5', 'F5', 'Ab5' ] ]
+    12.   F7: [ [ 'wn', 'F4', 'A4', 'C5', 'Eb5' ] ]
 
 [blues-progressions-02.mp3](blues-progressions-02.mp3)
 
