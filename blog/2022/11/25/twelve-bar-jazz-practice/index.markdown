@@ -40,8 +40,9 @@ With those things declared, we define and the grab the values for the command-li
         bars    => 12,      # number of 4/4 bars
         repeat  => 1,       # number of times to repeat
         percent => 25,      # maximum half-note percentage
-        drums   => 0,       # to drum, or not to drum?
         metrono => 'pedal', # hihat: pedal, closed, open
+        drums   => 0,       # to drum, or not to drum?
+        simple  => 0,       # don't randomly choose a transtion
         verbose => 0,
     );
     GetOptions( \%opts, 
@@ -52,8 +53,9 @@ With those things declared, we define and the grab the values for the command-li
         'bars=i',
         'repeat=i',
         'percent=i',
-        'drums',
         'metrono=s',
+        'drums',
+        'simple',
         'verbose',
     );
 
@@ -139,10 +141,17 @@ So for each bar defined...
 
         for my $n (0 .. $d->bars - 1) {
 
-Collect the chords of a bar (and there are 12 of them known, given by the `bars()` function). Then get a random chord from that list, possibly transpose it, and finally get the notes that define the chord:
+We collect the chords of a bar (and there are 12 bars, given by the `bars()` function).
 
             my @pool = $bars[ $n % @bars ]->@*;
-            my $chord = $pool[ int rand @pool ];
+
+If we are running with the `simple` command-line option, use the first defined chord in each bar pool.  This results in the standard progression:
+
+    C7 C7 C7 C7 / F7 F7 C7 C7 / G7 G7 C7 C7
+
+If we are **not** being "simple", then get a random chord from that list, possibly transpose it, and finally get the notes that define the chord.
+
+            my $chord = $opts{simple} ? $pool[0] : $pool[ int rand @pool ];
             my $new_chord = transposition($transpose, $chord, $md);
             my @notes = $cn->chord_with_octave($new_chord, $opts{octave});
 
@@ -154,9 +163,9 @@ We use an individual MIDI note specification temporarily inside the loop:
 
             my @spec;
 
-Next, we want to add either a whole or two half notes.  Whether to add a half is determined by the `percent` command option:
+Next, we want to add either a whole or two half notes.  Whether to add a half is determined by the `simple` and `percent` command-line options:
 
-            if ($opts{percent} >= int(rand 100) + 1) {
+            if (!$opts{simple} && $opts{percent} >= int(rand 100) + 1) {
 
 Accumulate the computed chord notes, and re-collect for the next half-note:
 
