@@ -125,14 +125,16 @@ Here, C is equal to zero for the `scale()` method, meaning that we do not want t
 
         my $transpose = $cn->scale($opts{tonic});
 
-Ok the bar lists and network transitions are static.  I took them from:
-
-[![](Blues-Progressions.jpg)](Blues-Progressions.jpg)
-
-which is freely available in the [Jazz Handbook](https://www.jazzbooks.com/jazz/fqbk).
+Next, we need the actual lists of chords to use:
 
         my @bars = bars();
         my %net  = net();
+
+The bar lists and network transitions are static.  I took them from:
+
+[![](Blues-Progressions.jpg)](Blues-Progressions.jpg)
+
+This is freely available in the [Jazz Handbook](https://www.jazzbooks.com/jazz/fqbk).
 
 We will be collecting MIDI note specifications (duration + pitch + octave) with this variable:
 
