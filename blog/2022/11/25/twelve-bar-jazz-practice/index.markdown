@@ -196,10 +196,10 @@ Ok we made it! All chords accounted for!  Next up is to actually add them to the
             $d->note(midi_format(@$_)) for @specs;
         }
 
-Finally, the first chord of an imperfect cadence is added to the end:
+Finally, the **first** chord of an imperfect cadence is added to the end:
 
-        my $cadence = $mc->cadence(type => 'imperfect');
-        $d->note($d->whole, $cadence->[0]->@*);
+        my $cadence = $mc->cadence(type => 'imperfect');  # 2 chords, but...
+        $d->note($d->whole, $cadence->[0]->@*);           # only use the 1st
     }
 
 For reference, here is the overly-complicated transposition subroutine:
