@@ -217,7 +217,7 @@ For reference, here is the chord transposition subroutine:
         return $chord;
     }
 
-And here are the actual chords for the seventh-chord, 12-bar blues:
+And here are the possible chords for the seventh-chord, 12-bar blues:
 
     sub bars {
         no warnings qw(qw);
