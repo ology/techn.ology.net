@@ -294,8 +294,6 @@ Which looks like this, for example (**not** the same as the audio below):
     11.  EbM7: [ [ 'wn', 'Eb4', 'G4', 'Bb4', 'D5' ] ]
     12.   CM7: [ [ 'wn', 'C4', 'E4', 'G4', 'B4' ] ]
 
-(Where `A#` == `Bb`, etc. Guess I need to display flats if the requested tonic is flat. Hmmmm.)
-
 [blues-progressions-02.mp3](blues-progressions-02.mp3)
 
     $ perl blues-progressions --percent=100 --patch=0 --bpm=120
