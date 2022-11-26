@@ -271,6 +271,8 @@ Which can be abbreviated to this, by the way:
 
     $ perl blues-progressions --ver --per=20 --met=closed --rep=2
 
+And `--verbose` **tells** you what chords (and even notes) are generated.  So that's really the way to practice harmic accuracy, I suppose - be verbose.
+
 [blues-progressions-01.mp3](blues-progressions-01.mp3)
 
     $ perl blues-progressions --percent=0 --tonic=Bb
