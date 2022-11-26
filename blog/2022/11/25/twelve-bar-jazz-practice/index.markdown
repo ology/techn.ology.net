@@ -152,7 +152,7 @@ If we are running with the `simple` command-line option, use the first defined c
 
     C7 C7 C7 C7 / F7 F7 C7 C7 / G7 G7 C7 C7
 
-If we are **not** being "simple", then get a random chord from that list, possibly transpose it, and finally get the notes that define the chord.
+If we are **not** being `simple`, then get a random chord from that list, possibly transpose it, and finally get the notes that define the chord.
 
             my $chord = $opts{simple} ? $pool[0] : $pool[ int rand @pool ];
             my $new_chord = transposition($transpose, $chord, $md);
@@ -170,7 +170,7 @@ Next, we want to add either a whole or two half notes.  Whether to add a half is
 
             if (!$opts{simple} && $opts{percent} >= int(rand 100) + 1) {
 
-Accumulate the computed chord notes, and re-collect for the next half-note:
+If we are **not** `simple` and the `percent` is right, accumulate the computed chord notes, and re-collect for the next half-note:
 
                 push @spec, [ $d->half, @notes ];
 
