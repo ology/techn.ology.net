@@ -174,6 +174,8 @@ Accumulate the computed chord notes, and re-collect for the next half-note:
                 push @spec, [ $d->half, @notes ];
             }
 
+Notice that the `@pool` is defined by the `net` of the chord, rather than the nth bar. This expands the possiblities enormously.
+
 If we have not decided to divide into half-notes, just add a whole-note to the score:
 
             else {
