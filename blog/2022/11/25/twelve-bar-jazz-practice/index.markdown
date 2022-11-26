@@ -295,7 +295,7 @@ Here is what I practice, most:
 
     $ perl blues-progressions --verbose --percent=0 --tonic=Bb
 
-Which looks like this example:
+Which looks and sounds like this:
 
     1.  BbM7: [ [ 'wn', 'Bb4', 'D5', 'F5', 'A5' ] ]
     2.   Am7: [ [ 'wn', 'A4', 'C5', 'E5', 'G5' ] ]
