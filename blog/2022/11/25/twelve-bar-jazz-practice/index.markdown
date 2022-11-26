@@ -289,4 +289,4 @@ And `--verbose` **tells** you what chords (and even notes) are generated.  So th
 
 Some [Steely Dan](https://en.wikipedia.org/wiki/Steely_Dan) changes, man... But some **really** lame drums! :D
 
-Anyway, like I say, I repeat 24 or 48 bars or more, import into my DAW for better patches, **then** I practice! :)
+Anyway, like I say, I repeat 8 or even 12 times or more, import into my DAW for better patches, **then** I practice! :)
