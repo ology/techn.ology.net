@@ -119,7 +119,7 @@ Next are instantiations of various music programming objects. One for transposit
             format => 'midi',
         );
 
-Now we may wish to transpose things from the default key of C. This is done by indicating the `tonic` in the command-line invocation.
+Now we may wish to transpose things from the default key of C. This is done by indicating the `tonic` on the command-line invocation.
 
 Here, C is equal to zero for the `scale()` method, meaning that we do not want to transpose. Everything else goes to 11. That is, C=0 .. B=11.
 
