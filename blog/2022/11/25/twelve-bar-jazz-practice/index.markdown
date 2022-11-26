@@ -279,4 +279,4 @@ But anyway:
 
 Some [Steely Dan](https://en.wikipedia.org/wiki/Steely_Dan) changes, man... But some **really** lame drums! :D
 
-Anyway, like I say, I loop 32 or 64 bars, import into my DAW for better patches, **then** I practice! :)
+Anyway, like I say, I repeat 32 or 64 bars, import into my DAW for better patches, **then** I practice! :)
