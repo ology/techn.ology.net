@@ -313,9 +313,9 @@ For the ambitious practitioner, we can speed up the tempo and make the progressi
 
     $ perl blues-progressions --percent=100 --patch=0 --bpm=120
 
-If you really want, there can be a cheesy drum pattern, too:
-
 [blues-progressions-03.mp3](blues-progressions-03.mp3)
+
+If you really want, there can be a cheesy drum pattern, too:
 
     $ perl blues-progressions --drums
 
