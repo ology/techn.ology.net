@@ -182,7 +182,8 @@ If we have not decided to divide into half-notes, just add a whole-note to the s
 
 Tell us what we've won, Bob!
 
-            printf '%*d. %13s: %s', length($opts{bars}), $n + 1, $names, ddc(\@spec) if $opts{verbose};
+            printf '%*d. %13s: %s', length($opts{bars}), $n + 1, $names, ddc(\@spec)
+                if $opts{verbose};
 
 Accumulate the note specifications:
 
