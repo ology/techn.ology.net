@@ -75,7 +75,7 @@ But we need to synchronize the two patterns, so that they are played simultaneou
         \&chords,
     );
 
-You can alter the drums in the following ways: Have a cheesey drumline or have a steady, quarter-note hi-hat pulse. More on that later.
+You can alter the drums in the following ways: Have a cheesy drumline or have a steady, quarter-note hi-hat pulse. More on that later.
 
 Finally, write the MIDI out to a file called "blues-progressions.mid":
 
