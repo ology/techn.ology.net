@@ -267,6 +267,10 @@ But anyway:
     $ perl blues-progressions --verbose --percent=20 --metrono=closed --repeat=2
     $ timidity blues-progressions.mid
 
+Which can be abbreviated to this, by the way:
+
+    $ perl blues-progressions --ver --per=20 --met=closed --rep=2
+
 [blues-progressions-01.mp3](blues-progressions-01.mp3)
 
     $ perl blues-progressions --percent=0 --tonic=Bb
