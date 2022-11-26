@@ -160,7 +160,7 @@ Next, we want to add either a whole or two half notes.  Whether to add a half is
 
             if ($opts{percent} >= int(rand 100) + 1) {
 
-Accumulate the compued chord notes, and re-collect for the next half-note:
+Accumulate the computed chord notes, and re-collect for the next half-note:
 
                 push @spec, [ $d->half, @notes ];
 
