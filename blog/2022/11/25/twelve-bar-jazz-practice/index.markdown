@@ -283,13 +283,13 @@ But anyway:
     $ perl blues-progressions --verbose --percent=20 --metrono=closed --repeat=2
     $ timidity blues-progressions.mid
 
+[blues-progressions-01.mp3](blues-progressions-01.mp3)
+
 This can be abbreviated, by the way:
 
     $ perl blues-progressions --ver --per=20 --met=closed --rep=2
 
 And `--verbose` **tells** you what chords (and even notes) are generated.  So that's really the way to practice - be verbose.
-
-[blues-progressions-01.mp3](blues-progressions-01.mp3)
 
 Here is what I practice, most:
 
