@@ -297,18 +297,18 @@ Here is what I practice, most:
 
 Which looks like this example:
 
-    1.          BbM7: [ [ 'wn', 'Bb4', 'D5', 'F5', 'A5' ] ]
-    2.           Am7: [ [ 'wn', 'A4', 'C5', 'E5', 'G5' ] ]
-    3.           Bb7: [ [ 'wn', 'Bb4', 'D5', 'F5', 'Ab5' ] ]
-    4.           Fm7: [ [ 'wn', 'F4', 'Ab4', 'C5', 'Eb5' ] ]
-    5.           Eb7: [ [ 'wn', 'Eb4', 'G4', 'Bb4', 'Db5' ] ]
-    6.           Eb7: [ [ 'wn', 'Eb4', 'G4', 'Bb4', 'Db5' ] ]
-    7.           Bb7: [ [ 'wn', 'Bb4', 'D5', 'F5', 'Ab5' ] ]
-    8.           Bb7: [ [ 'wn', 'Bb4', 'D5', 'F5', 'Ab5' ] ]
-    9.           Cm7: [ [ 'wn', 'C4', 'Eb4', 'G4', 'Bb4' ] ]
-    10.            F7: [ [ 'wn', 'F4', 'A4', 'C5', 'Eb5' ] ]
-    11.           Dm7: [ [ 'wn', 'D4', 'F4', 'A4', 'C5' ] ]
-    12.           Cm7: [ [ 'wn', 'C4', 'Eb4', 'G4', 'Bb4' ] ]
+    1.  BbM7: [ [ 'wn', 'Bb4', 'D5', 'F5', 'A5' ] ]
+    2.   Am7: [ [ 'wn', 'A4', 'C5', 'E5', 'G5' ] ]
+    3.   Bb7: [ [ 'wn', 'Bb4', 'D5', 'F5', 'Ab5' ] ]
+    4.   Fm7: [ [ 'wn', 'F4', 'Ab4', 'C5', 'Eb5' ] ]
+    5.   Eb7: [ [ 'wn', 'Eb4', 'G4', 'Bb4', 'Db5' ] ]
+    6.   Eb7: [ [ 'wn', 'Eb4', 'G4', 'Bb4', 'Db5' ] ]
+    7.   Bb7: [ [ 'wn', 'Bb4', 'D5', 'F5', 'Ab5' ] ]
+    8.   Bb7: [ [ 'wn', 'Bb4', 'D5', 'F5', 'Ab5' ] ]
+    9.   Cm7: [ [ 'wn', 'C4', 'Eb4', 'G4', 'Bb4' ] ]
+    10.   F7: [ [ 'wn', 'F4', 'A4', 'C5', 'Eb5' ] ]
+    11.  Dm7: [ [ 'wn', 'D4', 'F4', 'A4', 'C5' ] ]
+    12.  Cm7: [ [ 'wn', 'C4', 'Eb4', 'G4', 'Bb4' ] ]
 
 [blues-progressions-02.mp3](blues-progressions-02.mp3)
 
