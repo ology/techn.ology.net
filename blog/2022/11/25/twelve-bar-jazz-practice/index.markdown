@@ -251,6 +251,27 @@ And here is the transition network for each chord to a list of connected chords:
 
 Yes, every one is not used (yet)...
 
-So, on with the show!  Here are various renderings with thier command-line options:
+So, on with the show!  Here are various renderings with their command-line options.
 
+Btw, in `vim` I do this type of thing:
 
+    :!rm -f %.mid ; perl % --verbose ; timidity %.mid
+
+But anyway:
+
+    $ perl blues-progressions --verbose --percent=20 --metrono=closed --repeat=2
+    $ timidity blues-progressions.mid
+
+[blues-progressions-01.mp3](blues-progressions-01.mp3)
+
+    $ perl blues-progressions --percent=0 --tonic=Bb
+
+[blues-progressions-02.mp3](blues-progressions-02.mp3)
+
+    $ perl blues-progressions --percent=100 --patch=0 --bpm=120
+
+[blues-progressions-03.mp3](blues-progressions-03.mp3)
+
+    $ perl blues-progressions --drums
+
+[blues-progressions-04.mp3](blues-progressions-04.mp3)
