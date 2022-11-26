@@ -31,7 +31,7 @@ Followed by the libraries and their functionality, that we will use:
     use Music::MelodicDevice::Transposition ();     # transpose a note
     use Music::Note ();                             # enharmonic notes
 
-With those things declared, we define and the grab the values from the command-line:
+With those things declared, we define and then grab the values from the command-line:
 
     my %opts = (
         tonic   => 'C',     # note to transpose things to
