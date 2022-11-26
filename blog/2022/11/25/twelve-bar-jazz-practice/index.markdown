@@ -250,3 +250,7 @@ And here is the transition network for each chord to a list of connected chords:
     }
 
 Yes, every one is not used (yet)...
+
+So, on with the show!  Here are various renderings with thier command-line options:
+
+
