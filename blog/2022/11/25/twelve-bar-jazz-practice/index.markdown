@@ -281,17 +281,17 @@ And `--verbose` **tells** you what chords (and even notes) are generated.  So th
 
 Which looks like this, for example (**not** the same as the audio below):
 
-    1.    A#7: [ [ 'wn', 'A#4', 'D5', 'F5', 'G#5' ] ]
-    2.    Bm7: [ [ 'wn', 'B4', 'D5', 'F#5', 'A5' ] ]
-    3.    A#7: [ [ 'wn', 'A#4', 'D5', 'F5', 'G#5' ] ]
-    4.   F#M7: [ [ 'wn', 'F#4', 'A#4', 'C#5', 'F5' ] ]
-    5.   D#M7: [ [ 'wn', 'D#4', 'G4', 'A#4', 'D5' ] ]
-    6.   D#m7: [ [ 'wn', 'D#4', 'F#4', 'A#4', 'C#5' ] ]
-    7.    DM7: [ [ 'wn', 'D4', 'F#4', 'A4', 'C#5' ] ]
-    8.    Dm7: [ [ 'wn', 'D4', 'F4', 'A4', 'C5' ] ]
-    9.     C7: [ [ 'wn', 'C4', 'E4', 'G4', 'A#4' ] ]
-    10.   D#7: [ [ 'wn', 'D#4', 'G4', 'A#4', 'C#5' ] ]
-    11.   A#7: [ [ 'wn', 'A#4', 'D5', 'F5', 'G#5' ] ]
+    1.    Bm7: [ [ 'wn', 'B4', 'D5', 'Gb5', 'A5' ] ]
+    2.    Am7: [ [ 'wn', 'A4', 'C5', 'E5', 'G5' ] ]
+    3.    Gm7: [ [ 'wn', 'G4', 'Bb4', 'D5', 'F5' ] ]
+    4.   GbM7: [ [ 'wn', 'Gb4', 'Bb4', 'Db5', 'F5' ] ]
+    5.   EbM7: [ [ 'wn', 'Eb4', 'G4', 'Bb4', 'D5' ] ]
+    6.  Edim7: [ [ 'wn', 'E4', 'G4', 'Bb4', 'Db5' ] ]
+    7.    Dm7: [ [ 'wn', 'D4', 'F4', 'A4', 'C5' ] ]
+    8.   Dbm7: [ [ 'wn', 'Db4', 'E4', 'Ab4', 'B4' ] ]
+    9.     F7: [ [ 'wn', 'F4', 'A4', 'C5', 'Eb5' ] ]
+    10.    B7: [ [ 'wn', 'B4', 'Eb5', 'Gb5', 'A5' ] ]
+    11.  EbM7: [ [ 'wn', 'Eb4', 'G4', 'Bb4', 'D5' ] ]
     12.   CM7: [ [ 'wn', 'C4', 'E4', 'G4', 'B4' ] ]
 
 (Where `A#` == `Bb`, etc. Guess I need to display flats if the requested tonic is flat. Hmmmm.)
