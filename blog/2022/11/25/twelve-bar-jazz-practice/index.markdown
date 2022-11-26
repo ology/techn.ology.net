@@ -296,9 +296,9 @@ Which looks like this, for example (**not** the same as the audio below):
     11.  EbM7: [ [ 'wn', 'Eb4', 'G4', 'Bb4', 'D5' ] ]
     12.   CM7: [ [ 'wn', 'C4', 'E4', 'G4', 'B4' ] ]
 
-For the ambitious practitioner, we can speed up the tempo and make the progression "vertical" - i.e. chords seemingly stacked on top of each other.
-
 [blues-progressions-02.mp3](blues-progressions-02.mp3)
+
+For the ambitious practitioner, we can speed up the tempo and make the progression "vertical" - i.e. chords seemingly stacked on top of each other.
 
     $ perl blues-progressions --percent=100 --patch=0 --bpm=120
 
