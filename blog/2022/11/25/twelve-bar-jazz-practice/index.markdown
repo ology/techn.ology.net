@@ -273,7 +273,7 @@ And here is the note/chord "flattener" subroutine:
         return $string;
     }
 
-And here are the possible chords for the seventh-chord, 12-bar blues:
+And here are the possible chords (taken from the chart above) for the seventh-chord, 12-bar blues:
 
     sub bars {
         no warnings qw(qw);
