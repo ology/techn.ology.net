@@ -41,7 +41,7 @@ With those things declared, we define defaults, and then grab the values from th
         bars    => 12,      # number of 4/4 bars
         repeat  => 1,       # number of times to repeat
         percent => 25,      # maximum half-note percentage
-        metrono => 'pedal', # hihat: pedal, closed, open
+        hihat   => 'pedal', # pedal, closed, open
         drums   => 0,       # to drum, or not to drum?
         simple  => 0,       # don't randomly choose a transition
         verbose => 0,
@@ -54,7 +54,7 @@ With those things declared, we define defaults, and then grab the values from th
         'bars=i',
         'repeat=i',
         'percent=i',
-        'metrono=s',
+        'hihat=s',
         'drums',
         'simple',
         'verbose',
@@ -92,7 +92,7 @@ Here are the drums:
             $d->note($d->whole, $d->kick, $d->ride1);
         }
         else {
-            my $metronome = $opts{metrono} . '_hh';
+            my $metronome = $opts{hihat} . '_hh';
             $d->count_in({
                 bars  => $d->bars * $opts{repeat},
                 patch => $d->$metronome(),
@@ -282,7 +282,7 @@ Btw, in [vim](https://www.vim.org/) I do this type of thing:
 
 But anyway:
 
-    $ perl blues-progressions --verbose --percent=20 --metrono=closed --repeat=2
+    $ perl blues-progressions --verbose --percent=20 --hihat=closed --repeat=2
     $ timidity blues-progressions.mid
 
 [blues-progressions-01.mp3](blues-progressions-01.mp3)
