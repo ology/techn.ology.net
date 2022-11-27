@@ -122,7 +122,7 @@ And here is the bass subroutine:
         }
     }
 
-We play notes in the 3rd octave with the fretless bass patch (35).
+For this, we play notes in the 3rd octave with the fretless bass patch (35).
 
 Ok. So much for the easy bits... Next up is the meat of what we actually want to practice: Soloing over (or playing a bass-line to) the generated chords.
 
