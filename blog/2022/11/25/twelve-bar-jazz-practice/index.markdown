@@ -293,7 +293,7 @@ This can be abbreviated, by the way:
 
 And `--verbose` **tells** you what chords (and even notes) are generated.  So that's really the way to practice - be verbose.
 
-Here is what I practice, most:
+Here is what I practice, at first:
 
     $ perl blues-progressions --verbose --percent=0 --tonic=Bb
 
