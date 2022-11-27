@@ -234,7 +234,7 @@ Ok we made it! All chords accounted for!  Next up is to actually add them to the
             $d->note(midi_format(@$_)) for @specs;
         }
 
-(Note that the `midi_format()` function is used here to make sure all the sharps and flats are reconizable to MIDI-Perl.)
+(Note that the `midi_format()` function is used to make sure all the sharps and flats are reconizable to MIDI-Perl.)
 
 Finally, the **first** chord of an imperfect cadence is added to the end:
 
