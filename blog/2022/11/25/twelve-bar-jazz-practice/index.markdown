@@ -43,6 +43,7 @@ With those things declared, we define defaults, and then grab their argument val
         percent => 25,      # maximum half-note percentage
         hihat   => 'pedal', # pedal, closed, open
         drums   => 0,       # to drum, or not to drum?
+        bass    => 0,       # to have a parallel bass or not
         simple  => 0,       # don't randomly choose a transition
         verbose => 0,
     );
@@ -56,6 +57,7 @@ With those things declared, we define defaults, and then grab their argument val
         'percent=i',
         'hihat=s',
         'drums',
+        'bass',
         'simple',
         'verbose',
     );
@@ -69,6 +71,8 @@ Next we find our drummer (joke-omitted):
         reverb => 15,
     );
 
+    my @bass_notes; # global accumulator for the optional bass
+
 This includes everything we will need to compose a MIDI score.
 
 But we need to synchronize the two patterns, so that they are played simultaneously:
@@ -76,6 +80,7 @@ But we need to synchronize the two patterns, so that they are played simultaneou
     $d->sync(
         \&drums,
         \&chords,
+        \&bass,
     );
 
 You can alter the drums in the following ways: Have a cheesy drumline or have a steady, quarter-note hi-hat pulse. More on that later.
@@ -101,6 +106,21 @@ Here are the drums:
     }
 
 This says either play the `metronome44swing()` method, followed by a kick + ride whole-note, OR play a steady hi-hat (pedal, closed, or open).
+
+And here is the bass subroutine:
+
+    sub bass {
+        if ($opts{bass}) {
+            set_chan_patch($d->score, 1, 35);
+
+            for (1 .. $opts{repeat}) {
+                for my $n (@bass_notes) {
+                    $n =~ s/^([A-G][#b]?)\d$/$1 . 3/e;
+                    $d->note($d->whole, midi_format($n));
+                } 
+            }
+        }
+    }
 
 Ok. So much for the easy bits... Next up is the meat of what we actually want to practice: Soloing over (or playing a bass-line to) the generated chords.
 
