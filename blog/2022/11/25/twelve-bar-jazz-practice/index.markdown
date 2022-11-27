@@ -272,7 +272,7 @@ Yes, every one is not used (yet)...
 
 Ok now for the audio!
 
-As usual, I generally do **not** use a single, raw midi file to practice with.  Instead, after curating a few generated runs, I import the files into [my DAW](https://www.apple.com/logic-pro/) and render with superior instrumentation.
+Sometimes I use a raw midi file, played by timidity, to practice with.  But sometimes after curating a few generated runs, I import those files into [my DAW](https://www.apple.com/logic-pro/), possibly reorganize things, and render with superior instrumentation (and possibly drums, too).
 
 Below are various timidity renderings with their command-line options.
 
