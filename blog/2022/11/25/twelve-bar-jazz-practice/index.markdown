@@ -258,6 +258,21 @@ For reference, here is the chord transposition subroutine:
         return $chord;
     }
 
+And here is the note/chord "flattener" subroutine:
+
+    sub accidental {
+        my ($string) = @_; # note or chord name
+        if ($string =~ /^([A-G]#)(.*)?$/) { # is the note sharp?
+            my $note = $1;
+            my $flav = $2;
+            my $mn = Music::Note->new($note, 'isobase');
+            $mn->en_eq('b'); # convert to flat
+            $string = $mn->format('isobase');
+            $string .= $flav if $flav;
+        } 
+        return $string;
+    }
+
 And here are the possible chords for the seventh-chord, 12-bar blues:
 
     sub bars {
