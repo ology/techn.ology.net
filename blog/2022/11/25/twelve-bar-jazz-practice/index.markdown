@@ -75,7 +75,7 @@ Next we find our drummer (joke-omitted):
 
 This includes everything we will need to compose a MIDI score.
 
-But we need to synchronize the two patterns, so that they are played simultaneously:
+But we need to synchronize the patterns so that they are played simultaneously:
 
     $d->sync(
         \&drums,
