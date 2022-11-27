@@ -298,7 +298,7 @@ Below are various timidity renderings with their command-line options.
 
 Btw, in [vim](https://www.vim.org/) I do this type of thing:
 
-    :!rm -f %.mid ; perl % --verbose --simple ; timidity %.mid
+    :!rm -f %.mid ; perl % --verbose --simple --bass ; timidity %.mid
 
 But anyway:
 
