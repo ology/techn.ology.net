@@ -289,7 +289,7 @@ But anyway:
 
 This can be abbreviated, by the way:
 
-    $ perl blues-progressions --ver --per=20 --met=closed --rep=2
+    $ perl blues-progressions --ver --per=20 --hih=closed --rep=2
 
 And `--verbose` **tells** you what chords (and even notes) are generated.  So that's really the way to practice - be verbose.
 
