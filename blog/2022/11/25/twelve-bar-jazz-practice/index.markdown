@@ -12,6 +12,8 @@ I stumbled upon [this chart](Blues-Progressions.jpg) of 17 blues-jazz (jazz-blue
 
 ---
 
+**UPDATE:** I made a phone-friendly, Mojolicious [web UI](https://github.com/ology/Jazz-Tool) of this engine. Woo!
+
 This is an account of the program code itself.  For examples of a couple runs, see the MP3s below.
 
 Here is the traditional Perl preamble:
