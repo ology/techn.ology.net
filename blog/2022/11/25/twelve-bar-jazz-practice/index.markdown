@@ -8,7 +8,7 @@ tags:
   - software
 ---
 
-I stumbled upon [this chart](Blues-Progressions.jpg) of 17 blues-jazz (jazz-blues?) chord progressions. Naturally, being a programmer-musician, I made a program with which to practice improv skills. (tl;dr: [blues-progressions](https://github.com/ology/Music/blob/master/blues-progressions) & audio below)
+I stumbled upon [this chart](Blues-Progressions.jpg) of 17 blues-jazz (jazz-blues?) chord progressions by [Dan Haerle](http://www.danhaerle.com/). Naturally, being a programmer-musician, I made a program with which to practice improv skills. (tl;dr: [blues-progressions](https://github.com/ology/Music/blob/master/blues-progressions) & audio below)
 
 ---
 
