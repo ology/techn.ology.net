@@ -30,14 +30,6 @@ So... I think that Coltrane might have used this diagram like so:
 
 Naturally, being a programmer, I was compelled to attempt to automate the playing (via MIDI) of this diagram.  Check out [the code](https://github.com/ology/Music/blob/master/coltrane), if you dare.
 
-The results are so-so at best, so far.  Here are a couple runs:
-
-[coltrane-03](coltrane-03.mp3)
-
-[coltrane-04](coltrane-04.mp3)
-
-[coltrane-05](coltrane-05.mp3)
-
-So I imported a run into my [DAW](https://www.apple.com/logic-pro/) to have better drums:
+The results are so-so at best... So I imported a run into my [DAW](https://www.apple.com/logic-pro/) to have [better drums](https://www.meldaproduction.com/MDrummer):
 
 [Coltrane-fragment-02](Coltrane-fragment-02.mp3)
