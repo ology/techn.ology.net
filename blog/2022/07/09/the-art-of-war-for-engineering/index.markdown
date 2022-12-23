@@ -1,6 +1,6 @@
 ---                                                                                                                                                                          
 status: published
-title: The Art of War^WEngineering?
+title: The Art of War^WEng?
 tags:
   - psychology
   - systems
