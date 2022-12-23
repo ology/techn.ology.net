@@ -71,6 +71,8 @@ Now get HH:MM:SS coordinates of the given (or current) time for the hands:
 
     my ( $s, $m, $h ) = time_point( $radius, $seconds, $minutes, $hours, 1 );
 
+Notice that we pass a `1` to the `time_point()` function this time. That is a "flag" that means, that the hands of the clock are to be plotted (and not the hour markings).
+
 Draw the hands of the clock with varying thickness and color:
 
     $clock->setThickness(8);
