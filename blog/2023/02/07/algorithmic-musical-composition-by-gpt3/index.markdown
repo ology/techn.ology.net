@@ -129,4 +129,4 @@ B. Use of Probability
 
 VI. Conclusion
 
-1. TO DO
+1. Algorithmic musical composition is a process of creating music using algorithms and computer programming. It allows for the generation of complex musical structures and patterns, as well as the exploration of new sounds and ideas. It can be used to create music that is both structured and unpredictable, and can be used to explore and expand on existing musical styles. Algorithmic composition can be used to create music in a variety of styles, from classical to electronic. It can also be used to create music that is interactive and responsive to the user.
