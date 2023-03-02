@@ -14,7 +14,7 @@ I recently finished the thin but dense book ["Creating Rhythms"](https://abrazol
 
 ---
 
-The book is full of musical descriptions of mathematical sequences that can be interpreted as a series of rhythmic onset and rest beats.
+This book is full of musical descriptions of mathematical sequences that can be interpreted as a series of rhythmic onset and rest beats.
 
 The descriptions of the math and algorithms are great, but the fact that the book has a companion website with mostly working (on my Macbook) [c code](https://abrazol.com/books/rhythm1/software.html) is a blessing!
 
