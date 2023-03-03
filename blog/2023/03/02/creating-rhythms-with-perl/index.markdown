@@ -10,7 +10,7 @@ tags:
 ---
 
 ![](creating-rhythms-cover.png)
-I recently finished the thin but dense book ["Creating Rhythms"](https://abrazol.com/books/rhythm1). And being a Perl programmer at heart, I naturally turned most of the math and c code into a [handy module](https://metacpan.org/dist/Music-CreatingRhythms) for any intrepid programmer to play with!
+I recently finished the thin but dense book ["Creating Rhythms"](https://abrazol.com/books/rhythm1). And being a programmer at heart, I naturally turned most of the math and c code into a [handy perl module](https://metacpan.org/dist/Music-CreatingRhythms) for any intrepid programmer to play with!
 
 ---
 
