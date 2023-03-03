@@ -22,6 +22,6 @@ Now the actual program names are abbreviations of their functionality. Like `cfc
 
 I was pleased to find that porting the c algorithms as-is into perl was sufficiently (and sometimes very) fast. I thought about translating them to "idiomatic" perl, but was not sure how to implement the (often recursive) algorithms into said idioms. So I left them be for the most part. Some algorithms are straight-up perl modules with a single call. So I used that as much as I could (e.g. for de Bruijn and permutations, etc.).
 
-For completeness, I also added methods to do things to the sequences and intervals described in the book. So you can invert or reverse a sequence at a cetain point, or you can convert intervals to sequences and back. Also, I figured out how to render Euclidean rhythms by studying [Godfried Toussaint](http://cgm.cs.mcgill.ca/~godfried/publications/banff.pdf) and added that method too.
+For completeness, I also added methods to do things to the sequences and intervals described in the book. So you can invert or reverse a sequence at a cetain point, or you can convert intervals to sequences and back. Also, I figured out how to render Euclidean rhythms by studying [Godfried Toussaint](http://cgm.cs.mcgill.ca/~godfried/publications/banff.pdf) [PDF] and added that method too.
 
 Music-Math nerds - Enjoy! :D
