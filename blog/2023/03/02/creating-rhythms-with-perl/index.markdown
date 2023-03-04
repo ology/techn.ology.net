@@ -28,7 +28,7 @@ Music-Math nerds - Enjoy! :D
 
 ~
 
-As an example here are a couple short runs of the [play-set](https://github.com/ology/Music-CreatingRhythms/blob/main/eg/play-set.pl) program with closed hihat, snare and kick:
+As an example here are a couple short runs of the [play-set](https://github.com/ology/Music-CreatingRhythms/blob/main/eg/play-set.pl) program with steady closed hihat, and Christoffel word snare and kick:
 
 [play-set-01.mp3](play-set-01.mp3)
 
