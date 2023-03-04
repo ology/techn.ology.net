@@ -9,7 +9,7 @@ tags:
   - music
 ---
 
-![](creating-rhythms-cover.png)
+![creating-rhythms-cover.png](creating-rhythms-cover.png)
 I recently finished the thin but dense book ["Creating Rhythms"](https://abrazol.com/books/rhythm1). And being a programmer at heart, I naturally turned most of the math and c code into a [handy perl module](https://metacpan.org/dist/Music-CreatingRhythms) for any intrepid programmer to play with!
 
 ---
@@ -25,3 +25,13 @@ I was pleased to find that porting the c algorithms as-is into perl was sufficie
 For completeness, I also added methods to do things to the sequences and intervals described in the book. So you can invert or reverse a sequence at a cetain point, or you can convert intervals to sequences and back. Also, I figured out how to render Euclidean rhythms by studying [Godfried Toussaint](http://cgm.cs.mcgill.ca/~godfried/publications/banff.pdf) [PDF] and added that method too.
 
 Music-Math nerds - Enjoy! :D
+
+~
+
+As an example here are a couple short runs of the [play-set](https://github.com/ology/Music-CreatingRhythms/blob/main/eg/play-set.pl) program with closed hihat, snare and kick:
+
+[play-set-01.mp3](play-set-01.mp3)
+
+[play-set-04.mp3](play-set-04.mp3)
+
+[play-set-05.mp3](play-set-05.mp3)
