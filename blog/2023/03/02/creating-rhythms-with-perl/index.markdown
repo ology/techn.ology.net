@@ -36,4 +36,4 @@ As an example here are a couple short runs of the [play-set](https://github.com/
 
 [play-set-05.mp3](play-set-05.mp3)
 
-[play-set-06.mp3](play-set-05.mp3)
+[play-set-06.mp3](play-set-06.mp3)
