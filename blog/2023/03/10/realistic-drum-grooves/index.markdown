@@ -77,11 +77,13 @@ Finally, these computed notes and phrases are added to the score. For musical co
         $d->rest($d->quarter);
     }
 
-And here are a couple runs with syncopated snare and kick onsets:
+And here are a few runs with syncopated snare and kick onsets:
 
 [figured-syncopation-05.mp3](figured-syncopation-05.mp3)
 
 [figured-syncopation-06.mp3](figured-syncopation-06.mp3)
 
 [figured-syncopation-07.mp3](figured-syncopation-07.mp3)
+
+[figured-syncopation-08.mp3](figured-syncopation-08.mp3)
 
