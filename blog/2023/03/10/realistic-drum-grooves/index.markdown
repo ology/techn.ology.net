@@ -39,7 +39,7 @@ Anyway, each part is both **similar** in basic structure and **random** (i.e. "g
 
 The `part` routine synchronizes twice: First are three measures of straight-ahead groove (with Euclidean onsets) and figured bass. Second is a single measure of an ending fill with figured bass.
 
-The fill is actually a slightly complicated bit under the hood. It takes two arguments: one for the number of snare onsets and another for the kick onsets. These are for the continued groove that has been establed in the previous three bars. For the fill itself, which occurs at the **end** of the bar, a random Euclidean bitstring is also computed. This is assigned to the snare. (The fill is only snare at the moment. No cymbals or toms yet...)
+The fill is actually a slightly complicated bit under the hood. It takes two arguments: one for the number of snare onsets and another for the kick onsets. These are for the continued groove that has been established in the previous three bars. For the fill itself, which occurs at the **end** of the bar, a random Euclidean bitstring is also computed. This is assigned to the snare. (The fill is only snare at the moment. No cymbals or toms yet...)
 
 For musical context, this program also generates a randomzed, figured bassline. Actually it generates a few for each run. And this is also a complicated bit that uses a couple different tools.
 
