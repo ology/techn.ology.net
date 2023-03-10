@@ -9,7 +9,7 @@ tags:
   - music
 ---
 
-I finally have the tools to create realistic drum grooves!
+I finally have the tools to create realistic drum grooves! (tl;dr: [figured-syncopation](https://github.com/ology/Music/blob/master/figured-syncopation) & mp3s below)
 
 ---
 
