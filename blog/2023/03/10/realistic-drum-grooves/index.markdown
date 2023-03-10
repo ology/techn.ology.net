@@ -41,7 +41,7 @@ The `part` routine synchronizes twice: First are three measures of straight-ahea
 
 The fill is actually a slightly complicated bit under the hood. It takes two arguments: one for the number of snare onsets and another for the kick onsets. These are for the continued groove that has been established in the previous three bars. For the fill itself, which occurs at the **end** of the bar, a random Euclidean bitstring is also computed. This is assigned to the snare. (The fill is only snare at the moment. No cymbals or toms yet...)
 
-For musical context, this program also generates a randomzed, figured bassline. Actually it generates a few for each run. And this is also a complicated bit that uses a couple different tools.
+For musical context, this program optionally generates a randomzed, figured bassline. Actually it generates a few for each run. And this is also a complicated bit that uses a couple different tools.
 
 The Music::Duration::Partition module is used to create a couple different three-beat figures (i.e. "phrases", "motifs"). Why three? Because we add a rest on the fourth beat, so that the phrases don't run together.
 
