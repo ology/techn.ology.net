@@ -48,7 +48,6 @@ The Music::Duration::Partition module is used to create a couple different three
     my $mdp1 = Music::Duration::Partition->new(
         size => $size,
         pool => [qw/qn en sn/],
-        #verbose=>1,
     );
     my $motif1 = $mdp1->motif;
 
@@ -77,9 +76,8 @@ Finally, these computed notes and phrases are added to the score. For musical co
 
         $d->rest($d->quarter);
     }
-}
 
-And here are a couple runs with different snare and kick onsets:
+And here are a couple runs with syncopated snare and kick onsets:
 
 [figured-syncopation-05.mp3](figured-syncopation-05.mp3)
 
