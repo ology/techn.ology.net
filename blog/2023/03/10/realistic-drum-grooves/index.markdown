@@ -37,7 +37,7 @@ Speaking of changing channels and patches, that is actually done with MIDI::Util
 
 Anyway, each part is both **similar** in basic structure and **random** (i.e. "generative") in the changing syncopation and fill that is added.
 
-The `part` routine synchronizes twice: First are three measures of straight-ahead groove (with Euclidean onsets). Second is a single measure of an ending fill with figured bass.
+The `part` routine synchronizes twice: First are three measures of straight-ahead groove (with Euclidean onsets) and figured bass. Second is a single measure of an ending fill with figured bass.
 
 The fill is actually a slightly complicated bit under the hood. It takes two arguments: one for the number of snare onsets and another for the kick onsets. These are for the continued groove that has been establed in the previous three bars. For the fill itself, which occurs at the **end** of the bar, a random Euclidean bitstring is also computed. This is assigned to the snare. (The fill is only snare at the moment. No cymbals or toms yet...)
 
@@ -79,7 +79,7 @@ Finally, these computed notes and phrases are added to the score. For musical co
     }
 }
 
-And here are a couple runs with different snare onsets:
+And here are a couple runs with different snare and kick onsets:
 
 [figured-syncopation-05.mp3](figured-syncopation-05.mp3)
 
