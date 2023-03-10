@@ -19,6 +19,7 @@ Enter [Perl](https://www.perl.org/) and these programming modules:
 
 [MIDI::Drummer::Tiny](https://metacpan.org/dist/MIDI-Drummer-Tiny) and
 [MIDI::Util](https://metacpan.org/dist/MIDI-Util) and
+[Music::CreatingRhythms](https://metacpan.org/dist/Music-CreatingRhythms) and
 [Music::Duration::Partition](https://metacpan.org/dist/Music-Duration-Partition) and
 [Music::Scales](https://metacpan.org/dist/Music-Scales) and
 [Music::VoiceGen](https://metacpan.org/dist/Music-VoiceGen)
