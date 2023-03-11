@@ -90,3 +90,5 @@ And here are a few runs with syncopated snare and kick onsets:
 
 [figured-syncopation-09.mp3](figured-syncopation-09.mp3)
 
+[figured-syncopation-10.mp3](figured-syncopation-10.mp3)
+
