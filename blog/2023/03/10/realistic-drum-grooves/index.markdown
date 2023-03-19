@@ -92,3 +92,7 @@ And here are a few runs with syncopated snare and kick onsets:
 
 [figured-syncopation-10.mp3](figured-syncopation-10.mp3)
 
+~
+
+**UPDATE:** I have made a Mojolicious Perl [user interface](https://github.com/ology/Groove-Tool) for curious programmers. It is **much** easier to use than the command-line program described above.
+
