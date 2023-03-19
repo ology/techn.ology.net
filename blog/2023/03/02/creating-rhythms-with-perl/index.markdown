@@ -37,3 +37,7 @@ As an example, here are a couple short runs of the [play-christoffel-set](https:
 [play-set-05.mp3](play-set-05.mp3)
 
 [play-set-06.mp3](play-set-06.mp3)
+
+~
+
+**UPDATE:** I have made a Mojolicious Perl [user interface](https://github.com/ology/Groove-Tool) for a few of these concepts, for curious programmers. It is **much** easier to use than the command-line program above. :D
