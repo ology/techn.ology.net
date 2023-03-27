@@ -75,7 +75,7 @@ Prints out the number of overtone frequencies above the given note
 
 #### *motif* number [duration pool]
 
-Prints a randomized phrase with notes in the key of `C` with durations
+Prints a randomized phrase of the number of beats with notes in the key of `C` given the pool of durations
 
 #### *vov* Roman numeral phrase
 
