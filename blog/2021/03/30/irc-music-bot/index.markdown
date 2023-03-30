@@ -45,7 +45,7 @@ Prints out the URL to this page!
 
 Prints the github URL of the code for this bot
 
----
+ ---
 
 #### *convert* name or number
 
