@@ -45,7 +45,7 @@ Prints out the URL to this page!
 
 Prints the github URL of the code for this bot
 
-    ---
+ ---
 
 #### *convert* name or number
 
@@ -55,7 +55,7 @@ Converts between **midinum** and **ISO** note formats
 
 Prints out the number of overtone frequencies above the given note
 
----
+ ---
 
 #### *chord* C C# D D# ... B
 
@@ -71,7 +71,7 @@ Prints chords in the key of `C`, representing the given Roman numeral phrase
 
 For example: `vov I ii V/V`
 
----
+ ---
 
 #### *interval* C C# D [D# ...]
 
@@ -89,7 +89,7 @@ Prints the description and numeric ratio for the given named pitch **or** the pi
 
 Please see the long list of named intervals and ratios [here](https://metacpan.org/release/Music-Intervals/source/lib/Music/Intervals/Ratios.pm#L11)
 
----
+ ---
 
 #### *key* 1b [1#|2b|2#|...]
 
@@ -105,7 +105,7 @@ Prints the notes of the given scale
 
 Please see the list of scales [here](https://metacpan.org/pod/Music::Scales#SCALES)
 
----
+ ---
 
 #### *fingering* D3 m
 
@@ -117,7 +117,7 @@ Please see the known chords [here](https://metacpan.org/source/GENE/MIDI-Chord-G
 
 Prints the URL to a guitar fretboard diagram given the fingering and neck position arguments
 
----
+ ---
 
 #### *hit* yyyymmdd
 
@@ -135,7 +135,7 @@ Prints the URL for the Bach composition
 
 Note that The "em dash" must be used if needing a hyphen in the argument e.g. Anh.133–150.
 
----
+ ---
 
 #### *motif* number [duration pool]
 
@@ -199,7 +199,7 @@ Conveniently, these abbreviations may be used when making a phrase:
     bd => kick
     eb => electric_bass
 
----
+ ---
 
 #### *patch* number (or partial name)
 
