@@ -45,29 +45,17 @@ Prints out the URL to this page!
 
 Prints the github URL of the code for this bot
 
+---
+
 #### *convert* name or number
 
 Converts between **midinum** and **ISO** note formats
-
-#### *patch* number (or partial name)
-
-Prints out the name of a MIDI musical instrument for a patch number or
-
-Prints out the MIDI instrument name and patch number for a name fragment
 
 #### *freq* note number
 
 Prints out the number of overtone frequencies above the given note
 
-#### *motif* number [duration pool]
-
-Prints a randomized phrase of the number of beats with notes in the key of `C` given the pool of durations
-
-#### *vov* Roman numeral phrase
-
-Prints chords in the key of `C`, representing the given Roman numeral phrase
-
-For example: `vov I ii V/V`
+---
 
 #### *chord* C C# D D# ... B
 
@@ -76,6 +64,14 @@ Prints a chord name given the notes
 #### *notes* C [C7|CM7|...]
 
 Prints the notes of a given named chord
+
+#### *vov* Roman numeral phrase
+
+Prints chords in the key of `C`, representing the given Roman numeral phrase
+
+For example: `vov I ii V/V`
+
+---
 
 #### *interval* C C# D [D# ...]
 
@@ -93,6 +89,8 @@ Prints the description and numeric ratio for the given named pitch **or** the pi
 
 Please see the long list of named intervals and ratios [here](https://metacpan.org/release/Music-Intervals/source/lib/Music/Intervals/Ratios.pm#L11)
 
+---
+
 #### *key* 1b [1#|2b|2#|...]
 
 Prints the named key given the number of accidentals
@@ -107,9 +105,7 @@ Prints the notes of the given scale
 
 Please see the list of scales [here](https://metacpan.org/pod/Music::Scales#SCALES)
 
-#### *hit* yyyymmdd
-
-Finds the Billboard #1 hit song for that date
+---
 
 #### *fingering* D3 m
 
@@ -120,6 +116,12 @@ Please see the known chords [here](https://metacpan.org/source/GENE/MIDI-Chord-G
 #### *fret* x02220 1
 
 Prints the URL to a guitar fretboard diagram given the fingering and neck position arguments
+
+---
+
+#### *hit* yyyymmdd
+
+Finds the Billboard #1 hit song for that date
 
 #### *bwv* number (or an appendix name like "Anh.208")
 
@@ -132,6 +134,12 @@ Please see the [list of Bach works](https://imslp.org/wiki/List_of_works_by_Joha
 Prints the URL for the Bach composition
 
 Note that The "em dash" must be used if needing a hyphen in the argument e.g. Anh.133–150.
+
+---
+
+#### *motif* number [duration pool]
+
+Prints a randomized phrase of the number of beats with notes in the key of `C` given the pool of durations
 
 #### *play* [number [number]] phrase
 
@@ -190,6 +198,14 @@ Conveniently, these abbreviations may be used when making a phrase:
     ft => hi_floor_tom
     bd => kick
     eb => electric_bass
+
+---
+
+#### *patch* number (or partial name)
+
+Prints out the name of a MIDI musical instrument for a patch number or
+
+Prints out the MIDI instrument name and patch number for a name fragment
 
 #### *range* instrument
 
