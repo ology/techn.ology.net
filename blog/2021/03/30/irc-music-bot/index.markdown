@@ -205,7 +205,21 @@ Conveniently, these abbreviations may be used when making a phrase:
 
 Prints out the name of a MIDI musical instrument for a patch number or
 
-Prints out the MIDI instrument name and patch number for a name fragment
+Prints out the MIDI instrument name and patch number for an instrument name fragment or class of instruments
+
+The classes are:
+
+    bass
+    brass
+    effect
+    idiophone
+    keyboard
+    lamellaphone
+    membranophone
+    string
+    synth
+    voice
+    wind
 
 #### *range* instrument
 
