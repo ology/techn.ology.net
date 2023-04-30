@@ -197,6 +197,6 @@ Return the current counter to the calling loop, so that we can keep track of it 
 
 ![hex.svg](hex.svg)
 
-Once I finally had my hexagonal graph paper, I could use it to figure out things like, "How many possible rotational and flip symmetries are there"? And here is an animated graph of the 12 possible, colored so that things are more obvious:
+Once I finally had my hexagonal graph paper, I could use it to figure out things like, "How many possible rotational and flip symmetries are there"? And here is an animated graph of the 12 possible, colored, so that things are more obvious:
 
 ![animated.gif](animated.gif)
