@@ -8,7 +8,7 @@ tags:
 ---
 
 ![hat.png](hat.png)
-I recently read about the [13-sided "Einstein shape"](https://www.scientificamerican.com/article/newfound-mathematical-einstein-shape-creates-a-never-repeating-pattern/) (or hat/t-shirt tile) on a hexagonal grid of [kites](https://en.wikipedia.org/wiki/Kite_(geometry)). Being a curious cat and programmer, I had to find out more!
+I recently read about the [13-sided "Einstein shape"](https://www.scientificamerican.com/article/newfound-mathematical-einstein-shape-creates-a-never-repeating-pattern/) (or hat/t-shirt tile) on a hexagonal grid of [kites](https://en.wikipedia.org/wiki/Kite_(geometry)). Being a curious cat and programmer, I had to find out more! (tl;dr: [hexagon-grid](https://github.com/ology/Graphics/blob/master/hexagon-grid) and animation at the bottom)
 
 ---
 
