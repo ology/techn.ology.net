@@ -48,7 +48,7 @@ We declare and assign defaults for the possible command-line parameters:
         fill   => 'white',
     );
 
-Then we capture any given on the command-line by the user:
+Then we capture any user command-line input:
 
     GetOptions( \%opts,
         'rows=i',
