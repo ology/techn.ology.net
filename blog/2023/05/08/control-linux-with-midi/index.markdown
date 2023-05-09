@@ -18,7 +18,7 @@ Being a musician, I happen to have a couple MIDI controllers. Like this one, for
 
 An [Akai MPD218](https://www.akaipro.com/mpd218) 4x4x3 pad and 6x3 knob controller.
 
-With that device, a Linux laptop, perl, `aseqdump`, and `xdotool`, I was able to glue together a program that captures MIDI and triggers either modifier keystrokes (like CTRL-L) or text (like ':tabnew').
+With that device, a Linux laptop, perl, `aseqdump`, and `xdotool`, I was able to glue together a program that captures MIDI and triggers either modifier keystrokes (like CTRL-L) or literal text (like ':tabnew').
 
 Really, I only want to control my editor: `vim`. But you can trigger any keystroke thing, for any window that you are focused on! (I actually **do** have a bank of pads and knobs for Firefox things. But I just made that as a proof of concept, and never actually use it.)
 
