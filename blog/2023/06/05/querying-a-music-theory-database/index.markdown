@@ -72,8 +72,7 @@ Here is a run with verbose output:
     Ionian scale: [ 'C', 'D', 'E', 'F', 'G', 'A', 'B' ]
     Phrase: [ 'C', 'Dm', 'F', 'Am' ]
     Chords: [
-      [ 'C4', 'E4', 'G4' ], [ 'D4', 'F4', 'A4' ], [ 'F4', 'A4', 'C5' ],
-      [ 'A4', 'C5', 'E5' ],
+      [ 'C4', 'E4', 'G4' ], [ 'D4', 'F4', 'A4' ], [ 'F4', 'A4', 'C5' ], [ 'A4', 'C5', 'E5' ],
     ]
     Graph: 1-1,1-2,1-3,1-4,1-5,1-6,2-3,2-4,2-5,3-1,3-2,3-4,3-6,4-1,4-3,4-5,4-6,5-1,5-4,5-6,6-1,6-2,6-4,6-5
     Progression: [ 1, 3, 4, 1 ]
@@ -81,8 +80,7 @@ Here is a run with verbose output:
     Dorian scale: [ 'G', 'A', 'Bb', 'C', 'D', 'E', 'F' ]
     Phrase: [ 'Gm', 'Bb', 'C', 'Gm' ]
     Chords: [
-      [ 'G4', 'Bb4', 'D5' ], [ 'Bb4', 'D5', 'F5' ], [ 'C4', 'E4', 'G4' ],
-      [ 'G4', 'Bb4', 'D5' ],
+      [ 'G4', 'Bb4', 'D5' ], [ 'Bb4', 'D5', 'F5' ], [ 'C4', 'E4', 'G4' ], [ 'G4', 'Bb4', 'D5' ],
     ]
     Graph: 1-1,1-2,1-3,1-4,1-5,1-6,2-3,2-4,2-5,3-1,3-2,3-4,3-6,4-1,4-3,4-5,4-6,5-1,5-4,5-6,6-1,6-2,6-4,6-5
     Progression: [ 1, 4, 5, 4 ]
@@ -90,8 +88,7 @@ Here is a run with verbose output:
     Ionian scale: [ 'Eb', 'F', 'G', 'Ab', 'Bb', 'C', 'D' ]
     Phrase: [ 'Eb', 'Ab', 'Bb', 'Ab' ]
     Chords: [
-      [ 'Eb4', 'G4', 'Bb4' ], [ 'Ab4', 'C5', 'Eb5' ], [ 'Bb4', 'D5', 'F5' ],
-      [ 'Ab4', 'C5', 'Eb5' ],
+      [ 'Eb4', 'G4', 'Bb4' ], [ 'Ab4', 'C5', 'Eb5' ], [ 'Bb4', 'D5', 'F5' ], [ 'Ab4', 'C5', 'Eb5' ],
     ]
     Graph: 1-1,1-2,1-3,1-4,1-5,1-6,2-3,2-4,2-5,3-1,3-2,3-4,3-6,4-1,4-3,4-5,4-6,5-1,5-4,5-6,6-1,6-2,6-4,6-5
     Progression: [ 1, 6, 1, 4 ]
@@ -99,8 +96,7 @@ Here is a run with verbose output:
     Lydian scale: [ 'Gb', 'Ab', 'Bb', 'C', 'Db', 'Eb', 'F' ]
     Phrase: [ 'Gb', 'Ebm', 'Gb', 'Cdim' ]
     Chords: [
-      [ 'Gb4', 'Bb4', 'Db5' ], [ 'Eb4', 'Gb4', 'Bb4' ], [ 'Gb4', 'Bb4', 'Db5' ],
-      [ 'C4', 'Eb4', 'Gb4' ],
+      [ 'Gb4', 'Bb4', 'Db5' ], [ 'Eb4', 'Gb4', 'Bb4' ], [ 'Gb4', 'Bb4', 'Db5' ], [ 'C4', 'Eb4', 'Gb4' ],
     ]
 
 You can see the progress of what is going on under the hood. Initially we are in C major (Ionian). This four bar progression ends with an A minor chord. The program decides that this chord functions in G Dorian, and generates the second four bar phrase in that mode. The last chord is used to determine the next key modulation. Rinse, repeat...
