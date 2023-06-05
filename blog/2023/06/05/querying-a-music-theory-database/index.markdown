@@ -10,11 +10,9 @@ tags:
   - software
 ---
 
-For a long time, I have wondered how to easily know what chords have a diatonic function in two different keys (modes). This is known as a ["common"](https://en.wikipedia.org/wiki/Common_chord_(music)) or "pivot" chord. (tl;dr: the [mode-pivot](https://github.com/ology/Music-ModalFunction/blob/main/eg/mode-pivot) program)
+For a long time, I have wondered how to easily know what chords have a diatonic function in two different keys (modes). This is known as a ["common"](https://en.wikipedia.org/wiki/Common_chord_(music)) or "pivot" chord. Naturally, being a software engineer, I wrote a program to answer this for me! (tl;dr: the [mode-pivot](https://github.com/ology/Music-ModalFunction/blob/main/eg/mode-pivot) program)
 
 ---
-
-Naturally, being a software engineer, I wrote a program to answer this for me! =)
 
 For our purposes, the essential question is this: "Can a chord in one key function in a second?" Any parts of this open-ended question may be unbound, thereby resulting in all possible truths.
 
