@@ -63,7 +63,7 @@ So with the [Music::ModalFunction](https://metacpan.org/dist/Music-ModalFunction
     );
     my $query = $m->pivot_chord_keys;
     last unless @$query;
-    my $result = $query->[ int rand @$q ];
+    my $result = $query->[ int rand @$query ];
     ...
 
 Here is a run with verbose output:
