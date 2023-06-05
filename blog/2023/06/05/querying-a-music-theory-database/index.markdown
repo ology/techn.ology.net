@@ -10,7 +10,7 @@ tags:
   - software
 ---
 
-For a long time, I have wondered how to easily know what chords have a diatonic function in two different keys (modes). This is known as a ["common"](https://en.wikipedia.org/wiki/Common_chord_(music)) or "pivot" chord.
+For a long time, I have wondered how to easily know what chords have a diatonic function in two different keys (modes). This is known as a ["common"](https://en.wikipedia.org/wiki/Common_chord_(music)) or "pivot" chord. (tl;dr: the [mode-pivot](https://github.com/ology/Music-ModalFunction/blob/main/eg/mode-pivot) program)
 
 ---
 
