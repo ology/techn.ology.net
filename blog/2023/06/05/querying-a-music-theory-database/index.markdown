@@ -28,7 +28,7 @@ Enter Perl!
 
 With Perl and the excellent [Music::Scales](https://metacpan.org/pod/Music::Scales) module, I was able to generate every single fact about every single note of every single mode, on the fly, and save this in a Prolog database.
 
-This is done with a data structure holding every mode (7) and every property of that mode. Example:
+This is done with a data structure holding every mode (7) and every property (also 7 of them) of that mode. Example:
 
     ionian => [
         { chord => 'maj', roman => 'r_I',   function => 'tonic' },
@@ -41,7 +41,7 @@ This is done with a data structure holding every mode (7) and every property of 
     ],
     etc.
 
-Next, I literally append the single rule about pivot chords and what modes/keys and diatonic functions they are in. That rule looks like that:
+Next, I literally append the single rule about pivot chords and what modes/keys and diatonic functions they are in. That rule looks like this:
 
     pivot_chord_keys(ChordNote, Chord, Key1Note, Key1, Key1Function, Key1Roman, Key2Note, Key2, Key2Function, Key2Roman) :-
         chord_key(ChordNote, Chord, Key1Note, Key1, Key1Function, Key1Roman),
