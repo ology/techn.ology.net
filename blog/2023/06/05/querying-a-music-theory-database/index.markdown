@@ -24,7 +24,7 @@ This was a breakthrough for me. I could finally know what pivot chords function 
 
 Enter Perl!
 
-With Perl and the excellent [Music::Scales](https://metacpan.org/pod/Music::Scales) module, I was able to generate every single fact about every single note of every single mode, on the fly, and save this in a Prolog database.
+With the excellent [Music::Scales](https://metacpan.org/pod/Music::Scales) module and mode properties data-structure (shown below), I was able to generate every single fact about every single note of every single mode, on the fly, and save this in a Prolog database.
 
 This is done with a data structure holding every mode (7) and every property (also 7 of them) of that mode. Example:
 
