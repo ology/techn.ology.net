@@ -28,6 +28,7 @@ With the excellent [Music::Scales](https://metacpan.org/pod/Music::Scales) modul
 
 This is done with a data structure holding every mode (7) and every property (also 7 of them) of that mode. Example:
 
+%= highlight Perl => begin
     ionian => [
         { chord => 'maj', roman => 'r_I',   function => 'tonic' },
         { chord => 'min', roman => 'r_ii',  function => 'supertonic' },
@@ -38,6 +39,7 @@ This is done with a data structure holding every mode (7) and every property (al
         { chord => 'dim', roman => 'r_vii', function => 'leading_tone' }
     ],
     etc.
+%end
 
 Next, I literally append the single rule about pivot chords and what modes/keys and diatonic functions they are in. That rule looks like this:
 
