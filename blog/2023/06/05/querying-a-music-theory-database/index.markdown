@@ -54,7 +54,8 @@ And that's it really! Prolog is "declarative." That is, you don't tell it the st
 
 So with the [Music::ModalFunction](https://metacpan.org/dist/Music-ModalFunction) module, you can define the database and ask questions of it, in an automated fashion. For instance, consider the example Perl program, "mode-pivot", that comes with the distribution. It generates a chord progression that changes keys, based on the final chord in a section (of four whole note measures). This chord acts as the pivot between the original mode and the new mode. And the new mode is determined by 1) querying the database, 2) getting the results, and 3) selecting one at random:
 
-    ...
+%= highlight Perl => begin
+    # ...
     my $m = Music::ModalFunction->new(
         chord_note => lc($modal_pitch),
         chord      => $chord,
@@ -64,7 +65,8 @@ So with the [Music::ModalFunction](https://metacpan.org/dist/Music-ModalFunction
     my $query = $m->pivot_chord_keys;
     last unless @$query;
     my $result = $query->[ int rand @$query ];
-    ...
+    # ...
+%end
 
 Here is a run with verbose output:
 
