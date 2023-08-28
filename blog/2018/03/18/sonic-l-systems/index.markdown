@@ -21,21 +21,21 @@ Being a music nerd, I thought, "Why not make this play notes instead of draw lin
 The program is short but has a few parts. The first is the preamble that says we are a perl program and that we will be fooling with MIDI things:
 
 %= highlight "Perl" => begin
-    #!/usr/bin/env perl
-    use strict;
-    use warnings;
+#!/usr/bin/env perl
+use strict;
+use warnings;
 
-    use MIDI::Util;
+use MIDI::Util;
 %end
 
 Next, the program takes arguments from the command-line user:
 
 %= highlight "Perl" => begin
-    my $rule       = shift || 2,
-    my $iterations = shift || 4;
-    my $string     = shift || 'F';
-    my $distance   = shift || 'qn';
-    my $theta      = shift || 1;
+my $rule       = shift || 2,
+my $iterations = shift || 4;
+my $string     = shift || 'F';
+my $distance   = shift || 'qn';
+my $theta      = shift || 1;
 %end
 
 These variables specify the rule to use (shown below), the number of iterations to perform, the initial string (axiom), the "distance" – a musical duration like the quarter note, and theta – the amount to increase/decrease the current note value by.
@@ -43,15 +43,15 @@ These variables specify the rule to use (shown below), the number of iterations 
 Next up is to define the actual re-write rules to use:
 
 %= highlight "Perl" => begin
-    my %rules = (
-        ...
-        # Sierpinski arrowhead curve: start=F
-        5 => {
-            F => 'G-F-G',
-            G => 'F+G+F',
-        },
-        ...
-    );
+my %rules = (
+    ...
+    # Sierpinski arrowhead curve: start=F
+    5 => {
+        F => 'G-F-G',
+        G => 'F+G+F',
+    },
+    ...
+);
 %end
 
 The program then initializes a MIDI score and sets the initial note to middle C (MIDI note 60):
@@ -64,28 +64,28 @@ The program then initializes a MIDI score and sets the initial note to middle C 
 Ok. Now for the meat of the program – a dispatch table of MIDI and note events, re-writing the string according to the given rules, and finally translating each string symbol into a dispatched command:
 
 %= highlight "Perl" => begin
-    my %translate = (
-        'f' => sub { $score->r($distance) },
-        'F' => sub { $score->n( $distance, $note ) },
-        'G' => sub { $score->n( $distance, $note ) },
-        '-' => sub { $note -= $theta },
-        '+' => sub { $note += $theta },
-    );
+my %translate = (
+    'f' => sub { $score->r($distance) },
+    'F' => sub { $score->n( $distance, $note ) },
+    'G' => sub { $score->n( $distance, $note ) },
+    '-' => sub { $note -= $theta },
+    '+' => sub { $note += $theta },
+);
 
-    for ( 1 .. $iterations ) {
-        $string =~ s/(.)/defined($rules{$rule}{$1}) ? $rules{$rule}{$1} : $1/eg;
-    }
-    warn "$string\n";
+for ( 1 .. $iterations ) {
+    $string =~ s/(.)/defined($rules{$rule}{$1}) ? $rules{$rule}{$1} : $1/eg;
+}
+warn "$string\n";
 
-    for my $command ( split //, $string ) {
-        $translate{$command}->() if exists $translate{$command};
-    }
+for my $command ( split //, $string ) {
+    $translate{$command}->() if exists $translate{$command};
+}
 %end
 
 Lastly, the program writes the MIDI file that was created.
 
 %= highlight "Perl" => begin
-    $score->write_score( $0 . '.mid' );
+$score->write_score( $0 . '.mid' );
 %end
 
 Here are some examples. They are decidedly not music; more like Metroid on crack.
