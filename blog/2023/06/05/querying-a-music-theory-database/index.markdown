@@ -43,10 +43,12 @@ This is done with a data structure holding every mode (7) and every property (al
 
 Next, I literally append the single rule about pivot chords and what modes/keys and diatonic functions they are in. That rule looks like this:
 
+%= highlight -style => 'solarized-dark', Prolog => begin
     pivot_chord_keys(ChordNote, Chord, Key1Note, Key1, Key1Function, Key1Roman, Key2Note, Key2, Key2Function, Key2Roman) :-
         chord_key(ChordNote, Chord, Key1Note, Key1, Key1Function, Key1Roman),
         chord_key(ChordNote, Chord, Key2Note, Key2, Key2Function, Key2Roman),
         Key1Function \= Key2Function.
+%end
 
 This associates a chord, the "source" mode (key) that it functions in, and the "destination" mode (key) that we pivot to.
 
