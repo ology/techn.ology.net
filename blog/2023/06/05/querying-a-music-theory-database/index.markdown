@@ -28,7 +28,7 @@ With the excellent [Music::Scales](https://metacpan.org/pod/Music::Scales) modul
 
 This is done with a data structure holding every mode (7) and every property (also 7 of them) of that mode. Example:
 
-%= highlight -style => 'solarized-dark', Perl => begin
+%= highlight -style => 'solarized-light', Perl => begin
     ionian => [
         { chord => 'maj', roman => 'r_I',   function => 'tonic' },
         { chord => 'min', roman => 'r_ii',  function => 'supertonic' },
@@ -43,7 +43,7 @@ This is done with a data structure holding every mode (7) and every property (al
 
 Next, I literally append the single rule about pivot chords and what modes/keys and diatonic functions they are in. That rule looks like this:
 
-%= highlight -style => 'solarized-dark', Prolog => begin
+%= highlight -style => 'solarized-light', Prolog => begin
     pivot_chord_keys(ChordNote, Chord, Key1Note, Key1, Key1Function, Key1Roman, Key2Note, Key2, Key2Function, Key2Roman) :-
         chord_key(ChordNote, Chord, Key1Note, Key1, Key1Function, Key1Roman),
         chord_key(ChordNote, Chord, Key2Note, Key2, Key2Function, Key2Roman),
@@ -56,7 +56,7 @@ And that's it really! Prolog is "declarative." That is, you don't tell it the st
 
 So with the [Music::ModalFunction](https://metacpan.org/dist/Music-ModalFunction) module, you can define the database and ask questions of it, in an automated fashion. For instance, consider the example Perl program, "mode-pivot", that comes with the distribution. It generates a chord progression that changes keys, based on the final chord in a section (of four whole note measures). This chord acts as the pivot between the original mode and the new mode. And the new mode is determined by 1) querying the database, 2) getting the results, and 3) selecting one at random:
 
-%= highlight -style => 'solarized-dark', Perl => begin
+%= highlight -style => 'solarized-light', Perl => begin
     # ...
     my $m = Music::ModalFunction->new(
         chord_note => lc($modal_pitch),
