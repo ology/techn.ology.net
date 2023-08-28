@@ -15,7 +15,8 @@ In 1968, [Aristid Lindenmayer](https://en.wikipedia.org/wiki/Aristid_Lindenmayer
 
 Using [turtle graphics](https://en.wikipedia.org/wiki/Turtle_graphics) it is possible to draw all manner of fractal "pathological curves" with this technique.
 
-Being a music nerd, I thought, "Why not make this play notes instead of draw lines?" And so the program [https://github.com/ology/Music/blob/master/lindenmayer-midi](lindenmayer-midi) was born.
+Being a music nerd, I thought, "Why not make this play notes instead of draw lines?" And so the program
+[lindenmayer-midi](https://github.com/ology/Music/blob/master/lindenmayer-midi) was born.
 
 The program is short but has a few parts. The first is the preamble that says we are a perl program and that we will be fooling with MIDI things:
 
