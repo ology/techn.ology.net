@@ -98,7 +98,7 @@ The lexical diversity is shown in the following graph:
 
 [![](SOTU-Lexical-Diversity.png)](SOTU-Lexical-Diversity.png)
 
-%= highlight R Script => begin
+%= highlight "R Script" => begin
     R> df$file[ which( df$div == max(df$div) ) ]
     [1] "17901208-Washington.txt"
 
@@ -110,7 +110,7 @@ The reading level has steadily declined, as shown in this graph:
 
 [![](SOTU-FOG.png)](SOTU-FOG.png)
 
-%= highlight R Script => begin
+%= highlight "R Script" => begin
     R> sotu$Name[ which( sotu$FOG == max(sotu$FOG) ) ]
     [1] 18151205-Madison
 
