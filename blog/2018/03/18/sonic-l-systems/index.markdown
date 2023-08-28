@@ -94,7 +94,15 @@ MIDI files: [Sierpinski](https://www.ology.net/tech/wp-content/uploads/Sierpinsk
 
 [Sierpinski.mp3](Sierpinski.mp3)
 
-(On YouTube: [Binary](https://www.youtube.com/watch?v=v6dTNOsfAUY), [Koch Curve](https://www.youtube.com/watch?v=K_PqVZGScJQ), [Lindenmayer](https://www.youtube.com/watch?v=LUr_3Hfrinc), [Sierpinski Triangle](https://www.youtube.com/watch?v=Gt8NYdsdidU))
+On YouTube:
+
+[Binary](https://www.youtube.com/watch?v=v6dTNOsfAUY),
+
+[Koch Curve](https://www.youtube.com/watch?v=K_PqVZGScJQ),
+
+[Lindenmayer](https://www.youtube.com/watch?v=LUr_3Hfrinc),
+
+[Sierpinski Triangle](https://www.youtube.com/watch?v=Gt8NYdsdidU)
 
 Not the easiest to dance to…
 
