@@ -98,20 +98,28 @@ The lexical diversity is shown in the following graph:
 
 [![](SOTU-Lexical-Diversity.png)](SOTU-Lexical-Diversity.png)
 
+%= highlight R Script => begin
     R> df$file[ which( df$div == max(df$div) ) ]
     [1] "17901208-Washington.txt"
 
     R> df$file[ which( df$div == min(df$div) ) ]
     [1] "19460121-Truman.txt"
+%end
 
 The reading level has steadily declined, as shown in this graph:
 
 [![](SOTU-FOG.png)](SOTU-FOG.png)
 
+%= highlight R Script => begin
     R> sotu$Name[ which( sotu$FOG == max(sotu$FOG) ) ]
     [1] 18151205-Madison
 
     R> sotu$Name[ which( sotu$FOG == min(sotu$FOG) ) ]
     [1] 19920128-Bush
+%end
 
-(And here are two excellent sites with their own analysis: http://www.presidency.ucsb.edu/sou.php & http://stateoftheunion.onetwothree.net/)
+(And here are two excellent sites with their own analysis:
+[http://www.presidency.ucsb.edu/sou.php](http://www.presidency.ucsb.edu/sou.php)
+&
+[http://stateoftheunion.onetwothree.net/](http://stateoftheunion.onetwothree.net/)
+)
