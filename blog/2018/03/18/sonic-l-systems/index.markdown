@@ -19,24 +19,29 @@ Being a music nerd, I thought, "Why not make this play notes instead of draw lin
 
 The program is short but has a few parts. The first is the preamble that says we are a perl program and that we will be fooling with MIDI things:
 
+%= highlight "Perl" => begin
     #!/usr/bin/env perl
     use strict;
     use warnings;
 
     use MIDI::Util;
+%end
 
 Next, the program takes arguments from the command-line user:
 
+%= highlight "Perl" => begin
     my $rule       = shift || 2,
     my $iterations = shift || 4;
     my $string     = shift || 'F';
     my $distance   = shift || 'qn';
     my $theta      = shift || 1;
+%end
 
 These variables specify the rule to use (shown below), the number of iterations to perform, the initial string (axiom), the "distance" – a musical duration like the quarter note, and theta – the amount to increase/decrease the current note value by.
 
 Next up is to define the actual re-write rules to use:
 
+%= highlight "Perl" => begin
     my %rules = (
         ...
         # Sierpinski arrowhead curve: start=F
@@ -46,14 +51,18 @@ Next up is to define the actual re-write rules to use:
         },
         ...
     );
+%end
 
 The program then initializes a MIDI score and sets the initial note to middle C (MIDI note 60):
 
+%= highlight "Perl" => begin
     my $score = MIDIUtil::setup_midi( patch => 0, bpm => 300 );
     my $note = 60;
+%end
 
 Ok. Now for the meat of the program – a dispatch table of MIDI and note events, re-writing the string according to the given rules, and finally translating each string symbol into a dispatched command:
 
+%= highlight "Perl" => begin
     my %translate = (
         'f' => sub { $score->r($distance) },
         'F' => sub { $score->n( $distance, $note ) },
@@ -70,10 +79,13 @@ Ok. Now for the meat of the program – a dispatch table of MIDI and note events
     for my $command ( split //, $string ) {
         $translate{$command}->() if exists $translate{$command};
     }
+%end
 
 Lastly, the program writes the MIDI file that was created.
 
+%= highlight "Perl" => begin
     $score->write_score( $0 . '.mid' );
+%end
 
 Here are some examples. They are decidedly not music; more like Metroid on crack.
 
