@@ -85,10 +85,10 @@ Here is my analysis of the signals transmitted, with the command `aseqdump -p 'M
 
     MODE 1, Switch 1, Relative:
       BUTTON-KNOB (North West):
-        20:0   Control change          0, controller 32, value 0   # full turn left (increments of 4)
+        20:0   Control change          0, controller 32, value 1   # full turn left (increments of 4)
         20:0   Control change          0, controller 32, value 127 # full turn right (increments of 4)
       BUTTON-KNOB (West):
-        20:0   Control change          0, controller 31, value 0   # full turn left (increments of 4)
+        20:0   Control change          0, controller 31, value 1   # full turn left (increments of 4)
         20:0   Control change          0, controller 31, value 127 # full turn right (increments of 4)
 
     MODE 1, Switch 2, Relative:
@@ -96,13 +96,13 @@ Here is my analysis of the signals transmitted, with the command `aseqdump -p 'M
         20:0   Control change          0, controller 32, value 1   # turn left
         20:0   Control change          0, controller 32, value 127 # turn right
       BUTTON-KNOB (West):
-        20:0   Control change          0, controller 31, value 0   # turn left
+        20:0   Control change          0, controller 31, value 1   # turn left
         20:0   Control change          0, controller 31, value 127 # turn right
       BUTTON-KNOB (South West):
-        20:0   Control change          0, controller 30, value 0   # turn left
+        20:0   Control change          0, controller 30, value 1   # turn left
         20:0   Control change          0, controller 30, value 127 # turn right
       BUTTON-KNOB (East):
-        20:0   Control change          0, controller 29, value 0   # turn left
+        20:0   Control change          0, controller 29, value 1   # turn left
         20:0   Control change          0, controller 29, value 127 # turn right
 
     MODE 2, Switch 1/2, Absolute/Relative:
