@@ -18,7 +18,7 @@ The labeled photos are the only real documentation. And you have to save them fr
 
 Anyway, I was determined to figure it out from the perspective of the MIDI signals it transmits, because puzzling it out from the "documentation" is not entirely enlightening.
 
-Here is my analysis of the signals transmitted:
+Here is my analysis of the signals transmitted, with the command `aseqdump -p 'MIDI ROCK Joystick'` :
 
       Source   Event                  Ch  Data                     # comment
 
@@ -133,5 +133,5 @@ And here are the photos provided by the vendor:
 ![](MIDI-Rock-Stone-04.jpg)
 ![](MIDI-Rock-Stone-05.jpg)
 
-I was really hoping that each switch and mode would change **every** control. But alas... :\
+I was really hoping that each switch and mode would change **every** control. But alas... 🤔
 
