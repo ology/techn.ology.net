@@ -14,7 +14,7 @@ So I bought a [MIDI Rock](https://reverb.com/shop/midi-rock) "Stone" joystick co
 
 ![](MIDI-Rock-Stone-01.jpg)
 
-The labeled photos are the only real documentation. And you have to save them from where-ever you bought the device (e.g. eBay, in my case). The little text file "documentation" that came with it, seems to have been dashed off from memory, by an engineer. Descriptions? Bah!
+The labeled photos are actually the best documentation. The device comes with a small text file that introduces the Stone and reiterates the configuration settings.
 
 Anyway, I was determined to figure it out from the perspective of the MIDI signals it transmits, because puzzling it out from the "documentation" is not entirely enlightening.
 
