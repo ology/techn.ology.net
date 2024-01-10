@@ -16,9 +16,9 @@ So I bought a [MIDI Rock](https://reverb.com/shop/midi-rock) "Stone" joystick co
 
 The labeled photos are actually the best documentation. The device comes with a small text file that introduces the Stone and reiterates the configuration settings.
 
-Anyway, I was determined to figure it out from the perspective of the MIDI signals it transmits, because puzzling it out from the "documentation" is not entirely enlightening.
+However, I was determined to figure it out from the perspective of the MIDI signals it transmits. Here is my analysis of the signals transmitted, with the command
 
-Here is my analysis of the signals transmitted, with the command `aseqdump -p 'MIDI ROCK Joystick'` :
+`aseqdump -p 'MIDI ROCK Joystick'` :
 
       Source   Event                  Ch  Data                     # comment
 
@@ -133,5 +133,9 @@ And here are the photos provided by the vendor:
 ![](MIDI-Rock-Stone-04.jpg)
 ![](MIDI-Rock-Stone-05.jpg)
 
-I was really hoping that each switch and mode would change **every** control. But alas... 🤔
+I was hoping that each switch and mode would change **every** control. But no.
+
+But after contacting the maker, I can reprogram with the source and the right tools.
+
+To Be Continued...
 
