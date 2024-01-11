@@ -85,11 +85,11 @@ However, I was determined to figure it out from the perspective of the MIDI sign
 
     MODE 1, Switch 1, Relative:
       BUTTON-KNOB (North West):
-        20:0   Control change          0, controller 32, value 1   # full turn left
-        20:0   Control change          0, controller 32, value 127 # full turn right
+        20:0   Control change          0, controller 32, value 1   # turn left
+        20:0   Control change          0, controller 32, value 127 # turn right
       BUTTON-KNOB (West):
-        20:0   Control change          0, controller 31, value 1   # full turn left
-        20:0   Control change          0, controller 31, value 127 # full turn right
+        20:0   Control change          0, controller 31, value 1   # turn left
+        20:0   Control change          0, controller 31, value 127 # turn right
 
     MODE 1, Switch 2, Relative:
       BUTTON-KNOB (North West):
