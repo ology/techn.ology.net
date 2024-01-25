@@ -106,9 +106,9 @@ Prints the notes of the given scale
 
 Please see the list of scales [here](https://metacpan.org/pod/Music::Scales#SCALES)
 
-#### *common* mode key
+#### *common* mode1 mode2
 
-Lists the chords shared by the modal scale named, "mode" and "key".
+Lists the chords shared by modal scales.
 
 For example: `common c_ionian f_ionian` or `c_ionian a_aeolian` etc.
 
