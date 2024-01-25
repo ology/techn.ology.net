@@ -25,6 +25,7 @@ tl;dr: [irc-bot](https://github.com/ology/Music/blob/master/irc-bot)
 * [Music::Chord::Namer](https://metacpan.org/pod/Music::Chord::Namer) - Print out a chord name of the given notes
 * [Music::Duration::Partition](https://metacpan.org/pod/Music::Duration::Partition) and [Data::Dumper::Compact](https://metacpan.org/pod/Data::Dumper::Compact) - Generate a randomized phrase of `pitch.duration` elements
 * [Music::Intervals](https://metacpan.org/pod/Music::Intervals) - For computing the intervals between pitches
+* [Music::ModalFunction](https://metacpan.org/pod/Music::ModalFunction) - For comparing modal scale chords
 * [Mojo::UserAgent](https://metacpan.org/pod/Mojo::UserAgent) and [Mojo::DOM](https://metacpan.org/pod/Mojo::DOM) - For fetching web data
 * [Syntax::Keyword::Try](https://metacpan.org/pod/Syntax::Keyword::Try) and [MIDI::Util](https://metacpan.org/pod/MIDI::Util) and [MP3::Tag](https://metacpan.org/pod/MP3::Tag) - Generate an MP3 file based on a given phrase
 * A server to host MP3 files and run the fretboard diagram app
@@ -104,6 +105,12 @@ Prints the number of accidentals given a named key
 Prints the notes of the given scale
 
 Please see the list of scales [here](https://metacpan.org/pod/Music::Scales#SCALES)
+
+#### *common* mode key
+
+Lists the chords shared by the modal scale named, "mode" and "key".
+
+For example: `common c_ionian f_ionian` or `c_ionian a_aeolian` etc.
 
  ---
 
