@@ -20,7 +20,7 @@ I knew that diatonic chords marched up and down the staff sharing two notes with
 
 As you can see from this ribbon of triangles representing the seven diatonic chords, linked by two notes left and right, odd cycles make Möbius strips. This was not part of my investigation - just cool in itself.
 
-Anyway, I concluded that the simplest Platonic solid, the [tetrahedron](http://en.wikipedia.org/wiki/Tetrahedron), could represent this "relative chord" relationship. Its vertexes would be four notes, making the two other faces "odd" chords.
+Anyway, I concluded that the simplest Platonic solid, the [tetrahedron](http://en.wikipedia.org/wiki/Tetrahedron), could represent this "relative chord" relationship.
 
 ![](Rotating-Tetrahedron.gif)
 
