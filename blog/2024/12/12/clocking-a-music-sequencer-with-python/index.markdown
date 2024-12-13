@@ -38,7 +38,7 @@ Next we define our single subroutine, which first calculates the interval betwee
             outport.close()
             print("\nExiting...")
 
-Pretty simple really! Every interval, just send the message 'clock' down the wire to your sequencer. `^C` to cancel and close the session.
+Pretty simple really! For every interval, just send the message 'clock' down the wire to your sequencer. `^C` to cancel and close the session.
 
 Lastly, we define the MIDI port to output to. For me, that is my cheap USB interface cable called "USB MIDI Interface." Next, we tell that port we are ready to start, and then call our clock subroutine:
 
