@@ -23,12 +23,11 @@ First up, we import the functionality we will be using:
     import mido
     import time
 
-These are the built-in time library, and the excellent [MIDO](https://pypi.org/project/mido/) library (which depends on [python-rtmidi](https://pypi.org/project/python-rtmidi/)).
+These are the built-in `time` library, and the excellent [MIDO](https://pypi.org/project/mido/) library (which depends on [python-rtmidi](https://pypi.org/project/python-rtmidi/)).
 
-Next we define our single subroutine:
+Next we define our single subroutine, which first calculates the interval between clock messages (at 24 PPQN per beat):
 
     def send_clock(outport, bpm=120):
-        # Calculate the time between clock messages (24 PPQN per beat)
         interval = 60 / (bpm * 24)
         try:
             while True:
@@ -39,7 +38,9 @@ Next we define our single subroutine:
             outport.close()
             print("\nExiting...")
 
-Lastly, we define the MIDI port to output to. For me, that is my cheap USB interface cable. Next, we tell that port we are ready to start, and then call our clock subroutine:
+Pretty simple really! Every interval, just send the message 'clock' down the wire to your sequencer. `^C` to cancel and close the session.
+
+Lastly, we define the MIDI port to output to. For me, that is my cheap USB interface cable called "USB MIDI Interface." Next, we tell that port we are ready to start, and then call our clock subroutine:
 
     if __name__ == "__main__":
         with mido.open_output('USB MIDI Interface') as outport:
