@@ -6,7 +6,7 @@ tags:
   - MIDI
 ---
 
-So, I got tired of starting up my bloated music app (i.e. "[LogicPro X](https://www.apple.com/logic-pro/)", the industrial strength [DAW](https://en.wikipedia.org/wiki/Digital_audio_workstation)), which is made for recording and mastering, just to fool with my synths, and using my own timing systems. Since I'm a programmer, naturally I made a python MIDI program! tl;dr: [clock-it.py](https://github.com/ology/Music/blob/master/clock-it.py)
+So, I got tired of starting up my bloated music app (i.e. "[LogicPro X](https://www.apple.com/logic-pro/)", the industrial strength [DAW](https://en.wikipedia.org/wiki/Digital_audio_workstation)), which is made for recording and mastering, just to fool with my synths, using my own timing systems. Since I'm a programmer, naturally I made a python MIDI program! tl;dr: [clock-it.py](https://github.com/ology/Music/blob/master/clock-it.py)
 
 ---
 
