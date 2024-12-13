@@ -6,7 +6,7 @@ tags:
   - MIDI
 ---
 
-So, I got tired of starting up my bloated music app (i.e. "LogicPro X", the industrial strength DAW), which is made for recording and mastering, just to fool with my synths, and using my own timing systems. Since I'm a programmer, naturally I made a python MIDI program! tl;dr: [clock-it.py](https://github.com/ology/Music/blob/master/clock-it.py)
+So, I got tired of starting up my bloated music app (i.e. "[LogicPro X](https://www.apple.com/logic-pro/)", the industrial strength [DAW](https://en.wikipedia.org/wiki/Digital_audio_workstation)), which is made for recording and mastering, just to fool with my synths, and using my own timing systems. Since I'm a programmer, naturally I made a python MIDI program! tl;dr: [clock-it.py](https://github.com/ology/Music/blob/master/clock-it.py)
 
 ---
 
@@ -22,6 +22,8 @@ First up, we import the functionality we will be using:
 
     import mido
     import time
+
+These are the built-in time library, and the excellent [MIDO](https://pypi.org/project/mido/) library (which depends on [python-rtmidi](https://pypi.org/project/python-rtmidi/)).
 
 Next we define our single subroutine:
 
