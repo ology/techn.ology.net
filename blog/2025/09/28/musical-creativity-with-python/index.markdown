@@ -31,6 +31,6 @@ Eighth was my [module](https://metacpan.org/dist/Music-Chord-Progression) for cr
 
 For each, I made simple musical examples and added them to the readme files for each package.
 
-For my musical curiosities, I made a few threading MIDI players, one of which is: [https://github.com/ology/Music/blob/master/midi-thread-2.py](https://github.com/ology/Music/blob/master/midi-thread-2.py) that exercises the arpeggiation device (and is musically realized at https://www.youtube.com/watch?v=nbCCPr_KPdU). This open-source code can be copied and modified with any of the above packages for your own player.
+For my musical curiosities, I made a few threading MIDI players, one of which is: [https://github.com/ology/Music/blob/master/midi-thread-2.py](https://github.com/ology/Music/blob/master/midi-thread-2.py) that exercises the arpeggiation device (and is musically realized at [https://www.youtube.com/watch?v=nbCCPr_KPdU](https://www.youtube.com/watch?v=nbCCPr_KPdU)). This open-source code can be copied and modified with any of the above packages for your own player.
 
 Enjoy! :D
