@@ -19,11 +19,11 @@ Third was my [Creating Rhythms](https://metacpan.org/dist/Music-CreatingRhythms)
 
 After porting my rhythmic modules over, I turned to tonal things.
 
-So fourth was the fabulous module https://metacpan.org/pod/Music::VoiceGen by Jeremy Mates which I heavily depend upon for my stuff. That ended up as [https://pypi.org/project/music-voicegen/](https://pypi.org/project/music-voicegen/).
+So fourth was the fabulous module [https://metacpan.org/pod/Music::VoiceGen](https://metacpan.org/pod/Music::VoiceGen) by Jeremy Mates which I heavily depend upon for my stuff. That ended up as [https://pypi.org/project/music-voicegen/](https://pypi.org/project/music-voicegen/).
 
 Fifth was then my [bassline generator code](https://metacpan.org/dist/Music-Bassline-Generator). What would music be without a low-end? Haha! That ended up as [https://pypi.org/project/music-bassline-generator/](https://pypi.org/project/music-bassline-generator/).
 
-Sixth was probably the most nerdy of all chord changes - https://metacpan.org/dist/Music-Chord-Progression-Transform - my module for doing Neo-Riemann chord progressions. This code also depends on another module that I ported by Jeremy Mates: https://metacpan.org/pod/Music::NeoRiemannianTonnetz. This ended up as [https://pypi.org/project/music-tonnetztransform/](https://pypi.org/project/music-tonnetztransform/).
+Sixth was probably the most nerdy of all chord changes - https://metacpan.org/dist/Music-Chord-Progression-Transform - my module for doing Neo-Riemann chord progressions. This code also depends on another module that I ported by Jeremy Mates: [https://metacpan.org/pod/Music::NeoRiemannianTonnetz](https://metacpan.org/pod/Music::NeoRiemannianTonnetz). This ended up as [https://pypi.org/project/music-tonnetztransform/](https://pypi.org/project/music-tonnetztransform/).
 
 Seventh were my [modules](https://metacpan.org/search?size=500&q=melodic+device) for converting notes and phrases to traditional types of chromatic and melodic transformations, like inversion, ornaments, and arpeggiation, etc. The became [https://pypi.org/project/music-melodicdevice/](https://pypi.org/project/music-melodicdevice/).
 
