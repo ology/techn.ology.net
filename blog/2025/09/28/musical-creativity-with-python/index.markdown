@@ -25,7 +25,7 @@ Fifth was then my [bassline generator code](https://metacpan.org/dist/Music-Bass
 
 Sixth was probably the most nerdy of all chord changes - [https://metacpan.org/dist/Music-Chord-Progression-Transform](https://metacpan.org/dist/Music-Chord-Progression-Transform) - my module for doing neo-Riemannian chord progressions. This code also depends on another module that I ported by Jeremy Mates: [https://metacpan.org/pod/Music::NeoRiemannianTonnetz](https://metacpan.org/pod/Music::NeoRiemannianTonnetz). This ended up as [https://pypi.org/project/music-tonnetztransform/](https://pypi.org/project/music-tonnetztransform/).
 
-Seventh were my [modules](https://metacpan.org/search?size=500&q=melodic+device) for converting notes and phrases to traditional types of chromatic and melodic transformations, like inversion, ornaments, and arpeggiation, etc. They became [https://pypi.org/project/music-melodicdevice/](https://pypi.org/project/music-melodicdevice/).
+Seventh were my [modules](https://metacpan.org/search?size=500&q=melodic+device) for converting notes and phrases with traditional types of chromatic and melodic transformations, like inversion, ornaments, and arpeggiation, etc. They became [https://pypi.org/project/music-melodicdevice/](https://pypi.org/project/music-melodicdevice/).
 
 Eighth was my [module](https://metacpan.org/dist/Music-Chord-Progression) for creating randomized chord progressions based on weighted network transitions (from one chord to the next). This ended up as [https://pypi.org/project/chord-progression-network/](https://pypi.org/project/chord-progression-network/).
 
