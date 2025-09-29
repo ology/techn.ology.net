@@ -37,6 +37,8 @@ This is musically realized (and is extremely long) here:
 
 [https://www.youtube.com/watch?v=nbCCPr_KPdU](https://www.youtube.com/watch?v=nbCCPr_KPdU)
 
+For this example, I grabbed the name of the MIDI port and executed `python midi-thread-2.py 'USB MIDI Interface'`
+
 This open-source code can be copied and modified with any of the above packages for your own player.
 
 Enjoy! :D
