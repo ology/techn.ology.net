@@ -29,9 +29,9 @@ Seventh were my [modules](https://metacpan.org/search?size=500&q=melodic+device)
 
 Eighth was my [module](https://metacpan.org/dist/Music-Chord-Progression) for creating randomized chord progressions based on weighted network transitions (from one chord to the next). This ended up as [https://pypi.org/project/chord-progression-network/](https://pypi.org/project/chord-progression-network/).
 
-For each, I made simple musical examples and added them to the readme files for each package.
+I made simple musical examples and added them to the readme files for each package.
 
-For my musical curiosities, I made a few threading MIDI players, one of which is: [https://github.com/ology/Music/blob/master/midi-thread-2.py](https://github.com/ology/Music/blob/master/midi-thread-2.py) that exercises the arpeggiation device.
+For my musical curiosities, I made a few threading real-time MIDI players, one of which is: [https://github.com/ology/Music/blob/master/midi-thread-2.py](https://github.com/ology/Music/blob/master/midi-thread-2.py) that exercises the arpeggiation device.
 
 This is musically realized (and is extremely long) at [https://www.youtube.com/watch?v=nbCCPr_KPdU](https://www.youtube.com/watch?v=nbCCPr_KPdU)
 
