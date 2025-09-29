@@ -15,7 +15,7 @@ First up was my [rhythmic phrase generator](https://metacpan.org/dist/Music-Dura
 
 Second was my [handy MIDI drummer](https://metacpan.org/dist/MIDI-Drummer-Tiny). This makes it a no-brainer to add beats to a piece. This ended up as [https://pypi.org/project/music-drummer/](https://pypi.org/project/music-drummer/).
 
-Third was my [Creating Rhythms](https://metacpan.org/dist/Music-CreatingRhythms) module, based on the [excellent book](https://abrazol.com/books/rhythm1/) by Hollos and Hollos. This allows for the creation of combinatorical patterns that can be used for note rhythms or beats (like `euclid(m, n)` for instance). This became [https://pypi.org/project/music-creatingrhythms/](https://pypi.org/project/music-creatingrhythms/).
+Third was my [Creating Rhythms](https://metacpan.org/dist/Music-CreatingRhythms) module, based on the [excellent book](https://abrazol.com/books/rhythm1/) by Hollos and Hollos. This allows for the creation of combinatorical patterns that can be used for note rhythms or beats (e.g.`euclid(m, n)` for instance). This became [https://pypi.org/project/music-creatingrhythms/](https://pypi.org/project/music-creatingrhythms/).
 
 After porting my rhythmic modules over, I turned to tonal things.
 
