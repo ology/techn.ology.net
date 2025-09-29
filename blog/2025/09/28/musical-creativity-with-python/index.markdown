@@ -33,7 +33,9 @@ I made simple musical examples and added them to the readme files for each packa
 
 For my musical curiosities, I made a few threading real-time MIDI players, one of which is: [https://github.com/ology/Music/blob/master/midi-thread-2.py](https://github.com/ology/Music/blob/master/midi-thread-2.py) that exercises the arpeggiation device.
 
-This is musically realized (and is extremely long) at [https://www.youtube.com/watch?v=nbCCPr_KPdU](https://www.youtube.com/watch?v=nbCCPr_KPdU)
+This is musically realized (and is extremely long) here:
+
+[https://www.youtube.com/watch?v=nbCCPr_KPdU](https://www.youtube.com/watch?v=nbCCPr_KPdU)
 
 This open-source code can be copied and modified with any of the above packages for your own player.
 
