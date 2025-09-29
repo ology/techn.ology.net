@@ -7,7 +7,7 @@ tags:
   - MIDI
 ---
 
-Recently, I found that there were big gaps in the musical creativity packages on [pypi](https://pypi.org/). There are packages for music analysis and utilities for doing MIDI things, but nothing I could find for actual creativity. I decided to rectify this and port my [music and MIDI Perl code](https://metacpan.org/author/GENE) to Python.
+Recently, I found that there were gaps in the musical creativity packages on [pypi](https://pypi.org/). There are packages for music analysis and utilities for doing MIDI things, but nothing I could find for actual creativity. I decided to rectify this and port my [music and MIDI Perl code](https://metacpan.org/author/GENE) to Python.
 
 ---
 
