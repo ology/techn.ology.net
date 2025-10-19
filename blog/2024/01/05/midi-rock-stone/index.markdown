@@ -30,10 +30,12 @@ However, I was determined to figure it out from the perspective of the MIDI sign
         20:0   Pitch bend              0, value 0                  # Default center
         20:0   Pitch bend              0, value 8191               # Full North
 
-      BUTTON+JOYSTICK:
+      BUTTON+JOYSTICK (X & Y):
         20:0   Control change          0, controller 16, value 0   # Full South & West
         20:0   Control change          0, controller 16, value 60  # Default center
         20:0   Control change          0, controller 16, value 127 # Full North & East
+        20:0   Control change          0, controller 17, value 0   # Due North
+        20:0   Control change          0, controller 17, value 127 # Due South
 
       TWIST L/R:
         20:0   Control change          0, controller 10, value 0   # Full West (left turn)
