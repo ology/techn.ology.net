@@ -24,8 +24,8 @@ However, I was determined to figure it out from the perspective of the MIDI sign
 
     MODE 1, Switch 1, Absolute:
       JOYSTICK:
-        20:0   Control change          0, controller 1, value 0    # Default center to Full South & West
-        20:0   Control change          0, controller 1, value 127  # Full North & East
+        20:0   Control change          0, controller 1, value 0    # Full West
+        20:0   Control change          0, controller 1, value 127  # Full East
         20:0   Pitch bend              0, value -8192              # Full South
         20:0   Pitch bend              0, value 0                  # Default center
         20:0   Pitch bend              0, value 8191               # Full North
