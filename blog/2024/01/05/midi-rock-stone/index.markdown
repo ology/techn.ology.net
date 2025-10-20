@@ -135,6 +135,8 @@ And here are the photos provided by the vendor:
 ![](MIDI-Rock-Stone-04.jpg)
 ![](MIDI-Rock-Stone-05.jpg)
 
-After meticulously analyzing the MIDI messages, hhere is my contribution:
+~
+
+After meticulously analyzing the MIDI messages, here is my contribution:
 
 ![](MIDI-Rock-Joystick.png)
