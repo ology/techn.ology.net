@@ -135,9 +135,6 @@ And here are the photos provided by the vendor:
 ![](MIDI-Rock-Stone-04.jpg)
 ![](MIDI-Rock-Stone-05.jpg)
 
-I was hoping that each switch and mode would change **every** control. But no.
+After meticulously analyzing the MIDI messages, hhere is my contribution:
 
-But after contacting the maker, I can reprogram with the source and the right tools.
-
-To Be Continued...
-
+![](MIDI-Rock-Joystick.png)
