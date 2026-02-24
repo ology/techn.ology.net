@@ -18,17 +18,13 @@ For each example, we will play what things sound like with MIDI, by using the [m
 
 Here's how I start `fluidsynth` on my mac in the terminal, in a *separate* session. It uses a generic soundfont file (`sf2`) that can be downloaded [here](https://keymusician01.s3.amazonaws.com/FluidR3_GM.zip) (124MB zip).
 
-```
-fluidsynth -a coreaudio -m coremidi -g 2.0 ~/Music/soundfont/FluidR3_GM.sf2
-```
+    fluidsynth -a coreaudio -m coremidi -g 2.0 ~/Music/soundfont/FluidR3_GM.sf2
 
 So, how do Python and `mido` know what output port to use? There are a few ways, but with the `mido` package, you can do this:
 
-```
-import mido
-n = mido.get_output_names()
-print(n) # ['FluidSynth virtual port (89324)', ...]
-```
+    import mido
+    n = mido.get_output_names()
+    print(n) # ['FluidSynth virtual port (89324)', ...]
 
 This shows that `fluidsynth` is alive and ready for interaction.
 
@@ -36,46 +32,40 @@ Okay on with the show!
 
 First-up, let's look at partition algorithms. With the `part()` function, we can generate all partitions of `n`, where `n` is `5`, and the "parts" all add up to `5`. Then taking one of these (say, the third element), we convert it to a binary sequence that can be interpreted as a rhythmic phrase, and play it 4 times.
 
-```
-import time
-from music_creatingrhythms import Rhythms
+    import time
+    from music_creatingrhythms import Rhythms
 
-r = Rhythms()
+    r = Rhythms()
 
-parts = r.part(5)
-# [[1, 1, 1, 1, 1], [1, 1, 1, 2], [1, 1, 3], [1, 2, 2], [1, 4], [2, 3], [5]]
-p = parts[2] # [1, 1, 3]
+    parts = r.part(5)
+    # [[1, 1, 1, 1, 1], [1, 1, 1, 2], [1, 1, 3], [1, 2, 2], [1, 4], [2, 3], [5]]
+    p = parts[2] # [1, 1, 3]
 
-seq = r.int2b([p]) # [[1, 1, 1, 0, 0]]
-```
+    seq = r.int2b([p]) # [[1, 1, 1, 0, 0]]
 
 Now we realize the rhythm:
 
-```
-import mido
+    import mido
 
-port_name = sys.argv[1] if len(sys.argv) > 1 else 'USB MIDI'
-port = mido.open_output(port_name)
+    port_name = sys.argv[1] if len(sys.argv) > 1 else 'USB MIDI'
+    port = mido.open_output(port_name)
 
-snare = 40
+    snare = 40
 
-for _ in range(4):
-    for bit in seq[0]:
-        if bit == 1:
-            msg = mido.Message('note_on', note=snare, channel=9, velocity=100)
-            port.send(msg)
-            time.sleep(0.5)
-            msg = mido.Message('note_off', note=snare, channel=9, velocity=0)
-            port.send(msg)
-        else:
-            time.sleep(0.5)
-```
+    for _ in range(4):
+        for bit in seq[0]:
+            if bit == 1:
+                msg = mido.Message('note_on', note=snare, channel=9, velocity=100)
+                port.send(msg)
+                time.sleep(0.5)
+                msg = mido.Message('note_off', note=snare, channel=9, velocity=0)
+                port.send(msg)
+            else:
+                time.sleep(0.5)
 
 With this shell command, we can hear what it sounds like:
 
-```
-python coder-legion-1.1.py 'FluidSynth virtual port (89324)'
-```
+    python coder-legion-1.1.py 'FluidSynth virtual port (89324)'
 
 <audio controls>
   <source src="coder-legion-1.1.mp3" type="audio/mpeg">
@@ -87,14 +77,11 @@ Not terribly exciting yet! Also, the code is kind of klunky, but it illustrates 
 Let's see what the "compositions" of a number reveal. According to the documentation, a composition of a number is "the set of combinatorial variations of the partitions of `n` with the duplicates removed."
 
 Ok. Well the 7 partitions of `5` are:
-```
-[[1, 1, 1, 1, 1], [1, 1, 1, 2], [1, 1, 3], [1, 2, 2], [1, 4], [2, 3], [5]]
-```
+    [[1, 1, 1, 1, 1], [1, 1, 1, 2], [1, 1, 3], [1, 2, 2], [1, 4], [2, 3], [5]]
 
 And the 16 compositions of `5` are:
-```
-[[1, 1, 1, 1, 1], [1, 1, 1, 2], [1, 1, 2, 1], [1, 1, 3], [1, 2, 1, 1], [1, 2, 2], [1, 3, 1], [1, 4], [2, 1, 1, 1], [2, 1, 2], [2, 2, 1], [2, 3], [3, 1, 1], [3, 2], [4, 1], [5]]
-```
+
+    [[1, 1, 1, 1, 1], [1, 1, 1, 2], [1, 1, 2, 1], [1, 1, 3], [1, 2, 1, 1], [1, 2, 2], [1, 3, 1], [1, 4], [2, 1, 1, 1], [2, 1, 2], [2, 2, 1], [2, 3], [3, 1, 1], [3, 2], [4, 1], [5]]
 
 That is, the list of compositions has, not only the partition `[1, 2, 2]`, but also its variations: `[2, 1, 2]` and `[2, 2, 1]`. Same with the other partitions. Selections from this list will produce possibly cool rhythms.
 
@@ -102,49 +89,45 @@ So returning to music now... Previously, we output directly to a named, open MID
 
 Here are the compositions of `5` turned into sequences, played by a snare drum, and written to the disk:
 
-```
-from mido import Message, MidiFile, MidiTrack, MetaMessage, bpm2tempo
-from music_creatingrhythms import Rhythms
+    from mido import Message, MidiFile, MidiTrack, MetaMessage, bpm2tempo
+    from music_creatingrhythms import Rhythms
 
-def play_single(sequence):
-    global mid, track
-    snare = 40
-    channel = 9
-    t = mid.ticks_per_beat // 2 # nb: 480 = quarter-note
-    for bit in sequence:
-        if bit == 1:
-            msg = Message('note_on', note=snare, channel=channel, velocity=100, time=0)
-            track.append(msg)
-            msg = Message('note_off', note=snare, channel=channel, velocity=0, time=t)
-            track.append(msg)
-        else: # rest
-            track.append(Message('note_on', note=snare, velocity=0, time=t))
-            track.append(Message('note_off', note=snare, velocity=0, time=t))
+    def play_single(sequence):
+        global mid, track
+        snare = 40
+        channel = 9
+        t = mid.ticks_per_beat // 2 # nb: 480 = quarter-note
+        for bit in sequence:
+            if bit == 1:
+                msg = Message('note_on', note=snare, channel=channel, velocity=100, time=0)
+                track.append(msg)
+                msg = Message('note_off', note=snare, channel=channel, velocity=0, time=t)
+                track.append(msg)
+            else: # rest
+                track.append(Message('note_on', note=snare, velocity=0, time=t))
+                track.append(Message('note_off', note=snare, velocity=0, time=t))
 
-if __name__ == '__main__':
-    mid = MidiFile()
-    track = MidiTrack()
-    mid.tracks.append(track)
-    tempo = bpm2tempo(120)
-    track.append(MetaMessage('set_tempo', tempo=tempo, time=0))
-    track.append(MetaMessage('time_signature', numerator=4, denominator=4, time=0))
+    if __name__ == '__main__':
+        mid = MidiFile()
+        track = MidiTrack()
+        mid.tracks.append(track)
+        tempo = bpm2tempo(120)
+        track.append(MetaMessage('set_tempo', tempo=tempo, time=0))
+        track.append(MetaMessage('time_signature', numerator=4, denominator=4, time=0))
 
-    r = Rhythms()
+        r = Rhythms()
 
-    comps = r.compm(5, 3) # compositions of 5 with 3 elements
-    seq = r.int2b(comps)
+        comps = r.compm(5, 3) # compositions of 5 with 3 elements
+        seq = r.int2b(comps)
 
-    for s in seq:
-        play_single(s)
+        for s in seq:
+            play_single(s)
 
-    mid.save('coder-legion-2.1.mid')
-```
+        mid.save('coder-legion-2.1.mid')
 
 In order to play the MIDI file that is produced, we can use `fluidsynth` like this:
 
-```
-fluidsynth -i ~/Music/soundfont/FluidR3_GM.sf2 coder-legion-2.1.mid
-```
+    fluidsynth -i ~/Music/soundfont/FluidR3_GM.sf2 coder-legion-2.1.mid
 
 <audio controls>
   <source src="coder-legion-2.1.mp3" type="audio/mpeg">
@@ -157,89 +140,83 @@ A little better. Like a syncopated snare solo.
 
 Another way to play the MIDI file is to use [timidity](https://wiki.archlinux.org/title/Timidity++). On my mac, with the soundfont specified in the `timidity.cfg` configuration file, this would be:
 
-```
-timidity -c ~/timidity.cfg -Od coder-legion-2.1.mid
-```
+    timidity -c ~/timidity.cfg -Od coder-legion-2.1.mid
 
 To convert a MIDI file to an mp3 (or other audio formats), I do this:
 
-```
-timidity -c ~/timidity.cfg coder-legion-2.1.mid -Ow -o - | ffmpeg -i - -acodec libmp3lame -ab 64k coder-legion-2.1.mp3
-```
+    timidity -c ~/timidity.cfg coder-legion-2.1.mid -Ow -o - | ffmpeg -i - -acodec libmp3lame -ab 64k coder-legion-2.1.mp3
 
 Ok. Enough technical details! What if we want a kick bass drum and hi-hats, too? Refactor time…
 
-```
-import random
-from mido import Message, MidiFile, MidiTrack, MetaMessage, bpm2tempo
-from music_creatingrhythms import Rhythms
+    import random
+    from mido import Message, MidiFile, MidiTrack, MetaMessage, bpm2tempo
+    from music_creatingrhythms import Rhythms
 
-def open_mid():
-    mid = MidiFile()
-    track = MidiTrack()
-    mid.tracks.append(track)
-    tempo = bpm2tempo(120)
-    track.append(MetaMessage('set_tempo', tempo=tempo, time=0))
-    track.append(MetaMessage('time_signature', numerator=4, denominator=4, time=0))
-    return mid, track
+    def open_mid():
+        mid = MidiFile()
+        track = MidiTrack()
+        mid.tracks.append(track)
+        tempo = bpm2tempo(120)
+        track.append(MetaMessage('set_tempo', tempo=tempo, time=0))
+        track.append(MetaMessage('time_signature', numerator=4, denominator=4, time=0))
+        return mid, track
 
-def play_simul(notes):
-    global mid, track
-    channel = 9
-    duration = mid.ticks_per_beat // 4 # nb: 480 = quarter-note
-    for i, n in enumerate(notes):
-        bit = notes[n]
-        t = duration if i == 0 else 0
-        if bit == 1:
-            msg = Message('note_on', note=n, channel=channel, velocity=100, time=t)
-            track.append(msg)
-        else: # rest
-            track.append(Message('note_on', note=n, velocity=0, time=t))
-    for i, n in enumerate(notes):
-        bit = notes[n]
-        t = duration if i == 0 else 0
-        if bit == 1:
-            msg = Message('note_off', note=n, channel=channel, velocity=0, time=t)
-            track.append(msg)
-        else: # rest
-            track.append(Message('note_off', note=n, velocity=0, time=t))
+    def play_simul(notes):
+        global mid, track
+        channel = 9
+        duration = mid.ticks_per_beat // 4 # nb: 480 = quarter-note
+        for i, n in enumerate(notes):
+            bit = notes[n]
+            t = duration if i == 0 else 0
+            if bit == 1:
+                msg = Message('note_on', note=n, channel=channel, velocity=100, time=t)
+                track.append(msg)
+            else: # rest
+                track.append(Message('note_on', note=n, velocity=0, time=t))
+        for i, n in enumerate(notes):
+            bit = notes[n]
+            t = duration if i == 0 else 0
+            if bit == 1:
+                msg = Message('note_off', note=n, channel=channel, velocity=0, time=t)
+                track.append(msg)
+            else: # rest
+                track.append(Message('note_off', note=n, velocity=0, time=t))
 
-if __name__ == '__main__':
-    mid, track = open_mid()
+    if __name__ == '__main__':
+        mid, track = open_mid()
 
-    kick = 36
-    snare = 40
-    hihat = 42
-    repeat = 16
+        kick = 36
+        snare = 40
+        hihat = 42
+        repeat = 16
 
-    r = Rhythms()
+        r = Rhythms()
 
-    s_comps = r.compm(4, 2) # snare compositions of 4 with 2 elements
-    # [[1, 3], [2, 2], [3, 1]]
-    s_seq = r.int2b(s_comps)
-    # [[1, 1, 0, 0], [1, 0, 1, 0], [1, 0, 0, 1]]
+        s_comps = r.compm(4, 2) # snare compositions of 4 with 2 elements
+        # [[1, 3], [2, 2], [3, 1]]
+        s_seq = r.int2b(s_comps)
+        # [[1, 1, 0, 0], [1, 0, 1, 0], [1, 0, 0, 1]]
 
-    k_comps = r.compm(4, 3) # kick compositions of 4 with 3 elements
-    # [[1, 1, 2], [1, 2, 1], [2, 1, 1]]
-    k_seq = r.int2b(k_comps)
-    # [[1, 1, 1, 0], [1, 1, 0, 1], [1, 0, 1, 1]]
+        k_comps = r.compm(4, 3) # kick compositions of 4 with 3 elements
+        # [[1, 1, 2], [1, 2, 1], [2, 1, 1]]
+        k_seq = r.int2b(k_comps)
+        # [[1, 1, 1, 0], [1, 1, 0, 1], [1, 0, 1, 1]]
 
-    h_seq = [[1, 1, 1, 1]] # hihat
+        h_seq = [[1, 1, 1, 1]] # hihat
 
-    for _ in range(repeat):
-        s_choice = random.choice(s_seq)
-        k_choice = random.choice(k_seq)
-        for i in range(len(s_choice)):
-            simul = {
-                snare: s_choice[i],
-                kick: k_choice[i],
-                hihat: 1,
-            }
-            print(simul)
-            play_simul(simul)
+        for _ in range(repeat):
+            s_choice = random.choice(s_seq)
+            k_choice = random.choice(k_seq)
+            for i in range(len(s_choice)):
+                simul = {
+                    snare: s_choice[i],
+                    kick: k_choice[i],
+                    hihat: 1,
+                }
+                print(simul)
+                play_simul(simul)
 
-    mid.save('coder-legion-3.mid')
-```
+        mid.save('coder-legion-3.mid')
 
 <audio controls>
   <source src="coder-legion-3.mp3" type="audio/mpeg">
@@ -259,32 +236,29 @@ Image from [The Geometry of Musical Rhythm](https://cgm.cs.mcgill.ca/~godfried/p
 Rhythm necklaces are circular diagrams of equally spaced, connected nodes. A necklace is a lexicographical ordering with no rotational duplicates. For instance, the necklaces of `3` beats are `[[1, 1, 1], [1, 1, 0], [1, 0, 0], [0, 0, 0]]`. Notice that there is no `[1, 0, 1]` or `[0, 1, 1]`. Also, there are no rotated versions of `[1, 0, 0]`, either.
 
 So, how many 16 beat rhythm necklaces are there?
-```
-necklaces = r.neck(16)
-print(len(necklaces)) # 4116 of 'em!
-```
+
+    necklaces = r.neck(16)
+    print(len(necklaces)) # 4116 of 'em!
 
 Ok. Let's generate necklaces of `8` instead, pull a random choice, and play the pattern with a world percussion instrument.
 
 Also, let's simplify the code a bit.
 
-```
-# ...
+    # ...
 
-if __name__ == '__main__':
-    mid, track = open_mid()
+    if __name__ == '__main__':
+        mid, track = open_mid()
 
-    r = Rhythms()
+        r = Rhythms()
 
-    necklaces = r.neck(8) # all necklaces of 8 beats
-    choice = random.choice(necklaces)
-    print(choice)
+        necklaces = r.neck(8) # all necklaces of 8 beats
+        choice = random.choice(necklaces)
+        print(choice)
 
-    for _ in range(4):
-        play_single(choice)
+        for _ in range(4):
+            play_single(choice)
 
-    mid.save('coder-legion-4.1.mid')
-```
+        mid.save('coder-legion-4.1.mid')
 
 <audio controls>
   <source src="coder-legion-4.1.mp3" type="audio/mpeg">
@@ -295,38 +269,36 @@ Here we choose from **all** necklaces. But note that includes the sequence with 
 
 More interesting would be playing simultaneous beats.
 
-```
-# ...
+    # ...
 
-if __name__ == '__main__':
-    mid, track = open_mid()
+    if __name__ == '__main__':
+        mid, track = open_mid()
 
-    claves = 75
-    hi_conga = 63
-    low_conga = 64
-    repeat = 6
-    beats = 8
+        claves = 75
+        hi_conga = 63
+        low_conga = 64
+        repeat = 6
+        beats = 8
 
-    r = Rhythms()
+        r = Rhythms()
 
-    necklaces = r.neck(beats) # all necklaces of 16 beats
+        necklaces = r.neck(beats) # all necklaces of 16 beats
 
-    x_choice = random.choice(necklaces)
-    y_choice = random.choice(necklaces)
-    z_choice = random.choice(necklaces)
+        x_choice = random.choice(necklaces)
+        y_choice = random.choice(necklaces)
+        z_choice = random.choice(necklaces)
 
-    for _ in range(repeat):
-        for i in range(len(x_choice)):
-            simul = {
-                claves: x_choice[i],
-                hi_conga: y_choice[i],
-                low_conga: z_choice[i],
-            }
-            print(simul)
-            play_simul(simul)
+        for _ in range(repeat):
+            for i in range(len(x_choice)):
+                simul = {
+                    claves: x_choice[i],
+                    hi_conga: y_choice[i],
+                    low_conga: z_choice[i],
+                }
+                print(simul)
+                play_simul(simul)
 
-    mid.save('coder-legion-4.2.mid')
-```
+        mid.save('coder-legion-4.2.mid')
 
 And that sounds like:
 
@@ -339,36 +311,34 @@ How about Euclidean patterns? What are they, and why are they named for a geomet
 
 Euclidean patterns are a set number of positions `P` that are filled with a number of beats `Q` that is less than or equal to `P`. They are named for Euclid because they are generated by applying the "Euclidean algorithm," which was originally designed to find the greatest common divisor (GCD) of two numbers, to distribute musical beats as evenly as possible.
 
-```
-# ...
+    # ...
 
-if __name__ == '__main__':
-    mid, track = open_mid()
+    if __name__ == '__main__':
+        mid, track = open_mid()
 
-    kick = 36
-    snare = 40
-    hihat = 42
-    repeat = 4
-    beats = 16
+        kick = 36
+        snare = 40
+        hihat = 42
+        repeat = 4
+        beats = 16
 
-    r = Rhythms()
+        r = Rhythms()
 
-    s_pat = r.rotate_n(4, r.euclid(2, beats)) # snare
-    k_pat = r.euclid(2, beats) # kick
-    h_pat = r.euclid(11, beats) # hihats
+        s_pat = r.rotate_n(4, r.euclid(2, beats)) # snare
+        k_pat = r.euclid(2, beats) # kick
+        h_pat = r.euclid(11, beats) # hihats
 
-    for _ in range(repeat):
-        for i in range(beats):
-            simul = {
-                snare: s_pat[i],
-                kick: k_pat[i],
-                hihat: h_pat[i],
-            }
-            print(simul)
-            play_simul(simul)
+        for _ in range(repeat):
+            for i in range(beats):
+                simul = {
+                    snare: s_pat[i],
+                    kick: k_pat[i],
+                    hihat: h_pat[i],
+                }
+                print(simul)
+                play_simul(simul)
 
-    mid.save('coder-legion-5.mid')
-```
+        mid.save('coder-legion-5.mid')
 
 <audio controls>
   <source src="coder-legion-5.mp3" type="audio/mpeg">
