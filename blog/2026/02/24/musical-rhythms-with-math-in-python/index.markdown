@@ -3,7 +3,7 @@ status: published
 title: Musical Rhythms with Math in Python
 tags:
   - Python
-  - Math
+  - Mathematics
   - Music
   - MIDI
 ---
