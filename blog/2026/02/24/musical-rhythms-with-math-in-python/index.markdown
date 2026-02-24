@@ -357,7 +357,7 @@ Now we're talkin' - an actual drum groove! To reiterate, the `euclid()` method d
 
 **References:**
 
-* [Article repository](https://github.com/ology/Music/tree/master/coder-legion)
+* [Article repository](https://github.com/ology/Music/tree/master/mrwmip/)
 
 * [Creating Rhythms book](https://abrazol.com/books/rhythm1/)
 
@@ -371,4 +371,5 @@ Now we're talkin' - an actual drum groove! To reiterate, the `euclid()` method d
 
 **About the author**
 
-Gene is a long-time musician and software engineer. His personal website is [https://www.ology.net/](https://www.ology.net/).
+Gene is a long-time musician and software engineer. His personal website is [https://www.ology.net/](https://www.ology.net/) and [pypi packages](https://pypi.org/user/ology/).
+
