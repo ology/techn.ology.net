@@ -101,14 +101,16 @@ site:
     # "text", the text of the link, and "href", the URL to link to.
     nav:
         main:
+            - text: 'www.ology.net'
+              href: 'https://www.ology.net/'
 #            - text: 'On CPAN'
 #              href: 'https://metacpan.org/author/GENE'
-            - text: 'Github'
-              href: 'https://github.com/ology'
-            - text: 'Soundcloud'
-              href: 'https://soundcloud.com/gene-boggs-music'
-            - text: 'Algorithmic Music'
-              href: 'https://github.com/ology/MIDI-Perl-HOWTO/wiki'
+#            - text: 'Github'
+#              href: 'https://github.com/ology'
+#            - text: 'Soundcloud'
+#              href: 'https://soundcloud.com/gene-boggs-music'
+#            - text: 'Algorithmic Music'
+#              href: 'https://github.com/ology/MIDI-Perl-HOWTO/wiki'
 
     # deploy: This is the deploy object, used to deploy this site.
     deploy:
