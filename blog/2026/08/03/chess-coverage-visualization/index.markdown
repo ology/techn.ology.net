@@ -14,7 +14,7 @@ My younger brother kept beating me at chess, because I'd move something to an un
 
 So over time (...a long time), I wrote this helper that colors the chessboard according to where a piece can move, what squares are threatened by an opposing piece, and what squares are protected by a piece of the same color.
 
-Here is a screenshot of the final move of ["The Immortal Game."](anderssen_kieseritzky_1851.pgn) The last piece moved (a white bishop) is indicated by a red circle.
+Here is a screenshot of the final move of ["The Immortal Game"](anderssen_kieseritzky_1851.pgn) (PGN file). The last piece moved (a white bishop) is indicated by a red circle.
 
 ![ui](chess-coverage-app-Immotal-blow.png)
 
