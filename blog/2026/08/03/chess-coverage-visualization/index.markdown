@@ -19,7 +19,7 @@ Here is a screenshot of the final move of "The Immortal Game." The last piece mo
 ![ui](chess-coverage-app-Immotal-blow.png)
 
 Blue means that a white piece can move to that square.
-Brown that a black piece can move to that square.
+Brown means that a black piece can move to that square.
 Yellow means that the piece on that square is threatened by an opposing piece.
 Green means that the piece on that square is protected by an allied piece.
 Two diagonal colors on a square mean that 2 things can happen.
