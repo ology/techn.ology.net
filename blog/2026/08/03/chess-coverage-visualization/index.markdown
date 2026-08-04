@@ -24,6 +24,8 @@ Yellow means that the piece on that square is threatened by an opposing piece.
 Green means that the piece on that square is protected by an allied piece.
 Two diagonal colors on a square mean that 2 things can happen.
 
+The red square surrounding `G5` indicates the moves that the piece (a white pawn) at `G4` can make. (The computer's mouse is hovering over square `G4`, but the mouse pointer is not in the screen capture. Argh!)
+
 This doesn't enforce chess gameplay rules. It visualizes. But it just happens to allow play - and the game-state is preserved, so players can come back, later on.
 
 Also, it allows setting up an arbitrary board of say, all queens, with the "Clear board" button and the "Add a piece..." option-select page widgets.
