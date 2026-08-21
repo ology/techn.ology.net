@@ -30,7 +30,7 @@ This is the traditional way to apply effects in the music studio. And of course 
 
 Modern programming languages all have a functional MIDI interface. And there are a HUGE number of music programs out there. The coolest one of mine is (of course, the latest) a [MIDI filter](https://github.com/ology/Mojo-MIDIFilter) for simultaneously controlling multiple MIDI devices in the studio. That is, you can transfer MIDI messages to and from any USB computer-connected devices in your studio.
 
-For other programmers out there, a simpler, command-line program is the Perl code [continuous.pl](https://github.com/ology/MIDI-RtController-Filter-CC/blob/main/eg/continuous.pl) - check it out!
+For other programmers out there, a simpler, command-line program is this Perl code [continuous.pl](https://github.com/ology/MIDI-RtController-Filter-CC/blob/main/eg/continuous.pl) - check it out!
 
 ## With Logic Pro / Reaper
 
