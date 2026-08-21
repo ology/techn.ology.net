@@ -8,6 +8,8 @@ tags:
   - hardware
 ---
 
+![In Action](KaossPad-in-Action-Cropped.jpg)
+
 I recently scored a used Korg "Kaoss Pad V." This device ("KPV") is new to the market as of a few months, and it is the fifth version in a long line of Kaoss pads.
 
 ---
@@ -32,6 +34,8 @@ For other programmers out there, a simpler, command-line program is the Perl cod
 
 ## With Logic Pro / Reaper
 
+![In Logic Pro](KaossPad-LogicPro.png)
+
 So, this is exactly what I dreamed about: Recording real-time effects based on playback of another existing track in my DAW.
 
 It took me a bit of puzzling, trial, and error, but I finally figured out how to make the KPV play nice in my DAW, Logic Pro. In order to use it to record fresh effects for an existing audio track, do this:
@@ -53,5 +57,7 @@ It took me a bit of puzzling, trial, and error, but I finally figured out how to
 7. Give it a listen!
 
 And you do the same thing in Reaper: Have a source audio track (not plain MIDI). Add a new, blank track to record the Kaoss Pad. Switch the audio device in settings to the Kaoss Pad (which must be in "Send" mode). Mute the track and monitor with headphones on the KPV. Arm the new track for record and go for it, making X-Y pad motions. This will be recorded to the new track. Then when finished, switch the audio device back to the original system settings, un-mute and play!
+
+![In Reaper](KaossPad-Reaper.png)
 
 ## Happy effecting! :D
