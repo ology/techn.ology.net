@@ -7,3 +7,5 @@ Personal Blog
     ~/repos/ology/ology.github.io master> git st
     ~/repos/ology/ology.github.io master> git add YYYY/MM/  # for example
     ~/repos/ology/ology.github.io master> git cima 'Deploy!' ; git push
+
+Ref: https://metacpan.org/dist/Statocles/view/bin/statocles
