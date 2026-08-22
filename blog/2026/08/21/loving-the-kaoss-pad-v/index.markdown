@@ -28,6 +28,8 @@ This is the traditional way to apply effects in the music studio. And of course 
 
 [EDIT] I just realized that the KPV only sends the right side out if you have a right channel plugged into it. So, for my mixer mono-send, I just need an RCA splitter adapter, so I can go to *both* stereo input channels on the KPV. ...Ordered! :)
 
+![RCA Splitter](RCA-Splitter-Cable.png)
+
 ## USB MIDI to a device directly (with a program)
 
 There are fancy MIDI routing apps out there for sure. Also, modern programming languages all have a functional MIDI interface. And there are a HUGE number of music programs out there.
