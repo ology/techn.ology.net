@@ -24,7 +24,7 @@ Let's look at a few use-cases:
 
 ## As a mixer aux send/return
 
-This is the traditional way to apply effects in the music studio. And of course that method works fine with the KPV filtering per channel.
+This is the traditional way to apply effects in the music studio. And of course that method works fine with the KPV as a channel effect to dial-in.
 
 ## USB MIDI to a device directly (with a program)
 
