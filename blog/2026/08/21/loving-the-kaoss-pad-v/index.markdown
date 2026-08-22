@@ -24,7 +24,7 @@ Let's look at a few use-cases:
 
 ## As a mixer aux send/return
 
-This is the traditional way to apply effects in the music studio. And of course that method works fine with the KPV as a channel effect to dial-in. Even though the KPV has stereo in/outs, and my mixer has stereo returns (but mono send), I could only get things to work using the left channels of the KPV.
+This is the traditional way to apply effects in the music studio. And of course that method works fine with the KPV as a channel effect to dial-in. Even though the KPV has RCA stereo in/outs, and my mixer has stereo returns (but mono send), I could only get things to work using the left channels of the KPV.
 
 [EDIT] I just realized that the KPV only sends the right side out if you have a right channel plugged into it. So, for my mixer mono-send, I just need an RCA splitter adapter, so I can go to *both* stereo input channels on the KPV. ...Ordered! :)
 
