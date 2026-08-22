@@ -28,9 +28,9 @@ This is the traditional way to apply effects in the music studio. And of course 
 
 ## USB MIDI to a device directly (with a program)
 
-Modern programming languages all have a functional MIDI interface. And there are a HUGE number of music programs out there. The coolest one of mine is (of course, the latest) a [MIDI filter](https://github.com/ology/Mojo-MIDIFilter) for simultaneously controlling multiple MIDI devices in the studio. That is, you can transfer MIDI messages to and from any USB computer-connected devices in your studio.
+There are fancy MIDI routing apps out there for sure. Also, modern programming languages all have a functional MIDI interface. And there are a HUGE number of music programs out there.
 
-For other programmers out there, a simpler, command-line program is this Perl code [continuous.pl](https://github.com/ology/MIDI-RtController-Filter-CC/blob/main/eg/continuous.pl) - check it out!
+The coolest one of mine is (of course, the latest) a [MIDI filter](https://github.com/ology/Mojo-MIDIFilter) for simultaneously controlling multiple MIDI devices in the studio. That is, you can transfer MIDI messages to and from any USB computer-connected devices in your studio. (And For other programmers out there, a simpler, command-line program is this Perl code [continuous.pl](https://github.com/ology/MIDI-RtController-Filter-CC/blob/main/eg/continuous.pl))
 
 ## With Logic Pro / Reaper
 
