@@ -42,11 +42,19 @@ It took me a bit of puzzling, trial, and error, but I finally figured out how to
 
 1. Set the KPV to "SEND", not "DIRECT" and "Line & USB" as the "FX Target."
 
-2. Have an existing audio track to effect open in your DAW.
+  a. If not already set (known by holding down shift and seeing which target button LED is lit), the FX Target is set by first unsetting the previous target. (Wtf, Korg?)
 
-3. Now, go to the app settings and switch the audio device I/O from the default system setting to the "KAOSS PAD KPV" audio interface.
+  b. So, hold down the shift-key and press "Line & USB." Then do this again, to set the FX target.
 
-4. Make a new audio mic/line-in track for the Kaoss Pad and arm it for recording.
+  c. Fortunately you only have to do this once.
+
+1. Have an existing audio track to effect open in your DAW.
+
+2. Now, go to the app settings and switch the audio device I/O from the default system setting to the "KAOSS PAD KPV" audio interface for both input and output.
+
+3. Make a new audio mic/line-in track for the Kaoss Pad and arm it for recording.
+
+  a. You might mute the track and monitor with headphones from the KPV.
 
 5. Hit record and make fabulous X-Y gestures on the KPV!
 
