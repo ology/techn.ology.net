@@ -60,4 +60,8 @@ And you do the same thing in Reaper: Have a source audio track (not plain MIDI).
 
 ![In Reaper](KaossPad-Reaper.png)
 
+## I/O Plugin?
+
+Both DAWs have a generic I/O Plugin. However, I cannot get it to play nice with the KPV as a separate audio device. Alas!
+
 ## Happy effecting! :D
