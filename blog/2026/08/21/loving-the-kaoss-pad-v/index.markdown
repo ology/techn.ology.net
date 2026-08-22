@@ -24,7 +24,7 @@ Let's look at a few use-cases:
 
 ## As a mixer aux send/return
 
-This is the traditional way to apply effects in the music studio. And of course that method works fine with the KPV as a channel effect to dial-in.
+This is the traditional way to apply effects in the music studio. And of course that method works fine with the KPV as a channel effect to dial-in. Note that even though the KPV has stereo in/outs, and my mixer has stereo returns, I could only get things to work with the mono send/return using the left channel of the KPV. Argh?
 
 ## USB MIDI to a device directly (with a program)
 
