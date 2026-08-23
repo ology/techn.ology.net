@@ -72,9 +72,13 @@ It took me a bit of puzzling, trial, and error, but I finally figured out how to
 
 The DAW has a generic I/O plugin. However, I can't get it to work with the KPV as a separate audio device. Alas!
 
+[EDIT] A friendly person on the Interwebs suggested that on a Mac, you can make an "aggregate device" with the Audio Midi Setup utility. This screenshot says more than I can about it:
+
+![Aggregate device](Mac-aggregate-device.png)
+
 ## With Reaper
 
-And it has the same plugin that isn't the answer, apparantly. So you do the same thing as in Logic Pro: Have a source audio track (not plain MIDI). Add a new, blank track to record the Kaoss Pad. Switch the audio device in settings to the Kaoss Pad (which must be in "Send" mode). Mute the track and monitor with headphones on the KPV. Arm the new track for record and go for it, making X-Y pad motions. This will be recorded to the new track. Then when finished, switch the audio device back to the original system settings, un-mute and play!
+And it has the same I/O plugin, too. So you do the same things as in Logic Pro: Have a source audio track (not plain MIDI). Add a new, blank track to record the Kaoss Pad. Switch the audio device in settings to the Kaoss Pad (which must be in "Send" mode). Mute the track and monitor with headphones on the KPV. Arm the new track for record and go for it, making X-Y pad motions. This will be recorded to the new track. Then when finished, switch the audio device back to the original system settings, un-mute and play!
 
 ![In Reaper](KaossPad-Reaper.png)
 
