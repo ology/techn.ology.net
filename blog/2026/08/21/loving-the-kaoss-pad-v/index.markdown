@@ -36,7 +36,7 @@ There are fancy MIDI routing apps out there for sure. Also, modern programming l
 
 The coolest one of mine is (of course, the latest) a [MIDI filter](https://github.com/ology/Mojo-MIDIFilter) for simultaneously controlling multiple MIDI devices in the studio. That is, you can transfer MIDI messages to and from any USB computer-connected devices in your studio. (And For other programmers out there, a simpler, command-line program is this Perl code [continuous.pl](https://github.com/ology/MIDI-RtController-Filter-CC/blob/main/eg/continuous.pl))
 
-## With Logic Pro / Reaper
+## With Logic Pro
 
 ![In Logic Pro](KaossPad-LogicPro.png)
 
@@ -68,12 +68,14 @@ It took me a bit of puzzling, trial, and error, but I finally figured out how to
 
 7. Give it a listen!
 
-And you do the same thing in Reaper: Have a source audio track (not plain MIDI). Add a new, blank track to record the Kaoss Pad. Switch the audio device in settings to the Kaoss Pad (which must be in "Send" mode). Mute the track and monitor with headphones on the KPV. Arm the new track for record and go for it, making X-Y pad motions. This will be recorded to the new track. Then when finished, switch the audio device back to the original system settings, un-mute and play!
-
-![In Reaper](KaossPad-Reaper.png)
-
 ## I/O Plugin?
 
-Both DAWs have a generic I/O plugin. However, I can't get it to work with the KPV as a separate audio device. Alas!
+The DAW has a generic I/O plugin. However, I can't get it to work with the KPV as a separate audio device. Alas!
+
+## With Reaper
+
+And it has the same plugin that isn't the answer, apparantly. So you do the same thing as in Logic Pro: Have a source audio track (not plain MIDI). Add a new, blank track to record the Kaoss Pad. Switch the audio device in settings to the Kaoss Pad (which must be in "Send" mode). Mute the track and monitor with headphones on the KPV. Arm the new track for record and go for it, making X-Y pad motions. This will be recorded to the new track. Then when finished, switch the audio device back to the original system settings, un-mute and play!
+
+![In Reaper](KaossPad-Reaper.png)
 
 ## Happy "effecting"! :D
