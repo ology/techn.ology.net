@@ -6,6 +6,8 @@ tags:
   - music
   - hardware
 ---
+![Roland GP-100](gp-100.jpg)
+
 I recently acquired a classic, Roland GP-100 guitar effects processor from a friend. He is a wicked guitarist, multi-instrumentalist virtuoso, and owned it for decades. Naturally it's loaded with custom Jimmy Page and Zappa patches, EVH, Bridge of Sighs, ZZ Top, on and on!
 
 Anyway, I recorded a dump of the GP memory onto an external MIDI track in Logic Pro. I think this is a valid MIDI sysex file of the patches. But I don't want to test it on this thing, I've never tried it before, and I only have one!
