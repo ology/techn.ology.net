@@ -16,4 +16,4 @@ But if **you** have it dialed-in, please check [this file](https://drive.google.
 
 Here is a cool [write-up](https://www.vintagedigital.com.au/roland-gp-100/) on the device. And here are its [technical specifications](https://support.roland.com/hc/en-us/articles/201946959-GP-100-Technical-Specifications).
 
-#Roland #GP100 #MIDI #SYSEX
+`#Roland #GP100 #MIDI #SYSEX`
