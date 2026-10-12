@@ -127,7 +127,7 @@ Here are the patch types and names that I tediously compiled by hand:
  79    vintage    Hadden=ed2    
  80    dual       Van Halen brown    
  81    vintage    Jimmy Page vox    
- 82    vintage    Joe's 1959 lead    Garage
+ 82    vintage    Joe's 1959 lead
  83    dual       Van Halen brown    
  84    vintage    Jimmy Page vox    
  85    basic      Heartbeat:Belew    
@@ -206,7 +206,7 @@ Here are the patch types and names that I tediously compiled by hand:
 158    delay      Flange drive    
 159    vintage    Pedal feedbacker    
 160    delay      Stereo echo    
-161    basic      Fat BG drive    Billy Gibbons
+161    basic      Fat BG drive
 162    delay      Analog delay    
 163    delay      Tempo drive    
 164    vintage    Rhythm master    
@@ -218,7 +218,7 @@ Here are the patch types and names that I tediously compiled by hand:
 170    delay      Presence lead    
 171    delay      Sweet turbo OD    
 172    basic      Jazz tone    
-173    delay      BG power stack    Billy Gibbons
+173    delay      BG power stack
 174    delay      Acousticrisp    
 175    delay      Detuned drive    
 176    delay      JC clear pedal wah    
