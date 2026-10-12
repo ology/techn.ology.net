@@ -44,7 +44,7 @@ If **you** have it dialed-in, please [check it out](https://drive.google.com/fil
 
 Here are the patch types and names that I tediously compiled by hand:
 
-|     | Type    | Name               |
+|   # | Type    | Name               |
 | --: | :-----: | :----------------- |
 | 1   | vintage | Blue top loose     |
 | 2   | basic   | SLDN super lead    |
