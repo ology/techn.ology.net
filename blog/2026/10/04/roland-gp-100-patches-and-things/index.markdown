@@ -44,8 +44,8 @@ If **you** have it dialed-in, please [check it out](https://drive.google.com/fil
 
 Here are the patch types and names that I tediously compiled by hand:
 
-|     | Type    | Name                |
-| --: | :-----: | :------------------ |
+|     | Type    | Name               |
+| --: | :-----: | :----------------- |
 | 1   | vintage | Blue top loose     |
 | 2   | basic   | SLDN super lead    |
 | 3   | harmony | Reversed 2         |
@@ -243,9 +243,9 @@ Here are the patch types and names that I tediously compiled by hand:
 | 195 | delay   | JC-120 drive       |
 | 196 | delay   | Comp wah drive     |
 | 197 | harmony | 4th pitch shift    |
-| 198 |   vintag| Crying pan       |
-| 199 | harmony | Synth bass          |
-| 200 |    dual | Two Geddy overdr    |
+| 198 | vintage | Crying pan         |
+| 199 | harmony | Synth bass         |
+| 200 | dual    | Two Geddy overdr   |
 
 Btw, here is a cool [write-up](https://www.vintagedigital.com.au/roland-gp-100/) on the device. And here are its [technical specifications](https://support.roland.com/hc/en-us/articles/201946959-GP-100-Technical-Specifications).
 
