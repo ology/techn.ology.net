@@ -44,6 +44,7 @@ If **you** have it dialed-in, please [check it out](https://drive.google.com/fil
 
 Here are the patch types and names that I tediously compiled by hand:
 
+```
 |   # | Type    | Name               |
 | --: | :-----: | :----------------- |
 | 1   | vintage | Blue top loose     |
@@ -246,6 +247,7 @@ Here are the patch types and names that I tediously compiled by hand:
 | 198 | vintage | Crying pan         |
 | 199 | harmony | Synth bass         |
 | 200 | dual    | Two Geddy overdr   |
+```
 
 Btw, here is a cool [write-up](https://www.vintagedigital.com.au/roland-gp-100/) on the device. And here are its [technical specifications](https://support.roland.com/hc/en-us/articles/201946959-GP-100-Technical-Specifications).
 
