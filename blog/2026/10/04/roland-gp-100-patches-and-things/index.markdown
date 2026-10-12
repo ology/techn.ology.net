@@ -12,7 +12,7 @@ I recently acquired a classic, Roland GP-100 guitar effects processor from a fri
 
 ---
 
-I recorded a dump of the GP memory onto an external MIDI track in Logic Pro. [And this](https://drive.google.com/file/d/1P_XY7moAdn7v3fV3Pe4dd_V0BWqTB19e/view?usp=drive_link) is MIDI sysex file of the patches. It's untested, because I've never tried it before, and I only have one GP-100!
+I recorded a dump of the GP memory onto an external MIDI track in Logic Pro. [And this](https://drive.google.com/file/d/1P_XY7moAdn7v3fV3Pe4dd_V0BWqTB19e/view?usp=drive_link) is the resulting MIDI sysex file of the patches. It's untested, because I've never tried it before, and I only have one GP-100!
 
 ## Here's what Google has to say on the matter:
 
