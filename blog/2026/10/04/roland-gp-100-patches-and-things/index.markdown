@@ -10,6 +10,8 @@ tags:
 
 I recently acquired a classic, Roland GP-100 guitar effects processor from a friend. He is a wicked guitarist, multi-instrumentalist virtuoso, and owned it for decades. Naturally it's loaded with custom Jimmy Page and Zappa patches, EVH, ZZ Top, etc!
 
+---
+
 I recorded a dump of the GP memory onto an external MIDI track in Logic Pro. [And this](https://drive.google.com/file/d/1P_XY7moAdn7v3fV3Pe4dd_V0BWqTB19e/view?usp=drive_link) is MIDI sysex file of the patches. It's untested, because I've never tried it before, and I only have one GP-100!
 
 If **you** have it dialed-in, please [check it out](https://drive.google.com/file/d/1P_XY7moAdn7v3fV3Pe4dd_V0BWqTB19e/view?usp=drive_link) and see if it works for you.
@@ -17,7 +19,7 @@ If **you** have it dialed-in, please [check it out](https://drive.google.com/fil
 Here are the patch types and names that I tediously compiled by hand:
 
 ```
-#	  Type	  Name	
+	  Type	  Name	
 1	  vintage	Blue top loose	
 2	  basic	  SLDN super lead	
 3	  harmony	Reversed 2	
@@ -26,7 +28,7 @@ Here are the patch types and names that I tediously compiled by hand:
 6	  vintage	Zappa wah wah	
 7	  vintage	Les-wired2	
 8	  vintage	Hadden=ed	
-9	  basic	  Blow by blow dry	
+9	  basic	Blow by blow dry	
 10	basic	  No.1 combo	
 11	delay	  Zeppelin phase	
 12	basic	  Heartbeat:Belew	
