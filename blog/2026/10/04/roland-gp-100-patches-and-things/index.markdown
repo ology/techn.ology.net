@@ -14,6 +14,32 @@ I recently acquired a classic, Roland GP-100 guitar effects processor from a fri
 
 I recorded a dump of the GP memory onto an external MIDI track in Logic Pro. [And this](https://drive.google.com/file/d/1P_XY7moAdn7v3fV3Pe4dd_V0BWqTB19e/view?usp=drive_link) is MIDI sysex file of the patches. It's untested, because I've never tried it before, and I only have one GP-100!
 
+## Here's what Google has to say on the matter:
+
+To perform a System Exclusive (SysEx) memory dump (backup) or bulk load (restore) on your Roland GP-100, you will use the unit's [UTILITY] menu functions.
+
+* MIDI OUT of the GP-100 connects to the MIDI IN of your computer interface.
+* MIDI IN of the GP-100 connects to the MIDI OUT of your computer interface.
+
+### Step-by-Step SysEx Bulk Dump (Backup)
+
+   1. Open a SysEx utility program on your computer (such as MIDI-OX for Windows or SysEx Librarian for macOS) and set it to "Receive Manual Dump" or "Record".
+   2. Press the [UTILITY] button on the front panel of the GP-100.
+   3. Rotate the [PARAMETER] knob until "MIDI Bulk Dump" appears.
+   4. Use the [VALUE] knob to specify the block or range of data you wish to backup.
+   5. Press the [WRITE] button to begin sending the memory data.
+   6. Save the captured data as a `.mid` or `.syx` file on your computer.
+
+### Step-by-Step SysEx Bulk Load (Restore)
+
+   1. Press the [UTILITY] button.
+   2. Rotate the [PARAMETER] knob until "MIDI Bulk Load" is displayed on the screen. The unit will enter a standby state to wait for incoming MIDI streams.
+   3. Transmit from Computer: Open your saved file in your SysEx utility software and send or transmit.
+   4. The GP-100 screen will display data packet reception status. Once the file transmission from the software stops, the unit automatically processes and overwrites the designated user memory spots.
+   5. Press [EXIT] to return to the normal Play screen.
+
+## Anyway...
+
 If **you** have it dialed-in, please [check it out](https://drive.google.com/file/d/1P_XY7moAdn7v3fV3Pe4dd_V0BWqTB19e/view?usp=drive_link) and see if it works for you.
 
 Here are the patch types and names that I tediously compiled by hand:
