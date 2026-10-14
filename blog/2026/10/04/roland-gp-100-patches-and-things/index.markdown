@@ -12,7 +12,7 @@ I recently acquired a classic, Roland GP-100 guitar effects processor from a fri
 
 ---
 
-I recorded a dump of the GP memory onto an external MIDI track in Logic Pro. [And this](https://drive.google.com/file/d/1P_XY7moAdn7v3fV3Pe4dd_V0BWqTB19e/view?usp=drive_link) is the resulting MIDI sysex file of the patches. It's untested, because I've never tried it before, and I only have one GP-100!
+I recorded a dump of the GP memory onto an external MIDI track in Logic Pro. [And this](GP-100-2026-10-01-Mike.mid) is the resulting MIDI sysex file of the patches. It's untested, because I've never tried it before, and I only have one GP-100!
 
 ## Here's what Google has to say on the matter:
 
@@ -40,7 +40,7 @@ To perform a System Exclusive (SysEx) memory dump (backup) or bulk load (restore
 
 ## Anyway...
 
-If **you** have it dialed-in, please [check it out](https://drive.google.com/file/d/1P_XY7moAdn7v3fV3Pe4dd_V0BWqTB19e/view?usp=drive_link) and see if it works for you.
+If **you** have it dialed-in, please [check it out](GP-100-2026-10-01-Mike.mid) and see if it works for you.
 
 Btw, here is a cool [write-up](https://www.vintagedigital.com.au/roland-gp-100/) on the device. And here are its [technical specifications](https://support.roland.com/hc/en-us/articles/201946959-GP-100-Technical-Specifications).
 
