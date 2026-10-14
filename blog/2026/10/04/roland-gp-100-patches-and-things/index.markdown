@@ -44,7 +44,7 @@ If **you** have it dialed-in, please [check it out](GP-100-2026-10-01-Mike.mid) 
 
 Btw, here is a cool [write-up](https://www.vintagedigital.com.au/roland-gp-100/) on the device. And here are its [technical specifications](https://support.roland.com/hc/en-us/articles/201946959-GP-100-Technical-Specifications).
 
-Here are the patch types and names that I tediously compiled by hand:
+Here are the patch types and names that I tediously compiled by hand. (And unfortunately, markdown tables don't appear to work with [Statocles](https://metacpan.org/pod/Statocles#FEATURES) - Ugh :()
 
 |   # | Type    | Name               |
 
@@ -450,6 +450,6 @@ Here are the patch types and names that I tediously compiled by hand:
 
 | 200 | dual    | Two Geddy overdr   |
 
-And yes, markdown tables don't work with https://metacpan.org/pod/Statocles#FEATURES - Ugh :(
+Yep. Markdown tables don't work with [Statocles](https://metacpan.org/pod/Statocles#FEATURES)
 
 `#Roland #GP100 #MIDI #SYSEX`
