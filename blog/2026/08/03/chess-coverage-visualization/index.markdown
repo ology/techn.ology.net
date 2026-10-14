@@ -8,15 +8,15 @@ tags:
   - visualization
 ---
 
+![ui](chess-coverage-app-Immotal-blow.png)
+
 My younger brother kept beating me at chess, because I'd move something to an unprotected and even threatened square. Argh!
 
 ---
 
 So over time (...a long time), I wrote this helper that colors the chessboard according to where a piece can move, what squares are threatened by an opposing piece, and what squares are protected by a piece of the same color.
 
-Here is a screenshot of the final move of ["The Immortal Game"](anderssen_kieseritzky_1851.pgn.txt) (PGN file). The last piece moved (a white bishop) is indicated by a red circle.
-
-![ui](chess-coverage-app-Immotal-blow.png)
+The above screenshot is of the final move of ["The Immortal Game"](anderssen_kieseritzky_1851.pgn.txt) (PGN file). The last piece moved (a white bishop) is indicated by a red circle.
 
 Blue means that a white piece can move to that square.
 Brown means that a black piece can move to that square.
